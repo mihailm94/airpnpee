@@ -36,6 +36,37 @@
           "status": 2
         }
       }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:72554858138:android:cf6b0e249674169c",
+        "android_client_info": {
+          "package_name": "com.appspot.airpeepee.airpeepee"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "72554858138-80rfqien142k6ikh2pd834h6ftps2bki.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrUSqZUkQRNlppN4vMhUUrtRDXm8p0Kkk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
     }
   ],
   "configuration_version": "1"
