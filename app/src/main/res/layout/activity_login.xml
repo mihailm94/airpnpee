@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:gravity="center_horizontal"
     android:orientation="vertical"
     android:paddingLeft="@dimen/activity_horizontal_margin"
@@ -81,11 +82,18 @@
                 android:layout_marginTop="30dp"
                 android:layout_marginBottom="30dp" />
 
-            <com.google.android.gms.common.SignInButton
+            <com.shobhitpuri.custombuttons.GoogleSignInButton
                 android:id="@+id/sign_in_button"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/google_sign_up"
+                android:gravity="left|center"
+
+                app:isDarkTheme="true" />
+
+                />
 
         </LinearLayout>
     </ScrollView>
-</LinearLayout>
+</RelativeLayout>
