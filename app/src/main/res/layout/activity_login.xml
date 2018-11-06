@@ -82,7 +82,7 @@
                 android:layout_marginTop="30dp"
                 android:layout_marginBottom="30dp" />
 
-            <com.shobhitpuri.custombuttons.GoogleSignInButton
+            <com.google.android.gms.common.SignInButton
                 android:id="@+id/sign_in_button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
