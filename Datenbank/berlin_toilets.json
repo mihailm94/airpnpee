@@ -1,0 +1,13468 @@
+"29040668": {
+		"address":{
+			"location":{
+				"lat" : 52.5250054
+				"lon" : 13.335496
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"wheelchair": "yes"
+			"street": "Alt-Moabit"
+			"plz": "10555"
+		"opening_hours": "24/7"
+			"street_number": "81"
+		},
+}
+"36310181": {
+		"address":{
+			"location":{
+				"lat" : 52.550683
+				"lon" : 13.334696
+				},
+		},
+}
+"60240150": {
+		"address":{
+			"location":{
+				"lat" : 52.5184924
+				"lon" : 13.4063127
+				},
+		"wheelchair": "yes"
+			"street": "Spandauer Straße"
+			"plz": "10178"
+			"street_number": "9"
+		},
+}
+"66917214": {
+		"address":{
+			"location":{
+				"lat" : 52.5168607
+				"lon" : 13.3829509
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"wheelchair": "yes"
+		},
+}
+"71180687": {
+		"address":{
+			"location":{
+				"lat" : 52.5175448
+				"lon" : 13.3738695
+				},
+		"fee": "yes"
+		"wheelchair": "yes"
+		},
+}
+"76465610": {
+		"address":{
+			"location":{
+				"lat" : 52.5639385
+				"lon" : 13.3267121
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"wheelchair": "yes"
+		},
+}
+"78252191": {
+		"address":{
+			"location":{
+				"lat" : 52.5220502
+				"lon" : 13.40043
+				},
+			"street_number": "28"
+			"plz": "10178"
+			"street": "Burgstraße"
+		"fee": "yes"
+		"name": "City Toilette"
+		"opening_hours": "24/7"
+		"wheelchair": "yes"
+		},
+}
+"81362621": {
+		"address":{
+			"location":{
+				"lat" : 52.5096592
+				"lon" : 13.2726603
+				},
+		"name": "Öffentliche Toiletten"
+		"opening_hours": "Mo-Su 08:00-20:00"
+		"wheelchair": "no"
+		},
+}
+"86001818": {
+		"address":{
+			"location":{
+				"lat" : 52.5147116
+				"lon" : 13.3927835
+				},
+		"fee": "no"
+		"name": "Historische Toilette (Café Achteck)"
+		"wheelchair": "limited"
+		},
+}
+"88456311": {
+		"address":{
+			"location":{
+				"lat" : 52.447599
+				"lon" : 13.2293179
+				},
+		"wheelchair": "no"
+		},
+}
+"97876682": {
+		"address":{
+			"location":{
+				"lat" : 52.6356675
+				"lon" : 13.4947109
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"opening_hours": "24/7"
+		"wheelchair": "yes"
+		},
+}
+"151012608": {
+		"address":{
+			"location":{
+				"lat" : 52.5279505
+				"lon" : 13.5380407
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"wheelchair": "yes"
+		},
+}
+"151012639": {
+		"address":{
+			"location":{
+				"lat" : 52.513418
+				"lon" : 13.5549075
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"wheelchair": "yes"
+			"street": "Wuhlgartenweg"
+			"plz": "12683"
+		},
+}
+"216261158": {
+		"address":{
+			"location":{
+				"lat" : 52.5289801
+				"lon" : 13.3781221
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"wheelchair": "yes"
+			"street": "Platz vor dem Neuen Tor"
+			"plz": "10115"
+		"opening_hours": "24/7"
+		},
+}
+"245287540": {
+		"address":{
+			"location":{
+				"lat" : 52.5127007
+				"lon" : 13.4135507
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"opening_hours": "24/7"
+		"wheelchair": "yes"
+		},
+}
+"253775733": {
+		"address":{
+			"location":{
+				"lat" : 52.4395401
+				"lon" : 13.1772821
+				},
+		},
+}
+"253775734": {
+		"address":{
+			"location":{
+				"lat" : 52.4373163
+				"lon" : 13.1773459
+				},
+		"wheelchair": "no"
+		},
+}
+"253775735": {
+		"address":{
+			"location":{
+				"lat" : 52.4405511
+				"lon" : 13.1773664
+				},
+		},
+}
+"254863962": {
+		"address":{
+			"location":{
+				"lat" : 52.4702891
+				"lon" : 13.464036
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"wheelchair": "yes"
+		"opening_hours": "24/7"
+		},
+}
+"257372882": {
+		"address":{
+			"location":{
+				"lat" : 52.4874732
+				"lon" : 13.4643851
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"wheelchair": "yes"
+		"opening_hours": "24/7"
+		},
+}
+"258604531": {
+		"address":{
+			"location":{
+				"lat" : 52.4811845
+				"lon" : 13.3633629
+				},
+		"fee": "no"
+		"name": "Historische Toilette (Café Achteck)"
+		"wheelchair": "no"
+		},
+}
+"258889664": {
+		"address":{
+			"location":{
+				"lat" : 52.5699616
+				"lon" : 13.5663304
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"wheelchair": "yes"
+		},
+}
+"259606829": {
+		"address":{
+			"location":{
+				"lat" : 52.5414216
+				"lon" : 13.2056731
+				},
+		"name": "City Toilette"
+		"wheelchair": "yes"
+		},
+}
+"259606898": {
+		"address":{
+			"location":{
+				"lat" : 52.5383801
+				"lon" : 13.2011636
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"wheelchair": "yes"
+		"opening_hours": "24/7"
+		},
+}
+"259983109": {
+		"address":{
+			"location":{
+				"lat" : 52.484303
+				"lon" : 13.3527148
+				},
+			"street_number": "129"
+			"plz": "10827"
+			"street": "Hauptstraße"
+		"fee": "yes"
+		"name": "City Toilette"
+		"opening_hours": "24/7"
+		"wheelchair": "yes"
+		},
+}
+"264964211": {
+		"address":{
+			"location":{
+				"lat" : 52.5294173
+				"lon" : 13.5915624
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"wheelchair": "yes"
+		},
+}
+"268981842": {
+		"address":{
+			"location":{
+				"lat" : 52.4958545
+				"lon" : 13.4197605
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"opening_hours": "24/7"
+		"wheelchair": "yes"
+		},
+}
+"270161514": {
+		"address":{
+			"location":{
+				"lat" : 52.4950571
+				"lon" : 13.4391584
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"opening_hours": "24/7"
+		"wheelchair": "yes"
+		},
+}
+"271938947": {
+		"address":{
+			"location":{
+				"lat" : 52.4303983
+				"lon" : 13.1214072
+				},
+		"wheelchair": "yes"
+		},
+}
+"278139236": {
+		"address":{
+			"location":{
+				"lat" : 52.5368873
+				"lon" : 13.2050138
+				},
+		"name": "Öffentliche Toilette"
+		"wheelchair": "yes"
+		},
+}
+"279972996": {
+		"address":{
+			"location":{
+				"lat" : 52.544868
+				"lon" : 13.3523299
+				},
+		},
+}
+"280441806": {
+		"address":{
+			"location":{
+				"lat" : 52.4389794
+				"lon" : 13.3431041
+				},
+		"name": "City Toilette"
+		"wheelchair": "yes"
+		"opening_hours": "24/7"
+		},
+}
+"286472700": {
+		"address":{
+			"location":{
+				"lat" : 52.4239049
+				"lon" : 13.2163137
+				},
+		},
+}
+"286472701": {
+		"address":{
+			"location":{
+				"lat" : 52.4230736
+				"lon" : 13.2128881
+				},
+		},
+}
+"286618730": {
+		"address":{
+			"location":{
+				"lat" : 52.4786729
+				"lon" : 13.343464
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"opening_hours": "24/7"
+		"wheelchair": "yes"
+		},
+}
+"286976952": {
+		"address":{
+			"location":{
+				"lat" : 52.5172132
+				"lon" : 13.5138306
+				},
+		},
+}
+"286976954": {
+		"address":{
+			"location":{
+				"lat" : 52.5150386
+				"lon" : 13.5088114
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"wheelchair": "yes"
+		},
+}
+"287525643": {
+		"address":{
+			"location":{
+				"lat" : 52.4982552
+				"lon" : 13.2855929
+				},
+		},
+}
+"287809080": {
+		"address":{
+			"location":{
+				"lat" : 52.5361522
+				"lon" : 13.294005
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"wheelchair": "yes"
+		"opening_hours": "24/7"
+		},
+}
+"288089949": {
+		"address":{
+			"location":{
+				"lat" : 52.5335657
+				"lon" : 13.4370659
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"wheelchair": "yes"
+		"opening_hours": "24/7"
+		},
+}
+"289193076": {
+		"address":{
+			"location":{
+				"lat" : 52.4521725
+				"lon" : 13.4519985
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"opening_hours": "24/7"
+		"wheelchair": "yes"
+		},
+}
+"291412453": {
+		"address":{
+			"location":{
+				"lat" : 52.452506
+				"lon" : 13.1489751
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"wheelchair": "yes"
+		},
+}
+"294583209": {
+		"address":{
+			"location":{
+				"lat" : 52.4948538
+				"lon" : 13.3536461
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"wheelchair": "yes"
+		"opening_hours": "24/7"
+		},
+}
+"294614943": {
+		"address":{
+			"location":{
+				"lat" : 52.4876265
+				"lon" : 13.4252972
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"wheelchair": "yes"
+		},
+}
+"296134228": {
+		"address":{
+			"location":{
+				"lat" : 52.4276629
+				"lon" : 13.3260671
+				},
+		"name": "City Toilette"
+		"opening_hours": "24/7"
+		"wheelchair": "yes"
+		},
+}
+"298063781": {
+		"address":{
+			"location":{
+				"lat" : 52.4027464
+				"lon" : 13.2586319
+				},
+		},
+}
+"302805945": {
+		"address":{
+			"location":{
+				"lat" : 52.4845773
+				"lon" : 13.3855184
+				},
+		"name": "City Toilette"
+		"wheelchair": "yes"
+		"opening_hours": "24/7"
+		},
+}
+"304575905": {
+		"address":{
+			"location":{
+				"lat" : 52.5163769
+				"lon" : 13.3755227
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"wheelchair": "yes"
+		"opening_hours": "24/7"
+		},
+}
+"308003239": {
+		"address":{
+			"location":{
+				"lat" : 52.5064355
+				"lon" : 13.2276307
+				},
+		"wheelchair": "no"
+		},
+}
+"308809962": {
+		"address":{
+			"location":{
+				"lat" : 52.5506853
+				"lon" : 13.4133851
+				},
+		"fee": "yes"
+		"opening_hours": "24/7"
+		"wheelchair": "yes"
+		},
+}
+"309334321": {
+		"address":{
+			"location":{
+				"lat" : 52.4176142
+				"lon" : 13.3048425
+				},
+		"name": "City Toilette"
+		"wheelchair": "yes"
+		"opening_hours": "24/7"
+		},
+}
+"309363218": {
+		"address":{
+			"location":{
+				"lat" : 52.4940235
+				"lon" : 13.3250857
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"wheelchair": "yes"
+		"opening_hours": "24/7"
+		},
+}
+"309371016": {
+		"address":{
+			"location":{
+				"lat" : 52.5015328
+				"lon" : 13.3174167
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"wheelchair": "yes"
+			"street": "Kurfürstendamm"
+			"plz": "10707"
+		"opening_hours": "24/7"
+		},
+}
+"310022911": {
+		"address":{
+			"location":{
+				"lat" : 52.5458554
+				"lon" : 13.4273379
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"wheelchair": "yes"
+		"opening_hours": "24/7"
+		},
+}
+"310354965": {
+		"address":{
+			"location":{
+				"lat" : 52.5430089
+				"lon" : 13.4120097
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"opening_hours": "24/7"
+		"wheelchair": "yes"
+		},
+}
+"310570379": {
+		"address":{
+			"location":{
+				"lat" : 52.5891123
+				"lon" : 13.272575
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"wheelchair": "yes"
+		},
+}
+"310612133": {
+		"address":{
+			"location":{
+				"lat" : 52.5898825
+				"lon" : 13.282889
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"opening_hours": "24/7"
+		"wheelchair": "yes"
+		},
+}
+"310665969": {
+		"address":{
+			"location":{
+				"lat" : 52.5034262
+				"lon" : 13.3308728
+				},
+		"name": "Öffentliche Toiletten"
+		"wheelchair": "no"
+		},
+}
+"311083145": {
+		"address":{
+			"location":{
+				"lat" : 52.4953215
+				"lon" : 13.2993772
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"wheelchair": "yes"
+		"opening_hours": "24/7"
+		},
+}
+"311644392": {
+		"address":{
+			"location":{
+				"lat" : 52.4308673
+				"lon" : 13.3094606
+				},
+		"name": "City Toilette"
+		"wheelchair": "yes"
+			"street": "Goerzallee"
+			"plz": "12207"
+		"opening_hours": "24/7"
+			"street_number": "1"
+		},
+}
+"312476072": {
+		"address":{
+			"location":{
+				"lat" : 52.5199647
+				"lon" : 13.4610772
+				},
+		"fee": "no"
+		"name": "City Toilette"
+		"wheelchair": "yes"
+		},
+}
+"315792825": {
+		"address":{
+			"location":{
+				"lat" : 52.4971663
+				"lon" : 13.3223821
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"wheelchair": "yes"
+		},
+}
+"315896534": {
+		"address":{
+			"location":{
+				"lat" : 52.5252987
+				"lon" : 13.2311127
+				},
+		},
+}
+"317179422": {
+		"address":{
+			"location":{
+				"lat" : 52.5469956
+				"lon" : 13.3586017
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"wheelchair": "yes"
+		},
+}
+"319028839": {
+		"address":{
+			"location":{
+				"lat" : 52.5241479
+				"lon" : 13.4422214
+				},
+		},
+}
+"319028841": {
+		"address":{
+			"location":{
+				"lat" : 52.5241933
+				"lon" : 13.442177
+				},
+		},
+}
+"319028843": {
+		"address":{
+			"location":{
+				"lat" : 52.5241602
+				"lon" : 13.4420856
+				},
+		},
+}
+"319028846": {
+		"address":{
+			"location":{
+				"lat" : 52.5241148
+				"lon" : 13.4421299
+				},
+		},
+}
+"322867182": {
+		"address":{
+			"location":{
+				"lat" : 52.5853683
+				"lon" : 13.2537845
+				},
+		"wheelchair": "no"
+		},
+}
+"333944057": {
+		"address":{
+			"location":{
+				"lat" : 52.5598729
+				"lon" : 13.4136101
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"opening_hours": "24/7"
+		"wheelchair": "yes"
+		},
+}
+"337223385": {
+		"address":{
+			"location":{
+				"lat" : 52.5356409
+				"lon" : 13.4170063
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"opening_hours": "24/7"
+		"wheelchair": "yes"
+		},
+}
+"337223695": {
+		"address":{
+			"location":{
+				"lat" : 52.5467554
+				"lon" : 13.4054077
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"opening_hours": "24/7"
+		"wheelchair": "yes"
+		},
+}
+"343401150": {
+		"address":{
+			"location":{
+				"lat" : 52.5505584
+				"lon" : 13.3779912
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"wheelchair": "yes"
+		"opening_hours": "24/7"
+		},
+}
+"345555787": {
+		"address":{
+			"location":{
+				"lat" : 52.4646393
+				"lon" : 13.5138494
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"wheelchair": "yes"
+		"opening_hours": "24/7"
+		},
+}
+"347422928": {
+		"address":{
+			"location":{
+				"lat" : 52.442552
+				"lon" : 13.3120206
+				},
+		},
+}
+"349011829": {
+		"address":{
+			"location":{
+				"lat" : 52.5053322
+				"lon" : 13.3027878
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"wheelchair": "yes"
+			"street": "Stuttgarter Platz"
+			"plz": "10627"
+		"opening_hours": "24/7"
+		},
+}
+"349304086": {
+		"address":{
+			"location":{
+				"lat" : 52.5052547
+				"lon" : 13.3227129
+				},
+		},
+}
+"353202022": {
+		"address":{
+			"location":{
+				"lat" : 52.488556
+				"lon" : 13.3909001
+				},
+		"fee": "no"
+		"name": "Historische Toilette (Café Achteck)"
+		"wheelchair": "no"
+		},
+}
+"364123000": {
+		"address":{
+			"location":{
+				"lat" : 52.3865252
+				"lon" : 13.3984926
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"opening_hours": "24/7"
+		"wheelchair": "yes"
+		},
+}
+"365365513": {
+		"address":{
+			"location":{
+				"lat" : 52.4737166
+				"lon" : 13.4389
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"wheelchair": "yes"
+		"opening_hours": "24/7"
+		},
+}
+"365605621": {
+		"address":{
+			"location":{
+				"lat" : 52.5273789
+				"lon" : 13.3305814
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"wheelchair": "yes"
+			"street": "Waldstraße"
+			"plz": "10551"
+			"street_number": "1"
+		},
+}
+"369032628": {
+		"address":{
+			"location":{
+				"lat" : 52.5503926
+				"lon" : 13.3516226
+				},
+		},
+}
+"371097628": {
+		"address":{
+			"location":{
+				"lat" : 52.4135124
+				"lon" : 13.3631366
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"wheelchair": "yes"
+		},
+}
+"375879906": {
+		"address":{
+			"location":{
+				"lat" : 52.5072038
+				"lon" : 13.3325879
+				},
+		"fee": "yes"
+		"wheelchair": "no"
+		},
+}
+"377120370": {
+		"address":{
+			"location":{
+				"lat" : 52.5163479
+				"lon" : 13.3567345
+				},
+		"fee": "no"
+		"wheelchair": "no"
+		},
+}
+"377675091": {
+		"address":{
+			"location":{
+				"lat" : 52.5324582
+				"lon" : 13.4129012
+				},
+		"fee": "no"
+		"name": "Historische Toilette (Café Achteck)"
+		"wheelchair": "no"
+		},
+}
+"388125800": {
+		"address":{
+			"location":{
+				"lat" : 52.4588789
+				"lon" : 13.5799473
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"wheelchair": "yes"
+		},
+}
+"388591683": {
+		"address":{
+			"location":{
+				"lat" : 52.5079078
+				"lon" : 13.4638911
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"wheelchair": "yes"
+		"opening_hours": "24/7"
+		},
+}
+"390428248": {
+		"address":{
+			"location":{
+				"lat" : 52.4326
+				"lon" : 13.4086361
+				},
+		},
+}
+"401552930": {
+		"address":{
+			"location":{
+				"lat" : 52.5078664
+				"lon" : 13.3066735
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"wheelchair": "yes"
+		},
+}
+"405040170": {
+		"address":{
+			"location":{
+				"lat" : 52.5129041
+				"lon" : 13.5748931
+				},
+		},
+}
+"405040172": {
+		"address":{
+			"location":{
+				"lat" : 52.5059444
+				"lon" : 13.560903
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"wheelchair": "yes"
+		},
+}
+"408469307": {
+		"address":{
+			"location":{
+				"lat" : 52.5444528
+				"lon" : 13.3527277
+				},
+		"name": "Damen WC"
+		"wheelchair": "limited"
+		},
+}
+"408469602": {
+		"address":{
+			"location":{
+				"lat" : 52.5444267
+				"lon" : 13.3527791
+				},
+		"name": "Herren WC"
+		"wheelchair": "yes"
+		},
+}
+"413653260": {
+		"address":{
+			"location":{
+				"lat" : 52.509534
+				"lon" : 13.338881
+				},
+		"wheelchair": "yes"
+		},
+}
+"413653263": {
+		"address":{
+			"location":{
+				"lat" : 52.5069243
+				"lon" : 13.3379653
+				},
+		"name": "Öffentliche Toilette"
+		"wheelchair": "no"
+		},
+}
+"413653264": {
+		"address":{
+			"location":{
+				"lat" : 52.5068545
+				"lon" : 13.3420774
+				},
+		"wheelchair": "yes"
+		},
+}
+"416821723": {
+		"address":{
+			"location":{
+				"lat" : 52.4231802
+				"lon" : 13.4735536
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"wheelchair": "yes"
+		},
+}
+"419275395": {
+		"address":{
+			"location":{
+				"lat" : 52.5126724
+				"lon" : 13.3366833
+				},
+		"fee": "no"
+		"wheelchair": "no"
+		},
+}
+"426687394": {
+		"address":{
+			"location":{
+				"lat" : 52.5024723
+				"lon" : 13.3427061
+				},
+			"plz": "10789"
+			"street": "Wittenbergplatz"
+		"fee": "yes"
+		"name": "City Toilette"
+		"opening_hours": "24/7"
+		"wheelchair": "yes"
+		},
+}
+"429461039": {
+		"address":{
+			"location":{
+				"lat" : 52.5030177
+				"lon" : 13.4839809
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"opening_hours": "24/7"
+		"wheelchair": "yes"
+		},
+}
+"429578416": {
+		"address":{
+			"location":{
+				"lat" : 52.4136792
+				"lon" : 13.5742367
+				},
+		"fee": "yes"
+		"name": "City-Toilette"
+		"wheelchair": "yes"
+		},
+}
+"437290305": {
+		"address":{
+			"location":{
+				"lat" : 52.5214626
+				"lon" : 13.4129688
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"wheelchair": "yes"
+		},
+}
+"439239170": {
+		"address":{
+			"location":{
+				"lat" : 52.4505912
+				"lon" : 13.6243842
+				},
+		"fee": "no"
+		"wheelchair": "yes"
+		},
+}
+"441257129": {
+		"address":{
+			"location":{
+				"lat" : 52.4623565
+				"lon" : 13.5444405
+				},
+		"wheelchair": "no"
+		},
+}
+"441257192": {
+		"address":{
+			"location":{
+				"lat" : 52.4622142
+				"lon" : 13.5464636
+				},
+		"wheelchair": "no"
+		},
+}
+"441257332": {
+		"address":{
+			"location":{
+				"lat" : 52.4626505
+				"lon" : 13.5464644
+				},
+		"wheelchair": "no"
+		},
+}
+"442394347": {
+		"address":{
+			"location":{
+				"lat" : 52.4443937
+				"lon" : 13.3857545
+				},
+		"fee": "yes"
+		"name": "City Toilete"
+		"opening_hours": "24/7"
+		"wheelchair": "yes"
+		},
+}
+"442397976": {
+		"address":{
+			"location":{
+				"lat" : 52.4661747
+				"lon" : 13.4368387
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"opening_hours": "24/7"
+		"wheelchair": "yes"
+		},
+}
+"448443039": {
+		"address":{
+			"location":{
+				"lat" : 52.5309956
+				"lon" : 13.4706905
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"wheelchair": "yes"
+		},
+}
+"448809595": {
+		"address":{
+			"location":{
+				"lat" : 52.4716468
+				"lon" : 13.4415005
+				},
+		"fee": "yes"
+		"name": "Historische Toilette"
+		"wheelchair": "no"
+		},
+}
+"449372452": {
+		"address":{
+			"location":{
+				"lat" : 52.4718361
+				"lon" : 13.2661016
+				},
+		},
+}
+"450573181": {
+		"address":{
+			"location":{
+				"lat" : 52.5618444
+				"lon" : 13.2373146
+				},
+		},
+}
+"451759262": {
+		"address":{
+			"location":{
+				"lat" : 52.442337
+				"lon" : 13.240167
+				},
+			"street_number": "68"
+			"plz": "14163"
+			"street": "Fischerhüttenstraße"
+		"fee": "yes"
+		"name": "City Toilette"
+		"opening_hours": "24/7"
+		"wheelchair": "yes"
+		},
+}
+"459280620": {
+		"address":{
+			"location":{
+				"lat" : 52.4740638
+				"lon" : 13.4454423
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"opening_hours": "24/7"
+		"wheelchair": "yes"
+		},
+}
+"469165335": {
+		"address":{
+			"location":{
+				"lat" : 52.4333412
+				"lon" : 13.419243
+				},
+		"fee": "no"
+		"wheelchair": "yes"
+		},
+}
+"477427675": {
+		"address":{
+			"location":{
+				"lat" : 52.469885
+				"lon" : 13.1814906
+				},
+		"fee": "no"
+		"wheelchair": "no"
+		},
+}
+"477529798": {
+		"address":{
+			"location":{
+				"lat" : 52.5055729
+				"lon" : 13.3743012
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"wheelchair": "yes"
+			"street": "Linkstraße"
+			"plz": "10785"
+		"opening_hours": "24/7"
+			"street_number": "10"
+		},
+}
+"477532020": {
+		"address":{
+			"location":{
+				"lat" : 52.5000064
+				"lon" : 13.4303485
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"wheelchair": "yes"
+		},
+}
+"480350451": {
+		"address":{
+			"location":{
+				"lat" : 52.4988913
+				"lon" : 13.527101
+				},
+		"wheelchair": "yes"
+		},
+}
+"480350456": {
+		"address":{
+			"location":{
+				"lat" : 52.5016278
+				"lon" : 13.5326143
+				},
+		"fee": "no"
+		"wheelchair": "yes"
+		},
+}
+"480350458": {
+		"address":{
+			"location":{
+				"lat" : 52.5047637
+				"lon" : 13.5293754
+				},
+		},
+}
+"480350479": {
+		"address":{
+			"location":{
+				"lat" : 52.5077371
+				"lon" : 13.5321081
+				},
+		"wheelchair": "yes"
+		},
+}
+"485950613": {
+		"address":{
+			"location":{
+				"lat" : 52.5109968
+				"lon" : 13.4997933
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"wheelchair": "yes"
+		},
+}
+"487067546": {
+		"address":{
+			"location":{
+				"lat" : 52.5212353
+				"lon" : 13.4419408
+				},
+		"wheelchair": "yes"
+		},
+}
+"490178984": {
+		"address":{
+			"location":{
+				"lat" : 52.4895696
+				"lon" : 13.2346278
+				},
+		},
+}
+"499503851": {
+		"address":{
+			"location":{
+				"lat" : 52.4964552
+				"lon" : 13.3767468
+				},
+		},
+}
+"499503856": {
+		"address":{
+			"location":{
+				"lat" : 52.4965208
+				"lon" : 13.3768144
+				},
+		},
+}
+"499503860": {
+		"address":{
+			"location":{
+				"lat" : 52.4965036
+				"lon" : 13.3768594
+				},
+		},
+}
+"499503861": {
+		"address":{
+			"location":{
+				"lat" : 52.496438
+				"lon" : 13.3767918
+				},
+		},
+}
+"499503874": {
+		"address":{
+			"location":{
+				"lat" : 52.4965084
+				"lon" : 13.3768016
+				},
+		},
+}
+"503360841": {
+		"address":{
+			"location":{
+				"lat" : 52.4556132
+				"lon" : 13.3020534
+				},
+		},
+}
+"503360880": {
+		"address":{
+			"location":{
+				"lat" : 52.4526145
+				"lon" : 13.3031158
+				},
+		},
+}
+"506836884": {
+		"address":{
+			"location":{
+				"lat" : 52.4293287
+				"lon" : 13.1293572
+				},
+		"fee": "no"
+		"wheelchair": "no"
+		},
+}
+"506836885": {
+		"address":{
+			"location":{
+				"lat" : 52.4324459
+				"lon" : 13.143145
+				},
+		"fee": "no"
+		"wheelchair": "no"
+		},
+}
+"515660597": {
+		"address":{
+			"location":{
+				"lat" : 52.490337
+				"lon" : 13.4572669
+				},
+		"fee": "no"
+		"wheelchair": "yes"
+		},
+}
+"520248239": {
+		"address":{
+			"location":{
+				"lat" : 52.5051529
+				"lon" : 13.3338128
+				},
+		"name": "City Pissoir"
+		"opening_hours": "24/7"
+		"wheelchair": "no"
+		},
+}
+"530510700": {
+		"address":{
+			"location":{
+				"lat" : 52.5131715
+				"lon" : 13.4769418
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"opening_hours": "24/7"
+		"wheelchair": "yes"
+		},
+}
+"539477774": {
+		"address":{
+			"location":{
+				"lat" : 52.4688798
+				"lon" : 13.5264868
+				},
+		},
+}
+"539506614": {
+		"address":{
+			"location":{
+				"lat" : 52.5213345
+				"lon" : 13.1632355
+				},
+		"fee": "no"
+		"wheelchair": "yes"
+		},
+}
+"558361430": {
+		"address":{
+			"location":{
+				"lat" : 52.5331964
+				"lon" : 13.3366834
+				},
+		"wheelchair": "no"
+		},
+}
+"559576305": {
+		"address":{
+			"location":{
+				"lat" : 52.5122982
+				"lon" : 13.2536585
+				},
+		},
+}
+"559615852": {
+		"address":{
+			"location":{
+				"lat" : 52.5358298
+				"lon" : 13.6010557
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"wheelchair": "yes"
+		},
+}
+"559615853": {
+		"address":{
+			"location":{
+				"lat" : 52.5393944
+				"lon" : 13.6047093
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"wheelchair": "yes"
+			"street": "Stendaler Straße"
+			"plz": "12627"
+			"street_number": "26"
+		},
+}
+"564705493": {
+		"address":{
+			"location":{
+				"lat" : 52.5503771
+				"lon" : 13.3516447
+				},
+		},
+}
+"564705494": {
+		"address":{
+			"location":{
+				"lat" : 52.5503614
+				"lon" : 13.3516149
+				},
+		},
+}
+"566352589": {
+		"address":{
+			"location":{
+				"lat" : 52.5130286
+				"lon" : 13.2435524
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"wheelchair": "yes"
+		"opening_hours": "24/7"
+		},
+}
+"566352601": {
+		"address":{
+			"location":{
+				"lat" : 52.5121859
+				"lon" : 13.2407758
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"wheelchair": "yes"
+		"opening_hours": "24/7"
+		},
+}
+"567469910": {
+		"address":{
+			"location":{
+				"lat" : 52.4765428
+				"lon" : 13.3651006
+				},
+		},
+}
+"567869854": {
+		"address":{
+			"location":{
+				"lat" : 52.4585955
+				"lon" : 13.526667
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"wheelchair": "yes"
+		"opening_hours": "24/7"
+		},
+}
+"582889347": {
+		"address":{
+			"location":{
+				"lat" : 52.5189878
+				"lon" : 13.4795728
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"wheelchair": "yes"
+			"street": "Kielblockstraße"
+			"plz": "10367"
+		"opening_hours": "24/7"
+			"street_number": "1"
+		},
+}
+"588548879": {
+		"address":{
+			"location":{
+				"lat" : 52.552599
+				"lon" : 13.4662475
+				},
+		"name": "City Toilette"
+		"wheelchair": "yes"
+		"opening_hours": "24/7"
+		},
+}
+"599305846": {
+		"address":{
+			"location":{
+				"lat" : 52.5075952
+				"lon" : 13.4506354
+				},
+		},
+}
+"599913127": {
+		"address":{
+			"location":{
+				"lat" : 52.5081387
+				"lon" : 13.3744541
+				},
+		"wheelchair": "yes"
+		},
+}
+"602941961": {
+		"address":{
+			"location":{
+				"lat" : 52.4506928
+				"lon" : 13.3429206
+				},
+			"street_number": "31"
+			"plz": "12169"
+			"street": "Immenweg"
+		"fee": "yes"
+		"name": "City Toilette"
+		"opening_hours": "Mo-Su 00:00-24:00"
+		"wheelchair": "yes"
+		},
+}
+"603045622": {
+		"address":{
+			"location":{
+				"lat" : 52.4639297
+				"lon" : 13.3776915
+				},
+		"name": "City Toilette"
+		"wheelchair": "yes"
+		},
+}
+"603054378": {
+		"address":{
+			"location":{
+				"lat" : 52.4225451
+				"lon" : 13.3710834
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"wheelchair": "yes"
+		"opening_hours": "24/7"
+		},
+}
+"603054379": {
+		"address":{
+			"location":{
+				"lat" : 52.3877817
+				"lon" : 13.4101467
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"wheelchair": "yes"
+		},
+}
+"606332828": {
+		"address":{
+			"location":{
+				"lat" : 52.4585695
+				"lon" : 13.3491142
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"opening_hours": "24/7"
+		"wheelchair": "yes"
+		},
+}
+"606334104": {
+		"address":{
+			"location":{
+				"lat" : 52.4864199
+				"lon" : 13.3275441
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"opening_hours": "24/7"
+		"wheelchair": "yes"
+		},
+}
+"606342979": {
+		"address":{
+			"location":{
+				"lat" : 52.467208
+				"lon" : 13.3086409
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"wheelchair": "yes"
+			"street": "Breitenbachplatz"
+			"plz": "14195"
+		"opening_hours": "24/7"
+			"street_number": "8"
+		},
+}
+"606342985": {
+		"address":{
+			"location":{
+				"lat" : 52.4733291
+				"lon" : 13.3092479
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"wheelchair": "yes"
+		},
+}
+"606347837": {
+		"address":{
+			"location":{
+				"lat" : 52.4766273
+				"lon" : 13.2816214
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"wheelchair": "yes"
+		"opening_hours": "24/7"
+		},
+}
+"606347840": {
+		"address":{
+			"location":{
+				"lat" : 52.5188112
+				"lon" : 13.290364
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"wheelchair": "yes"
+		},
+}
+"606355966": {
+		"address":{
+			"location":{
+				"lat" : 52.5160084
+				"lon" : 13.2600638
+				},
+			"street_number": "42"
+			"plz": "14052"
+			"street": "Preußenallee"
+		"fee": "yes"
+		"name": "City Toilette"
+		"opening_hours": "24/7"
+		"wheelchair": "yes"
+		},
+}
+"606361933": {
+		"address":{
+			"location":{
+				"lat" : 52.5114089
+				"lon" : 13.4472606
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"opening_hours": "24/7"
+		"wheelchair": "yes"
+		},
+}
+"612241397": {
+		"address":{
+			"location":{
+				"lat" : 52.4572706
+				"lon" : 13.3213529
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"wheelchair": "yes"
+		},
+}
+"613570529": {
+		"address":{
+			"location":{
+				"lat" : 52.5561069
+				"lon" : 13.3484051
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"wheelchair": "yes"
+		"opening_hours": "24/7"
+		},
+}
+"614554794": {
+		"address":{
+			"location":{
+				"lat" : 52.5588789
+				"lon" : 13.3376515
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"opening_hours": "24/7"
+		"wheelchair": "yes"
+		},
+}
+"614554795": {
+		"address":{
+			"location":{
+				"lat" : 52.4999324
+				"lon" : 13.3631501
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"wheelchair": "yes"
+			"street": "Potsdamer Straße"
+			"plz": "10785"
+			"street_number": "109"
+		},
+}
+"614555064": {
+		"address":{
+			"location":{
+				"lat" : 52.5561129
+				"lon" : 13.3835674
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"wheelchair": "yes"
+		"opening_hours": "24/7"
+		},
+}
+"614557466": {
+		"address":{
+			"location":{
+				"lat" : 52.5554751
+				"lon" : 13.3560445
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"wheelchair": "yes"
+		},
+}
+"614557469": {
+		"address":{
+			"location":{
+				"lat" : 52.5415877
+				"lon" : 13.3699819
+				},
+		},
+}
+"617053934": {
+		"address":{
+			"location":{
+				"lat" : 52.4799381
+				"lon" : 13.4283987
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"wheelchair": "yes"
+		"opening_hours": "24/7"
+		},
+}
+"617082837": {
+		"address":{
+			"location":{
+				"lat" : 52.4245238
+				"lon" : 13.4630208
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"wheelchair": "yes"
+		"opening_hours": "24/7"
+		},
+}
+"618048318": {
+		"address":{
+			"location":{
+				"lat" : 52.6342587
+				"lon" : 13.4955184
+				},
+		"fee": "no"
+		"wheelchair": "yes"
+		},
+}
+"621170700": {
+		"address":{
+			"location":{
+				"lat" : 52.4372733
+				"lon" : 13.447217
+				},
+		},
+}
+"621170701": {
+		"address":{
+			"location":{
+				"lat" : 52.4372213
+				"lon" : 13.4472196
+				},
+		},
+}
+"621170702": {
+		"address":{
+			"location":{
+				"lat" : 52.4372238
+				"lon" : 13.4473546
+				},
+		},
+}
+"621170705": {
+		"address":{
+			"location":{
+				"lat" : 52.4372758
+				"lon" : 13.447352
+				},
+		},
+}
+"629473517": {
+		"address":{
+			"location":{
+				"lat" : 52.5441375
+				"lon" : 13.3267108
+				},
+		},
+}
+"629473536": {
+		"address":{
+			"location":{
+				"lat" : 52.544183
+				"lon" : 13.3268148
+				},
+		},
+}
+"629473539": {
+		"address":{
+			"location":{
+				"lat" : 52.5441842
+				"lon" : 13.3266556
+				},
+		},
+}
+"629473543": {
+		"address":{
+			"location":{
+				"lat" : 52.5442296
+				"lon" : 13.3267597
+				},
+		},
+}
+"648910282": {
+		"address":{
+			"location":{
+				"lat" : 52.5489567
+				"lon" : 13.3593853
+				},
+		"opening_hours": "Mo-Fr 09:00-17:00"
+		},
+}
+"650378255": {
+		"address":{
+			"location":{
+				"lat" : 52.4676202
+				"lon" : 13.3768184
+				},
+		},
+}
+"660898991": {
+		"address":{
+			"location":{
+				"lat" : 52.5026144
+				"lon" : 13.415159
+				},
+		"fee": "no"
+		"wheelchair": "no"
+		},
+}
+"667990662": {
+		"address":{
+			"location":{
+				"lat" : 52.4390961
+				"lon" : 13.720988
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"opening_hours": "24/7"
+		"wheelchair": "yes"
+		},
+}
+"674124305": {
+		"address":{
+			"location":{
+				"lat" : 52.5341561
+				"lon" : 13.1957166
+				},
+		"wheelchair": "yes"
+		},
+}
+"674124307": {
+		"address":{
+			"location":{
+				"lat" : 52.5338875
+				"lon" : 13.1975169
+				},
+		"wheelchair": "yes"
+		},
+}
+"676257164": {
+		"address":{
+			"location":{
+				"lat" : 52.4805155
+				"lon" : 13.3369245
+				},
+		},
+}
+"676257165": {
+		"address":{
+			"location":{
+				"lat" : 52.4805004
+				"lon" : 13.3369448
+				},
+		},
+}
+"676257166": {
+		"address":{
+			"location":{
+				"lat" : 52.4805039
+				"lon" : 13.3369498
+				},
+		},
+}
+"676257167": {
+		"address":{
+			"location":{
+				"lat" : 52.4805119
+				"lon" : 13.3369484
+				},
+		},
+}
+"676257169": {
+		"address":{
+			"location":{
+				"lat" : 52.4804966
+				"lon" : 13.3369201
+				},
+		},
+}
+"676257171": {
+		"address":{
+			"location":{
+				"lat" : 52.4805074
+				"lon" : 13.336901
+				},
+		},
+}
+"676257172": {
+		"address":{
+			"location":{
+				"lat" : 52.4804976
+				"lon" : 13.3369335
+				},
+		},
+}
+"676257174": {
+		"address":{
+			"location":{
+				"lat" : 52.4805118
+				"lon" : 13.3369083
+				},
+		},
+}
+"676257175": {
+		"address":{
+			"location":{
+				"lat" : 52.480508
+				"lon" : 13.3369511
+				},
+		},
+}
+"676257176": {
+		"address":{
+			"location":{
+				"lat" : 52.4805016
+				"lon" : 13.3369006
+				},
+		},
+}
+"676257180": {
+		"address":{
+			"location":{
+				"lat" : 52.4805147
+				"lon" : 13.3369381
+				},
+		},
+}
+"676257187": {
+		"address":{
+			"location":{
+				"lat" : 52.4804977
+				"lon" : 13.3369074
+				},
+		},
+}
+"676750065": {
+		"address":{
+			"location":{
+				"lat" : 52.5415903
+				"lon" : 13.3700335
+				},
+		},
+}
+"676750084": {
+		"address":{
+			"location":{
+				"lat" : 52.5415718
+				"lon" : 13.3700098
+				},
+		},
+}
+"677136725": {
+		"address":{
+			"location":{
+				"lat" : 52.5151674
+				"lon" : 13.4172186
+				},
+		},
+}
+"677136727": {
+		"address":{
+			"location":{
+				"lat" : 52.5151111
+				"lon" : 13.4171274
+				},
+		},
+}
+"677136734": {
+		"address":{
+			"location":{
+				"lat" : 52.5150795
+				"lon" : 13.4173263
+				},
+		},
+}
+"677136743": {
+		"address":{
+			"location":{
+				"lat" : 52.515095
+				"lon" : 13.4171479
+				},
+		},
+}
+"677136776": {
+		"address":{
+			"location":{
+				"lat" : 52.515159
+				"lon" : 13.4171346
+				},
+		},
+}
+"677136826": {
+		"address":{
+			"location":{
+				"lat" : 52.5151315
+				"lon" : 13.4172656
+				},
+		},
+}
+"677136827": {
+		"address":{
+			"location":{
+				"lat" : 52.5150338
+				"lon" : 13.4172213
+				},
+		},
+}
+"677136843": {
+		"address":{
+			"location":{
+				"lat" : 52.5151428
+				"lon" : 13.4171198
+				},
+		},
+}
+"677136867": {
+		"address":{
+			"location":{
+				"lat" : 52.5151587
+				"lon" : 13.4172336
+				},
+		},
+}
+"690485727": {
+		"address":{
+			"location":{
+				"lat" : 52.507832
+				"lon" : 13.334897
+				},
+		"fee": "yes"
+		"name": "Toilette im Elefantehaus"
+		"wheelchair": "yes"
+		},
+}
+"697095974": {
+		"address":{
+			"location":{
+				"lat" : 52.4536966
+				"lon" : 13.5094875
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"opening_hours": "24/7"
+		"wheelchair": "yes"
+		},
+}
+"718143708": {
+		"address":{
+			"location":{
+				"lat" : 52.5105858
+				"lon" : 13.2368566
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"wheelchair": "yes"
+		},
+}
+"718143802": {
+		"address":{
+			"location":{
+				"lat" : 52.507185
+				"lon" : 13.2792158
+				},
+		"fee": "yes"
+		"wheelchair": "no"
+		},
+}
+"726126780": {
+		"address":{
+			"location":{
+				"lat" : 52.4733718
+				"lon" : 13.3147654
+				},
+		"fee": "no"
+		"wheelchair": "no"
+		},
+}
+"728285533": {
+		"address":{
+			"location":{
+				"lat" : 52.5416046
+				"lon" : 13.3700032
+				},
+		},
+}
+"731644150": {
+		"address":{
+			"location":{
+				"lat" : 52.4796651
+				"lon" : 13.4091266
+				},
+		},
+}
+"747395207": {
+		"address":{
+			"location":{
+				"lat" : 52.5806937
+				"lon" : 13.40022
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"wheelchair": "yes"
+		},
+}
+"753328979": {
+		"address":{
+			"location":{
+				"lat" : 52.5672241
+				"lon" : 13.4118014
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"wheelchair": "yes"
+		},
+}
+"765566780": {
+		"address":{
+			"location":{
+				"lat" : 52.4310491
+				"lon" : 13.25965
+				},
+			"street_number": "35"
+			"plz": "14169"
+			"street": "Teltower Damm"
+		"fee": "yes"
+		"name": "City Toilette"
+		"opening_hours": "24/7"
+		"wheelchair": "yes"
+		},
+}
+"783433120": {
+		"address":{
+			"location":{
+				"lat" : 52.5292444
+				"lon" : 13.4435267
+				},
+		"wheelchair": "yes"
+		},
+}
+"812189276": {
+		"address":{
+			"location":{
+				"lat" : 52.5030523
+				"lon" : 13.4245354
+				},
+		"fee": "no"
+		"wheelchair": "yes"
+		},
+}
+"821587328": {
+		"address":{
+			"location":{
+				"lat" : 52.4820196
+				"lon" : 13.3035968
+				},
+		"fee": "no"
+		},
+}
+"821587335": {
+		"address":{
+			"location":{
+				"lat" : 52.4822756
+				"lon" : 13.3033906
+				},
+		"fee": "no"
+		},
+}
+"821588546": {
+		"address":{
+			"location":{
+				"lat" : 52.4815187
+				"lon" : 13.3015349
+				},
+		},
+}
+"832550019": {
+		"address":{
+			"location":{
+				"lat" : 52.5641541
+				"lon" : 13.363746
+				},
+		"wheelchair": "no"
+		},
+}
+"833912467": {
+		"address":{
+			"location":{
+				"lat" : 52.4597208
+				"lon" : 13.3579831
+				},
+		},
+}
+"833912471": {
+		"address":{
+			"location":{
+				"lat" : 52.4597309
+				"lon" : 13.3579215
+				},
+		},
+}
+"833912474": {
+		"address":{
+			"location":{
+				"lat" : 52.4597764
+				"lon" : 13.3579414
+				},
+		},
+}
+"833912481": {
+		"address":{
+			"location":{
+				"lat" : 52.4597663
+				"lon" : 13.3580031
+				},
+		},
+}
+"840325608": {
+		"address":{
+			"location":{
+				"lat" : 52.492843
+				"lon" : 13.4085538
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"wheelchair": "yes"
+			"street": "Urbanstraße"
+			"plz": "10961"
+		"opening_hours": "24/7"
+			"street_number": "21"
+		},
+}
+"851492389": {
+		"address":{
+			"location":{
+				"lat" : 52.4344265
+				"lon" : 13.4143478
+				},
+		"fee": "no"
+		"wheelchair": "limited"
+		},
+}
+"853887530": {
+		"address":{
+			"location":{
+				"lat" : 52.4559388
+				"lon" : 13.375985
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"opening_hours": "24/7"
+		"wheelchair": "yes"
+		},
+}
+"855355995": {
+		"address":{
+			"location":{
+				"lat" : 52.4109899
+				"lon" : 13.5275176
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"wheelchair": "yes"
+		},
+}
+"897675464": {
+		"address":{
+			"location":{
+				"lat" : 52.522858
+				"lon" : 13.586615
+				},
+		"name": "SpreeCenter"
+		"wheelchair": "yes"
+		},
+}
+"927092067": {
+		"address":{
+			"location":{
+				"lat" : 52.5141833
+				"lon" : 13.3914532
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"wheelchair": "yes"
+		"opening_hours": "24/7"
+		},
+}
+"932522039": {
+		"address":{
+			"location":{
+				"lat" : 52.4545568
+				"lon" : 13.189963
+				},
+		"fee": "no"
+		"wheelchair": "no"
+		},
+}
+"943976002": {
+		"address":{
+			"location":{
+				"lat" : 52.48107
+				"lon" : 13.4061075
+				},
+		},
+}
+"943976034": {
+		"address":{
+			"location":{
+				"lat" : 52.480979
+				"lon" : 13.4060305
+				},
+		},
+}
+"943976041": {
+		"address":{
+			"location":{
+				"lat" : 52.4810974
+				"lon" : 13.4060202
+				},
+		},
+}
+"943976047": {
+		"address":{
+			"location":{
+				"lat" : 52.4810065
+				"lon" : 13.4059431
+				},
+		},
+}
+"948654855": {
+		"address":{
+			"location":{
+				"lat" : 52.4157527
+				"lon" : 13.4977622
+				},
+			"plz": "12355"
+			"street": "Waltersdorfer Chaussee"
+		"fee": "yes"
+		"name": "City Toilette"
+		"wheelchair": "yes"
+		},
+}
+"956276731": {
+		"address":{
+			"location":{
+				"lat" : 52.4034828
+				"lon" : 13.5073384
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"wheelchair": "yes"
+			"street": "Lieselotte-Berger-Platz"
+			"plz": "12355"
+		},
+}
+"960164646": {
+		"address":{
+			"location":{
+				"lat" : 52.5282954
+				"lon" : 13.3196927
+				},
+		"fee": "no"
+		"wheelchair": "no"
+		},
+}
+"976553355": {
+		"address":{
+			"location":{
+				"lat" : 52.5250818
+				"lon" : 13.369056
+				},
+		"fee": "yes"
+		"name": "WC Center Berlin-Hauptbahnhof"
+		"wheelchair": "yes"
+			"street": "Europaplatz"
+			"plz": "10557"
+			"street_number": "1"
+		},
+}
+"976596829": {
+		"address":{
+			"location":{
+				"lat" : 52.5071296
+				"lon" : 13.3320816
+				},
+		"name": "Öffentliche Toilette (nur mit Euro-Schlüssel)"
+		"wheelchair": "yes"
+		},
+}
+"1002641311": {
+		"address":{
+			"location":{
+				"lat" : 52.422951
+				"lon" : 13.3124974
+				},
+		"fee": "no"
+		"wheelchair": "yes"
+		},
+}
+"1030895309": {
+		"address":{
+			"location":{
+				"lat" : 52.4387637
+				"lon" : 13.3868921
+				},
+		"name": "Historische Toilette (Café Achteck)"
+		"wheelchair": "no"
+		},
+}
+"1037876143": {
+		"address":{
+			"location":{
+				"lat" : 52.4213988
+				"lon" : 13.1763564
+				},
+		"name": "Öffentliche Toiletten"
+		"wheelchair": "yes"
+		},
+}
+"1070919487": {
+		"address":{
+			"location":{
+				"lat" : 52.5049204
+				"lon" : 13.2783634
+				},
+		"wheelchair": "no"
+		},
+}
+"1096930211": {
+		"address":{
+			"location":{
+				"lat" : 52.5355035
+				"lon" : 13.2003507
+				},
+		"name": "City Toilette"
+		"wheelchair": "yes"
+		"opening_hours": "24/7"
+		},
+}
+"1102909349": {
+		"address":{
+			"location":{
+				"lat" : 52.4696467
+				"lon" : 13.3416221
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"opening_hours": "24/7"
+		"wheelchair": "yes"
+		},
+}
+"1147909340": {
+		"address":{
+			"location":{
+				"lat" : 52.5208533
+				"lon" : 13.5884432
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"wheelchair": "yes"
+		"opening_hours": "24/7"
+		},
+}
+"1158920828": {
+		"address":{
+			"location":{
+				"lat" : 52.607055
+				"lon" : 13.4207141
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"wheelchair": "yes"
+		"opening_hours": "24/7"
+		},
+}
+"1162997290": {
+		"address":{
+			"location":{
+				"lat" : 52.43532
+				"lon" : 13.129883
+				},
+		},
+}
+"1162997298": {
+		"address":{
+			"location":{
+				"lat" : 52.435273
+				"lon" : 13.1298706
+				},
+		},
+}
+"1162997313": {
+		"address":{
+			"location":{
+				"lat" : 52.4353406
+				"lon" : 13.1296744
+				},
+		},
+}
+"1162997316": {
+		"address":{
+			"location":{
+				"lat" : 52.4352935
+				"lon" : 13.1296619
+				},
+		},
+}
+"1181090513": {
+		"address":{
+			"location":{
+				"lat" : 52.407931
+				"lon" : 13.0948252
+				},
+		"fee": "no"
+		"wheelchair": "yes"
+		},
+}
+"1205048326": {
+		"address":{
+			"location":{
+				"lat" : 52.4977567
+				"lon" : 13.403246
+				},
+		"wheelchair": "yes"
+		},
+}
+"1205705420": {
+		"address":{
+			"location":{
+				"lat" : 52.4976244
+				"lon" : 13.4055994
+				},
+		},
+}
+"1206287825": {
+		"address":{
+			"location":{
+				"lat" : 52.4559333
+				"lon" : 13.3508816
+				},
+		},
+}
+"1206287828": {
+		"address":{
+			"location":{
+				"lat" : 52.4557694
+				"lon" : 13.3528317
+				},
+		},
+}
+"1229446777": {
+		"address":{
+			"location":{
+				"lat" : 52.5101788
+				"lon" : 13.3067366
+				},
+		"wheelchair": "no"
+		},
+}
+"1242393944": {
+		"address":{
+			"location":{
+				"lat" : 52.3757386
+				"lon" : 13.6492265
+				},
+		"fee": "yes"
+		},
+}
+"1249802242": {
+		"address":{
+			"location":{
+				"lat" : 52.5222412
+				"lon" : 13.4098056
+				},
+		"fee": "yes"
+		"wheelchair": "yes"
+		},
+}
+"1250216184": {
+		"address":{
+			"location":{
+				"lat" : 52.5399204
+				"lon" : 13.3534612
+				},
+		},
+}
+"1250216187": {
+		"address":{
+			"location":{
+				"lat" : 52.5399431
+				"lon" : 13.3534769
+				},
+		},
+}
+"1250216188": {
+		"address":{
+			"location":{
+				"lat" : 52.5399434
+				"lon" : 13.3534457
+				},
+		},
+}
+"1250216189": {
+		"address":{
+			"location":{
+				"lat" : 52.539924
+				"lon" : 13.3534764
+				},
+		},
+}
+"1250216191": {
+		"address":{
+			"location":{
+				"lat" : 52.5399342
+				"lon" : 13.3534389
+				},
+		},
+}
+"1250216192": {
+		"address":{
+			"location":{
+				"lat" : 52.5399332
+				"lon" : 13.3534835
+				},
+		},
+}
+"1250216193": {
+		"address":{
+			"location":{
+				"lat" : 52.5399242
+				"lon" : 13.3534445
+				},
+		},
+}
+"1250216196": {
+		"address":{
+			"location":{
+				"lat" : 52.5399475
+				"lon" : 13.3534601
+				},
+		},
+}
+"1270212926": {
+		"address":{
+			"location":{
+				"lat" : 52.4295061
+				"lon" : 13.4225285
+				},
+		},
+}
+"1270212952": {
+		"address":{
+			"location":{
+				"lat" : 52.4294917
+				"lon" : 13.4226798
+				},
+		},
+}
+"1270212991": {
+		"address":{
+			"location":{
+				"lat" : 52.4294731
+				"lon" : 13.4226681
+				},
+		},
+}
+"1270213005": {
+		"address":{
+			"location":{
+				"lat" : 52.4295246
+				"lon" : 13.4225403
+				},
+		},
+}
+"1302233643": {
+		"address":{
+			"location":{
+				"lat" : 52.6005368
+				"lon" : 13.4018038
+				},
+		"wheelchair": "limited"
+		},
+}
+"1306551400": {
+		"address":{
+			"location":{
+				"lat" : 52.5075581
+				"lon" : 13.3949444
+				},
+		"wheelchair": "no"
+		},
+}
+"1306966563": {
+		"address":{
+			"location":{
+				"lat" : 52.5537526
+				"lon" : 13.4132835
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"opening_hours": "24/7"
+		"wheelchair": "yes"
+		},
+}
+"1314648134": {
+		"address":{
+			"location":{
+				"lat" : 52.4510255
+				"lon" : 13.336177
+				},
+		"name": "City Toilette"
+		"wheelchair": "yes"
+		},
+}
+"1323444917": {
+		"address":{
+			"location":{
+				"lat" : 52.5394649
+				"lon" : 13.5772439
+				},
+		"fee": "no"
+		"wheelchair": "no"
+		},
+}
+"1323444930": {
+		"address":{
+			"location":{
+				"lat" : 52.5386946
+				"lon" : 13.5797503
+				},
+		"fee": "no"
+		"wheelchair": "yes"
+		},
+}
+"1332815597": {
+		"address":{
+			"location":{
+				"lat" : 52.4659315
+				"lon" : 13.4867831
+				},
+		"name": "City Toilette"
+		"opening_hours": "24/7"
+		"wheelchair": "yes"
+		},
+}
+"1333652295": {
+		"address":{
+			"location":{
+				"lat" : 52.5110584
+				"lon" : 13.3442559
+				},
+		},
+}
+"1333652432": {
+		"address":{
+			"location":{
+				"lat" : 52.5109545
+				"lon" : 13.3441286
+				},
+		},
+}
+"1333652484": {
+		"address":{
+			"location":{
+				"lat" : 52.5109866
+				"lon" : 13.3440616
+				},
+		},
+}
+"1333652570": {
+		"address":{
+			"location":{
+				"lat" : 52.5110909
+				"lon" : 13.3441852
+				},
+		},
+}
+"1334651630": {
+		"address":{
+			"location":{
+				"lat" : 52.5538124
+				"lon" : 13.1985679
+				},
+		"wheelchair": "yes"
+		},
+}
+"1348055724": {
+		"address":{
+			"location":{
+				"lat" : 52.4582524
+				"lon" : 13.3039891
+				},
+		"wheelchair": "yes"
+		},
+}
+"1348055726": {
+		"address":{
+			"location":{
+				"lat" : 52.456435
+				"lon" : 13.3068276
+				},
+		"wheelchair": "yes"
+		},
+}
+"1358366757": {
+		"address":{
+			"location":{
+				"lat" : 52.4074596
+				"lon" : 13.5905933
+				},
+		"fee": "no"
+		"wheelchair": "yes"
+		},
+}
+"1362188839": {
+		"address":{
+			"location":{
+				"lat" : 52.5034326
+				"lon" : 13.5232084
+				},
+		},
+}
+"1362188850": {
+		"address":{
+			"location":{
+				"lat" : 52.5032875
+				"lon" : 13.5232775
+				},
+		},
+}
+"1366551999": {
+		"address":{
+			"location":{
+				"lat" : 52.5444615
+				"lon" : 13.2383298
+				},
+		"name": "Öffentliche Toilette"
+		"wheelchair": "yes"
+		},
+}
+"1371616212": {
+		"address":{
+			"location":{
+				"lat" : 52.4344461
+				"lon" : 13.539252
+				},
+		"fee": "yes"
+		"name": "City-Toilette"
+		"wheelchair": "yes"
+		},
+}
+"1453830466": {
+		"address":{
+			"location":{
+				"lat" : 52.5226503
+				"lon" : 13.372021
+				},
+		"wheelchair": "no"
+		},
+}
+"1453886966": {
+		"address":{
+			"location":{
+				"lat" : 52.5225436
+				"lon" : 13.3708178
+				},
+		"wheelchair": "no"
+		},
+}
+"1469076897": {
+		"address":{
+			"location":{
+				"lat" : 52.5046955
+				"lon" : 13.5238162
+				},
+		"wheelchair": "no"
+		},
+}
+"1482482347": {
+		"address":{
+			"location":{
+				"lat" : 52.5385816
+				"lon" : 13.5751048
+				},
+		"fee": "no"
+		"wheelchair": "yes"
+		},
+}
+"1489542116": {
+		"address":{
+			"location":{
+				"lat" : 52.4938214
+				"lon" : 13.367006
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"opening_hours": "24/7"
+		"wheelchair": "yes"
+		},
+}
+"1496353211": {
+		"address":{
+			"location":{
+				"lat" : 52.4849286
+				"lon" : 13.3186569
+				},
+		},
+}
+"1535094001": {
+		"address":{
+			"location":{
+				"lat" : 52.5480093
+				"lon" : 13.5047152
+				},
+		"wheelchair": "yes"
+		},
+}
+"1626847888": {
+		"address":{
+			"location":{
+				"lat" : 52.4337795
+				"lon" : 13.5247832
+				},
+		},
+}
+"1626847891": {
+		"address":{
+			"location":{
+				"lat" : 52.4337938
+				"lon" : 13.5247623
+				},
+		},
+}
+"1626847896": {
+		"address":{
+			"location":{
+				"lat" : 52.4337984
+				"lon" : 13.5248177
+				},
+		},
+}
+"1626847898": {
+		"address":{
+			"location":{
+				"lat" : 52.4338074
+				"lon" : 13.5247421
+				},
+		},
+}
+"1626847899": {
+		"address":{
+			"location":{
+				"lat" : 52.4338182
+				"lon" : 13.5247262
+				},
+		},
+}
+"1626847911": {
+		"address":{
+			"location":{
+				"lat" : 52.4338371
+				"lon" : 13.5247607
+				},
+		},
+}
+"1639361903": {
+		"address":{
+			"location":{
+				"lat" : 52.4725407
+				"lon" : 13.3280438
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"wheelchair": "yes"
+		},
+}
+"1653339120": {
+		"address":{
+			"location":{
+				"lat" : 52.5221184
+				"lon" : 13.4074699
+				},
+		"fee": "no"
+		"opening_hours": "Mo-Sa 07:00-22:00; Su,PH off"
+		"wheelchair": "yes"
+		},
+}
+"1658785321": {
+		"address":{
+			"location":{
+				"lat" : 52.493095
+				"lon" : 13.3109418
+				},
+		},
+}
+"1658785325": {
+		"address":{
+			"location":{
+				"lat" : 52.493123
+				"lon" : 13.311007
+				},
+		},
+}
+"1658785326": {
+		"address":{
+			"location":{
+				"lat" : 52.4931466
+				"lon" : 13.3108823
+				},
+		},
+}
+"1658785327": {
+		"address":{
+			"location":{
+				"lat" : 52.4931746
+				"lon" : 13.3109474
+				},
+		},
+}
+"1676549556": {
+		"address":{
+			"location":{
+				"lat" : 52.5881684
+				"lon" : 13.2885324
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"wheelchair": "yes"
+		"opening_hours": "24/7"
+		},
+}
+"1694286748": {
+		"address":{
+			"location":{
+				"lat" : 52.5854047
+				"lon" : 13.2095148
+				},
+		},
+}
+"1700499560": {
+		"address":{
+			"location":{
+				"lat" : 52.5204994
+				"lon" : 13.2285742
+				},
+		},
+}
+"1700499598": {
+		"address":{
+			"location":{
+				"lat" : 52.5204345
+				"lon" : 13.2286568
+				},
+		},
+}
+"1700499609": {
+		"address":{
+			"location":{
+				"lat" : 52.5204785
+				"lon" : 13.2286756
+				},
+		},
+}
+"1700499629": {
+		"address":{
+			"location":{
+				"lat" : 52.5204532
+				"lon" : 13.2285527
+				},
+		},
+}
+"1734187370": {
+		"address":{
+			"location":{
+				"lat" : 52.5128821
+				"lon" : 13.5748778
+				},
+		},
+}
+"1734187371": {
+		"address":{
+			"location":{
+				"lat" : 52.5128831
+				"lon" : 13.5748694
+				},
+		},
+}
+"1734187372": {
+		"address":{
+			"location":{
+				"lat" : 52.5128832
+				"lon" : 13.5748864
+				},
+		},
+}
+"1734187374": {
+		"address":{
+			"location":{
+				"lat" : 52.5128858
+				"lon" : 13.5748929
+				},
+		},
+}
+"1734187375": {
+		"address":{
+			"location":{
+				"lat" : 52.5128859
+				"lon" : 13.5748628
+				},
+		},
+}
+"1734187380": {
+		"address":{
+			"location":{
+				"lat" : 52.5128899
+				"lon" : 13.5748993
+				},
+		},
+}
+"1734187382": {
+		"address":{
+			"location":{
+				"lat" : 52.5128906
+				"lon" : 13.5748569
+				},
+		},
+}
+"1734187385": {
+		"address":{
+			"location":{
+				"lat" : 52.512895
+				"lon" : 13.5748536
+				},
+		},
+}
+"1734187386": {
+		"address":{
+			"location":{
+				"lat" : 52.5128952
+				"lon" : 13.574902
+				},
+		},
+}
+"1734187389": {
+		"address":{
+			"location":{
+				"lat" : 52.5128999
+				"lon" : 13.5748996
+				},
+		},
+}
+"1734187390": {
+		"address":{
+			"location":{
+				"lat" : 52.5129013
+				"lon" : 13.5748553
+				},
+		},
+}
+"1734187391": {
+		"address":{
+			"location":{
+				"lat" : 52.5129047
+				"lon" : 13.5748618
+				},
+		},
+}
+"1734187393": {
+		"address":{
+			"location":{
+				"lat" : 52.5129062
+				"lon" : 13.574886
+				},
+		},
+}
+"1734187394": {
+		"address":{
+			"location":{
+				"lat" : 52.5129064
+				"lon" : 13.5748692
+				},
+		},
+}
+"1734187395": {
+		"address":{
+			"location":{
+				"lat" : 52.5129067
+				"lon" : 13.5748779
+				},
+		},
+}
+"1766025211": {
+		"address":{
+			"location":{
+				"lat" : 52.5118122
+				"lon" : 13.5599732
+				},
+		},
+}
+"1766025212": {
+		"address":{
+			"location":{
+				"lat" : 52.5118307
+				"lon" : 13.559887
+				},
+		},
+}
+"1766025213": {
+		"address":{
+			"location":{
+				"lat" : 52.5118631
+				"lon" : 13.5600027
+				},
+		},
+}
+"1766025214": {
+		"address":{
+			"location":{
+				"lat" : 52.5118817
+				"lon" : 13.5599163
+				},
+		},
+}
+"1772989815": {
+		"address":{
+			"location":{
+				"lat" : 52.5407706
+				"lon" : 13.214237
+				},
+		"fee": "no"
+		"wheelchair": "no"
+		},
+}
+"1783747284": {
+		"address":{
+			"location":{
+				"lat" : 52.4875751
+				"lon" : 13.2637393
+				},
+		"fee": "yes"
+		},
+}
+"1792425992": {
+		"address":{
+			"location":{
+				"lat" : 52.4784839
+				"lon" : 13.3567622
+				},
+		"fee": "no"
+		"wheelchair": "no"
+		},
+}
+"1809995809": {
+		"address":{
+			"location":{
+				"lat" : 52.5127988
+				"lon" : 13.3200917
+				},
+		"name": "Technische Universität"
+		"wheelchair": "yes"
+		},
+}
+"1813864246": {
+		"address":{
+			"location":{
+				"lat" : 52.459428
+				"lon" : 13.3669402
+				},
+		"fee": "no"
+		"wheelchair": "no"
+		},
+}
+"1832343332": {
+		"address":{
+			"location":{
+				"lat" : 52.4702334
+				"lon" : 13.4168386
+				},
+		"fee": "no"
+		"wheelchair": "yes"
+		},
+}
+"1835625932": {
+		"address":{
+			"location":{
+				"lat" : 52.5407294
+				"lon" : 13.2142552
+				},
+		"name": "Behindertentoilette"
+		"wheelchair": "yes"
+		},
+}
+"1837548917": {
+		"address":{
+			"location":{
+				"lat" : 52.4577637
+				"lon" : 13.6253798
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"wheelchair": "yes"
+		},
+}
+"1860568005": {
+		"address":{
+			"location":{
+				"lat" : 52.5539075
+				"lon" : 13.4657272
+				},
+		},
+}
+"1899025641": {
+		"address":{
+			"location":{
+				"lat" : 52.5061113
+				"lon" : 13.2748522
+				},
+		},
+}
+"1899025644": {
+		"address":{
+			"location":{
+				"lat" : 52.5066304
+				"lon" : 13.2731732
+				},
+		},
+}
+"1913867221": {
+		"address":{
+			"location":{
+				"lat" : 52.4918964
+				"lon" : 13.4386447
+				},
+		"fee": "yes"
+		"wheelchair": "limited"
+		},
+}
+"1914161737": {
+		"address":{
+			"location":{
+				"lat" : 52.5489481
+				"lon" : 13.1651334
+				},
+			"plz": "13589"
+			"street": "Spektefeld"
+		"wheelchair": "no"
+		},
+}
+"1917330916": {
+		"address":{
+			"location":{
+				"lat" : 52.5049372
+				"lon" : 13.2704595
+				},
+		},
+}
+"1930318497": {
+		"address":{
+			"location":{
+				"lat" : 52.4107212
+				"lon" : 13.1228827
+				},
+		},
+}
+"1930318498": {
+		"address":{
+			"location":{
+				"lat" : 52.410731
+				"lon" : 13.1229732
+				},
+		},
+}
+"1930318499": {
+		"address":{
+			"location":{
+				"lat" : 52.4107735
+				"lon" : 13.1228675
+				},
+		},
+}
+"1930318500": {
+		"address":{
+			"location":{
+				"lat" : 52.4107833
+				"lon" : 13.122958
+				},
+		},
+}
+"1930606389": {
+		"address":{
+			"location":{
+				"lat" : 52.4068473
+				"lon" : 13.1369622
+				},
+		},
+}
+"1930606390": {
+		"address":{
+			"location":{
+				"lat" : 52.4069062
+				"lon" : 13.137053
+				},
+		},
+}
+"1930606391": {
+		"address":{
+			"location":{
+				"lat" : 52.4069158
+				"lon" : 13.1368428
+				},
+		},
+}
+"1930606392": {
+		"address":{
+			"location":{
+				"lat" : 52.4069747
+				"lon" : 13.1369336
+				},
+		},
+}
+"1964424319": {
+		"address":{
+			"location":{
+				"lat" : 52.5732924
+				"lon" : 13.5046998
+				},
+		},
+}
+"1964424322": {
+		"address":{
+			"location":{
+				"lat" : 52.5733037
+				"lon" : 13.5047229
+				},
+		},
+}
+"1964424326": {
+		"address":{
+			"location":{
+				"lat" : 52.5733082
+				"lon" : 13.5046803
+				},
+		},
+}
+"1964424331": {
+		"address":{
+			"location":{
+				"lat" : 52.5733133
+				"lon" : 13.5047229
+				},
+		},
+}
+"1964424334": {
+		"address":{
+			"location":{
+				"lat" : 52.5733178
+				"lon" : 13.5047007
+				},
+		},
+}
+"1964424335": {
+		"address":{
+			"location":{
+				"lat" : 52.5733183
+				"lon" : 13.5047155
+				},
+		},
+}
+"1977632076": {
+		"address":{
+			"location":{
+				"lat" : 52.4873551
+				"lon" : 13.378072
+				},
+		},
+}
+"1977632077": {
+		"address":{
+			"location":{
+				"lat" : 52.4873558
+				"lon" : 13.3780176
+				},
+		},
+}
+"1977632083": {
+		"address":{
+			"location":{
+				"lat" : 52.4874159
+				"lon" : 13.3780742
+				},
+		},
+}
+"1977632084": {
+		"address":{
+			"location":{
+				"lat" : 52.4874166
+				"lon" : 13.3780197
+				},
+		},
+}
+"1978502855": {
+		"address":{
+			"location":{
+				"lat" : 52.4379566
+				"lon" : 13.5479454
+				},
+			"street": "Marktplatz Adlershof"
+		"fee": "yes"
+		"opening_hours": "Mo-Su 09:00-24:00"
+		},
+}
+"1978519821": {
+		"address":{
+			"location":{
+				"lat" : 52.4409638
+				"lon" : 13.5460488
+				},
+		"wheelchair": "no"
+		},
+}
+"1991761085": {
+		"address":{
+			"location":{
+				"lat" : 52.6319692
+				"lon" : 13.2889945
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"wheelchair": "yes"
+			"street": "Welfenallee"
+			"plz": "13465"
+		"opening_hours": "24/7"
+			"street_number": "1"
+		},
+}
+"2082331579": {
+		"address":{
+			"location":{
+				"lat" : 52.554384
+				"lon" : 13.2918961
+				},
+		},
+}
+"2082331581": {
+		"address":{
+			"location":{
+				"lat" : 52.5537251
+				"lon" : 13.2914508
+				},
+		},
+}
+"2082331586": {
+		"address":{
+			"location":{
+				"lat" : 52.5544983
+				"lon" : 13.2922034
+				},
+		},
+}
+"2132541603": {
+		"address":{
+			"location":{
+				"lat" : 52.5331943
+				"lon" : 13.2400893
+				},
+		},
+}
+"2143522429": {
+		"address":{
+			"location":{
+				"lat" : 52.5040691
+				"lon" : 13.4243168
+				},
+		"wheelchair": "yes"
+		},
+}
+"2146573501": {
+		"address":{
+			"location":{
+				"lat" : 52.476906
+				"lon" : 13.4180212
+				},
+		},
+}
+"2146573502": {
+		"address":{
+			"location":{
+				"lat" : 52.4769104
+				"lon" : 13.4180639
+				},
+		},
+}
+"2146573503": {
+		"address":{
+			"location":{
+				"lat" : 52.476985
+				"lon" : 13.417999
+				},
+		},
+}
+"2146573504": {
+		"address":{
+			"location":{
+				"lat" : 52.4769894
+				"lon" : 13.4180417
+				},
+		},
+}
+"2273522793": {
+		"address":{
+			"location":{
+				"lat" : 52.4868882
+				"lon" : 13.31249
+				},
+		},
+}
+"2273522804": {
+		"address":{
+			"location":{
+				"lat" : 52.4868752
+				"lon" : 13.3098239
+				},
+		},
+}
+"2273522806": {
+		"address":{
+			"location":{
+				"lat" : 52.4737381
+				"lon" : 13.3019869
+				},
+		"wheelchair": "yes"
+		},
+}
+"2295133206": {
+		"address":{
+			"location":{
+				"lat" : 52.4693356
+				"lon" : 13.198344
+				},
+			"street": "Lieper Bucht"
+			"street_number": "1"
+		},
+}
+"2302013307": {
+		"address":{
+			"location":{
+				"lat" : 52.5114926
+				"lon" : 13.4345705
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"wheelchair": "yes"
+		"opening_hours": "24/7"
+		},
+}
+"2328392984": {
+		"address":{
+			"location":{
+				"lat" : 52.4943924
+				"lon" : 13.3792609
+				},
+		"fee": "no"
+		"wheelchair": "yes"
+		"opening_hours": "24/7"
+		},
+}
+"2332761255": {
+		"address":{
+			"location":{
+				"lat" : 52.462757
+				"lon" : 13.4319232
+				},
+		},
+}
+"2338749579": {
+		"address":{
+			"location":{
+				"lat" : 52.6037205
+				"lon" : 13.39776
+				},
+		"wheelchair": "no"
+		"opening_hours": "Mar-Nov"
+		},
+}
+"2338749608": {
+		"address":{
+			"location":{
+				"lat" : 52.6039187
+				"lon" : 13.397393
+				},
+		"wheelchair": "yes"
+		},
+}
+"2349795034": {
+		"address":{
+			"location":{
+				"lat" : 52.554353
+				"lon" : 13.445799
+				},
+		"fee": "yes"
+		"name": "Georgen-Parochial-Friedhof Haupteingang"
+		"opening_hours": "Mo-Su 08:00-20:00"
+		},
+}
+"2351691628": {
+		"address":{
+			"location":{
+				"lat" : 52.5165754
+				"lon" : 13.3811272
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"wheelchair": "yes"
+		},
+}
+"2356047927": {
+		"address":{
+			"location":{
+				"lat" : 52.6473047
+				"lon" : 13.4811982
+				},
+		},
+}
+"2373093362": {
+		"address":{
+			"location":{
+				"lat" : 52.4985527
+				"lon" : 13.3707318
+				},
+		"name": "WC"
+		"wheelchair": "yes"
+		},
+}
+"2378807163": {
+		"address":{
+			"location":{
+				"lat" : 52.520725
+				"lon" : 13.387559
+				},
+		"fee": "yes"
+		"opening_hours": "24/7"
+		"wheelchair": "yes"
+		},
+}
+"2387056584": {
+		"address":{
+			"location":{
+				"lat" : 52.4098546
+				"lon" : 13.3816695
+				},
+		"wheelchair": "yes"
+		"opening_hours": "Mo-Sa 07:00-22:00"
+		},
+}
+"2420832350": {
+		"address":{
+			"location":{
+				"lat" : 52.5096974
+				"lon" : 13.3263083
+				},
+		"fee": "no"
+		"wheelchair": "no"
+		},
+}
+"2421748309": {
+		"address":{
+			"location":{
+				"lat" : 52.5753534
+				"lon" : 13.2191164
+				},
+		"fee": "no"
+		"wheelchair": "yes"
+		"opening_hours": "24/7"
+		},
+}
+"2425536936": {
+		"address":{
+			"location":{
+				"lat" : 52.4826771
+				"lon" : 13.4159934
+				},
+		"wheelchair": "no"
+		"opening_hours": "Mo-Su 10:00-23:00"
+		},
+}
+"2439126152": {
+		"address":{
+			"location":{
+				"lat" : 52.4828574
+				"lon" : 13.4382053
+				},
+		},
+}
+"2439126164": {
+		"address":{
+			"location":{
+				"lat" : 52.4828581
+				"lon" : 13.4382315
+				},
+		},
+}
+"2439126177": {
+		"address":{
+			"location":{
+				"lat" : 52.482866
+				"lon" : 13.4381886
+				},
+		},
+}
+"2439126191": {
+		"address":{
+			"location":{
+				"lat" : 52.4828702
+				"lon" : 13.4382484
+				},
+		},
+}
+"2439126203": {
+		"address":{
+			"location":{
+				"lat" : 52.4828841
+				"lon" : 13.4381886
+				},
+		},
+}
+"2439126214": {
+		"address":{
+			"location":{
+				"lat" : 52.4828869
+				"lon" : 13.4382484
+				},
+		},
+}
+"2439126229": {
+		"address":{
+			"location":{
+				"lat" : 52.4828951
+				"lon" : 13.4382046
+				},
+		},
+}
+"2439126248": {
+		"address":{
+			"location":{
+				"lat" : 52.4828966
+				"lon" : 13.4382307
+				},
+		},
+}
+"2459611822": {
+		"address":{
+			"location":{
+				"lat" : 52.4199095
+				"lon" : 13.1761347
+				},
+		"fee": "yes"
+		},
+}
+"2503787392": {
+		"address":{
+			"location":{
+				"lat" : 52.5106986
+				"lon" : 13.4603815
+				},
+		},
+}
+"2503787393": {
+		"address":{
+			"location":{
+				"lat" : 52.5107505
+				"lon" : 13.4604067
+				},
+		},
+}
+"2503787394": {
+		"address":{
+			"location":{
+				"lat" : 52.5107395
+				"lon" : 13.4604676
+				},
+		},
+}
+"2503787395": {
+		"address":{
+			"location":{
+				"lat" : 52.5106877
+				"lon" : 13.4604424
+				},
+		},
+}
+"2510698217": {
+		"address":{
+			"location":{
+				"lat" : 52.5361357
+				"lon" : 13.5766729
+				},
+		},
+}
+"2510698218": {
+		"address":{
+			"location":{
+				"lat" : 52.5361616
+				"lon" : 13.576803
+				},
+		},
+}
+"2510698219": {
+		"address":{
+			"location":{
+				"lat" : 52.536169
+				"lon" : 13.576655
+				},
+		},
+}
+"2510698222": {
+		"address":{
+			"location":{
+				"lat" : 52.5361949
+				"lon" : 13.5767851
+				},
+		},
+}
+"2534736965": {
+		"address":{
+			"location":{
+				"lat" : 52.4919892
+				"lon" : 13.4782353
+				},
+		},
+}
+"2534736966": {
+		"address":{
+			"location":{
+				"lat" : 52.4920049
+				"lon" : 13.4782698
+				},
+		},
+}
+"2534736967": {
+		"address":{
+			"location":{
+				"lat" : 52.4920059
+				"lon" : 13.4782148
+				},
+		},
+}
+"2534736968": {
+		"address":{
+			"location":{
+				"lat" : 52.4920216
+				"lon" : 13.4782493
+				},
+		},
+}
+"2654762858": {
+		"address":{
+			"location":{
+				"lat" : 52.531907
+				"lon" : 13.6032441
+				},
+		"name": "CIty Toilette"
+		"wheelchair": "yes"
+			"street": "Kastanien Boulevard, großer Platz"
+		},
+}
+"2696505685": {
+		"address":{
+			"location":{
+				"lat" : 52.489063
+				"lon" : 13.451135
+				},
+		"name": "City Toilette"
+		"opening_hours": "24/7"
+		"wheelchair": "yes"
+		},
+}
+"2736062782": {
+		"address":{
+			"location":{
+				"lat" : 52.5445729
+				"lon" : 13.3530335
+				},
+		"name": "Damen und Herren WC"
+		"wheelchair": "yes"
+		},
+}
+"2747623821": {
+		"address":{
+			"location":{
+				"lat" : 52.5247809
+				"lon" : 13.4356818
+				},
+		},
+}
+"2747623825": {
+		"address":{
+			"location":{
+				"lat" : 52.5248092
+				"lon" : 13.4358533
+				},
+		},
+}
+"2747623827": {
+		"address":{
+			"location":{
+				"lat" : 52.5248256
+				"lon" : 13.4356619
+				},
+		},
+}
+"2747623831": {
+		"address":{
+			"location":{
+				"lat" : 52.5248539
+				"lon" : 13.4358333
+				},
+		},
+}
+"2749684213": {
+		"address":{
+			"location":{
+				"lat" : 52.5271996
+				"lon" : 13.4274739
+				},
+		},
+}
+"2749684216": {
+		"address":{
+			"location":{
+				"lat" : 52.5272012
+				"lon" : 13.4274492
+				},
+		},
+}
+"2749684223": {
+		"address":{
+			"location":{
+				"lat" : 52.5272072
+				"lon" : 13.427456
+				},
+		},
+}
+"2749684243": {
+		"address":{
+			"location":{
+				"lat" : 52.5272246
+				"lon" : 13.4273938
+				},
+		},
+}
+"2749684251": {
+		"address":{
+			"location":{
+				"lat" : 52.5272306
+				"lon" : 13.4274006
+				},
+		},
+}
+"2749684258": {
+		"address":{
+			"location":{
+				"lat" : 52.5272379
+				"lon" : 13.4275176
+				},
+		},
+}
+"2749684262": {
+		"address":{
+			"location":{
+				"lat" : 52.52724
+				"lon" : 13.4273784
+				},
+		},
+}
+"2749684283": {
+		"address":{
+			"location":{
+				"lat" : 52.5272782
+				"lon" : 13.427422
+				},
+		},
+}
+"2750387890": {
+		"address":{
+			"location":{
+				"lat" : 52.4362324
+				"lon" : 13.1777997
+				},
+		},
+}
+"2755751089": {
+		"address":{
+			"location":{
+				"lat" : 52.5103489
+				"lon" : 13.3366498
+				},
+		"wheelchair": "no"
+		},
+}
+"2756088684": {
+		"address":{
+			"location":{
+				"lat" : 52.4279933
+				"lon" : 13.4335621
+				},
+		},
+}
+"2756088686": {
+		"address":{
+			"location":{
+				"lat" : 52.4279683
+				"lon" : 13.4335953
+				},
+		},
+}
+"2756088688": {
+		"address":{
+			"location":{
+				"lat" : 52.4279479
+				"lon" : 13.4335542
+				},
+		},
+}
+"2756088691": {
+		"address":{
+			"location":{
+				"lat" : 52.4279728
+				"lon" : 13.433521
+				},
+		},
+}
+"2756088704": {
+		"address":{
+			"location":{
+				"lat" : 52.4287257
+				"lon" : 13.4205328
+				},
+		},
+}
+"2756088705": {
+		"address":{
+			"location":{
+				"lat" : 52.4287089
+				"lon" : 13.4205095
+				},
+		},
+}
+"2756088707": {
+		"address":{
+			"location":{
+				"lat" : 52.4286436
+				"lon" : 13.4206352
+				},
+		},
+}
+"2756088709": {
+		"address":{
+			"location":{
+				"lat" : 52.4286603
+				"lon" : 13.4206585
+				},
+		},
+}
+"2780540653": {
+		"address":{
+			"location":{
+				"lat" : 52.4965642
+				"lon" : 13.37208
+				},
+		},
+}
+"2782101092": {
+		"address":{
+			"location":{
+				"lat" : 52.4659369
+				"lon" : 13.3850929
+				},
+		"fee": "no"
+		},
+}
+"2788669421": {
+		"address":{
+			"location":{
+				"lat" : 52.4266024
+				"lon" : 13.6301132
+				},
+		},
+}
+"2802040174": {
+		"address":{
+			"location":{
+				"lat" : 52.54584
+				"lon" : 13.1681855
+				},
+		"wheelchair": "yes"
+		},
+}
+"2819534379": {
+		"address":{
+			"location":{
+				"lat" : 52.5497792
+				"lon" : 13.4850915
+				},
+		},
+}
+"2819534380": {
+		"address":{
+			"location":{
+				"lat" : 52.5495305
+				"lon" : 13.4854504
+				},
+		},
+}
+"2819534381": {
+		"address":{
+			"location":{
+				"lat" : 52.5494957
+				"lon" : 13.4853837
+				},
+		},
+}
+"2819534382": {
+		"address":{
+			"location":{
+				"lat" : 52.5497482
+				"lon" : 13.4850243
+				},
+		},
+}
+"2823976726": {
+		"address":{
+			"location":{
+				"lat" : 52.4675063
+				"lon" : 13.2616439
+				},
+			"street": "Hüttenweg"
+			"plz": "14193"
+		"opening_hours": "Nov-Mar Sa,Su,PH 10:00-16:00; Apr-Oct Tu-Su 10:00-18:00"
+			"street_number": "100"
+		},
+}
+"2836208805": {
+		"address":{
+			"location":{
+				"lat" : 52.5429319
+				"lon" : 13.4187214
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"opening_hours": "24/7"
+		"wheelchair": "yes"
+		},
+}
+"2837703632": {
+		"address":{
+			"location":{
+				"lat" : 52.4971662
+				"lon" : 13.4514767
+				},
+		},
+}
+"2866359085": {
+		"address":{
+			"location":{
+				"lat" : 52.4296013
+				"lon" : 13.4573559
+				},
+		},
+}
+"2876782197": {
+		"address":{
+			"location":{
+				"lat" : 52.4244892
+				"lon" : 13.2360812
+				},
+		},
+}
+"2876782198": {
+		"address":{
+			"location":{
+				"lat" : 52.4245091
+				"lon" : 13.2360666
+				},
+		},
+}
+"2876782199": {
+		"address":{
+			"location":{
+				"lat" : 52.4245108
+				"lon" : 13.2361605
+				},
+		},
+}
+"2876782200": {
+		"address":{
+			"location":{
+				"lat" : 52.4245307
+				"lon" : 13.2361459
+				},
+		},
+}
+"2877285649": {
+		"address":{
+			"location":{
+				"lat" : 52.5155971
+				"lon" : 13.3449741
+				},
+		"fee": "no"
+		"wheelchair": "no"
+		},
+}
+"2898966843": {
+		"address":{
+			"location":{
+				"lat" : 52.420239
+				"lon" : 13.4047287
+				},
+		},
+}
+"2898966844": {
+		"address":{
+			"location":{
+				"lat" : 52.420272
+				"lon" : 13.4045
+				},
+		},
+}
+"2898966845": {
+		"address":{
+			"location":{
+				"lat" : 52.4202749
+				"lon" : 13.4047805
+				},
+		},
+}
+"2898966846": {
+		"address":{
+			"location":{
+				"lat" : 52.4203743
+				"lon" : 13.4048
+				},
+		},
+}
+"2898966930": {
+		"address":{
+			"location":{
+				"lat" : 52.4200165
+				"lon" : 13.4044234
+				},
+		},
+}
+"2898966931": {
+		"address":{
+			"location":{
+				"lat" : 52.4203235
+				"lon" : 13.4047604
+				},
+		},
+}
+"2898966932": {
+		"address":{
+			"location":{
+				"lat" : 52.4203335
+				"lon" : 13.4046836
+				},
+		},
+}
+"2898966933": {
+		"address":{
+			"location":{
+				"lat" : 52.4204116
+				"lon" : 13.404716
+				},
+		},
+}
+"2898967053": {
+		"address":{
+			"location":{
+				"lat" : 52.4200663
+				"lon" : 13.4043096
+				},
+		},
+}
+"2898967054": {
+		"address":{
+			"location":{
+				"lat" : 52.4200753
+				"lon" : 13.4041545
+				},
+		},
+}
+"2898967055": {
+		"address":{
+			"location":{
+				"lat" : 52.4202249
+				"lon" : 13.4045205
+				},
+		},
+}
+"2898967119": {
+		"address":{
+			"location":{
+				"lat" : 52.4199922
+				"lon" : 13.40414
+				},
+		},
+}
+"2898967120": {
+		"address":{
+			"location":{
+				"lat" : 52.4200093
+				"lon" : 13.4044986
+				},
+		},
+}
+"2898967121": {
+		"address":{
+			"location":{
+				"lat" : 52.4201942
+				"lon" : 13.4047531
+				},
+		},
+}
+"2898967122": {
+		"address":{
+			"location":{
+				"lat" : 52.4202968
+				"lon" : 13.4046301
+				},
+		},
+}
+"2898967123": {
+		"address":{
+			"location":{
+				"lat" : 52.4203073
+				"lon" : 13.4045557
+				},
+		},
+}
+"2898967328": {
+		"address":{
+			"location":{
+				"lat" : 52.4202148
+				"lon" : 13.4045984
+				},
+		},
+}
+"2898967429": {
+		"address":{
+			"location":{
+				"lat" : 52.4199495
+				"lon" : 13.4041697
+				},
+		},
+}
+"2898967430": {
+		"address":{
+			"location":{
+				"lat" : 52.4199767
+				"lon" : 13.4043715
+				},
+		},
+}
+"2898967431": {
+		"address":{
+			"location":{
+				"lat" : 52.4199829
+				"lon" : 13.4042961
+				},
+		},
+}
+"2898967432": {
+		"address":{
+			"location":{
+				"lat" : 52.4200483
+				"lon" : 13.404544
+				},
+		},
+}
+"2898967433": {
+		"address":{
+			"location":{
+				"lat" : 52.4200601
+				"lon" : 13.4043905
+				},
+		},
+}
+"2898967537": {
+		"address":{
+			"location":{
+				"lat" : 52.4199442
+				"lon" : 13.4042455
+				},
+		},
+}
+"2898967538": {
+		"address":{
+			"location":{
+				"lat" : 52.4200327
+				"lon" : 13.4041887
+				},
+		},
+}
+"2898967539": {
+		"address":{
+			"location":{
+				"lat" : 52.4200929
+				"lon" : 13.4045119
+				},
+		},
+}
+"2898967540": {
+		"address":{
+			"location":{
+				"lat" : 52.4200976
+				"lon" : 13.404434
+				},
+		},
+}
+"2898967541": {
+		"address":{
+			"location":{
+				"lat" : 52.4201091
+				"lon" : 13.4042803
+				},
+		},
+}
+"2898967542": {
+		"address":{
+			"location":{
+				"lat" : 52.4201134
+				"lon" : 13.4042035
+				},
+		},
+}
+"2898967543": {
+		"address":{
+			"location":{
+				"lat" : 52.4201591
+				"lon" : 13.4046988
+				},
+		},
+}
+"2898967544": {
+		"address":{
+			"location":{
+				"lat" : 52.420171
+				"lon" : 13.4046174
+				},
+		},
+}
+"2898967545": {
+		"address":{
+			"location":{
+				"lat" : 52.4203553
+				"lon" : 13.4048078
+				},
+		},
+}
+"2898967546": {
+		"address":{
+			"location":{
+				"lat" : 52.4203744
+				"lon" : 13.4048001
+				},
+		},
+}
+"2898967547": {
+		"address":{
+			"location":{
+				"lat" : 52.420379
+				"lon" : 13.4046617
+				},
+		},
+}
+"2898967548": {
+		"address":{
+			"location":{
+				"lat" : 52.4204009
+				"lon" : 13.4047891
+				},
+		},
+}
+"2906318701": {
+		"address":{
+			"location":{
+				"lat" : 52.5252096
+				"lon" : 13.1969125
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"wheelchair": "yes"
+		},
+}
+"2969838043": {
+		"address":{
+			"location":{
+				"lat" : 52.5075901
+				"lon" : 13.450614
+				},
+		},
+}
+"2969838044": {
+		"address":{
+			"location":{
+				"lat" : 52.5075933
+				"lon" : 13.4506338
+				},
+		},
+}
+"2969838045": {
+		"address":{
+			"location":{
+				"lat" : 52.5075988
+				"lon" : 13.4506027
+				},
+		},
+}
+"2969838046": {
+		"address":{
+			"location":{
+				"lat" : 52.5076026
+				"lon" : 13.4506031
+				},
+		},
+}
+"2969838047": {
+		"address":{
+			"location":{
+				"lat" : 52.5076069
+				"lon" : 13.4506455
+				},
+		},
+}
+"2969838048": {
+		"address":{
+			"location":{
+				"lat" : 52.5076111
+				"lon" : 13.4506448
+				},
+		},
+}
+"2969838049": {
+		"address":{
+			"location":{
+				"lat" : 52.5076168
+				"lon" : 13.4506154
+				},
+		},
+}
+"2969838050": {
+		"address":{
+			"location":{
+				"lat" : 52.5076192
+				"lon" : 13.4506294
+				},
+		},
+}
+"2969839926": {
+		"address":{
+			"location":{
+				"lat" : 52.5075906
+				"lon" : 13.4506282
+				},
+		},
+}
+"2969839927": {
+		"address":{
+			"location":{
+				"lat" : 52.5075951
+				"lon" : 13.4506047
+				},
+		},
+}
+"2969839928": {
+		"address":{
+			"location":{
+				"lat" : 52.5075989
+				"lon" : 13.4506374
+				},
+		},
+}
+"2969839929": {
+		"address":{
+			"location":{
+				"lat" : 52.5076028
+				"lon" : 13.4506434
+				},
+		},
+}
+"2969839930": {
+		"address":{
+			"location":{
+				"lat" : 52.507608
+				"lon" : 13.4506088
+				},
+		},
+}
+"2969839931": {
+		"address":{
+			"location":{
+				"lat" : 52.5076133
+				"lon" : 13.4506107
+				},
+		},
+}
+"2969839932": {
+		"address":{
+			"location":{
+				"lat" : 52.5076177
+				"lon" : 13.4506364
+				},
+		},
+}
+"2969840169": {
+		"address":{
+			"location":{
+				"lat" : 52.5075894
+				"lon" : 13.4506212
+				},
+		},
+}
+"2969840170": {
+		"address":{
+			"location":{
+				"lat" : 52.5075921
+				"lon" : 13.4506086
+				},
+		},
+}
+"2969840171": {
+		"address":{
+			"location":{
+				"lat" : 52.5075972
+				"lon" : 13.4506371
+				},
+		},
+}
+"2969840172": {
+		"address":{
+			"location":{
+				"lat" : 52.5075995
+				"lon" : 13.4506391
+				},
+		},
+}
+"2969840173": {
+		"address":{
+			"location":{
+				"lat" : 52.5076062
+				"lon" : 13.4506057
+				},
+		},
+}
+"2969840174": {
+		"address":{
+			"location":{
+				"lat" : 52.507609
+				"lon" : 13.4506086
+				},
+		},
+}
+"2969840175": {
+		"address":{
+			"location":{
+				"lat" : 52.5076149
+				"lon" : 13.4506417
+				},
+		},
+}
+"2969840176": {
+		"address":{
+			"location":{
+				"lat" : 52.5076189
+				"lon" : 13.450622
+				},
+		},
+}
+"2971135274": {
+		"address":{
+			"location":{
+				"lat" : 52.5481783
+				"lon" : 13.4512436
+				},
+		},
+}
+"2971135275": {
+		"address":{
+			"location":{
+				"lat" : 52.5481794
+				"lon" : 13.4512277
+				},
+		},
+}
+"2971158982": {
+		"address":{
+			"location":{
+				"lat" : 52.5481593
+				"lon" : 13.4512351
+				},
+		},
+}
+"2971159896": {
+		"address":{
+			"location":{
+				"lat" : 52.5481577
+				"lon" : 13.4512196
+				},
+		},
+}
+"2971159897": {
+		"address":{
+			"location":{
+				"lat" : 52.5481586
+				"lon" : 13.4512116
+				},
+		},
+}
+"2971159898": {
+		"address":{
+			"location":{
+				"lat" : 52.5481614
+				"lon" : 13.4512055
+				},
+		},
+}
+"2971159899": {
+		"address":{
+			"location":{
+				"lat" : 52.5481651
+				"lon" : 13.4512456
+				},
+		},
+}
+"2971159900": {
+		"address":{
+			"location":{
+				"lat" : 52.5481655
+				"lon" : 13.451204
+				},
+		},
+}
+"2971159901": {
+		"address":{
+			"location":{
+				"lat" : 52.5481697
+				"lon" : 13.4512053
+				},
+		},
+}
+"2971159902": {
+		"address":{
+			"location":{
+				"lat" : 52.5481699
+				"lon" : 13.4512509
+				},
+		},
+}
+"2971159903": {
+		"address":{
+			"location":{
+				"lat" : 52.5481738
+				"lon" : 13.4512099
+				},
+		},
+}
+"2971159904": {
+		"address":{
+			"location":{
+				"lat" : 52.5481748
+				"lon" : 13.4512499
+				},
+		},
+}
+"2975229966": {
+		"address":{
+			"location":{
+				"lat" : 52.5534759
+				"lon" : 13.2898147
+				},
+		},
+}
+"2977451431": {
+		"address":{
+			"location":{
+				"lat" : 52.4711699
+				"lon" : 13.38686
+				},
+		},
+}
+"2977451432": {
+		"address":{
+			"location":{
+				"lat" : 52.4711879
+				"lon" : 13.3869018
+				},
+		},
+}
+"2977456233": {
+		"address":{
+			"location":{
+				"lat" : 52.4712423
+				"lon" : 13.3867763
+				},
+		},
+}
+"2977456234": {
+		"address":{
+			"location":{
+				"lat" : 52.4712602
+				"lon" : 13.3868181
+				},
+		},
+}
+"3000664386": {
+		"address":{
+			"location":{
+				"lat" : 52.5151002
+				"lon" : 13.4173025
+				},
+		},
+}
+"3000664392": {
+		"address":{
+			"location":{
+				"lat" : 52.5151353
+				"lon" : 13.4172734
+				},
+		},
+}
+"3000665173": {
+		"address":{
+			"location":{
+				"lat" : 52.5151723
+				"lon" : 13.4171858
+				},
+		},
+}
+"3000666231": {
+		"address":{
+			"location":{
+				"lat" : 52.5151037
+				"lon" : 13.4173091
+				},
+		},
+}
+"3000666232": {
+		"address":{
+			"location":{
+				"lat" : 52.5151224
+				"lon" : 13.4171196
+				},
+		},
+}
+"3000666238": {
+		"address":{
+			"location":{
+				"lat" : 52.5151687
+				"lon" : 13.4171551
+				},
+		},
+}
+"3011404374": {
+		"address":{
+			"location":{
+				"lat" : 52.4428708
+				"lon" : 13.676914
+				},
+		},
+}
+"3070232796": {
+		"address":{
+			"location":{
+				"lat" : 52.4147553
+				"lon" : 13.1265451
+				},
+		},
+}
+"3070232800": {
+		"address":{
+			"location":{
+				"lat" : 52.4147764
+				"lon" : 13.1267724
+				},
+		},
+}
+"3070232810": {
+		"address":{
+			"location":{
+				"lat" : 52.4148817
+				"lon" : 13.1265136
+				},
+		},
+}
+"3070232813": {
+		"address":{
+			"location":{
+				"lat" : 52.4149032
+				"lon" : 13.1267406
+				},
+		},
+}
+"3073255685": {
+		"address":{
+			"location":{
+				"lat" : 52.4982706
+				"lon" : 13.4441641
+				},
+		"wheelchair": "no"
+		},
+}
+"3090410739": {
+		"address":{
+			"location":{
+				"lat" : 52.5029268
+				"lon" : 13.4115082
+				},
+		"wheelchair": "limited"
+		},
+}
+"3094367707": {
+		"address":{
+			"location":{
+				"lat" : 52.460382
+				"lon" : 13.5852693
+				},
+		},
+}
+"3098632580": {
+		"address":{
+			"location":{
+				"lat" : 52.5176065
+				"lon" : 13.3170016
+				},
+		},
+}
+"3098632581": {
+		"address":{
+			"location":{
+				"lat" : 52.5176358
+				"lon" : 13.317028
+				},
+		},
+}
+"3098632582": {
+		"address":{
+			"location":{
+				"lat" : 52.5176511
+				"lon" : 13.3169828
+				},
+		},
+}
+"3098632583": {
+		"address":{
+			"location":{
+				"lat" : 52.5176216
+				"lon" : 13.316956
+				},
+		},
+}
+"3121841839": {
+		"address":{
+			"location":{
+				"lat" : 52.490315
+				"lon" : 13.2360264
+				},
+		},
+}
+"3154409161": {
+		"address":{
+			"location":{
+				"lat" : 52.4938612
+				"lon" : 13.3318823
+				},
+		"name": "Prager Passage"
+		"opening_hours": "Mo-Sa 08:00-18:00"
+		"wheelchair": "yes"
+		},
+}
+"3164304961": {
+		"address":{
+			"location":{
+				"lat" : 52.5129879
+				"lon" : 13.3199002
+				},
+		},
+}
+"3164304962": {
+		"address":{
+			"location":{
+				"lat" : 52.5129934
+				"lon" : 13.3200046
+				},
+		},
+}
+"3164304971": {
+		"address":{
+			"location":{
+				"lat" : 52.51303
+				"lon" : 13.3198979
+				},
+		},
+}
+"3164304972": {
+		"address":{
+			"location":{
+				"lat" : 52.513033
+				"lon" : 13.32
+				},
+		},
+}
+"3166435557": {
+		"address":{
+			"location":{
+				"lat" : 52.5129874
+				"lon" : 13.3199004
+				},
+		},
+}
+"3166435560": {
+		"address":{
+			"location":{
+				"lat" : 52.5129919
+				"lon" : 13.3200041
+				},
+		},
+}
+"3166438161": {
+		"address":{
+			"location":{
+				"lat" : 52.5130098
+				"lon" : 13.3198972
+				},
+		},
+}
+"3166438163": {
+		"address":{
+			"location":{
+				"lat" : 52.5130326
+				"lon" : 13.3198972
+				},
+		},
+}
+"3166438165": {
+		"address":{
+			"location":{
+				"lat" : 52.5130386
+				"lon" : 13.3199612
+				},
+		},
+}
+"3166438167": {
+		"address":{
+			"location":{
+				"lat" : 52.5130388
+				"lon" : 13.319979
+				},
+		},
+}
+"3166438169": {
+		"address":{
+			"location":{
+				"lat" : 52.5130452
+				"lon" : 13.3199608
+				},
+		},
+}
+"3166438171": {
+		"address":{
+			"location":{
+				"lat" : 52.5130484
+				"lon" : 13.3199782
+				},
+		},
+}
+"3166438173": {
+		"address":{
+			"location":{
+				"lat" : 52.5130489
+				"lon" : 13.3199944
+				},
+		},
+}
+"3166590687": {
+		"address":{
+			"location":{
+				"lat" : 52.5130071
+				"lon" : 13.3198982
+				},
+		},
+}
+"3167012608": {
+		"address":{
+			"location":{
+				"lat" : 52.513033
+				"lon" : 13.3199999
+				},
+		},
+}
+"3167098614": {
+		"address":{
+			"location":{
+				"lat" : 52.5129889
+				"lon" : 13.3199004
+				},
+		},
+}
+"3167098619": {
+		"address":{
+			"location":{
+				"lat" : 52.5129951
+				"lon" : 13.3200028
+				},
+		},
+}
+"3167098620": {
+		"address":{
+			"location":{
+				"lat" : 52.5130064
+				"lon" : 13.3198971
+				},
+		},
+}
+"3167098627": {
+		"address":{
+			"location":{
+				"lat" : 52.5130334
+				"lon" : 13.3198972
+				},
+		},
+}
+"3167098629": {
+		"address":{
+			"location":{
+				"lat" : 52.5130353
+				"lon" : 13.3199988
+				},
+		},
+}
+"3179301511": {
+		"address":{
+			"location":{
+				"lat" : 52.5092526
+				"lon" : 13.4973504
+				},
+		},
+}
+"3181885302": {
+		"address":{
+			"location":{
+				"lat" : 52.557167
+				"lon" : 13.4658951
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"wheelchair": "yes"
+		},
+}
+"3201464861": {
+		"address":{
+			"location":{
+				"lat" : 52.528144
+				"lon" : 13.433836
+				},
+		"wheelchair": "yes"
+			"street": "Am Friedrichshain"
+			"plz": "10407"
+		},
+}
+"3211345892": {
+		"address":{
+			"location":{
+				"lat" : 52.5441039
+				"lon" : 13.3522975
+				},
+		"fee": "no"
+		},
+}
+"3269400307": {
+		"address":{
+			"location":{
+				"lat" : 52.5454113
+				"lon" : 13.4581955
+				},
+		"fee": "no"
+		},
+}
+"3290671964": {
+		"address":{
+			"location":{
+				"lat" : 52.4918921
+				"lon" : 13.2354066
+				},
+		},
+}
+"3290671977": {
+		"address":{
+			"location":{
+				"lat" : 52.4919224
+				"lon" : 13.2354407
+				},
+		},
+}
+"3290671978": {
+		"address":{
+			"location":{
+				"lat" : 52.4919229
+				"lon" : 13.2353328
+				},
+		},
+}
+"3290671999": {
+		"address":{
+			"location":{
+				"lat" : 52.4919532
+				"lon" : 13.2353668
+				},
+		},
+}
+"3300507073": {
+		"address":{
+			"location":{
+				"lat" : 52.5544677
+				"lon" : 13.4610379
+				},
+		},
+}
+"3317308217": {
+		"address":{
+			"location":{
+				"lat" : 52.617643
+				"lon" : 13.4885155
+				},
+		"name": "City Toilette"
+		"wheelchair": "yes"
+		},
+}
+"3317358559": {
+		"address":{
+			"location":{
+				"lat" : 52.5194651
+				"lon" : 13.3999766
+				},
+		"name": "City Toilette"
+		"wheelchair": "yes"
+		},
+}
+"3319965293": {
+		"address":{
+			"location":{
+				"lat" : 52.4690484
+				"lon" : 13.2352346
+				},
+		},
+}
+"3328492375": {
+		"address":{
+			"location":{
+				"lat" : 52.4265419
+				"lon" : 13.6301001
+				},
+		},
+}
+"3328492376": {
+		"address":{
+			"location":{
+				"lat" : 52.426552
+				"lon" : 13.6299736
+				},
+		},
+}
+"3328492379": {
+		"address":{
+			"location":{
+				"lat" : 52.4266125
+				"lon" : 13.6299866
+				},
+		},
+}
+"3338458355": {
+		"address":{
+			"location":{
+				"lat" : 52.5106351
+				"lon" : 13.3830226
+				},
+		"fee": "yes"
+		"wheelchair": "yes"
+		},
+}
+"3338459657": {
+		"address":{
+			"location":{
+				"lat" : 52.5183901
+				"lon" : 13.3890855
+				},
+		"fee": "no"
+		"wheelchair": "yes"
+		},
+}
+"3342161756": {
+		"address":{
+			"location":{
+				"lat" : 52.4996256
+				"lon" : 13.5306138
+				},
+		},
+}
+"3342161768": {
+		"address":{
+			"location":{
+				"lat" : 52.4996486
+				"lon" : 13.530683
+				},
+		},
+}
+"3342161787": {
+		"address":{
+			"location":{
+				"lat" : 52.4996845
+				"lon" : 13.5305609
+				},
+		},
+}
+"3342161800": {
+		"address":{
+			"location":{
+				"lat" : 52.4997076
+				"lon" : 13.53063
+				},
+		},
+}
+"3342164344": {
+		"address":{
+			"location":{
+				"lat" : 52.5032828
+				"lon" : 13.5232557
+				},
+		},
+}
+"3342164354": {
+		"address":{
+			"location":{
+				"lat" : 52.5033015
+				"lon" : 13.5233419
+				},
+		},
+}
+"3342164412": {
+		"address":{
+			"location":{
+				"lat" : 52.5034248
+				"lon" : 13.5231727
+				},
+		},
+}
+"3342164423": {
+		"address":{
+			"location":{
+				"lat" : 52.5034436
+				"lon" : 13.523259
+				},
+		},
+}
+"3342165245": {
+		"address":{
+			"location":{
+				"lat" : 52.5049824
+				"lon" : 13.5283435
+				},
+		},
+}
+"3342165261": {
+		"address":{
+			"location":{
+				"lat" : 52.5050164
+				"lon" : 13.5284562
+				},
+		},
+}
+"3342165262": {
+		"address":{
+			"location":{
+				"lat" : 52.5050221
+				"lon" : 13.5283234
+				},
+		},
+}
+"3342165265": {
+		"address":{
+			"location":{
+				"lat" : 52.5050249
+				"lon" : 13.528305
+				},
+		},
+}
+"3342165267": {
+		"address":{
+			"location":{
+				"lat" : 52.5050285
+				"lon" : 13.5283166
+				},
+		},
+}
+"3342165270": {
+		"address":{
+			"location":{
+				"lat" : 52.5050364
+				"lon" : 13.5283681
+				},
+		},
+}
+"3342165317": {
+		"address":{
+			"location":{
+				"lat" : 52.5051751
+				"lon" : 13.5283261
+				},
+		},
+}
+"3342165318": {
+		"address":{
+			"location":{
+				"lat" : 52.505176
+				"lon" : 13.5283358
+				},
+		},
+}
+"3342165319": {
+		"address":{
+			"location":{
+				"lat" : 52.5051799
+				"lon" : 13.5283239
+				},
+		},
+}
+"3342165321": {
+		"address":{
+			"location":{
+				"lat" : 52.5051882
+				"lon" : 13.5284097
+				},
+		},
+}
+"3343053921": {
+		"address":{
+			"location":{
+				"lat" : 52.438375
+				"lon" : 13.4125455
+				},
+		},
+}
+"3397870263": {
+		"address":{
+			"location":{
+				"lat" : 52.5225796
+				"lon" : 13.4117384
+				},
+		"fee": "no"
+		"wheelchair": "yes"
+		},
+}
+"3397873724": {
+		"address":{
+			"location":{
+				"lat" : 52.5198235
+				"lon" : 13.4087645
+				},
+		},
+}
+"3397873725": {
+		"address":{
+			"location":{
+				"lat" : 52.5198408
+				"lon" : 13.4087431
+				},
+		},
+}
+"3397873726": {
+		"address":{
+			"location":{
+				"lat" : 52.5198468
+				"lon" : 13.4088154
+				},
+		},
+}
+"3397873727": {
+		"address":{
+			"location":{
+				"lat" : 52.5198641
+				"lon" : 13.4087939
+				},
+		},
+}
+"3418920443": {
+		"address":{
+			"location":{
+				"lat" : 52.5378244
+				"lon" : 13.2697151
+				},
+		},
+}
+"3418920444": {
+		"address":{
+			"location":{
+				"lat" : 52.5378251
+				"lon" : 13.2696538
+				},
+		},
+}
+"3418920445": {
+		"address":{
+			"location":{
+				"lat" : 52.537827
+				"lon" : 13.2697998
+				},
+		},
+}
+"3418920447": {
+		"address":{
+			"location":{
+				"lat" : 52.537828
+				"lon" : 13.2697152
+				},
+		},
+}
+"3418920450": {
+		"address":{
+			"location":{
+				"lat" : 52.5378724
+				"lon" : 13.2698012
+				},
+		},
+}
+"3418920453": {
+		"address":{
+			"location":{
+				"lat" : 52.537874
+				"lon" : 13.2696554
+				},
+		},
+}
+"3420104801": {
+		"address":{
+			"location":{
+				"lat" : 52.5118216
+				"lon" : 13.5599293
+				},
+		},
+}
+"3420104803": {
+		"address":{
+			"location":{
+				"lat" : 52.5118401
+				"lon" : 13.559843
+				},
+		},
+}
+"3420104805": {
+		"address":{
+			"location":{
+				"lat" : 52.5118586
+				"lon" : 13.5597567
+				},
+		},
+}
+"3420104806": {
+		"address":{
+			"location":{
+				"lat" : 52.5118841
+				"lon" : 13.5597715
+				},
+		},
+}
+"3420104808": {
+		"address":{
+			"location":{
+				"lat" : 52.511891
+				"lon" : 13.5598725
+				},
+		},
+}
+"3420104810": {
+		"address":{
+			"location":{
+				"lat" : 52.5119095
+				"lon" : 13.5597862
+				},
+		},
+}
+"3441428131": {
+		"address":{
+			"location":{
+				"lat" : 52.5759527
+				"lon" : 13.2431641
+				},
+		"fee": "no"
+		"wheelchair": "no"
+		},
+}
+"3452218363": {
+		"address":{
+			"location":{
+				"lat" : 52.4831629
+				"lon" : 13.5024392
+				},
+		},
+}
+"3454241060": {
+		"address":{
+			"location":{
+				"lat" : 52.5246033
+				"lon" : 13.4391066
+				},
+		"fee": "no"
+		},
+}
+"3454241061": {
+		"address":{
+			"location":{
+				"lat" : 52.524822
+				"lon" : 13.4391436
+				},
+		"fee": "no"
+		},
+}
+"3457159699": {
+		"address":{
+			"location":{
+				"lat" : 52.5416699
+				"lon" : 13.4289223
+				},
+		"fee": "no"
+		"wheelchair": "yes"
+		},
+}
+"3490706053": {
+		"address":{
+			"location":{
+				"lat" : 52.5291629
+				"lon" : 13.4609937
+				},
+		"fee": "no"
+		},
+}
+"3490724146": {
+		"address":{
+			"location":{
+				"lat" : 52.4560594
+				"lon" : 13.3207145
+				},
+		"fee": "no"
+		},
+}
+"3490724147": {
+		"address":{
+			"location":{
+				"lat" : 52.4568814
+				"lon" : 13.3200049
+				},
+		"fee": "no"
+		"wheelchair": "yes"
+		},
+}
+"3518345729": {
+		"address":{
+			"location":{
+				"lat" : 52.4326562
+				"lon" : 13.1647344
+				},
+		},
+}
+"3518345732": {
+		"address":{
+			"location":{
+				"lat" : 52.4326768
+				"lon" : 13.1648264
+				},
+		},
+}
+"3518345735": {
+		"address":{
+			"location":{
+				"lat" : 52.4327192
+				"lon" : 13.1646964
+				},
+		},
+}
+"3518345737": {
+		"address":{
+			"location":{
+				"lat" : 52.4327399
+				"lon" : 13.1647884
+				},
+		},
+}
+"3549530998": {
+		"address":{
+			"location":{
+				"lat" : 52.4339766
+				"lon" : 13.4230673
+				},
+		},
+}
+"3549530999": {
+		"address":{
+			"location":{
+				"lat" : 52.4339847
+				"lon" : 13.4231104
+				},
+		},
+}
+"3549531000": {
+		"address":{
+			"location":{
+				"lat" : 52.4340637
+				"lon" : 13.4230231
+				},
+		},
+}
+"3549531001": {
+		"address":{
+			"location":{
+				"lat" : 52.4340718
+				"lon" : 13.4230662
+				},
+		},
+}
+"3549531003": {
+		"address":{
+			"location":{
+				"lat" : 52.4372267
+				"lon" : 13.422002
+				},
+		},
+}
+"3549531004": {
+		"address":{
+			"location":{
+				"lat" : 52.4372585
+				"lon" : 13.421981
+				},
+		},
+}
+"3549531005": {
+		"address":{
+			"location":{
+				"lat" : 52.4372506
+				"lon" : 13.4220988
+				},
+		},
+}
+"3549531006": {
+		"address":{
+			"location":{
+				"lat" : 52.4372823
+				"lon" : 13.4220778
+				},
+		},
+}
+"3553740882": {
+		"address":{
+			"location":{
+				"lat" : 52.5142675
+				"lon" : 13.2439059
+				},
+		"wheelchair": "yes"
+		},
+}
+"3593060462": {
+		"address":{
+			"location":{
+				"lat" : 52.5702535
+				"lon" : 13.4073678
+				},
+		},
+}
+"3593060463": {
+		"address":{
+			"location":{
+				"lat" : 52.5702555
+				"lon" : 13.4073662
+				},
+		},
+}
+"3593060464": {
+		"address":{
+			"location":{
+				"lat" : 52.5702621
+				"lon" : 13.4073519
+				},
+		},
+}
+"3593060465": {
+		"address":{
+			"location":{
+				"lat" : 52.5702626
+				"lon" : 13.4074038
+				},
+		},
+}
+"3593060466": {
+		"address":{
+			"location":{
+				"lat" : 52.5702732
+				"lon" : 13.4073543
+				},
+		},
+}
+"3593060467": {
+		"address":{
+			"location":{
+				"lat" : 52.5702753
+				"lon" : 13.4073529
+				},
+		},
+}
+"3593060468": {
+		"address":{
+			"location":{
+				"lat" : 52.5702844
+				"lon" : 13.4073888
+				},
+		},
+}
+"3645059073": {
+		"address":{
+			"location":{
+				"lat" : 52.5395493
+				"lon" : 13.2165056
+				},
+		},
+}
+"3645059076": {
+		"address":{
+			"location":{
+				"lat" : 52.5395761
+				"lon" : 13.216378
+				},
+		},
+}
+"3645059080": {
+		"address":{
+			"location":{
+				"lat" : 52.539601
+				"lon" : 13.2165343
+				},
+		},
+}
+"3645059081": {
+		"address":{
+			"location":{
+				"lat" : 52.5396025
+				"lon" : 13.2163948
+				},
+		},
+}
+"3645059082": {
+		"address":{
+			"location":{
+				"lat" : 52.5396028
+				"lon" : 13.2163925
+				},
+		},
+}
+"3645059083": {
+		"address":{
+			"location":{
+				"lat" : 52.5396125
+				"lon" : 13.2164439
+				},
+		},
+}
+"3645059085": {
+		"address":{
+			"location":{
+				"lat" : 52.539619
+				"lon" : 13.2164475
+				},
+		},
+}
+"3645059086": {
+		"address":{
+			"location":{
+				"lat" : 52.5396204
+				"lon" : 13.216405
+				},
+		},
+}
+"3682089865": {
+		"address":{
+			"location":{
+				"lat" : 52.4809299
+				"lon" : 13.488641
+				},
+		"fee": "no"
+		},
+}
+"3683994495": {
+		"address":{
+			"location":{
+				"lat" : 52.451759
+				"lon" : 13.3097799
+				},
+		},
+}
+"3688060528": {
+		"address":{
+			"location":{
+				"lat" : 52.618132
+				"lon" : 13.336666
+				},
+		},
+}
+"3713373371": {
+		"address":{
+			"location":{
+				"lat" : 52.5052227
+				"lon" : 13.3227507
+				},
+		},
+}
+"3713373372": {
+		"address":{
+			"location":{
+				"lat" : 52.5052238
+				"lon" : 13.3227107
+				},
+		},
+}
+"3713373373": {
+		"address":{
+			"location":{
+				"lat" : 52.5052537
+				"lon" : 13.3227529
+				},
+		},
+}
+"3713810565": {
+		"address":{
+			"location":{
+				"lat" : 52.4333269
+				"lon" : 13.3515106
+				},
+		},
+}
+"3713810570": {
+		"address":{
+			"location":{
+				"lat" : 52.4333509
+				"lon" : 13.3514511
+				},
+		},
+}
+"3713810572": {
+		"address":{
+			"location":{
+				"lat" : 52.4333878
+				"lon" : 13.3516512
+				},
+		},
+}
+"3713810575": {
+		"address":{
+			"location":{
+				"lat" : 52.4334438
+				"lon" : 13.3515125
+				},
+		},
+}
+"3715382340": {
+		"address":{
+			"location":{
+				"lat" : 52.576168
+				"lon" : 13.4128017
+				},
+		"fee": "no"
+		},
+}
+"3717577635": {
+		"address":{
+			"location":{
+				"lat" : 52.5765094
+				"lon" : 13.4125464
+				},
+		},
+}
+"3740428919": {
+		"address":{
+			"location":{
+				"lat" : 52.4537143
+				"lon" : 13.2403207
+				},
+		"fee": "no"
+		},
+}
+"3815674914": {
+		"address":{
+			"location":{
+				"lat" : 52.519241
+				"lon" : 13.3860738
+				},
+		},
+}
+"3815674915": {
+		"address":{
+			"location":{
+				"lat" : 52.5192435
+				"lon" : 13.3861134
+				},
+		},
+}
+"3815674918": {
+		"address":{
+			"location":{
+				"lat" : 52.5192562
+				"lon" : 13.3861359
+				},
+		},
+}
+"3815674920": {
+		"address":{
+			"location":{
+				"lat" : 52.5192588
+				"lon" : 13.3861758
+				},
+		},
+}
+"3815674923": {
+		"address":{
+			"location":{
+				"lat" : 52.5192733
+				"lon" : 13.3861082
+				},
+		},
+}
+"3815674925": {
+		"address":{
+			"location":{
+				"lat" : 52.519275
+				"lon" : 13.3861326
+				},
+		},
+}
+"3815674926": {
+		"address":{
+			"location":{
+				"lat" : 52.5192759
+				"lon" : 13.386147
+				},
+		},
+}
+"3815674927": {
+		"address":{
+			"location":{
+				"lat" : 52.5192809
+				"lon" : 13.3860668
+				},
+		},
+}
+"3815674928": {
+		"address":{
+			"location":{
+				"lat" : 52.5192835
+				"lon" : 13.3861065
+				},
+		},
+}
+"3815674930": {
+		"address":{
+			"location":{
+				"lat" : 52.5192851
+				"lon" : 13.3861454
+				},
+		},
+}
+"3815674931": {
+		"address":{
+			"location":{
+				"lat" : 52.5192867
+				"lon" : 13.3861709
+				},
+		},
+}
+"3825536180": {
+		"address":{
+			"location":{
+				"lat" : 52.4170873
+				"lon" : 13.6255275
+				},
+		"fee": "yes"
+		},
+}
+"3842680251": {
+		"address":{
+			"location":{
+				"lat" : 52.5443605
+				"lon" : 13.5492389
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"wheelchair": "yes"
+		"opening_hours": "24/7"
+		},
+}
+"3844737158": {
+		"address":{
+			"location":{
+				"lat" : 52.4749732
+				"lon" : 13.3660192
+				},
+		},
+}
+"3844737160": {
+		"address":{
+			"location":{
+				"lat" : 52.4749828
+				"lon" : 13.3660134
+				},
+		},
+}
+"3844737163": {
+		"address":{
+			"location":{
+				"lat" : 52.4749888
+				"lon" : 13.3659511
+				},
+		},
+}
+"3844737167": {
+		"address":{
+			"location":{
+				"lat" : 52.4750001
+				"lon" : 13.3660031
+				},
+		},
+}
+"3844737171": {
+		"address":{
+			"location":{
+				"lat" : 52.4750053
+				"lon" : 13.3659411
+				},
+		},
+}
+"3844737177": {
+		"address":{
+			"location":{
+				"lat" : 52.4750203
+				"lon" : 13.3662275
+				},
+		},
+}
+"3844737179": {
+		"address":{
+			"location":{
+				"lat" : 52.4750312
+				"lon" : 13.3662209
+				},
+		},
+}
+"3844737189": {
+		"address":{
+			"location":{
+				"lat" : 52.475064
+				"lon" : 13.3662005
+				},
+		},
+}
+"3844738054": {
+		"address":{
+			"location":{
+				"lat" : 52.4765544
+				"lon" : 13.3651499
+				},
+		},
+}
+"3844738068": {
+		"address":{
+			"location":{
+				"lat" : 52.4765799
+				"lon" : 13.3652558
+				},
+		},
+}
+"3844738078": {
+		"address":{
+			"location":{
+				"lat" : 52.4766031
+				"lon" : 13.365063
+				},
+		},
+}
+"3844738110": {
+		"address":{
+			"location":{
+				"lat" : 52.4766987
+				"lon" : 13.3650035
+				},
+		},
+}
+"3844738118": {
+		"address":{
+			"location":{
+				"lat" : 52.4767286
+				"lon" : 13.3651329
+				},
+		},
+}
+"3844738120": {
+		"address":{
+			"location":{
+				"lat" : 52.4767349
+				"lon" : 13.3651603
+				},
+		},
+}
+"3846200851": {
+		"address":{
+			"location":{
+				"lat" : 52.5095651
+				"lon" : 13.4354103
+				},
+		},
+}
+"3846201958": {
+		"address":{
+			"location":{
+				"lat" : 52.5095773
+				"lon" : 13.4354242
+				},
+		},
+}
+"3846201962": {
+		"address":{
+			"location":{
+				"lat" : 52.5095891
+				"lon" : 13.4353538
+				},
+		},
+}
+"3846201966": {
+		"address":{
+			"location":{
+				"lat" : 52.5095998
+				"lon" : 13.4353661
+				},
+		},
+}
+"3846202015": {
+		"address":{
+			"location":{
+				"lat" : 52.5096761
+				"lon" : 13.4355379
+				},
+		},
+}
+"3846202030": {
+		"address":{
+			"location":{
+				"lat" : 52.5097013
+				"lon" : 13.4354786
+				},
+		},
+}
+"3848194399": {
+		"address":{
+			"location":{
+				"lat" : 52.4905131
+				"lon" : 13.3980459
+				},
+		},
+}
+"3848194417": {
+		"address":{
+			"location":{
+				"lat" : 52.490526
+				"lon" : 13.3980761
+				},
+		},
+}
+"3848194429": {
+		"address":{
+			"location":{
+				"lat" : 52.4905335
+				"lon" : 13.3980265
+				},
+		},
+}
+"3848194435": {
+		"address":{
+			"location":{
+				"lat" : 52.4905358
+				"lon" : 13.398027
+				},
+		},
+}
+"3848194437": {
+		"address":{
+			"location":{
+				"lat" : 52.4905379
+				"lon" : 13.3980278
+				},
+		},
+}
+"3848194440": {
+		"address":{
+			"location":{
+				"lat" : 52.4905399
+				"lon" : 13.3980293
+				},
+		},
+}
+"3848194442": {
+		"address":{
+			"location":{
+				"lat" : 52.4905418
+				"lon" : 13.3980315
+				},
+		},
+}
+"3848194444": {
+		"address":{
+			"location":{
+				"lat" : 52.4905434
+				"lon" : 13.3980341
+				},
+		},
+}
+"3848194447": {
+		"address":{
+			"location":{
+				"lat" : 52.4905447
+				"lon" : 13.3980372
+				},
+		},
+}
+"3848194448": {
+		"address":{
+			"location":{
+				"lat" : 52.4905452
+				"lon" : 13.3980547
+				},
+		},
+}
+"3848194450": {
+		"address":{
+			"location":{
+				"lat" : 52.4905456
+				"lon" : 13.3980406
+				},
+		},
+}
+"3848194451": {
+		"address":{
+			"location":{
+				"lat" : 52.4905458
+				"lon" : 13.3980513
+				},
+		},
+}
+"3848194452": {
+		"address":{
+			"location":{
+				"lat" : 52.4905461
+				"lon" : 13.3980442
+				},
+		},
+}
+"3848194453": {
+		"address":{
+			"location":{
+				"lat" : 52.4905462
+				"lon" : 13.3980478
+				},
+		},
+}
+"3857534753": {
+		"address":{
+			"location":{
+				"lat" : 52.4828693
+				"lon" : 13.3263282
+				},
+		},
+}
+"3857534754": {
+		"address":{
+			"location":{
+				"lat" : 52.4828739
+				"lon" : 13.3265094
+				},
+		},
+}
+"3857534761": {
+		"address":{
+			"location":{
+				"lat" : 52.4829062
+				"lon" : 13.3263257
+				},
+		},
+}
+"3857534762": {
+		"address":{
+			"location":{
+				"lat" : 52.482907
+				"lon" : 13.326357
+				},
+		},
+}
+"3857534763": {
+		"address":{
+			"location":{
+				"lat" : 52.4829111
+				"lon" : 13.3264667
+				},
+		},
+}
+"3857534764": {
+		"address":{
+			"location":{
+				"lat" : 52.4829122
+				"lon" : 13.3265068
+				},
+		},
+}
+"3857534766": {
+		"address":{
+			"location":{
+				"lat" : 52.4829173
+				"lon" : 13.3263563
+				},
+		},
+}
+"3857534767": {
+		"address":{
+			"location":{
+				"lat" : 52.4829201
+				"lon" : 13.3264661
+				},
+		},
+}
+"3860571062": {
+		"address":{
+			"location":{
+				"lat" : 52.5334342
+				"lon" : 13.3469324
+				},
+		"fee": "no"
+		"name": "Historische Toilette (Café Achteck)"
+		"wheelchair": "no"
+		},
+}
+"3901368004": {
+		"address":{
+			"location":{
+				"lat" : 52.5375358
+				"lon" : 13.4024968
+				},
+		},
+}
+"3901368015": {
+		"address":{
+			"location":{
+				"lat" : 52.5375576
+				"lon" : 13.4025744
+				},
+		},
+}
+"3901368019": {
+		"address":{
+			"location":{
+				"lat" : 52.5375633
+				"lon" : 13.4024759
+				},
+		},
+}
+"3901368025": {
+		"address":{
+			"location":{
+				"lat" : 52.5375698
+				"lon" : 13.4024974
+				},
+		},
+}
+"3901368027": {
+		"address":{
+			"location":{
+				"lat" : 52.5375757
+				"lon" : 13.4024943
+				},
+		},
+}
+"3901368030": {
+		"address":{
+			"location":{
+				"lat" : 52.537578
+				"lon" : 13.4024955
+				},
+		},
+}
+"3901368032": {
+		"address":{
+			"location":{
+				"lat" : 52.5375802
+				"lon" : 13.4024966
+				},
+		},
+}
+"3901368034": {
+		"address":{
+			"location":{
+				"lat" : 52.5375805
+				"lon" : 13.4025327
+				},
+		},
+}
+"3901368036": {
+		"address":{
+			"location":{
+				"lat" : 52.5375823
+				"lon" : 13.4024984
+				},
+		},
+}
+"3901368037": {
+		"address":{
+			"location":{
+				"lat" : 52.5375823
+				"lon" : 13.4025307
+				},
+		},
+}
+"3901368038": {
+		"address":{
+			"location":{
+				"lat" : 52.5375841
+				"lon" : 13.4025008
+				},
+		},
+}
+"3901368039": {
+		"address":{
+			"location":{
+				"lat" : 52.5375841
+				"lon" : 13.4025283
+				},
+		},
+}
+"3901368040": {
+		"address":{
+			"location":{
+				"lat" : 52.5375856
+				"lon" : 13.4025038
+				},
+		},
+}
+"3901368041": {
+		"address":{
+			"location":{
+				"lat" : 52.5375856
+				"lon" : 13.4025253
+				},
+		},
+}
+"3901368042": {
+		"address":{
+			"location":{
+				"lat" : 52.5375859
+				"lon" : 13.4025538
+				},
+		},
+}
+"3901368043": {
+		"address":{
+			"location":{
+				"lat" : 52.5375867
+				"lon" : 13.4025071
+				},
+		},
+}
+"3901368044": {
+		"address":{
+			"location":{
+				"lat" : 52.5375867
+				"lon" : 13.402522
+				},
+		},
+}
+"3901368045": {
+		"address":{
+			"location":{
+				"lat" : 52.5375874
+				"lon" : 13.4025108
+				},
+		},
+}
+"3901368046": {
+		"address":{
+			"location":{
+				"lat" : 52.5375874
+				"lon" : 13.4025183
+				},
+		},
+}
+"3901368047": {
+		"address":{
+			"location":{
+				"lat" : 52.5375876
+				"lon" : 13.4025146
+				},
+		},
+}
+"3926288654": {
+		"address":{
+			"location":{
+				"lat" : 52.5111924
+				"lon" : 13.4691506
+				},
+		},
+}
+"3926288669": {
+		"address":{
+			"location":{
+				"lat" : 52.5112034
+				"lon" : 13.4691179
+				},
+		},
+}
+"3926288673": {
+		"address":{
+			"location":{
+				"lat" : 52.5112094
+				"lon" : 13.4691148
+				},
+		},
+}
+"3926288676": {
+		"address":{
+			"location":{
+				"lat" : 52.5112117
+				"lon" : 13.4691684
+				},
+		},
+}
+"3926288679": {
+		"address":{
+			"location":{
+				"lat" : 52.5112162
+				"lon" : 13.4691183
+				},
+		},
+}
+"3926288680": {
+		"address":{
+			"location":{
+				"lat" : 52.51122
+				"lon" : 13.4691244
+				},
+		},
+}
+"3926288684": {
+		"address":{
+			"location":{
+				"lat" : 52.5112217
+				"lon" : 13.4691302
+				},
+		},
+}
+"3926288685": {
+		"address":{
+			"location":{
+				"lat" : 52.5112225
+				"lon" : 13.4691363
+				},
+		},
+}
+"3933289784": {
+		"address":{
+			"location":{
+				"lat" : 52.5107485
+				"lon" : 13.460418
+				},
+		},
+}
+"3939814146": {
+		"address":{
+			"location":{
+				"lat" : 52.5398196
+				"lon" : 13.3952674
+				},
+		},
+}
+"3939814148": {
+		"address":{
+			"location":{
+				"lat" : 52.5398214
+				"lon" : 13.3952658
+				},
+		},
+}
+"3939814149": {
+		"address":{
+			"location":{
+				"lat" : 52.5398219
+				"lon" : 13.3952618
+				},
+		},
+}
+"3939814151": {
+		"address":{
+			"location":{
+				"lat" : 52.5398233
+				"lon" : 13.3952568
+				},
+		},
+}
+"3939814154": {
+		"address":{
+			"location":{
+				"lat" : 52.5398265
+				"lon" : 13.3952514
+				},
+		},
+}
+"3939814155": {
+		"address":{
+			"location":{
+				"lat" : 52.5398296
+				"lon" : 13.3953017
+				},
+		},
+}
+"3939814156": {
+		"address":{
+			"location":{
+				"lat" : 52.5398327
+				"lon" : 13.3952483
+				},
+		},
+}
+"3939814862": {
+		"address":{
+			"location":{
+				"lat" : 52.5398389
+				"lon" : 13.3952522
+				},
+		},
+}
+"3939814864": {
+		"address":{
+			"location":{
+				"lat" : 52.5398406
+				"lon" : 13.395251
+				},
+		},
+}
+"3939814872": {
+		"address":{
+			"location":{
+				"lat" : 52.5398505
+				"lon" : 13.3952853
+				},
+		},
+}
+"3953458282": {
+		"address":{
+			"location":{
+				"lat" : 52.4294522
+				"lon" : 13.3293855
+				},
+		"wheelchair": "yes"
+		},
+}
+"3957892710": {
+		"address":{
+			"location":{
+				"lat" : 52.543013
+				"lon" : 13.3501498
+				},
+		},
+}
+"3957892733": {
+		"address":{
+			"location":{
+				"lat" : 52.54303
+				"lon" : 13.3501834
+				},
+		},
+}
+"3957892734": {
+		"address":{
+			"location":{
+				"lat" : 52.5430302
+				"lon" : 13.3501842
+				},
+		},
+}
+"3957892735": {
+		"address":{
+			"location":{
+				"lat" : 52.5430303
+				"lon" : 13.3501832
+				},
+		},
+}
+"3957892736": {
+		"address":{
+			"location":{
+				"lat" : 52.5430303
+				"lon" : 13.3501833
+				},
+		},
+}
+"3957892737": {
+		"address":{
+			"location":{
+				"lat" : 52.5430304
+				"lon" : 13.350183
+				},
+		},
+}
+"3957892738": {
+		"address":{
+			"location":{
+				"lat" : 52.5430304
+				"lon" : 13.3501831
+				},
+		},
+}
+"3957892739": {
+		"address":{
+			"location":{
+				"lat" : 52.5430304
+				"lon" : 13.3501835
+				},
+		},
+}
+"3957892749": {
+		"address":{
+			"location":{
+				"lat" : 52.5430479
+				"lon" : 13.3502179
+				},
+		},
+}
+"3957892750": {
+		"address":{
+			"location":{
+				"lat" : 52.5430479
+				"lon" : 13.350218
+				},
+		},
+}
+"3957892751": {
+		"address":{
+			"location":{
+				"lat" : 52.5430479
+				"lon" : 13.3502181
+				},
+		},
+}
+"3957892752": {
+		"address":{
+			"location":{
+				"lat" : 52.543048
+				"lon" : 13.3502183
+				},
+		},
+}
+"3957892753": {
+		"address":{
+			"location":{
+				"lat" : 52.5430481
+				"lon" : 13.3502182
+				},
+		},
+}
+"3957892754": {
+		"address":{
+			"location":{
+				"lat" : 52.5430482
+				"lon" : 13.3502177
+				},
+		},
+}
+"3957892761": {
+		"address":{
+			"location":{
+				"lat" : 52.5430601
+				"lon" : 13.3500837
+				},
+		},
+}
+"3957892771": {
+		"address":{
+			"location":{
+				"lat" : 52.5430776
+				"lon" : 13.3501171
+				},
+		},
+}
+"3957892778": {
+		"address":{
+			"location":{
+				"lat" : 52.5430954
+				"lon" : 13.3501514
+				},
+		},
+}
+"3957892992": {
+		"address":{
+			"location":{
+				"lat" : 52.5434949
+				"lon" : 13.3510777
+				},
+		},
+}
+"3957893004": {
+		"address":{
+			"location":{
+				"lat" : 52.5435183
+				"lon" : 13.3511225
+				},
+		},
+}
+"3957893017": {
+		"address":{
+			"location":{
+				"lat" : 52.5435346
+				"lon" : 13.3511549
+				},
+		},
+}
+"3957893027": {
+		"address":{
+			"location":{
+				"lat" : 52.5435447
+				"lon" : 13.3511729
+				},
+		},
+}
+"3957893028": {
+		"address":{
+			"location":{
+				"lat" : 52.5435424
+				"lon" : 13.3510103
+				},
+		},
+}
+"3957893030": {
+		"address":{
+			"location":{
+				"lat" : 52.5435468
+				"lon" : 13.351178
+				},
+		},
+}
+"3957893036": {
+		"address":{
+			"location":{
+				"lat" : 52.5435477
+				"lon" : 13.3510203
+				},
+		},
+}
+"3957893039": {
+		"address":{
+			"location":{
+				"lat" : 52.5435588
+				"lon" : 13.3512009
+				},
+		},
+}
+"3957893047": {
+		"address":{
+			"location":{
+				"lat" : 52.5435659
+				"lon" : 13.351055
+				},
+		},
+}
+"3957893067": {
+		"address":{
+			"location":{
+				"lat" : 52.5435923
+				"lon" : 13.3511054
+				},
+		},
+}
+"3957893070": {
+		"address":{
+			"location":{
+				"lat" : 52.5435955
+				"lon" : 13.3511094
+				},
+		},
+}
+"3957893088": {
+		"address":{
+			"location":{
+				"lat" : 52.5436074
+				"lon" : 13.3511317
+				},
+		},
+}
+"3958106929": {
+		"address":{
+			"location":{
+				"lat" : 52.549168
+				"lon" : 13.3886289
+				},
+		},
+}
+"3958106930": {
+		"address":{
+			"location":{
+				"lat" : 52.5491726
+				"lon" : 13.3887306
+				},
+		},
+}
+"3958124204": {
+		"address":{
+			"location":{
+				"lat" : 52.5491234
+				"lon" : 13.3886343
+				},
+		},
+}
+"3958124205": {
+		"address":{
+			"location":{
+				"lat" : 52.5491279
+				"lon" : 13.388736
+				},
+		},
+}
+"3974152809": {
+		"address":{
+			"location":{
+				"lat" : 52.4588617
+				"lon" : 13.2860887
+				},
+		},
+}
+"3980482214": {
+		"address":{
+			"location":{
+				"lat" : 52.4331023
+				"lon" : 13.2580463
+				},
+			"street": "Kirchstraße"
+			"street_number": "1+3"
+		},
+}
+"4003667897": {
+		"address":{
+			"location":{
+				"lat" : 52.5203163
+				"lon" : 13.387688
+				},
+		"fee": "yes"
+		"wheelchair": "yes"
+		},
+}
+"4013360455": {
+		"address":{
+			"location":{
+				"lat" : 52.5553392
+				"lon" : 13.2909647
+				},
+		},
+}
+"4013360460": {
+		"address":{
+			"location":{
+				"lat" : 52.5552458
+				"lon" : 13.2901951
+				},
+		},
+}
+"4013360465": {
+		"address":{
+			"location":{
+				"lat" : 52.5551942
+				"lon" : 13.2893316
+				},
+		},
+}
+"4013360473": {
+		"address":{
+			"location":{
+				"lat" : 52.5542334
+				"lon" : 13.2887494
+				},
+		},
+}
+"4013360479": {
+		"address":{
+			"location":{
+				"lat" : 52.5539192
+				"lon" : 13.2891581
+				},
+		},
+}
+"4051269792": {
+		"address":{
+			"location":{
+				"lat" : 52.525402
+				"lon" : 13.304319
+				},
+		"name": "Öffentliche Toilette"
+		"wheelchair": "yes"
+		},
+}
+"4054598150": {
+		"address":{
+			"location":{
+				"lat" : 52.5247911
+				"lon" : 13.3689892
+				},
+		},
+}
+"4054598156": {
+		"address":{
+			"location":{
+				"lat" : 52.5248129
+				"lon" : 13.3690724
+				},
+		},
+}
+"4054598162": {
+		"address":{
+			"location":{
+				"lat" : 52.5248498
+				"lon" : 13.3689466
+				},
+		},
+}
+"4054598165": {
+		"address":{
+			"location":{
+				"lat" : 52.5248719
+				"lon" : 13.3690289
+				},
+		},
+}
+"4054649395": {
+		"address":{
+			"location":{
+				"lat" : 52.5248609
+				"lon" : 13.369037
+				},
+		},
+}
+"4061391767": {
+		"address":{
+			"location":{
+				"lat" : 52.5061992
+				"lon" : 13.3071746
+				},
+		"fee": "yes"
+		"wheelchair": "yes"
+		},
+}
+"4077933793": {
+		"address":{
+			"location":{
+				"lat" : 52.5240619
+				"lon" : 13.4614338
+				},
+		"fee": "no"
+		"wheelchair": "yes"
+		},
+}
+"4100233311": {
+		"address":{
+			"location":{
+				"lat" : 52.5677071
+				"lon" : 13.1925318
+				},
+		},
+}
+"4102071490": {
+		"address":{
+			"location":{
+				"lat" : 52.4788125
+				"lon" : 13.4381234
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"wheelchair": "yes"
+		},
+}
+"4126712922": {
+		"address":{
+			"location":{
+				"lat" : 52.5455208
+				"lon" : 13.3555983
+				},
+		},
+}
+"4127536103": {
+		"address":{
+			"location":{
+				"lat" : 52.5710801
+				"lon" : 13.1971549
+				},
+		},
+}
+"4129127606": {
+		"address":{
+			"location":{
+				"lat" : 52.5945316
+				"lon" : 13.2212282
+				},
+		"fee": "no"
+		"name": "Toiletten-Container"
+		},
+}
+"4130458295": {
+		"address":{
+			"location":{
+				"lat" : 52.5450307
+				"lon" : 13.3546588
+				},
+		},
+}
+"4142893318": {
+		"address":{
+			"location":{
+				"lat" : 52.5446988
+				"lon" : 13.3550873
+				},
+		},
+}
+"4142893319": {
+		"address":{
+			"location":{
+				"lat" : 52.5447152
+				"lon" : 13.3550644
+				},
+		},
+}
+"4142893320": {
+		"address":{
+			"location":{
+				"lat" : 52.5447393
+				"lon" : 13.3551114
+				},
+		},
+}
+"4142893321": {
+		"address":{
+			"location":{
+				"lat" : 52.5447408
+				"lon" : 13.3551684
+				},
+		},
+}
+"4142893322": {
+		"address":{
+			"location":{
+				"lat" : 52.5447517
+				"lon" : 13.35506
+				},
+		},
+}
+"4142893323": {
+		"address":{
+			"location":{
+				"lat" : 52.5447608
+				"lon" : 13.3550006
+				},
+		},
+}
+"4142893324": {
+		"address":{
+			"location":{
+				"lat" : 52.544762
+				"lon" : 13.3550799
+				},
+		},
+}
+"4142893326": {
+		"address":{
+			"location":{
+				"lat" : 52.5447748
+				"lon" : 13.3550276
+				},
+		},
+}
+"4142893327": {
+		"address":{
+			"location":{
+				"lat" : 52.5447774
+				"lon" : 13.3549774
+				},
+		},
+}
+"4142893328": {
+		"address":{
+			"location":{
+				"lat" : 52.5447798
+				"lon" : 13.3551144
+				},
+		},
+}
+"4142893330": {
+		"address":{
+			"location":{
+				"lat" : 52.5448151
+				"lon" : 13.3550503
+				},
+		},
+}
+"4142893331": {
+		"address":{
+			"location":{
+				"lat" : 52.5448195
+				"lon" : 13.3550589
+				},
+		},
+}
+"4142893333": {
+		"address":{
+			"location":{
+				"lat" : 52.5448281
+				"lon" : 13.3550321
+				},
+		},
+}
+"4142893371": {
+		"address":{
+			"location":{
+				"lat" : 52.5450743
+				"lon" : 13.3545188
+				},
+		},
+}
+"4142893373": {
+		"address":{
+			"location":{
+				"lat" : 52.545098
+				"lon" : 13.3545632
+				},
+		},
+}
+"4142893376": {
+		"address":{
+			"location":{
+				"lat" : 52.5451125
+				"lon" : 13.3544644
+				},
+		},
+}
+"4142893379": {
+		"address":{
+			"location":{
+				"lat" : 52.5451334
+				"lon" : 13.3545038
+				},
+		},
+}
+"4142901392": {
+		"address":{
+			"location":{
+				"lat" : 52.5452733
+				"lon" : 13.3550871
+				},
+		},
+}
+"4142901450": {
+		"address":{
+			"location":{
+				"lat" : 52.5456202
+				"lon" : 13.3554576
+				},
+		},
+}
+"4142901454": {
+		"address":{
+			"location":{
+				"lat" : 52.5456432
+				"lon" : 13.3555014
+				},
+		},
+}
+"4144465021": {
+		"address":{
+			"location":{
+				"lat" : 52.545082
+				"lon" : 13.3545848
+				},
+		},
+}
+"4144465042": {
+		"address":{
+			"location":{
+				"lat" : 52.5453141
+				"lon" : 13.3550301
+				},
+		},
+}
+"4144465045": {
+		"address":{
+			"location":{
+				"lat" : 52.5453386
+				"lon" : 13.3550775
+				},
+		},
+}
+"4147054105": {
+		"address":{
+			"location":{
+				"lat" : 52.5450597
+				"lon" : 13.354541
+				},
+		},
+}
+"4147054122": {
+		"address":{
+			"location":{
+				"lat" : 52.545136
+				"lon" : 13.3545086
+				},
+		},
+}
+"4147054140": {
+		"address":{
+			"location":{
+				"lat" : 52.5453324
+				"lon" : 13.3550038
+				},
+		},
+}
+"4147054143": {
+		"address":{
+			"location":{
+				"lat" : 52.5453632
+				"lon" : 13.3549607
+				},
+		},
+}
+"4147054149": {
+		"address":{
+			"location":{
+				"lat" : 52.5453853
+				"lon" : 13.355003
+				},
+		},
+}
+"4147054150": {
+		"address":{
+			"location":{
+				"lat" : 52.5453879
+				"lon" : 13.355008
+				},
+		},
+}
+"4147054186": {
+		"address":{
+			"location":{
+				"lat" : 52.5455732
+				"lon" : 13.3555242
+				},
+		},
+}
+"4147054188": {
+		"address":{
+			"location":{
+				"lat" : 52.5455799
+				"lon" : 13.3555147
+				},
+		},
+}
+"4147054493": {
+		"address":{
+			"location":{
+				"lat" : 52.5455961
+				"lon" : 13.3555676
+				},
+		},
+}
+"4147054507": {
+		"address":{
+			"location":{
+				"lat" : 52.5456406
+				"lon" : 13.3554964
+				},
+		},
+}
+"4149568296": {
+		"address":{
+			"location":{
+				"lat" : 52.5450224
+				"lon" : 13.3545933
+				},
+		},
+}
+"4149568298": {
+		"address":{
+			"location":{
+				"lat" : 52.5450311
+				"lon" : 13.3545811
+				},
+		},
+}
+"4149568304": {
+		"address":{
+			"location":{
+				"lat" : 52.5450541
+				"lon" : 13.3546252
+				},
+		},
+}
+"4149568306": {
+		"address":{
+			"location":{
+				"lat" : 52.5450651
+				"lon" : 13.3545315
+				},
+		},
+}
+"4149568310": {
+		"address":{
+			"location":{
+				"lat" : 52.5450886
+				"lon" : 13.3545766
+				},
+		},
+}
+"4149568313": {
+		"address":{
+			"location":{
+				"lat" : 52.5451362
+				"lon" : 13.3545091
+				},
+		},
+}
+"4149568318": {
+		"address":{
+			"location":{
+				"lat" : 52.5452621
+				"lon" : 13.3551029
+				},
+		},
+}
+"4149568322": {
+		"address":{
+			"location":{
+				"lat" : 52.5452809
+				"lon" : 13.3550763
+				},
+		},
+}
+"4149568323": {
+		"address":{
+			"location":{
+				"lat" : 52.5452865
+				"lon" : 13.3551502
+				},
+		},
+}
+"4149568328": {
+		"address":{
+			"location":{
+				"lat" : 52.5453052
+				"lon" : 13.3551239
+				},
+		},
+}
+"4149568331": {
+		"address":{
+			"location":{
+				"lat" : 52.5453387
+				"lon" : 13.3550767
+				},
+		},
+}
+"4149568353": {
+		"address":{
+			"location":{
+				"lat" : 52.5455374
+				"lon" : 13.3555744
+				},
+		},
+}
+"4149568356": {
+		"address":{
+			"location":{
+				"lat" : 52.5455437
+				"lon" : 13.3556424
+				},
+		},
+}
+"4149568358": {
+		"address":{
+			"location":{
+				"lat" : 52.5455603
+				"lon" : 13.3556185
+				},
+		},
+}
+"4153530650": {
+		"address":{
+			"location":{
+				"lat" : 52.5450524
+				"lon" : 13.3546511
+				},
+		},
+}
+"4153530664": {
+		"address":{
+			"location":{
+				"lat" : 52.5450899
+				"lon" : 13.3545985
+				},
+		},
+}
+"4153530687": {
+		"address":{
+			"location":{
+				"lat" : 52.5451434
+				"lon" : 13.3545229
+				},
+		},
+}
+"4153538839": {
+		"address":{
+			"location":{
+				"lat" : 52.5453033
+				"lon" : 13.3551458
+				},
+		},
+}
+"4153538842": {
+		"address":{
+			"location":{
+				"lat" : 52.5453106
+				"lon" : 13.3550346
+				},
+		},
+}
+"4153538855": {
+		"address":{
+			"location":{
+				"lat" : 52.5453408
+				"lon" : 13.3550936
+				},
+		},
+}
+"4153538865": {
+		"address":{
+			"location":{
+				"lat" : 52.5453692
+				"lon" : 13.3550537
+				},
+		},
+}
+"4153538869": {
+		"address":{
+			"location":{
+				"lat" : 52.5453938
+				"lon" : 13.3550194
+				},
+		},
+}
+"4153539015": {
+		"address":{
+			"location":{
+				"lat" : 52.5455286
+				"lon" : 13.3555872
+				},
+		},
+}
+"4153539031": {
+		"address":{
+			"location":{
+				"lat" : 52.5455559
+				"lon" : 13.3556401
+				},
+		},
+}
+"4153539034": {
+		"address":{
+			"location":{
+				"lat" : 52.5455651
+				"lon" : 13.3555351
+				},
+		},
+}
+"4153539047": {
+		"address":{
+			"location":{
+				"lat" : 52.5455926
+				"lon" : 13.3555882
+				},
+		},
+}
+"4153539061": {
+		"address":{
+			"location":{
+				"lat" : 52.5456475
+				"lon" : 13.3555111
+				},
+		},
+}
+"4153627717": {
+		"address":{
+			"location":{
+				"lat" : 52.543523
+				"lon" : 13.3511331
+				},
+		},
+}
+"4153832996": {
+		"address":{
+			"location":{
+				"lat" : 52.5435211
+				"lon" : 13.3511293
+				},
+		},
+}
+"4169900689": {
+		"address":{
+			"location":{
+				"lat" : 52.501262
+				"lon" : 13.3911455
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"opening_hours": "24/7"
+		"wheelchair": "yes"
+		},
+}
+"4172772889": {
+		"address":{
+			"location":{
+				"lat" : 52.475576
+				"lon" : 13.524203
+				},
+		},
+}
+"4178851014": {
+		"address":{
+			"location":{
+				"lat" : 52.5430154
+				"lon" : 13.3501546
+				},
+		},
+}
+"4178851015": {
+		"address":{
+			"location":{
+				"lat" : 52.5430209
+				"lon" : 13.3501655
+				},
+		},
+}
+"4178851016": {
+		"address":{
+			"location":{
+				"lat" : 52.5430408
+				"lon" : 13.3502045
+				},
+		},
+}
+"4178851017": {
+		"address":{
+			"location":{
+				"lat" : 52.5430464
+				"lon" : 13.3502152
+				},
+		},
+}
+"4178884559": {
+		"address":{
+			"location":{
+				"lat" : 52.5435259
+				"lon" : 13.3511384
+				},
+		},
+}
+"4178884560": {
+		"address":{
+			"location":{
+				"lat" : 52.5435316
+				"lon" : 13.3511492
+				},
+		},
+}
+"4178884561": {
+		"address":{
+			"location":{
+				"lat" : 52.5435388
+				"lon" : 13.3511629
+				},
+		},
+}
+"4178884562": {
+		"address":{
+			"location":{
+				"lat" : 52.5435448
+				"lon" : 13.3511742
+				},
+		},
+}
+"4178884563": {
+		"address":{
+			"location":{
+				"lat" : 52.5435493
+				"lon" : 13.3511828
+				},
+		},
+}
+"4178884564": {
+		"address":{
+			"location":{
+				"lat" : 52.543555
+				"lon" : 13.3511936
+				},
+		},
+}
+"4179020025": {
+		"address":{
+			"location":{
+				"lat" : 52.5430151
+				"lon" : 13.3501538
+				},
+		},
+}
+"4179020026": {
+		"address":{
+			"location":{
+				"lat" : 52.5430207
+				"lon" : 13.3501646
+				},
+		},
+}
+"4179020027": {
+		"address":{
+			"location":{
+				"lat" : 52.5430419
+				"lon" : 13.3502056
+				},
+		},
+}
+"4179020028": {
+		"address":{
+			"location":{
+				"lat" : 52.5430475
+				"lon" : 13.3502164
+				},
+		},
+}
+"4179176758": {
+		"address":{
+			"location":{
+				"lat" : 52.5434994
+				"lon" : 13.3510863
+				},
+		},
+}
+"4179176759": {
+		"address":{
+			"location":{
+				"lat" : 52.543505
+				"lon" : 13.3510971
+				},
+		},
+}
+"4179176761": {
+		"address":{
+			"location":{
+				"lat" : 52.5435376
+				"lon" : 13.3511594
+				},
+		},
+}
+"4179176762": {
+		"address":{
+			"location":{
+				"lat" : 52.5435436
+				"lon" : 13.3511708
+				},
+		},
+}
+"4179176763": {
+		"address":{
+			"location":{
+				"lat" : 52.5435483
+				"lon" : 13.3511799
+				},
+		},
+}
+"4179176764": {
+		"address":{
+			"location":{
+				"lat" : 52.5435544
+				"lon" : 13.3511916
+				},
+		},
+}
+"4179239558": {
+		"address":{
+			"location":{
+				"lat" : 52.5435346
+				"lon" : 13.3511555
+				},
+		},
+}
+"4179239566": {
+		"address":{
+			"location":{
+				"lat" : 52.5435697
+				"lon" : 13.3510601
+				},
+		},
+}
+"4179239567": {
+		"address":{
+			"location":{
+				"lat" : 52.5435831
+				"lon" : 13.3510857
+				},
+		},
+}
+"4193594583": {
+		"address":{
+			"location":{
+				"lat" : 52.5435222
+				"lon" : 13.3511318
+				},
+		},
+}
+"4193594584": {
+		"address":{
+			"location":{
+				"lat" : 52.5435706
+				"lon" : 13.351062
+				},
+		},
+}
+"4194109597": {
+		"address":{
+			"location":{
+				"lat" : 52.5435224
+				"lon" : 13.3511321
+				},
+		},
+}
+"4194109598": {
+		"address":{
+			"location":{
+				"lat" : 52.5435704
+				"lon" : 13.3510623
+				},
+		},
+}
+"4198414181": {
+		"address":{
+			"location":{
+				"lat" : 52.5448308
+				"lon" : 13.355081
+				},
+		},
+}
+"4198414182": {
+		"address":{
+			"location":{
+				"lat" : 52.5448438
+				"lon" : 13.355063
+				},
+		},
+}
+"4199011805": {
+		"address":{
+			"location":{
+				"lat" : 52.5415861
+				"lon" : 13.3699799
+				},
+		},
+}
+"4199011806": {
+		"address":{
+			"location":{
+				"lat" : 52.5415905
+				"lon" : 13.3699808
+				},
+		},
+}
+"4199011807": {
+		"address":{
+			"location":{
+				"lat" : 52.5415934
+				"lon" : 13.3699808
+				},
+		},
+}
+"4199011808": {
+		"address":{
+			"location":{
+				"lat" : 52.5415962
+				"lon" : 13.3699821
+				},
+		},
+}
+"4199011810": {
+		"address":{
+			"location":{
+				"lat" : 52.5415986
+				"lon" : 13.3699845
+				},
+		},
+}
+"4199011811": {
+		"address":{
+			"location":{
+				"lat" : 52.5416007
+				"lon" : 13.369988
+				},
+		},
+}
+"4199011812": {
+		"address":{
+			"location":{
+				"lat" : 52.5416022
+				"lon" : 13.3699921
+				},
+		},
+}
+"4199011813": {
+		"address":{
+			"location":{
+				"lat" : 52.5416029
+				"lon" : 13.3699968
+				},
+		},
+}
+"4199011814": {
+		"address":{
+			"location":{
+				"lat" : 52.5416029
+				"lon" : 13.3700016
+				},
+		},
+}
+"4217521312": {
+		"address":{
+			"location":{
+				"lat" : 52.5456402
+				"lon" : 13.3554968
+				},
+		},
+}
+"4217521313": {
+		"address":{
+			"location":{
+				"lat" : 52.5456409
+				"lon" : 13.3555204
+				},
+		},
+}
+"4217598140": {
+		"address":{
+			"location":{
+				"lat" : 52.5450756
+				"lon" : 13.3546185
+				},
+		},
+}
+"4217598141": {
+		"address":{
+			"location":{
+				"lat" : 52.5450815
+				"lon" : 13.3546102
+				},
+		},
+}
+"4217598142": {
+		"address":{
+			"location":{
+				"lat" : 52.5450963
+				"lon" : 13.3545895
+				},
+		},
+}
+"4217598143": {
+		"address":{
+			"location":{
+				"lat" : 52.5451021
+				"lon" : 13.3545812
+				},
+		},
+}
+"4218712245": {
+		"address":{
+			"location":{
+				"lat" : 52.5133798
+				"lon" : 13.2305092
+				},
+		"fee": "no"
+		},
+}
+"4225421094": {
+		"address":{
+			"location":{
+				"lat" : 52.543114
+				"lon" : 13.291179
+				},
+		},
+}
+"4233705445": {
+		"address":{
+			"location":{
+				"lat" : 52.5342736
+				"lon" : 13.1981988
+				},
+		},
+}
+"4233705450": {
+		"address":{
+			"location":{
+				"lat" : 52.5342985
+				"lon" : 13.1980576
+				},
+		},
+}
+"4233705452": {
+		"address":{
+			"location":{
+				"lat" : 52.5343015
+				"lon" : 13.1982121
+				},
+		},
+}
+"4233705456": {
+		"address":{
+			"location":{
+				"lat" : 52.5343254
+				"lon" : 13.1980703
+				},
+		},
+}
+"4239735855": {
+		"address":{
+			"location":{
+				"lat" : 52.5791432
+				"lon" : 13.4817053
+				},
+		},
+}
+"4253085066": {
+		"address":{
+			"location":{
+				"lat" : 52.4853355
+				"lon" : 13.4800239
+				},
+		"fee": "yes"
+		},
+}
+"4256164991": {
+		"address":{
+			"location":{
+				"lat" : 52.550377
+				"lon" : 13.3515928
+				},
+		},
+}
+"4267091448": {
+		"address":{
+			"location":{
+				"lat" : 52.5338737
+				"lon" : 13.3843208
+				},
+		"fee": "no"
+		"name": "Damen-WC"
+		},
+}
+"4267091449": {
+		"address":{
+			"location":{
+				"lat" : 52.5338236
+				"lon" : 13.3843725
+				},
+		"fee": "no"
+		"name": "Herren-WC"
+		},
+}
+"4267091856": {
+		"address":{
+			"location":{
+				"lat" : 52.5336351
+				"lon" : 13.3843933
+				},
+		"name": "Lodge WC"
+		},
+}
+"4286130005": {
+		"address":{
+			"location":{
+				"lat" : 52.5128207
+				"lon" : 13.3928357
+				},
+		"fee": "no"
+		"wheelchair": "no"
+		"opening_hours": "May-Sep: 10:00-19:00; Oct-Apr 10:00-18:00"
+		},
+}
+"4290134620": {
+		"address":{
+			"location":{
+				"lat" : 52.479954
+				"lon" : 13.4171149
+				},
+		"fee": "no"
+		},
+}
+"4294674699": {
+		"address":{
+			"location":{
+				"lat" : 52.556563
+				"lon" : 13.362559
+				},
+		"wheelchair": "yes"
+		},
+}
+"4296007992": {
+		"address":{
+			"location":{
+				"lat" : 52.4956998
+				"lon" : 13.4810618
+				},
+		"fee": "no"
+		"wheelchair": "yes"
+		},
+}
+"4302091804": {
+		"address":{
+			"location":{
+				"lat" : 52.5092332
+				"lon" : 13.4973377
+				},
+		},
+}
+"4302091810": {
+		"address":{
+			"location":{
+				"lat" : 52.5092499
+				"lon" : 13.4972684
+				},
+		},
+}
+"4302091819": {
+		"address":{
+			"location":{
+				"lat" : 52.5092694
+				"lon" : 13.4972811
+				},
+		},
+}
+"4308868164": {
+		"address":{
+			"location":{
+				"lat" : 52.5090584
+				"lon" : 13.4307258
+				},
+		},
+}
+"4317555799": {
+		"address":{
+			"location":{
+				"lat" : 52.549541
+				"lon" : 13.3888535
+				},
+		"fee": "yes"
+		},
+}
+"4317555800": {
+		"address":{
+			"location":{
+				"lat" : 52.5495428
+				"lon" : 13.3889238
+				},
+		},
+}
+"4339502620": {
+		"address":{
+			"location":{
+				"lat" : 52.4933749
+				"lon" : 13.4633273
+				},
+		},
+}
+"4351255327": {
+		"address":{
+			"location":{
+				"lat" : 52.6108952
+				"lon" : 13.3026807
+				},
+		"fee": "no"
+		"wheelchair": "no"
+		},
+}
+"4351511612": {
+		"address":{
+			"location":{
+				"lat" : 52.5478499
+				"lon" : 13.3609798
+				},
+		},
+}
+"4359607233": {
+		"address":{
+			"location":{
+				"lat" : 52.519856
+				"lon" : 13.2939325
+				},
+		"name": "Toilette"
+		},
+}
+"4359607234": {
+		"address":{
+			"location":{
+				"lat" : 52.5199407
+				"lon" : 13.2931103
+				},
+		"name": "Toilette"
+		},
+}
+"4375761913": {
+		"address":{
+			"location":{
+				"lat" : 52.6161641
+				"lon" : 13.3074565
+				},
+		},
+}
+"4375761914": {
+		"address":{
+			"location":{
+				"lat" : 52.6161653
+				"lon" : 13.3074897
+				},
+		},
+}
+"4375761915": {
+		"address":{
+			"location":{
+				"lat" : 52.6161832
+				"lon" : 13.3074394
+				},
+		},
+}
+"4375761916": {
+		"address":{
+			"location":{
+				"lat" : 52.6161855
+				"lon" : 13.3075051
+				},
+		},
+}
+"4375761917": {
+		"address":{
+			"location":{
+				"lat" : 52.6162013
+				"lon" : 13.3074545
+				},
+		},
+}
+"4375761918": {
+		"address":{
+			"location":{
+				"lat" : 52.6162021
+				"lon" : 13.307489
+				},
+		},
+}
+"4381117581": {
+		"address":{
+			"location":{
+				"lat" : 52.4984962
+				"lon" : 13.5235963
+				},
+		"wheelchair": "yes"
+		},
+}
+"4389473677": {
+		"address":{
+			"location":{
+				"lat" : 52.5244986
+				"lon" : 13.3681344
+				},
+		"fee": "yes"
+		"wheelchair": "no"
+		},
+}
+"4396258268": {
+		"address":{
+			"location":{
+				"lat" : 52.5422056
+				"lon" : 13.5007473
+				},
+		},
+}
+"4400885119": {
+		"address":{
+			"location":{
+				"lat" : 52.5011369
+				"lon" : 13.271534
+				},
+		},
+}
+"4400885121": {
+		"address":{
+			"location":{
+				"lat" : 52.5011713
+				"lon" : 13.2715772
+				},
+		},
+}
+"4400885122": {
+		"address":{
+			"location":{
+				"lat" : 52.5011863
+				"lon" : 13.2714279
+				},
+		},
+}
+"4400885123": {
+		"address":{
+			"location":{
+				"lat" : 52.5011883
+				"lon" : 13.2715986
+				},
+		},
+}
+"4400885124": {
+		"address":{
+			"location":{
+				"lat" : 52.5012053
+				"lon" : 13.27162
+				},
+		},
+}
+"4400885125": {
+		"address":{
+			"location":{
+				"lat" : 52.501221
+				"lon" : 13.2715283
+				},
+		},
+}
+"4400885126": {
+		"address":{
+			"location":{
+				"lat" : 52.5012377
+				"lon" : 13.2714926
+				},
+		},
+}
+"4400885127": {
+		"address":{
+			"location":{
+				"lat" : 52.5012631
+				"lon" : 13.2716928
+				},
+		},
+}
+"4400885129": {
+		"address":{
+			"location":{
+				"lat" : 52.5012959
+				"lon" : 13.2716225
+				},
+		},
+}
+"4400885135": {
+		"address":{
+			"location":{
+				"lat" : 52.5017283
+				"lon" : 13.2722909
+				},
+		},
+}
+"4400885137": {
+		"address":{
+			"location":{
+				"lat" : 52.501765
+				"lon" : 13.2723372
+				},
+		},
+}
+"4400885138": {
+		"address":{
+			"location":{
+				"lat" : 52.5017714
+				"lon" : 13.2723453
+				},
+		},
+}
+"4400885139": {
+		"address":{
+			"location":{
+				"lat" : 52.5017771
+				"lon" : 13.2723525
+				},
+		},
+}
+"4400885140": {
+		"address":{
+			"location":{
+				"lat" : 52.5017813
+				"lon" : 13.2721777
+				},
+		},
+}
+"4400885141": {
+		"address":{
+			"location":{
+				"lat" : 52.5018141
+				"lon" : 13.2723993
+				},
+		},
+}
+"4400885142": {
+		"address":{
+			"location":{
+				"lat" : 52.5018244
+				"lon" : 13.2722321
+				},
+		},
+}
+"4400885145": {
+		"address":{
+			"location":{
+				"lat" : 52.5018671
+				"lon" : 13.2722861
+				},
+		},
+}
+"4400885151": {
+		"address":{
+			"location":{
+				"lat" : 52.5024279
+				"lon" : 13.2687705
+				},
+		},
+}
+"4400885152": {
+		"address":{
+			"location":{
+				"lat" : 52.5024805
+				"lon" : 13.2686577
+				},
+		},
+}
+"4400885153": {
+		"address":{
+			"location":{
+				"lat" : 52.5024797
+				"lon" : 13.2688357
+				},
+		},
+}
+"4400885155": {
+		"address":{
+			"location":{
+				"lat" : 52.5025001
+				"lon" : 13.2687919
+				},
+		},
+}
+"4400885157": {
+		"address":{
+			"location":{
+				"lat" : 52.502516
+				"lon" : 13.2687024
+				},
+		},
+}
+"4400885158": {
+		"address":{
+			"location":{
+				"lat" : 52.5025323
+				"lon" : 13.268723
+				},
+		},
+}
+"4400885159": {
+		"address":{
+			"location":{
+				"lat" : 52.5025494
+				"lon" : 13.2687445
+				},
+		},
+}
+"4400885160": {
+		"address":{
+			"location":{
+				"lat" : 52.5025745
+				"lon" : 13.2688855
+				},
+		},
+}
+"4400885162": {
+		"address":{
+			"location":{
+				"lat" : 52.5026066
+				"lon" : 13.2688166
+				},
+		},
+}
+"4400885172": {
+		"address":{
+			"location":{
+				"lat" : 52.5030219
+				"lon" : 13.2695192
+				},
+		},
+}
+"4400885173": {
+		"address":{
+			"location":{
+				"lat" : 52.503064
+				"lon" : 13.2695722
+				},
+		},
+}
+"4400885174": {
+		"address":{
+			"location":{
+				"lat" : 52.5030761
+				"lon" : 13.269403
+				},
+		},
+}
+"4400885176": {
+		"address":{
+			"location":{
+				"lat" : 52.5031067
+				"lon" : 13.2696261
+				},
+		},
+}
+"4400885177": {
+		"address":{
+			"location":{
+				"lat" : 52.5031127
+				"lon" : 13.2694493
+				},
+		},
+}
+"4400885178": {
+		"address":{
+			"location":{
+				"lat" : 52.5031182
+				"lon" : 13.2694563
+				},
+		},
+}
+"4400885180": {
+		"address":{
+			"location":{
+				"lat" : 52.503125
+				"lon" : 13.2694649
+				},
+		},
+}
+"4400885181": {
+		"address":{
+			"location":{
+				"lat" : 52.5031609
+				"lon" : 13.2695102
+				},
+		},
+}
+"4400932051": {
+		"address":{
+			"location":{
+				"lat" : 52.5011368
+				"lon" : 13.2715341
+				},
+		},
+}
+"4400932053": {
+		"address":{
+			"location":{
+				"lat" : 52.5011712
+				"lon" : 13.2715773
+				},
+		},
+}
+"4400932054": {
+		"address":{
+			"location":{
+				"lat" : 52.5011859
+				"lon" : 13.2714288
+				},
+		},
+}
+"4400932055": {
+		"address":{
+			"location":{
+				"lat" : 52.5011882
+				"lon" : 13.2715987
+				},
+		},
+}
+"4400932056": {
+		"address":{
+			"location":{
+				"lat" : 52.5012052
+				"lon" : 13.2716201
+				},
+		},
+}
+"4400932057": {
+		"address":{
+			"location":{
+				"lat" : 52.501221
+				"lon" : 13.2715284
+				},
+		},
+}
+"4400932058": {
+		"address":{
+			"location":{
+				"lat" : 52.5012373
+				"lon" : 13.2714934
+				},
+		},
+}
+"4400932059": {
+		"address":{
+			"location":{
+				"lat" : 52.5012631
+				"lon" : 13.2716929
+				},
+		},
+}
+"4400932061": {
+		"address":{
+			"location":{
+				"lat" : 52.5012959
+				"lon" : 13.2716226
+				},
+		},
+}
+"4400932065": {
+		"address":{
+			"location":{
+				"lat" : 52.5017289
+				"lon" : 13.2722918
+				},
+		},
+}
+"4400932067": {
+		"address":{
+			"location":{
+				"lat" : 52.501765
+				"lon" : 13.2723373
+				},
+		},
+}
+"4400932069": {
+		"address":{
+			"location":{
+				"lat" : 52.5017772
+				"lon" : 13.2723526
+				},
+		},
+}
+"4400932071": {
+		"address":{
+			"location":{
+				"lat" : 52.5018142
+				"lon" : 13.2723993
+				},
+		},
+}
+"4400932077": {
+		"address":{
+			"location":{
+				"lat" : 52.5024278
+				"lon" : 13.2687697
+				},
+		},
+}
+"4400932078": {
+		"address":{
+			"location":{
+				"lat" : 52.5024804
+				"lon" : 13.2686572
+				},
+		},
+}
+"4400932079": {
+		"address":{
+			"location":{
+				"lat" : 52.5024798
+				"lon" : 13.2688352
+				},
+		},
+}
+"4400932081": {
+		"address":{
+			"location":{
+				"lat" : 52.5025002
+				"lon" : 13.2687915
+				},
+		},
+}
+"4400932082": {
+		"address":{
+			"location":{
+				"lat" : 52.5025162
+				"lon" : 13.2687024
+				},
+		},
+}
+"4400932084": {
+		"address":{
+			"location":{
+				"lat" : 52.5025323
+				"lon" : 13.2687227
+				},
+		},
+}
+"4400932085": {
+		"address":{
+			"location":{
+				"lat" : 52.5025496
+				"lon" : 13.2687445
+				},
+		},
+}
+"4400932086": {
+		"address":{
+			"location":{
+				"lat" : 52.5025747
+				"lon" : 13.2688855
+				},
+		},
+}
+"4400932087": {
+		"address":{
+			"location":{
+				"lat" : 52.5026069
+				"lon" : 13.2688167
+				},
+		},
+}
+"4400935991": {
+		"address":{
+			"location":{
+				"lat" : 52.5030228
+				"lon" : 13.2695192
+				},
+		},
+}
+"4400935992": {
+		"address":{
+			"location":{
+				"lat" : 52.5030643
+				"lon" : 13.2695715
+				},
+		},
+}
+"4400935993": {
+		"address":{
+			"location":{
+				"lat" : 52.5030764
+				"lon" : 13.2694031
+				},
+		},
+}
+"4400935995": {
+		"address":{
+			"location":{
+				"lat" : 52.503107
+				"lon" : 13.2696254
+				},
+		},
+}
+"4400935996": {
+		"address":{
+			"location":{
+				"lat" : 52.5031128
+				"lon" : 13.269449
+				},
+		},
+}
+"4400935997": {
+		"address":{
+			"location":{
+				"lat" : 52.5031183
+				"lon" : 13.2694559
+				},
+		},
+}
+"4400935999": {
+		"address":{
+			"location":{
+				"lat" : 52.5031251
+				"lon" : 13.2694645
+				},
+		},
+}
+"4400936000": {
+		"address":{
+			"location":{
+				"lat" : 52.503161
+				"lon" : 13.2695097
+				},
+		},
+}
+"4402299889": {
+		"address":{
+			"location":{
+				"lat" : 52.5153304
+				"lon" : 13.3949409
+				},
+		},
+}
+"4404131260": {
+		"address":{
+			"location":{
+				"lat" : 52.4538202
+				"lon" : 13.3081832
+				},
+		},
+}
+"4404131263": {
+		"address":{
+			"location":{
+				"lat" : 52.4538456
+				"lon" : 13.3082435
+				},
+		},
+}
+"4404131264": {
+		"address":{
+			"location":{
+				"lat" : 52.4538815
+				"lon" : 13.3081136
+				},
+		},
+}
+"4404131266": {
+		"address":{
+			"location":{
+				"lat" : 52.4539069
+				"lon" : 13.3081738
+				},
+		},
+}
+"4404264492": {
+		"address":{
+			"location":{
+				"lat" : 52.4985993
+				"lon" : 13.4182275
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"opening_hours": "24/7"
+		"wheelchair": "yes"
+		},
+}
+"4421726697": {
+		"address":{
+			"location":{
+				"lat" : 52.545091
+				"lon" : 13.3545722
+				},
+		},
+}
+"4421726699": {
+		"address":{
+			"location":{
+				"lat" : 52.5450974
+				"lon" : 13.3545631
+				},
+		},
+}
+"4424265982": {
+		"address":{
+			"location":{
+				"lat" : 52.5456048
+				"lon" : 13.3555553
+				},
+		},
+}
+"4424265984": {
+		"address":{
+			"location":{
+				"lat" : 52.5456108
+				"lon" : 13.3555469
+				},
+		},
+}
+"4434724081": {
+		"address":{
+			"location":{
+				"lat" : 52.491938
+				"lon" : 13.2354033
+				},
+		},
+}
+"4439021889": {
+		"address":{
+			"location":{
+				"lat" : 52.5353146
+				"lon" : 13.3895979
+				},
+		},
+}
+"4439303222": {
+		"address":{
+			"location":{
+				"lat" : 52.5426851
+				"lon" : 13.4089902
+				},
+		"fee": "no"
+		},
+}
+"4440688190": {
+		"address":{
+			"location":{
+				"lat" : 52.5065796
+				"lon" : 13.3837553
+				},
+		"fee": "no"
+		},
+}
+"4442805399": {
+		"address":{
+			"location":{
+				"lat" : 52.4776451
+				"lon" : 13.4219454
+				},
+		},
+}
+"4442805400": {
+		"address":{
+			"location":{
+				"lat" : 52.4776481
+				"lon" : 13.4219866
+				},
+		},
+}
+"4442805401": {
+		"address":{
+			"location":{
+				"lat" : 52.477672
+				"lon" : 13.4219402
+				},
+		},
+}
+"4442805402": {
+		"address":{
+			"location":{
+				"lat" : 52.477675
+				"lon" : 13.4219814
+				},
+		},
+}
+"4446281991": {
+		"address":{
+			"location":{
+				"lat" : 52.4825632
+				"lon" : 13.6011244
+				},
+		},
+}
+"4446281992": {
+		"address":{
+			"location":{
+				"lat" : 52.482566
+				"lon" : 13.6011297
+				},
+		},
+}
+"4446281993": {
+		"address":{
+			"location":{
+				"lat" : 52.4825676
+				"lon" : 13.6011361
+				},
+		},
+}
+"4446281994": {
+		"address":{
+			"location":{
+				"lat" : 52.4825456
+				"lon" : 13.6011571
+				},
+		},
+}
+"4446281995": {
+		"address":{
+			"location":{
+				"lat" : 52.4825428
+				"lon" : 13.6011512
+				},
+		},
+}
+"4446281996": {
+		"address":{
+			"location":{
+				"lat" : 52.4825414
+				"lon" : 13.601144
+				},
+		},
+}
+"4446281997": {
+		"address":{
+			"location":{
+				"lat" : 52.4825679
+				"lon" : 13.601143
+				},
+		},
+}
+"4446281998": {
+		"address":{
+			"location":{
+				"lat" : 52.4825669
+				"lon" : 13.6011497
+				},
+		},
+}
+"4446281999": {
+		"address":{
+			"location":{
+				"lat" : 52.4825646
+				"lon" : 13.6011556
+				},
+		},
+}
+"4446282000": {
+		"address":{
+			"location":{
+				"lat" : 52.4825613
+				"lon" : 13.60116
+				},
+		},
+}
+"4446282001": {
+		"address":{
+			"location":{
+				"lat" : 52.4825574
+				"lon" : 13.6011625
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		},
+}
+"4446282002": {
+		"address":{
+			"location":{
+				"lat" : 52.4825531
+				"lon" : 13.6011628
+				},
+		},
+}
+"4446282003": {
+		"address":{
+			"location":{
+				"lat" : 52.4825491
+				"lon" : 13.601161
+				},
+		},
+}
+"4446282004": {
+		"address":{
+			"location":{
+				"lat" : 52.4825416
+				"lon" : 13.6011365
+				},
+		},
+}
+"4446282005": {
+		"address":{
+			"location":{
+				"lat" : 52.4825433
+				"lon" : 13.6011296
+				},
+		},
+}
+"4446282006": {
+		"address":{
+			"location":{
+				"lat" : 52.4825463
+				"lon" : 13.601124
+				},
+		},
+}
+"4446282007": {
+		"address":{
+			"location":{
+				"lat" : 52.4825503
+				"lon" : 13.6011204
+				},
+		},
+}
+"4446282008": {
+		"address":{
+			"location":{
+				"lat" : 52.4825548
+				"lon" : 13.6011192
+				},
+		},
+}
+"4446282009": {
+		"address":{
+			"location":{
+				"lat" : 52.4825593
+				"lon" : 13.6011206
+				},
+		},
+}
+"4446293928": {
+		"address":{
+			"location":{
+				"lat" : 52.5009103
+				"lon" : 13.5473491
+				},
+		},
+}
+"4446293929": {
+		"address":{
+			"location":{
+				"lat" : 52.5009144
+				"lon" : 13.5473444
+				},
+		},
+}
+"4446293930": {
+		"address":{
+			"location":{
+				"lat" : 52.5009173
+				"lon" : 13.5473377
+				},
+		},
+}
+"4446293931": {
+		"address":{
+			"location":{
+				"lat" : 52.5008891
+				"lon" : 13.5473296
+				},
+		},
+}
+"4446293932": {
+		"address":{
+			"location":{
+				"lat" : 52.5008959
+				"lon" : 13.5473476
+				},
+		},
+}
+"4446293933": {
+		"address":{
+			"location":{
+				"lat" : 52.5009005
+				"lon" : 13.5473508
+				},
+		},
+}
+"4446293934": {
+		"address":{
+			"location":{
+				"lat" : 52.5009055
+				"lon" : 13.5473513
+				},
+		},
+}
+"4446293935": {
+		"address":{
+			"location":{
+				"lat" : 52.5008902
+				"lon" : 13.5473366
+				},
+		},
+}
+"4446293936": {
+		"address":{
+			"location":{
+				"lat" : 52.5008926
+				"lon" : 13.5473428
+				},
+		},
+}
+"4446293937": {
+		"address":{
+			"location":{
+				"lat" : 52.5009187
+				"lon" : 13.5473299
+				},
+		},
+}
+"4446293938": {
+		"address":{
+			"location":{
+				"lat" : 52.5009184
+				"lon" : 13.5473217
+				},
+		},
+}
+"4446293939": {
+		"address":{
+			"location":{
+				"lat" : 52.5009166
+				"lon" : 13.5473141
+				},
+		},
+}
+"4446293940": {
+		"address":{
+			"location":{
+				"lat" : 52.5009133
+				"lon" : 13.547308
+				},
+		},
+}
+"4446293941": {
+		"address":{
+			"location":{
+				"lat" : 52.5009089
+				"lon" : 13.5473039
+				},
+		},
+}
+"4446293942": {
+		"address":{
+			"location":{
+				"lat" : 52.500904
+				"lon" : 13.5473025
+				},
+		},
+}
+"4446293943": {
+		"address":{
+			"location":{
+				"lat" : 52.5008991
+				"lon" : 13.5473039
+				},
+		},
+}
+"4446293944": {
+		"address":{
+			"location":{
+				"lat" : 52.5008947
+				"lon" : 13.5473078
+				},
+		},
+}
+"4446293945": {
+		"address":{
+			"location":{
+				"lat" : 52.5008913
+				"lon" : 13.5473139
+				},
+		},
+}
+"4446293946": {
+		"address":{
+			"location":{
+				"lat" : 52.5008894
+				"lon" : 13.5473215
+				},
+		},
+}
+"4446301674": {
+		"address":{
+			"location":{
+				"lat" : 52.5235329
+				"lon" : 13.4329749
+				},
+		},
+}
+"4446301675": {
+		"address":{
+			"location":{
+				"lat" : 52.5235289
+				"lon" : 13.4329704
+				},
+		},
+}
+"4446301676": {
+		"address":{
+			"location":{
+				"lat" : 52.5235241
+				"lon" : 13.4329684
+				},
+		},
+}
+"4446301677": {
+		"address":{
+			"location":{
+				"lat" : 52.5235088
+				"lon" : 13.4330004
+				},
+		},
+}
+"4446301678": {
+		"address":{
+			"location":{
+				"lat" : 52.5235111
+				"lon" : 13.4330074
+				},
+		},
+}
+"4446301679": {
+		"address":{
+			"location":{
+				"lat" : 52.5235147
+				"lon" : 13.4330129
+				},
+		},
+}
+"4446301680": {
+		"address":{
+			"location":{
+				"lat" : 52.5235191
+				"lon" : 13.4330161
+				},
+		},
+}
+"4446301681": {
+		"address":{
+			"location":{
+				"lat" : 52.5235193
+				"lon" : 13.432969
+				},
+		},
+}
+"4446301682": {
+		"address":{
+			"location":{
+				"lat" : 52.5235148
+				"lon" : 13.4329722
+				},
+		},
+}
+"4446301683": {
+		"address":{
+			"location":{
+				"lat" : 52.5235112
+				"lon" : 13.4329776
+				},
+		},
+}
+"4446301684": {
+		"address":{
+			"location":{
+				"lat" : 52.5235089
+				"lon" : 13.4329846
+				},
+		},
+}
+"4446301685": {
+		"address":{
+			"location":{
+				"lat" : 52.5235081
+				"lon" : 13.4329925
+				},
+		},
+}
+"4446301686": {
+		"address":{
+			"location":{
+				"lat" : 52.523524
+				"lon" : 13.4330168
+				},
+		},
+}
+"4446301687": {
+		"address":{
+			"location":{
+				"lat" : 52.5235287
+				"lon" : 13.4330149
+				},
+		},
+}
+"4446301688": {
+		"address":{
+			"location":{
+				"lat" : 52.5235328
+				"lon" : 13.4330105
+				},
+		},
+}
+"4446303389": {
+		"address":{
+			"location":{
+				"lat" : 52.5235358
+				"lon" : 13.4330043
+				},
+		},
+}
+"4446303390": {
+		"address":{
+			"location":{
+				"lat" : 52.5235374
+				"lon" : 13.4329968
+				},
+		},
+}
+"4446303391": {
+		"address":{
+			"location":{
+				"lat" : 52.5235374
+				"lon" : 13.4329888
+				},
+		},
+}
+"4446303392": {
+		"address":{
+			"location":{
+				"lat" : 52.5235359
+				"lon" : 13.4329812
+				},
+		},
+}
+"4455740291": {
+		"address":{
+			"location":{
+				"lat" : 52.5435222
+				"lon" : 13.3511317
+				},
+		},
+}
+"4455740292": {
+		"address":{
+			"location":{
+				"lat" : 52.543571
+				"lon" : 13.3510626
+				},
+		},
+}
+"4456665970": {
+		"address":{
+			"location":{
+				"lat" : 52.4401756
+				"lon" : 13.3878859
+				},
+		},
+}
+"4456665971": {
+		"address":{
+			"location":{
+				"lat" : 52.4401716
+				"lon" : 13.3878825
+				},
+		},
+}
+"4456665972": {
+		"address":{
+			"location":{
+				"lat" : 52.4401672
+				"lon" : 13.3878813
+				},
+		},
+}
+"4456665973": {
+		"address":{
+			"location":{
+				"lat" : 52.4401627
+				"lon" : 13.3878825
+				},
+		},
+}
+"4456665974": {
+		"address":{
+			"location":{
+				"lat" : 52.4401593
+				"lon" : 13.3879241
+				},
+		},
+}
+"4456665975": {
+		"address":{
+			"location":{
+				"lat" : 52.4401637
+				"lon" : 13.3879273
+				},
+		},
+}
+"4456665976": {
+		"address":{
+			"location":{
+				"lat" : 52.4401686
+				"lon" : 13.3879279
+				},
+		},
+}
+"4456665977": {
+		"address":{
+			"location":{
+				"lat" : 52.4401732
+				"lon" : 13.3879258
+				},
+		},
+}
+"4456665978": {
+		"address":{
+			"location":{
+				"lat" : 52.4401772
+				"lon" : 13.3879212
+				},
+		},
+}
+"4456665979": {
+		"address":{
+			"location":{
+				"lat" : 52.4401587
+				"lon" : 13.3878859
+				},
+		},
+}
+"4456665980": {
+		"address":{
+			"location":{
+				"lat" : 52.4401555
+				"lon" : 13.3878912
+				},
+		},
+}
+"4456665981": {
+		"address":{
+			"location":{
+				"lat" : 52.4401536
+				"lon" : 13.3878979
+				},
+		},
+}
+"4456665982": {
+		"address":{
+			"location":{
+				"lat" : 52.440153
+				"lon" : 13.3879052
+				},
+		},
+}
+"4456665983": {
+		"address":{
+			"location":{
+				"lat" : 52.4401538
+				"lon" : 13.3879125
+				},
+		},
+}
+"4456665984": {
+		"address":{
+			"location":{
+				"lat" : 52.440156
+				"lon" : 13.387919
+				},
+		},
+}
+"4456665985": {
+		"address":{
+			"location":{
+				"lat" : 52.44018
+				"lon" : 13.3879146
+				},
+		},
+}
+"4456665986": {
+		"address":{
+			"location":{
+				"lat" : 52.4401813
+				"lon" : 13.387907
+				},
+		},
+}
+"4456665987": {
+		"address":{
+			"location":{
+				"lat" : 52.440181
+				"lon" : 13.387899
+				},
+		},
+}
+"4456665988": {
+		"address":{
+			"location":{
+				"lat" : 52.440179
+				"lon" : 13.3878917
+				},
+		},
+}
+"4495746645": {
+		"address":{
+			"location":{
+				"lat" : 52.4737126
+				"lon" : 13.4409186
+				},
+		},
+}
+"4495746646": {
+		"address":{
+			"location":{
+				"lat" : 52.473708
+				"lon" : 13.4409313
+				},
+		},
+}
+"4495746647": {
+		"address":{
+			"location":{
+				"lat" : 52.4736992
+				"lon" : 13.440935
+				},
+		},
+}
+"4495746648": {
+		"address":{
+			"location":{
+				"lat" : 52.4736914
+				"lon" : 13.4409274
+				},
+		},
+}
+"4495746649": {
+		"address":{
+			"location":{
+				"lat" : 52.4736892
+				"lon" : 13.440913
+				},
+		},
+}
+"4495746650": {
+		"address":{
+			"location":{
+				"lat" : 52.4736938
+				"lon" : 13.4409002
+				},
+		},
+}
+"4495746651": {
+		"address":{
+			"location":{
+				"lat" : 52.4737026
+				"lon" : 13.4408966
+				},
+		},
+}
+"4495746652": {
+		"address":{
+			"location":{
+				"lat" : 52.4737104
+				"lon" : 13.4409042
+				},
+		},
+}
+"4497060854": {
+		"address":{
+			"location":{
+				"lat" : 52.5244015
+				"lon" : 13.4426267
+				},
+		},
+}
+"4515616431": {
+		"address":{
+			"location":{
+				"lat" : 52.5455545
+				"lon" : 13.4942012
+				},
+		},
+}
+"4515616432": {
+		"address":{
+			"location":{
+				"lat" : 52.5455553
+				"lon" : 13.4942144
+				},
+		},
+}
+"4515616433": {
+		"address":{
+			"location":{
+				"lat" : 52.54556
+				"lon" : 13.4942209
+				},
+		},
+}
+"4515616434": {
+		"address":{
+			"location":{
+				"lat" : 52.5455606
+				"lon" : 13.4941783
+				},
+		},
+}
+"4515616435": {
+		"address":{
+			"location":{
+				"lat" : 52.5455671
+				"lon" : 13.4942228
+				},
+		},
+}
+"4515616436": {
+		"address":{
+			"location":{
+				"lat" : 52.5455726
+				"lon" : 13.4942155
+				},
+		},
+}
+"4515616437": {
+		"address":{
+			"location":{
+				"lat" : 52.5455786
+				"lon" : 13.4941919
+				},
+		},
+}
+"4520978488": {
+		"address":{
+			"location":{
+				"lat" : 52.5510635
+				"lon" : 13.4305229
+				},
+		},
+}
+"4520980389": {
+		"address":{
+			"location":{
+				"lat" : 52.5510638
+				"lon" : 13.4305106
+				},
+		},
+}
+"4520980390": {
+		"address":{
+			"location":{
+				"lat" : 52.551067
+				"lon" : 13.4305037
+				},
+		},
+}
+"4520980391": {
+		"address":{
+			"location":{
+				"lat" : 52.5510699
+				"lon" : 13.4305302
+				},
+		},
+}
+"4520980392": {
+		"address":{
+			"location":{
+				"lat" : 52.5510745
+				"lon" : 13.430502
+				},
+		},
+}
+"4520980393": {
+		"address":{
+			"location":{
+				"lat" : 52.551077
+				"lon" : 13.4305368
+				},
+		},
+}
+"4520980394": {
+		"address":{
+			"location":{
+				"lat" : 52.5510812
+				"lon" : 13.4305066
+				},
+		},
+}
+"4520980395": {
+		"address":{
+			"location":{
+				"lat" : 52.5510858
+				"lon" : 13.4305358
+				},
+		},
+}
+"4520980396": {
+		"address":{
+			"location":{
+				"lat" : 52.5510867
+				"lon" : 13.4305105
+				},
+		},
+}
+"4520980397": {
+		"address":{
+			"location":{
+				"lat" : 52.5510893
+				"lon" : 13.430522
+				},
+		},
+}
+"4532431816": {
+		"address":{
+			"location":{
+				"lat" : 52.5414948
+				"lon" : 13.4382107
+				},
+		},
+}
+"4532431817": {
+		"address":{
+			"location":{
+				"lat" : 52.5415011
+				"lon" : 13.4382166
+				},
+		},
+}
+"4532431818": {
+		"address":{
+			"location":{
+				"lat" : 52.5415027
+				"lon" : 13.4381884
+				},
+		},
+}
+"4532431819": {
+		"address":{
+			"location":{
+				"lat" : 52.5415069
+				"lon" : 13.4382222
+				},
+		},
+}
+"4532431820": {
+		"address":{
+			"location":{
+				"lat" : 52.5415148
+				"lon" : 13.4381999
+				},
+		},
+}
+"4532458789": {
+		"address":{
+			"location":{
+				"lat" : 52.5486144
+				"lon" : 13.4208728
+				},
+		},
+}
+"4532458790": {
+		"address":{
+			"location":{
+				"lat" : 52.5486287
+				"lon" : 13.420841
+				},
+		},
+}
+"4532458791": {
+		"address":{
+			"location":{
+				"lat" : 52.5486355
+				"lon" : 13.4208984
+				},
+		},
+}
+"4532458792": {
+		"address":{
+			"location":{
+				"lat" : 52.5486498
+				"lon" : 13.4208667
+				},
+		},
+}
+"4545151422": {
+		"address":{
+			"location":{
+				"lat" : 52.5260728
+				"lon" : 13.3480891
+				},
+		},
+}
+"4545151423": {
+		"address":{
+			"location":{
+				"lat" : 52.5260502
+				"lon" : 13.34809
+				},
+		},
+}
+"4545151424": {
+		"address":{
+			"location":{
+				"lat" : 52.5260501
+				"lon" : 13.3480481
+				},
+		},
+}
+"4545151425": {
+		"address":{
+			"location":{
+				"lat" : 52.5260723
+				"lon" : 13.3480489
+				},
+		},
+}
+"4545161726": {
+		"address":{
+			"location":{
+				"lat" : 52.5260822
+				"lon" : 13.3480703
+				},
+		},
+}
+"4569218978": {
+		"address":{
+			"location":{
+				"lat" : 52.5080613
+				"lon" : 13.3352905
+				},
+		"wheelchair": "yes"
+		},
+}
+"4571077590": {
+		"address":{
+			"location":{
+				"lat" : 52.5337883
+				"lon" : 13.4194204
+				},
+		},
+}
+"4583793046": {
+		"address":{
+			"location":{
+				"lat" : 52.4952194
+				"lon" : 13.4414783
+				},
+		},
+}
+"4591401953": {
+		"address":{
+			"location":{
+				"lat" : 52.5530654
+				"lon" : 13.2944994
+				},
+		"fee": "yes"
+		},
+}
+"4678898865": {
+		"address":{
+			"location":{
+				"lat" : 52.4702313
+				"lon" : 13.3852208
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"opening_hours": "24/7"
+		"wheelchair": "yes"
+		},
+}
+"4686690326": {
+		"address":{
+			"location":{
+				"lat" : 52.4621098
+				"lon" : 13.5040252
+				},
+		},
+}
+"4709412192": {
+		"address":{
+			"location":{
+				"lat" : 52.4974302
+				"lon" : 13.5214785
+				},
+		},
+}
+"4727301692": {
+		"address":{
+			"location":{
+				"lat" : 52.4972503
+				"lon" : 13.521265
+				},
+		},
+}
+"4736223629": {
+		"address":{
+			"location":{
+				"lat" : 52.5450074
+				"lon" : 13.3546148
+				},
+		},
+}
+"4751634622": {
+		"address":{
+			"location":{
+				"lat" : 52.5119671
+				"lon" : 13.3246429
+				},
+		},
+}
+"4756851873": {
+		"address":{
+			"location":{
+				"lat" : 52.5032102
+				"lon" : 13.4223052
+				},
+		"fee": "no"
+		},
+}
+"4761858226": {
+		"address":{
+			"location":{
+				"lat" : 52.5257159
+				"lon" : 13.3427221
+				},
+		"wheelchair": "no"
+		},
+}
+"4776824885": {
+		"address":{
+			"location":{
+				"lat" : 52.5140625
+				"lon" : 13.348361
+				},
+		"fee": "no"
+		"opening_hours": "10:00-18:30"
+		"wheelchair": "no"
+		},
+}
+"4776824886": {
+		"address":{
+			"location":{
+				"lat" : 52.5140718
+				"lon" : 13.3484613
+				},
+		"fee": "no"
+		"opening_hours": "10:00-18:30"
+		"wheelchair": "no"
+		},
+}
+"4777033774": {
+		"address":{
+			"location":{
+				"lat" : 52.5216411
+				"lon" : 13.5085661
+				},
+		},
+}
+"4777033775": {
+		"address":{
+			"location":{
+				"lat" : 52.5216221
+				"lon" : 13.5085657
+				},
+		},
+}
+"4777033776": {
+		"address":{
+			"location":{
+				"lat" : 52.5216223
+				"lon" : 13.5085362
+				},
+		},
+}
+"4777033777": {
+		"address":{
+			"location":{
+				"lat" : 52.5216414
+				"lon" : 13.5085366
+				},
+		},
+}
+"4786939216": {
+		"address":{
+			"location":{
+				"lat" : 52.4796454
+				"lon" : 13.4090972
+				},
+		},
+}
+"4786939217": {
+		"address":{
+			"location":{
+				"lat" : 52.4796904
+				"lon" : 13.4090165
+				},
+		},
+}
+"4786939218": {
+		"address":{
+			"location":{
+				"lat" : 52.47971
+				"lon" : 13.409046
+				},
+		},
+}
+"4786939219": {
+		"address":{
+			"location":{
+				"lat" : 52.4796104
+				"lon" : 13.4091685
+				},
+		},
+}
+"4786939220": {
+		"address":{
+			"location":{
+				"lat" : 52.4795741
+				"lon" : 13.4092354
+				},
+		},
+}
+"4786939221": {
+		"address":{
+			"location":{
+				"lat" : 52.47959
+				"lon" : 13.4092586
+				},
+		},
+}
+"4786939222": {
+		"address":{
+			"location":{
+				"lat" : 52.4796263
+				"lon" : 13.4091918
+				},
+		},
+}
+"4787823530": {
+		"address":{
+			"location":{
+				"lat" : 52.5444576
+				"lon" : 13.3527855
+				},
+		},
+}
+"4789943507": {
+		"address":{
+			"location":{
+				"lat" : 52.5906991
+				"lon" : 13.2830296
+				},
+		"fee": "no"
+		"wheelchair": "no"
+		},
+}
+"4789943508": {
+		"address":{
+			"location":{
+				"lat" : 52.5903218
+				"lon" : 13.2821064
+				},
+		"fee": "yes"
+		"wheelchair": "yes"
+		},
+}
+"4789979548": {
+		"address":{
+			"location":{
+				"lat" : 52.5840591
+				"lon" : 13.2860595
+				},
+		"fee": "yes"
+		},
+}
+"4791532280": {
+		"address":{
+			"location":{
+				"lat" : 52.5444761
+				"lon" : 13.3527018
+				},
+		},
+}
+"4791532281": {
+		"address":{
+			"location":{
+				"lat" : 52.5444935
+				"lon" : 13.3527358
+				},
+		},
+}
+"4791532299": {
+		"address":{
+			"location":{
+				"lat" : 52.544856
+				"lon" : 13.3522355
+				},
+		},
+}
+"4791532303": {
+		"address":{
+			"location":{
+				"lat" : 52.5447396
+				"lon" : 13.3533437
+				},
+		},
+}
+"4791532308": {
+		"address":{
+			"location":{
+				"lat" : 52.5448364
+				"lon" : 13.3522641
+				},
+		},
+}
+"4791532311": {
+		"address":{
+			"location":{
+				"lat" : 52.5446475
+				"lon" : 13.3528091
+				},
+		},
+}
+"4791532425": {
+		"address":{
+			"location":{
+				"lat" : 52.5444403
+				"lon" : 13.3527517
+				},
+		},
+}
+"4791532430": {
+		"address":{
+			"location":{
+				"lat" : 52.5446651
+				"lon" : 13.3528015
+				},
+		},
+}
+"4791532434": {
+		"address":{
+			"location":{
+				"lat" : 52.5446172
+				"lon" : 13.3527328
+				},
+		},
+}
+"4791532440": {
+		"address":{
+			"location":{
+				"lat" : 52.5444693
+				"lon" : 13.3527688
+				},
+		},
+}
+"4791532441": {
+		"address":{
+			"location":{
+				"lat" : 52.5448672
+				"lon" : 13.3522569
+				},
+		},
+}
+"4791532443": {
+		"address":{
+			"location":{
+				"lat" : 52.5446239
+				"lon" : 13.3527233
+				},
+		},
+}
+"4791532445": {
+		"address":{
+			"location":{
+				"lat" : 52.5446128
+				"lon" : 13.3527391
+				},
+		},
+}
+"4791532446": {
+		"address":{
+			"location":{
+				"lat" : 52.5446244
+				"lon" : 13.3527226
+				},
+		},
+}
+"4791532448": {
+		"address":{
+			"location":{
+				"lat" : 52.544861
+				"lon" : 13.3522446
+				},
+		},
+}
+"4791532449": {
+		"address":{
+			"location":{
+				"lat" : 52.544462
+				"lon" : 13.3527795
+				},
+		},
+}
+"4791532457": {
+		"address":{
+			"location":{
+				"lat" : 52.5444757
+				"lon" : 13.3527602
+				},
+		},
+}
+"4791532459": {
+		"address":{
+			"location":{
+				"lat" : 52.5448705
+				"lon" : 13.3523349
+				},
+		},
+}
+"4791532461": {
+		"address":{
+			"location":{
+				"lat" : 52.5444712
+				"lon" : 13.3527664
+				},
+		},
+}
+"4791532465": {
+		"address":{
+			"location":{
+				"lat" : 52.5444633
+				"lon" : 13.352748
+				},
+		},
+}
+"4791532470": {
+		"address":{
+			"location":{
+				"lat" : 52.5444771
+				"lon" : 13.3527583
+				},
+		},
+}
+"4791532474": {
+		"address":{
+			"location":{
+				"lat" : 52.5448816
+				"lon" : 13.3522852
+				},
+		},
+}
+"4791532475": {
+		"address":{
+			"location":{
+				"lat" : 52.5444669
+				"lon" : 13.352743
+				},
+		},
+}
+"4791532478": {
+		"address":{
+			"location":{
+				"lat" : 52.5444935
+				"lon" : 13.3527355
+				},
+		},
+}
+"4791532479": {
+		"address":{
+			"location":{
+				"lat" : 52.5444548
+				"lon" : 13.3527314
+				},
+		},
+}
+"4791532481": {
+		"address":{
+			"location":{
+				"lat" : 52.5444847
+				"lon" : 13.3527477
+				},
+		},
+}
+"4791532487": {
+		"address":{
+			"location":{
+				"lat" : 52.5444437
+				"lon" : 13.3527469
+				},
+		},
+}
+"4791532491": {
+		"address":{
+			"location":{
+				"lat" : 52.5444623
+				"lon" : 13.3527789
+				},
+		},
+}
+"4791532492": {
+		"address":{
+			"location":{
+				"lat" : 52.5448918
+				"lon" : 13.3523049
+				},
+		},
+}
+"4791532504": {
+		"address":{
+			"location":{
+				"lat" : 52.5444762
+				"lon" : 13.3527016
+				},
+		},
+}
+"4791532511": {
+		"address":{
+			"location":{
+				"lat" : 52.544461
+				"lon" : 13.3527807
+				},
+		},
+}
+"4791532514": {
+		"address":{
+			"location":{
+				"lat" : 52.5444424
+				"lon" : 13.3527557
+				},
+		},
+}
+"4791532525": {
+		"address":{
+			"location":{
+				"lat" : 52.5444898
+				"lon" : 13.3527407
+				},
+		},
+}
+"4791532529": {
+		"address":{
+			"location":{
+				"lat" : 52.5441829
+				"lon" : 13.3524031
+				},
+		},
+}
+"4791532534": {
+		"address":{
+			"location":{
+				"lat" : 52.544468
+				"lon" : 13.3527709
+				},
+		},
+}
+"4791532542": {
+		"address":{
+			"location":{
+				"lat" : 52.5444728
+				"lon" : 13.3527643
+				},
+		},
+}
+"4791532555": {
+		"address":{
+			"location":{
+				"lat" : 52.5441094
+				"lon" : 13.352258
+				},
+		},
+}
+"4791532557": {
+		"address":{
+			"location":{
+				"lat" : 52.5441284
+				"lon" : 13.3522193
+				},
+		},
+}
+"4791532558": {
+		"address":{
+			"location":{
+				"lat" : 52.5446913
+				"lon" : 13.353357
+				},
+		},
+}
+"4791532559": {
+		"address":{
+			"location":{
+				"lat" : 52.5444754
+				"lon" : 13.3527112
+				},
+		},
+}
+"4791532561": {
+		"address":{
+			"location":{
+				"lat" : 52.5441603
+				"lon" : 13.3522843
+				},
+		},
+}
+"4791532563": {
+		"address":{
+			"location":{
+				"lat" : 52.5442044
+				"lon" : 13.3523744
+				},
+		},
+}
+"4791532567": {
+		"address":{
+			"location":{
+				"lat" : 52.5446883
+				"lon" : 13.3533766
+				},
+		},
+}
+"4791532569": {
+		"address":{
+			"location":{
+				"lat" : 52.5441818
+				"lon" : 13.3524011
+				},
+		},
+}
+"4791532574": {
+		"address":{
+			"location":{
+				"lat" : 52.5444739
+				"lon" : 13.3527627
+				},
+		},
+}
+"4791532576": {
+		"address":{
+			"location":{
+				"lat" : 52.5441054
+				"lon" : 13.35225
+				},
+		},
+}
+"4791532578": {
+		"address":{
+			"location":{
+				"lat" : 52.5446941
+				"lon" : 13.3533384
+				},
+		},
+}
+"4791532579": {
+		"address":{
+			"location":{
+				"lat" : 52.5446916
+				"lon" : 13.3533552
+				},
+		},
+}
+"4791532580": {
+		"address":{
+			"location":{
+				"lat" : 52.544459
+				"lon" : 13.3527835
+				},
+		},
+}
+"4791532598": {
+		"address":{
+			"location":{
+				"lat" : 52.5446939
+				"lon" : 13.3533396
+				},
+		},
+}
+"4791532602": {
+		"address":{
+			"location":{
+				"lat" : 52.5447225
+				"lon" : 13.3534302
+				},
+		},
+}
+"4791532604": {
+		"address":{
+			"location":{
+				"lat" : 52.5446908
+				"lon" : 13.3533606
+				},
+		},
+}
+"4791532607": {
+		"address":{
+			"location":{
+				"lat" : 52.5444575
+				"lon" : 13.3527349
+				},
+		},
+}
+"4791532611": {
+		"address":{
+			"location":{
+				"lat" : 52.5446867
+				"lon" : 13.3533872
+				},
+		},
+}
+"4791532616": {
+		"address":{
+			"location":{
+				"lat" : 52.5444762
+				"lon" : 13.3527017
+				},
+		},
+}
+"4791532619": {
+		"address":{
+			"location":{
+				"lat" : 52.5441169
+				"lon" : 13.3522727
+				},
+		},
+}
+"4791532621": {
+		"address":{
+			"location":{
+				"lat" : 52.5447199
+				"lon" : 13.3533039
+				},
+		},
+}
+"4791532630": {
+		"address":{
+			"location":{
+				"lat" : 52.5444935
+				"lon" : 13.3527356
+				},
+		},
+}
+"4791532633": {
+		"address":{
+			"location":{
+				"lat" : 52.5447281
+				"lon" : 13.3534017
+				},
+		},
+}
+"4791532637": {
+		"address":{
+			"location":{
+				"lat" : 52.5441744
+				"lon" : 13.3523864
+				},
+		},
+}
+"4791532641": {
+		"address":{
+			"location":{
+				"lat" : 52.5441378
+				"lon" : 13.3523142
+				},
+		},
+}
+"4791532647": {
+		"address":{
+			"location":{
+				"lat" : 52.5444741
+				"lon" : 13.3527627
+				},
+		},
+}
+"4791532648": {
+		"address":{
+			"location":{
+				"lat" : 52.5444858
+				"lon" : 13.3527466
+				},
+		},
+}
+"4791532649": {
+		"address":{
+			"location":{
+				"lat" : 52.5444547
+				"lon" : 13.3527318
+				},
+		},
+}
+"4791532653": {
+		"address":{
+			"location":{
+				"lat" : 52.5444816
+				"lon" : 13.3527524
+				},
+		},
+}
+"4791532664": {
+		"address":{
+			"location":{
+				"lat" : 52.5444529
+				"lon" : 13.3527342
+				},
+		},
+}
+"4791532679": {
+		"address":{
+			"location":{
+				"lat" : 52.5444575
+				"lon" : 13.3527858
+				},
+		},
+}
+"4791532680": {
+		"address":{
+			"location":{
+				"lat" : 52.5444668
+				"lon" : 13.3527434
+				},
+		},
+}
+"4791532681": {
+		"address":{
+			"location":{
+				"lat" : 52.5444402
+				"lon" : 13.3527521
+				},
+		},
+}
+"4791532682": {
+		"address":{
+			"location":{
+				"lat" : 52.5444632
+				"lon" : 13.3527483
+				},
+		},
+}
+"4791532698": {
+		"address":{
+			"location":{
+				"lat" : 52.5444667
+				"lon" : 13.3527484
+				},
+		},
+}
+"4791532712": {
+		"address":{
+			"location":{
+				"lat" : 52.5444756
+				"lon" : 13.3527606
+				},
+		},
+}
+"4791532715": {
+		"address":{
+			"location":{
+				"lat" : 52.5444629
+				"lon" : 13.3527537
+				},
+		},
+}
+"4812165022": {
+		"address":{
+			"location":{
+				"lat" : 52.4592631
+				"lon" : 13.3557103
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"opening_hours": "24/7"
+		"wheelchair": "yes"
+		},
+}
+"4876409414": {
+		"address":{
+			"location":{
+				"lat" : 52.444275
+				"lon" : 13.6275743
+				},
+		},
+}
+"4876409415": {
+		"address":{
+			"location":{
+				"lat" : 52.4443001
+				"lon" : 13.6275849
+				},
+		},
+}
+"4876409416": {
+		"address":{
+			"location":{
+				"lat" : 52.4443204
+				"lon" : 13.6274695
+				},
+		},
+}
+"4876409417": {
+		"address":{
+			"location":{
+				"lat" : 52.4442946
+				"lon" : 13.627458
+				},
+		},
+}
+"4903790021": {
+		"address":{
+			"location":{
+				"lat" : 52.5385085
+				"lon" : 13.4126228
+				},
+		},
+}
+"4917254720": {
+		"address":{
+			"location":{
+				"lat" : 52.5400375
+				"lon" : 13.5729445
+				},
+		"fee": "no"
+		"wheelchair": "yes"
+		},
+}
+"4938849683": {
+		"address":{
+			"location":{
+				"lat" : 52.507999
+				"lon" : 13.3100515
+				},
+		},
+}
+"4956264142": {
+		"address":{
+			"location":{
+				"lat" : 52.5230859
+				"lon" : 13.3952593
+				},
+		},
+}
+"4956264143": {
+		"address":{
+			"location":{
+				"lat" : 52.5230368
+				"lon" : 13.395236
+				},
+		},
+}
+"4956264144": {
+		"address":{
+			"location":{
+				"lat" : 52.5230314
+				"lon" : 13.3952665
+				},
+		},
+}
+"4956264145": {
+		"address":{
+			"location":{
+				"lat" : 52.5230806
+				"lon" : 13.3952898
+				},
+		},
+}
+"4958547360": {
+		"address":{
+			"location":{
+				"lat" : 52.5447843
+				"lon" : 13.3514213
+				},
+		},
+}
+"4958547361": {
+		"address":{
+			"location":{
+				"lat" : 52.5448027
+				"lon" : 13.3513959
+				},
+		},
+}
+"4958547364": {
+		"address":{
+			"location":{
+				"lat" : 52.5451295
+				"lon" : 13.3508876
+				},
+		},
+}
+"4958547365": {
+		"address":{
+			"location":{
+				"lat" : 52.5447863
+				"lon" : 13.3513638
+				},
+		},
+}
+"4958547384": {
+		"address":{
+			"location":{
+				"lat" : 52.5456161
+				"lon" : 13.3516824
+				},
+		},
+}
+"4958547385": {
+		"address":{
+			"location":{
+				"lat" : 52.5451692
+				"lon" : 13.3521593
+				},
+		},
+}
+"4958547387": {
+		"address":{
+			"location":{
+				"lat" : 52.5455622
+				"lon" : 13.3517586
+				},
+		},
+}
+"4958547388": {
+		"address":{
+			"location":{
+				"lat" : 52.5455423
+				"lon" : 13.3517198
+				},
+		},
+}
+"4958547393": {
+		"address":{
+			"location":{
+				"lat" : 52.5451301
+				"lon" : 13.3520834
+				},
+		},
+}
+"4958547405": {
+		"address":{
+			"location":{
+				"lat" : 52.5451654
+				"lon" : 13.3522262
+				},
+		},
+}
+"4958547971": {
+		"address":{
+			"location":{
+				"lat" : 52.5451895
+				"lon" : 13.3508512
+				},
+		},
+}
+"4958547973": {
+		"address":{
+			"location":{
+				"lat" : 52.5452094
+				"lon" : 13.3509294
+				},
+		},
+}
+"4958547992": {
+		"address":{
+			"location":{
+				"lat" : 52.5451752
+				"lon" : 13.3509769
+				},
+		},
+}
+"4958548035": {
+		"address":{
+			"location":{
+				"lat" : 52.5451832
+				"lon" : 13.3508389
+				},
+		},
+}
+"4958548053": {
+		"address":{
+			"location":{
+				"lat" : 52.5455466
+				"lon" : 13.3517803
+				},
+		},
+}
+"4958548077": {
+		"address":{
+			"location":{
+				"lat" : 52.545552
+				"lon" : 13.3517727
+				},
+		},
+}
+"4958548118": {
+		"address":{
+			"location":{
+				"lat" : 52.5452212
+				"lon" : 13.350913
+				},
+		},
+}
+"4958548238": {
+		"address":{
+			"location":{
+				"lat" : 52.545108
+				"lon" : 13.3521142
+				},
+		},
+}
+"4958548244": {
+		"address":{
+			"location":{
+				"lat" : 52.5455603
+				"lon" : 13.3517613
+				},
+		},
+}
+"4958548255": {
+		"address":{
+			"location":{
+				"lat" : 52.5455905
+				"lon" : 13.3516527
+				},
+		},
+}
+"4958548266": {
+		"address":{
+			"location":{
+				"lat" : 52.5451689
+				"lon" : 13.352159
+				},
+		},
+}
+"4958548285": {
+		"address":{
+			"location":{
+				"lat" : 52.5455588
+				"lon" : 13.3516967
+				},
+		},
+}
+"4958548287": {
+		"address":{
+			"location":{
+				"lat" : 52.5451883
+				"lon" : 13.3509587
+				},
+		},
+}
+"4958548325": {
+		"address":{
+			"location":{
+				"lat" : 52.5455495
+				"lon" : 13.3517096
+				},
+		},
+}
+"4958548328": {
+		"address":{
+			"location":{
+				"lat" : 52.5455649
+				"lon" : 13.3516882
+				},
+		},
+}
+"4958548333": {
+		"address":{
+			"location":{
+				"lat" : 52.5455584
+				"lon" : 13.3517271
+				},
+		},
+}
+"4958548341": {
+		"address":{
+			"location":{
+				"lat" : 52.5455356
+				"lon" : 13.3517588
+				},
+		},
+}
+"4958548345": {
+		"address":{
+			"location":{
+				"lat" : 52.5456013
+				"lon" : 13.3517044
+				},
+		},
+}
+"4958548348": {
+		"address":{
+			"location":{
+				"lat" : 52.5451689
+				"lon" : 13.3521592
+				},
+		},
+}
+"4958548349": {
+		"address":{
+			"location":{
+				"lat" : 52.5451487
+				"lon" : 13.3508612
+				},
+		},
+}
+"4958548350": {
+		"address":{
+			"location":{
+				"lat" : 52.545131
+				"lon" : 13.3521591
+				},
+		},
+}
+"4958548352": {
+		"address":{
+			"location":{
+				"lat" : 52.5451335
+				"lon" : 13.3520899
+				},
+		},
+}
+"4958548358": {
+		"address":{
+			"location":{
+				"lat" : 52.5451461
+				"lon" : 13.3508646
+				},
+		},
+}
+"4958548359": {
+		"address":{
+			"location":{
+				"lat" : 52.5452087
+				"lon" : 13.3508886
+				},
+		},
+}
+"4958548366": {
+		"address":{
+			"location":{
+				"lat" : 52.5451947
+				"lon" : 13.3509081
+				},
+		},
+}
+"4958548367": {
+		"address":{
+			"location":{
+				"lat" : 52.5451628
+				"lon" : 13.3509525
+				},
+		},
+}
+"4958548372": {
+		"address":{
+			"location":{
+				"lat" : 52.5451237
+				"lon" : 13.352145
+				},
+		},
+}
+"4958548376": {
+		"address":{
+			"location":{
+				"lat" : 52.545601
+				"lon" : 13.3517048
+				},
+		},
+}
+"4958548377": {
+		"address":{
+			"location":{
+				"lat" : 52.5451612
+				"lon" : 13.3508437
+				},
+		},
+}
+"4958548380": {
+		"address":{
+			"location":{
+				"lat" : 52.5451797
+				"lon" : 13.350929
+				},
+		},
+}
+"4958548384": {
+		"address":{
+			"location":{
+				"lat" : 52.5451704
+				"lon" : 13.3522364
+				},
+		},
+}
+"4958548395": {
+		"address":{
+			"location":{
+				"lat" : 52.5451833
+				"lon" : 13.3508392
+				},
+		},
+}
+"4958548397": {
+		"address":{
+			"location":{
+				"lat" : 52.5447822
+				"lon" : 13.3514752
+				},
+		},
+}
+"4958548399": {
+		"address":{
+			"location":{
+				"lat" : 52.545156
+				"lon" : 13.350851
+				},
+		},
+}
+"4958548407": {
+		"address":{
+			"location":{
+				"lat" : 52.5451896
+				"lon" : 13.3508515
+				},
+		},
+}
+"4958548411": {
+		"address":{
+			"location":{
+				"lat" : 52.5451631
+				"lon" : 13.3522217
+				},
+		},
+}
+"4958548416": {
+		"address":{
+			"location":{
+				"lat" : 52.5451425
+				"lon" : 13.3508696
+				},
+		},
+}
+"4958548417": {
+		"address":{
+			"location":{
+				"lat" : 52.5451901
+				"lon" : 13.3508522
+				},
+		},
+}
+"4958548521": {
+		"address":{
+			"location":{
+				"lat" : 52.5451556
+				"lon" : 13.3508514
+				},
+		},
+}
+"4958548523": {
+		"address":{
+			"location":{
+				"lat" : 52.5451337
+				"lon" : 13.3520904
+				},
+		},
+}
+"4958548524": {
+		"address":{
+			"location":{
+				"lat" : 52.5456165
+				"lon" : 13.3516832
+				},
+		},
+}
+"4958548529": {
+		"address":{
+			"location":{
+				"lat" : 52.5455385
+				"lon" : 13.351625
+				},
+		},
+}
+"4958548537": {
+		"address":{
+			"location":{
+				"lat" : 52.5451112
+				"lon" : 13.3521207
+				},
+		},
+}
+"4958548542": {
+		"address":{
+			"location":{
+				"lat" : 52.5455666
+				"lon" : 13.351586
+				},
+		},
+}
+"4958548543": {
+		"address":{
+			"location":{
+				"lat" : 52.5447752
+				"lon" : 13.3514618
+				},
+		},
+}
+"4958548545": {
+		"address":{
+			"location":{
+				"lat" : 52.5452108
+				"lon" : 13.3522462
+				},
+		},
+}
+"4958548548": {
+		"address":{
+			"location":{
+				"lat" : 52.5455703
+				"lon" : 13.3515931
+				},
+		},
+}
+"4958548551": {
+		"address":{
+			"location":{
+				"lat" : 52.5447706
+				"lon" : 13.3513857
+				},
+		},
+}
+"4958548553": {
+		"address":{
+			"location":{
+				"lat" : 52.545578
+				"lon" : 13.3516082
+				},
+		},
+}
+"4958548554": {
+		"address":{
+			"location":{
+				"lat" : 52.5448035
+				"lon" : 13.3514588
+				},
+		},
+}
+"4958548561": {
+		"address":{
+			"location":{
+				"lat" : 52.5452128
+				"lon" : 13.3508965
+				},
+		},
+}
+"4958548562": {
+		"address":{
+			"location":{
+				"lat" : 52.5451862
+				"lon" : 13.3521983
+				},
+		},
+}
+"4958548563": {
+		"address":{
+			"location":{
+				"lat" : 52.5451794
+				"lon" : 13.3509431
+				},
+		},
+}
+"4958548575": {
+		"address":{
+			"location":{
+				"lat" : 52.5451467
+				"lon" : 13.3521898
+				},
+		},
+}
+"4958548578": {
+		"address":{
+			"location":{
+				"lat" : 52.5455538
+				"lon" : 13.3516548
+				},
+		},
+}
+"4958548581": {
+		"address":{
+			"location":{
+				"lat" : 52.5451879
+				"lon" : 13.352196
+				},
+		},
+}
+"4958548583": {
+		"address":{
+			"location":{
+				"lat" : 52.5451669
+				"lon" : 13.3509605
+				},
+		},
+}
+"4958548591": {
+		"address":{
+			"location":{
+				"lat" : 52.5451397
+				"lon" : 13.3521764
+				},
+		},
+}
+"4958548595": {
+		"address":{
+			"location":{
+				"lat" : 52.5456009
+				"lon" : 13.3517049
+				},
+		},
+}
+"4958548601": {
+		"address":{
+			"location":{
+				"lat" : 52.5455819
+				"lon" : 13.3516158
+				},
+		},
+}
+"4958548603": {
+		"address":{
+			"location":{
+				"lat" : 52.5451755
+				"lon" : 13.3508238
+				},
+		},
+}
+"4958548604": {
+		"address":{
+			"location":{
+				"lat" : 52.5455884
+				"lon" : 13.3517222
+				},
+		},
+}
+"4958548607": {
+		"address":{
+			"location":{
+				"lat" : 52.5451406
+				"lon" : 13.3508722
+				},
+		},
+}
+"4958548609": {
+		"address":{
+			"location":{
+				"lat" : 52.5451459
+				"lon" : 13.3521886
+				},
+		},
+}
+"4958548612": {
+		"address":{
+			"location":{
+				"lat" : 52.5451837
+				"lon" : 13.3508398
+				},
+		},
+}
+"4958548614": {
+		"address":{
+			"location":{
+				"lat" : 52.5455966
+				"lon" : 13.3516443
+				},
+		},
+}
+"4958548616": {
+		"address":{
+			"location":{
+				"lat" : 52.5455934
+				"lon" : 13.3517153
+				},
+		},
+}
+"4958548620": {
+		"address":{
+			"location":{
+				"lat" : 52.5451901
+				"lon" : 13.3522748
+				},
+		},
+}
+"4958548621": {
+		"address":{
+			"location":{
+				"lat" : 52.5447778
+				"lon" : 13.3513758
+				},
+		},
+}
+"4958548622": {
+		"address":{
+			"location":{
+				"lat" : 52.545183
+				"lon" : 13.350839
+				},
+		},
+}
+"4958548623": {
+		"address":{
+			"location":{
+				"lat" : 52.5447705
+				"lon" : 13.3513859
+				},
+		},
+}
+"4958548624": {
+		"address":{
+			"location":{
+				"lat" : 52.5451752
+				"lon" : 13.3509773
+				},
+		},
+}
+"4958548625": {
+		"address":{
+			"location":{
+				"lat" : 52.545158
+				"lon" : 13.3522122
+				},
+		},
+}
+"4958548626": {
+		"address":{
+			"location":{
+				"lat" : 52.5451654
+				"lon" : 13.3522267
+				},
+		},
+}
+"4958548628": {
+		"address":{
+			"location":{
+				"lat" : 52.5452214
+				"lon" : 13.3509132
+				},
+		},
+}
+"4958548629": {
+		"address":{
+			"location":{
+				"lat" : 52.5447777
+				"lon" : 13.3513758
+				},
+		},
+}
+"4958548630": {
+		"address":{
+			"location":{
+				"lat" : 52.544768
+				"lon" : 13.3513893
+				},
+		},
+}
+"4958548631": {
+		"address":{
+			"location":{
+				"lat" : 52.5447821
+				"lon" : 13.3514752
+				},
+		},
+}
+"4958548632": {
+		"address":{
+			"location":{
+				"lat" : 52.5447753
+				"lon" : 13.3514618
+				},
+		},
+}
+"4958548634": {
+		"address":{
+			"location":{
+				"lat" : 52.5455874
+				"lon" : 13.3517236
+				},
+		},
+}
+"4958548636": {
+		"address":{
+			"location":{
+				"lat" : 52.5451893
+				"lon" : 13.3508512
+				},
+		},
+}
+"4958548639": {
+		"address":{
+			"location":{
+				"lat" : 52.5451331
+				"lon" : 13.3508824
+				},
+		},
+}
+"4958548642": {
+		"address":{
+			"location":{
+				"lat" : 52.5451453
+				"lon" : 13.3508655
+				},
+		},
+}
+"4958548647": {
+		"address":{
+			"location":{
+				"lat" : 52.545187
+				"lon" : 13.3508864
+				},
+		},
+}
+"4958548648": {
+		"address":{
+			"location":{
+				"lat" : 52.5451554
+				"lon" : 13.3508514
+				},
+		},
+}
+"4958548649": {
+		"address":{
+			"location":{
+				"lat" : 52.5448035
+				"lon" : 13.3514587
+				},
+		},
+}
+"4958548651": {
+		"address":{
+			"location":{
+				"lat" : 52.5447864
+				"lon" : 13.3513638
+				},
+		},
+}
+"4958548653": {
+		"address":{
+			"location":{
+				"lat" : 52.5451901
+				"lon" : 13.3522749
+				},
+		},
+}
+"4958548654": {
+		"address":{
+			"location":{
+				"lat" : 52.5455684
+				"lon" : 13.3516834
+				},
+		},
+}
+"4958548659": {
+		"address":{
+			"location":{
+				"lat" : 52.5451643
+				"lon" : 13.3522246
+				},
+		},
+}
+"4958548661": {
+		"address":{
+			"location":{
+				"lat" : 52.5452095
+				"lon" : 13.3509301
+				},
+		},
+}
+"4958548662": {
+		"address":{
+			"location":{
+				"lat" : 52.5455885
+				"lon" : 13.3517221
+				},
+		},
+}
+"4958548663": {
+		"address":{
+			"location":{
+				"lat" : 52.5447861
+				"lon" : 13.3514829
+				},
+		},
+}
+"4958548666": {
+		"address":{
+			"location":{
+				"lat" : 52.5455865
+				"lon" : 13.3516247
+				},
+		},
+}
+"4958548667": {
+		"address":{
+			"location":{
+				"lat" : 52.5451406
+				"lon" : 13.3508721
+				},
+		},
+}
+"4958548668": {
+		"address":{
+			"location":{
+				"lat" : 52.5451752
+				"lon" : 13.3508239
+				},
+		},
+}
+"4958548669": {
+		"address":{
+			"location":{
+				"lat" : 52.5455791
+				"lon" : 13.3516105
+				},
+		},
+}
+"4958548671": {
+		"address":{
+			"location":{
+				"lat" : 52.5455965
+				"lon" : 13.3516441
+				},
+		},
+}
+"4958548672": {
+		"address":{
+			"location":{
+				"lat" : 52.5455623
+				"lon" : 13.3517587
+				},
+		},
+}
+"4958548673": {
+		"address":{
+			"location":{
+				"lat" : 52.5451294
+				"lon" : 13.3508876
+				},
+		},
+}
+"4958548674": {
+		"address":{
+			"location":{
+				"lat" : 52.5455796
+				"lon" : 13.3517345
+				},
+		},
+}
+"4958548682": {
+		"address":{
+			"location":{
+				"lat" : 52.545186
+				"lon" : 13.3521982
+				},
+		},
+}
+"4958548683": {
+		"address":{
+			"location":{
+				"lat" : 52.5455785
+				"lon" : 13.3516093
+				},
+		},
+}
+"4958548684": {
+		"address":{
+			"location":{
+				"lat" : 52.5451436
+				"lon" : 13.35211
+				},
+		},
+}
+"4958548685": {
+		"address":{
+			"location":{
+				"lat" : 52.5447505
+				"lon" : 13.3514135
+				},
+		},
+}
+"4958548688": {
+		"address":{
+			"location":{
+				"lat" : 52.5452107
+				"lon" : 13.3522464
+				},
+		},
+}
+"4958548690": {
+		"address":{
+			"location":{
+				"lat" : 52.5455504
+				"lon" : 13.3516484
+				},
+		},
+}
+"4958548691": {
+		"address":{
+			"location":{
+				"lat" : 52.5447844
+				"lon" : 13.3514213
+				},
+		},
+}
+"4958548692": {
+		"address":{
+			"location":{
+				"lat" : 52.5451876
+				"lon" : 13.3521959
+				},
+		},
+}
+"4958548695": {
+		"address":{
+			"location":{
+				"lat" : 52.5451527
+				"lon" : 13.3508553
+				},
+		},
+}
+"4958548697": {
+		"address":{
+			"location":{
+				"lat" : 52.5451214
+				"lon" : 13.3521407
+				},
+		},
+}
+"4958548698": {
+		"address":{
+			"location":{
+				"lat" : 52.5451882
+				"lon" : 13.3509593
+				},
+		},
+}
+"4958548699": {
+		"address":{
+			"location":{
+				"lat" : 52.5451791
+				"lon" : 13.3508974
+				},
+		},
+}
+"4958548700": {
+		"address":{
+			"location":{
+				"lat" : 52.5451424
+				"lon" : 13.3508696
+				},
+		},
+}
+"4958548702": {
+		"address":{
+			"location":{
+				"lat" : 52.5447669
+				"lon" : 13.3514455
+				},
+		},
+}
+"4958548703": {
+		"address":{
+			"location":{
+				"lat" : 52.5447507
+				"lon" : 13.3514141
+				},
+		},
+}
+"4958548704": {
+		"address":{
+			"location":{
+				"lat" : 52.5448087
+				"lon" : 13.3513298
+				},
+		},
+}
+"4958548705": {
+		"address":{
+			"location":{
+				"lat" : 52.5448096
+				"lon" : 13.3513316
+				},
+		},
+}
+"4958548706": {
+		"address":{
+			"location":{
+				"lat" : 52.5447505
+				"lon" : 13.3514136
+				},
+		},
+}
+"4958548707": {
+		"address":{
+			"location":{
+				"lat" : 52.5447756
+				"lon" : 13.3513429
+				},
+		},
+}
+"4958548708": {
+		"address":{
+			"location":{
+				"lat" : 52.5447593
+				"lon" : 13.3514306
+				},
+		},
+}
+"4958548709": {
+		"address":{
+			"location":{
+				"lat" : 52.5447996
+				"lon" : 13.3513119
+				},
+		},
+}
+"4958548710": {
+		"address":{
+			"location":{
+				"lat" : 52.5447589
+				"lon" : 13.3514299
+				},
+		},
+}
+"4958548711": {
+		"address":{
+			"location":{
+				"lat" : 52.5447949
+				"lon" : 13.3513804
+				},
+		},
+}
+"4958548712": {
+		"address":{
+			"location":{
+				"lat" : 52.5447989
+				"lon" : 13.3513106
+				},
+		},
+}
+"4958548713": {
+		"address":{
+			"location":{
+				"lat" : 52.5447665
+				"lon" : 13.3514448
+				},
+		},
+}
+"4958548714": {
+		"address":{
+			"location":{
+				"lat" : 52.5448028
+				"lon" : 13.3513958
+				},
+		},
+}
+"4958548715": {
+		"address":{
+			"location":{
+				"lat" : 52.5447584
+				"lon" : 13.3514289
+				},
+		},
+}
+"4985273339": {
+		"address":{
+			"location":{
+				"lat" : 52.3699542
+				"lon" : 13.6427869
+				},
+		},
+}
+"4985273340": {
+		"address":{
+			"location":{
+				"lat" : 52.3699368
+				"lon" : 13.642901
+				},
+		},
+}
+"4985273341": {
+		"address":{
+			"location":{
+				"lat" : 52.3699934
+				"lon" : 13.6429252
+				},
+		},
+}
+"4985273342": {
+		"address":{
+			"location":{
+				"lat" : 52.37001
+				"lon" : 13.6428111
+				},
+		},
+}
+"5022093422": {
+		"address":{
+			"location":{
+				"lat" : 52.5191343
+				"lon" : 13.3646383
+				},
+		},
+}
+"5042518818": {
+		"address":{
+			"location":{
+				"lat" : 52.6145301
+				"lon" : 13.2055219
+				},
+		},
+}
+"5047304280": {
+		"address":{
+			"location":{
+				"lat" : 52.5447021
+				"lon" : 13.3905208
+				},
+		"fee": "yes"
+		"name": "City Toilette"
+		"opening_hours": "24/7"
+		"wheelchair": "yes"
+		},
+}
+"5056004801": {
+		"address":{
+			"location":{
+				"lat" : 52.4812853
+				"lon" : 13.526028
+				},
+		},
+}
+"5056004803": {
+		"address":{
+			"location":{
+				"lat" : 52.4813041
+				"lon" : 13.5259924
+				},
+		},
+}
+"5056004804": {
+		"address":{
+			"location":{
+				"lat" : 52.4812803
+				"lon" : 13.5260119
+				},
+		},
+}
+"5056004805": {
+		"address":{
+			"location":{
+				"lat" : 52.4812957
+				"lon" : 13.5260337
+				},
+		},
+}
+"5056004806": {
+		"address":{
+			"location":{
+				"lat" : 52.481309
+				"lon" : 13.5260086
+				},
+		},
+}
+"5056004807": {
+		"address":{
+			"location":{
+				"lat" : 52.4812936
+				"lon" : 13.5259867
+				},
+		},
+}
+"5056019545": {
+		"address":{
+			"location":{
+				"lat" : 52.4812901
+				"lon" : 13.5260326
+				},
+		},
+}
+"5056019546": {
+		"address":{
+			"location":{
+				"lat" : 52.4813083
+				"lon" : 13.5260177
+				},
+		},
+}
+"5056019547": {
+		"address":{
+			"location":{
+				"lat" : 52.4812992
+				"lon" : 13.5259879
+				},
+		},
+}
+"5056024383": {
+		"address":{
+			"location":{
+				"lat" : 52.4812882
+				"lon" : 13.5259892
+				},
+		},
+}
+"5056024384": {
+		"address":{
+			"location":{
+				"lat" : 52.481281
+				"lon" : 13.5260028
+				},
+		},
+}
+"5056024385": {
+		"address":{
+			"location":{
+				"lat" : 52.4812818
+				"lon" : 13.5260208
+				},
+		},
+}
+"5056024386": {
+		"address":{
+			"location":{
+				"lat" : 52.4813055
+				"lon" : 13.5260257
+				},
+		},
+}
+"5056024738": {
+		"address":{
+			"location":{
+				"lat" : 52.4813011
+				"lon" : 13.5260313
+				},
+		},
+}
+"5056024739": {
+		"address":{
+			"location":{
+				"lat" : 52.4813075
+				"lon" : 13.5259997
+				},
+		},
+}
+"5056024821": {
+		"address":{
+			"location":{
+				"lat" : 52.4812838
+				"lon" : 13.5259948
+				},
+		},
+}
+"5060729822": {
+		"address":{
+			"location":{
+				"lat" : 52.5003924
+				"lon" : 13.3768415
+				},
+		"fee": "yes"
+		"opening_hours": "24/7"
+		},
+}
+"5078910421": {
+		"address":{
+			"location":{
+				"lat" : 52.5255222
+				"lon" : 13.2405189
+				},
+		},
+}
+"5081673030": {
+		"address":{
+			"location":{
+				"lat" : 52.5978982
+				"lon" : 13.355451
+				},
+		"wheelchair": "yes"
+		},
+}
+"5095774443": {
+		"address":{
+			"location":{
+				"lat" : 52.5443811
+				"lon" : 13.3886299
+				},
+		"fee": "no"
+		},
+}
+"5119478076": {
+		"address":{
+			"location":{
+				"lat" : 52.4836249
+				"lon" : 13.5307386
+				},
+		"fee": "no"
+		"name": "EcoToilette"
+		},
+}
+"5161529491": {
+		"address":{
+			"location":{
+				"lat" : 52.478983
+				"lon" : 13.3282647
+				},
+		},
+}
+"5161529492": {
+		"address":{
+			"location":{
+				"lat" : 52.478983
+				"lon" : 13.3283038
+				},
+		},
+}
+"5161529493": {
+		"address":{
+			"location":{
+				"lat" : 52.478961
+				"lon" : 13.3283033
+				},
+		},
+}
+"5161529494": {
+		"address":{
+			"location":{
+				"lat" : 52.4789613
+				"lon" : 13.3282642
+				},
+		},
+}
+"5165009582": {
+		"address":{
+			"location":{
+				"lat" : 52.5426908
+				"lon" : 13.3436725
+				},
+		},
+}
+"5165014334": {
+		"address":{
+			"location":{
+				"lat" : 52.5443178
+				"lon" : 13.3392298
+				},
+		},
+}
+"5235972643": {
+		"address":{
+			"location":{
+				"lat" : 52.5260774
+				"lon" : 13.3480853
+				},
+		},
+}
+"5235972644": {
+		"address":{
+			"location":{
+				"lat" : 52.5260803
+				"lon" : 13.3480801
+				},
+		},
+}
+"5235972645": {
+		"address":{
+			"location":{
+				"lat" : 52.5260817
+				"lon" : 13.3480612
+				},
+		},
+}
+"5235972646": {
+		"address":{
+			"location":{
+				"lat" : 52.5260789
+				"lon" : 13.3480545
+				},
+		},
+}
+"5250276421": {
+		"address":{
+			"location":{
+				"lat" : 52.5396699
+				"lon" : 13.5768267
+				},
+		},
+}
+"5250276422": {
+		"address":{
+			"location":{
+				"lat" : 52.538014
+				"lon" : 13.5703854
+				},
+		},
+}
+"5250276621": {
+		"address":{
+			"location":{
+				"lat" : 52.5397556
+				"lon" : 13.5748317
+				},
+		},
+}
+"5268574029": {
+		"address":{
+			"location":{
+				"lat" : 52.4524606
+				"lon" : 13.3322034
+				},
+			"street_number": "33"
+			"plz": "12167"
+			"street": "Albrechtstraße"
+		},
+}
+"5272502230": {
+		"address":{
+			"location":{
+				"lat" : 52.4592648
+				"lon" : 13.2893236
+				},
+		"fee": "no"
+		},
+}
+"5322523406": {
+		"address":{
+			"location":{
+				"lat" : 52.4757725
+				"lon" : 13.2904478
+				},
+		},
+}
+"5322523407": {
+		"address":{
+			"location":{
+				"lat" : 52.4757709
+				"lon" : 13.2904367
+				},
+		},
+}
+"5322523408": {
+		"address":{
+			"location":{
+				"lat" : 52.4757745
+				"lon" : 13.290427
+				},
+		},
+}
+"5322523409": {
+		"address":{
+			"location":{
+				"lat" : 52.4757812
+				"lon" : 13.2904243
+				},
+		},
+}
+"5322523410": {
+		"address":{
+			"location":{
+				"lat" : 52.4757784
+				"lon" : 13.2904537
+				},
+		},
+}
+"5322523411": {
+		"address":{
+			"location":{
+				"lat" : 52.4757958
+				"lon" : 13.2904582
+				},
+		},
+}
+"5322523412": {
+		"address":{
+			"location":{
+				"lat" : 52.4757986
+				"lon" : 13.2904287
+				},
+		},
+}
+"5339378086": {
+		"address":{
+			"location":{
+				"lat" : 52.4813036
+				"lon" : 13.443285
+				},
+		"wheelchair": "yes"
+		},
+}
+"5368605803": {
+		"address":{
+			"location":{
+				"lat" : 52.528764
+				"lon" : 13.4707811
+				},
+			"street_number": "8"
+			"plz": "10369"
+			"street": "Anton-Saefkow-Platz"
+		},
+}
+"5378273106": {
+		"address":{
+			"location":{
+				"lat" : 52.4333479
+				"lon" : 13.3516079
+				},
+		},
+}
+"5378273107": {
+		"address":{
+			"location":{
+				"lat" : 52.4333689
+				"lon" : 13.3515561
+				},
+		},
+}
+"5378273108": {
+		"address":{
+			"location":{
+				"lat" : 52.4333796
+				"lon" : 13.3514822
+				},
+		},
+}
+"5378273109": {
+		"address":{
+			"location":{
+				"lat" : 52.4333906
+				"lon" : 13.3514548
+				},
+		},
+}
+"5396231460": {
+		"address":{
+			"location":{
+				"lat" : 52.4788275
+				"lon" : 13.4381288
+				},
+		},
+}
+"5396231461": {
+		"address":{
+			"location":{
+				"lat" : 52.4788268
+				"lon" : 13.4381345
+				},
+		},
+}
+"5396231462": {
+		"address":{
+			"location":{
+				"lat" : 52.4788249
+				"lon" : 13.4381383
+				},
+		},
+}
+"5396231463": {
+		"address":{
+			"location":{
+				"lat" : 52.4788218
+				"lon" : 13.4381407
+				},
+		},
+}
+"5396231464": {
+		"address":{
+			"location":{
+				"lat" : 52.4788179
+				"lon" : 13.4381417
+				},
+		},
+}
+"5396231465": {
+		"address":{
+			"location":{
+				"lat" : 52.4788137
+				"lon" : 13.4381415
+				},
+		},
+}
+"5396231466": {
+		"address":{
+			"location":{
+				"lat" : 52.4788095
+				"lon" : 13.43814
+				},
+		},
+}
+"5396231467": {
+		"address":{
+			"location":{
+				"lat" : 52.4788045
+				"lon" : 13.4381356
+				},
+		},
+}
+"5396231468": {
+		"address":{
+			"location":{
+				"lat" : 52.4788004
+				"lon" : 13.4381293
+				},
+		},
+}
+"5396231469": {
+		"address":{
+			"location":{
+				"lat" : 52.478798
+				"lon" : 13.4381223
+				},
+		},
+}
+"5396231470": {
+		"address":{
+			"location":{
+				"lat" : 52.4787977
+				"lon" : 13.4381164
+				},
+		},
+}
+"5396231471": {
+		"address":{
+			"location":{
+				"lat" : 52.4787989
+				"lon" : 13.4381113
+				},
+		},
+}
+"5396231472": {
+		"address":{
+			"location":{
+				"lat" : 52.4788011
+				"lon" : 13.4381079
+				},
+		},
+}
+"5396231473": {
+		"address":{
+			"location":{
+				"lat" : 52.4788052
+				"lon" : 13.4381062
+				},
+		},
+}
+"5396231474": {
+		"address":{
+			"location":{
+				"lat" : 52.478809
+				"lon" : 13.4381059
+				},
+		},
+}
+"5396231475": {
+		"address":{
+			"location":{
+				"lat" : 52.4788135
+				"lon" : 13.4381071
+				},
+		},
+}
+"5396231476": {
+		"address":{
+			"location":{
+				"lat" : 52.4788172
+				"lon" : 13.4381088
+				},
+		},
+}
+"5396231477": {
+		"address":{
+			"location":{
+				"lat" : 52.4788218
+				"lon" : 13.4381129
+				},
+		},
+}
+"5396231478": {
+		"address":{
+			"location":{
+				"lat" : 52.4788246
+				"lon" : 13.4381171
+				},
+		},
+}
+"5396231479": {
+		"address":{
+			"location":{
+				"lat" : 52.4788266
+				"lon" : 13.4381225
+				},
+		},
+}
+"5559778659": {
+		"address":{
+			"location":{
+				"lat" : 52.4425425
+				"lon" : 13.3211734
+				},
+			"street_number": "30"
+			"plz": "12203"
+			"street": "Hindenburgdamm"
+		},
+}
+"5567268023": {
+		"address":{
+			"location":{
+				"lat" : 52.6313787
+				"lon" : 13.511022
+				},
+			"street_number": "50"
+			"plz": "13125"
+			"street": "Schwanebecker Chaussee"
+		},
+}
+"5615530357": {
+		"address":{
+			"location":{
+				"lat" : 52.4576972
+				"lon" : 13.5098302
+				},
+		},
+}
+"5615733202": {
+		"address":{
+			"location":{
+				"lat" : 52.4572059
+				"lon" : 13.5081648
+				},
+		},
+}
+"5615795932": {
+		"address":{
+			"location":{
+				"lat" : 52.541743
+				"lon" : 13.5419617
+				},
+		},
+}
+"5618185661": {
+		"address":{
+			"location":{
+				"lat" : 52.5436289
+				"lon" : 13.5438896
+				},
+		"fee": "yes"
+		"wheelchair": "yes"
+		},
+}
+"5630372401": {
+		"address":{
+			"location":{
+				"lat" : 52.4952062
+				"lon" : 13.4415167
+				},
+		},
+}
+"5630372402": {
+		"address":{
+			"location":{
+				"lat" : 52.4951445
+				"lon" : 13.4414597
+				},
+		},
+}
+"5630372403": {
+		"address":{
+			"location":{
+				"lat" : 52.4951577
+				"lon" : 13.4414213
+				},
+		},
+}
+"5634632567": {
+		"address":{
+			"location":{
+				"lat" : 52.4980131
+				"lon" : 13.5243135
+				},
+		"fee": "no"
+		},
+}
+"5637725809": {
+		"address":{
+			"location":{
+				"lat" : 52.5050881
+				"lon" : 13.5283973
+				},
+		},
+}
+"5641700432": {
+		"address":{
+			"location":{
+				"lat" : 52.5033707
+				"lon" : 13.5232501
+				},
+		},
+}
+"5646294784": {
+		"address":{
+			"location":{
+				"lat" : 52.471293
+				"lon" : 13.1188009
+				},
+		},
+}
+"5659211474": {
+		"address":{
+			"location":{
+				"lat" : 52.5486791
+				"lon" : 13.2581794
+				},
+		},
+}
+"5660607347": {
+		"address":{
+			"location":{
+				"lat" : 52.4440832
+				"lon" : 13.5747007
+				},
+		"wheelchair": "yes"
+		},
+}
+"5667281467": {
+		"address":{
+			"location":{
+				"lat" : 52.4480441
+				"lon" : 13.6093818
+				},
+		},
+}
+"5667281468": {
+		"address":{
+			"location":{
+				"lat" : 52.4480023
+				"lon" : 13.6093409
+				},
+		},
+}
+"5667281469": {
+		"address":{
+			"location":{
+				"lat" : 52.4479276
+				"lon" : 13.6095464
+				},
+		},
+}
+"5667281470": {
+		"address":{
+			"location":{
+				"lat" : 52.4479694
+				"lon" : 13.6095873
+				},
+		},
+}
+"5732104364": {
+		"address":{
+			"location":{
+				"lat" : 52.4967964
+				"lon" : 13.3929616
+				},
+		},
+}
+"5732356061": {
+		"address":{
+			"location":{
+				"lat" : 52.6356607
+				"lon" : 13.4946007
+				},
+		},
+}
+"5732356062": {
+		"address":{
+			"location":{
+				"lat" : 52.6356602
+				"lon" : 13.4946086
+				},
+		},
+}
+"5732356063": {
+		"address":{
+			"location":{
+				"lat" : 52.6356591
+				"lon" : 13.4946176
+				},
+		},
+}
+"5732356064": {
+		"address":{
+			"location":{
+				"lat" : 52.6356568
+				"lon" : 13.4946224
+				},
+		},
+}
+"5732356065": {
+		"address":{
+			"location":{
+				"lat" : 52.6356516
+				"lon" : 13.4946259
+				},
+		},
+}
+"5732356066": {
+		"address":{
+			"location":{
+				"lat" : 52.6356467
+				"lon" : 13.4946274
+				},
+		},
+}
+"5732356067": {
+		"address":{
+			"location":{
+				"lat" : 52.6356282
+				"lon" : 13.4946086
+				},
+		},
+}
+"5732356068": {
+		"address":{
+			"location":{
+				"lat" : 52.6356407
+				"lon" : 13.4945757
+				},
+		},
+}
+"5732356069": {
+		"address":{
+			"location":{
+				"lat" : 52.6356605
+				"lon" : 13.4945962
+				},
+		},
+}
+"5737653203": {
+		"address":{
+			"location":{
+				"lat" : 52.4767708
+				"lon" : 13.2102508
+				},
+		},
+}
+"5737653216": {
+		"address":{
+			"location":{
+				"lat" : 52.4786165
+				"lon" : 13.1981507
+				},
+		},
+}
+"5774438887": {
+		"address":{
+			"location":{
+				"lat" : 52.5044433
+				"lon" : 13.4235221
+				},
+		},
+}
+"5777053714": {
+		"address":{
+			"location":{
+				"lat" : 52.4327672
+				"lon" : 13.4156991
+				},
+		},
+}
+"5792474338": {
+		"address":{
+			"location":{
+				"lat" : 52.5199322
+				"lon" : 13.4111573
+				},
+		},
+}
+"5792474339": {
+		"address":{
+			"location":{
+				"lat" : 52.5195727
+				"lon" : 13.4112293
+				},
+		},
+}
+"5813246244": {
+		"address":{
+			"location":{
+				"lat" : 52.3898856
+				"lon" : 13.5377218
+				},
+		},
+}
+"5825165340": {
+		"address":{
+			"location":{
+				"lat" : 52.4440715
+				"lon" : 13.3360324
+				},
+		},
+}
+"5827888492": {
+		"address":{
+			"location":{
+				"lat" : 52.5363323
+				"lon" : 13.5729573
+				},
+		},
+}
+"5834648285": {
+		"address":{
+			"location":{
+				"lat" : 52.5111411
+				"lon" : 13.3833003
+				},
+		"fee": "yes"
+		"wheelchair": "yes"
+		},
+}
+"5836061885": {
+		"address":{
+			"location":{
+				"lat" : 52.5059204
+				"lon" : 13.3350525
+				},
+		"wheelchair": "yes"
+		},
+}
+"5836590937": {
+		"address":{
+			"location":{
+				"lat" : 52.5338359
+				"lon" : 13.5815826
+				},
+		},
+}
+"5836590938": {
+		"address":{
+			"location":{
+				"lat" : 52.5338168
+				"lon" : 13.5816134
+				},
+		},
+}
+"5836590939": {
+		"address":{
+			"location":{
+				"lat" : 52.5338543
+				"lon" : 13.5816764
+				},
+		},
+}
+"5836590940": {
+		"address":{
+			"location":{
+				"lat" : 52.5338735
+				"lon" : 13.5816455
+				},
+		},
+}
+"5836900388": {
+		"address":{
+			"location":{
+				"lat" : 52.5058844
+				"lon" : 13.3384162
+				},
+		"wheelchair": "yes"
+		},
+}
+"5841873608": {
+		"address":{
+			"location":{
+				"lat" : 52.4730539
+				"lon" : 13.1449893
+				},
+		"wheelchair": "yes"
+		},
+}
+"5841873609": {
+		"address":{
+			"location":{
+				"lat" : 52.4728191
+				"lon" : 13.1439153
+				},
+		},
+}
+"5841873611": {
+		"address":{
+			"location":{
+				"lat" : 52.4726467
+				"lon" : 13.1417036
+				},
+		},
+}
+"5841873612": {
+		"address":{
+			"location":{
+				"lat" : 52.4723837
+				"lon" : 13.1386174
+				},
+		},
+}
+"5841873613": {
+		"address":{
+			"location":{
+				"lat" : 52.4682614
+				"lon" : 13.1393429
+				},
+		"wheelchair": "yes"
+		},
+}
+"5843925611": {
+		"address":{
+			"location":{
+				"lat" : 52.5441639
+				"lon" : 13.2744053
+				},
+		},
+}
+"5843925612": {
+		"address":{
+			"location":{
+				"lat" : 52.5435637
+				"lon" : 13.2744066
+				},
+		},
+}
+"5844370738": {
+		"address":{
+			"location":{
+				"lat" : 52.5270841
+				"lon" : 13.3437228
+				},
+		},
+}
+"5848133061": {
+		"address":{
+			"location":{
+				"lat" : 52.5032995
+				"lon" : 13.272066
+				},
+		},
+}
+"5848134181": {
+		"address":{
+			"location":{
+				"lat" : 52.5033676
+				"lon" : 13.2719192
+				},
+		},
+}
+"5848134182": {
+		"address":{
+			"location":{
+				"lat" : 52.5034352
+				"lon" : 13.2720039
+				},
+		},
+}
+"5848134931": {
+		"address":{
+			"location":{
+				"lat" : 52.5033671
+				"lon" : 13.2721506
+				},
+		},
+}
+"5866195018": {
+		"address":{
+			"location":{
+				"lat" : 52.4328341
+				"lon" : 13.5352635
+				},
+		"wheelchair": "yes"
+		},
+}
+"5871818291": {
+		"address":{
+			"location":{
+				"lat" : 52.4947113
+				"lon" : 13.625328
+				},
+		},
+}
+"5894774951": {
+		"address":{
+			"location":{
+				"lat" : 52.434045
+				"lon" : 13.1911571
+				},
+		"fee": "yes"
+		},
+}
+"5909689841": {
+		"address":{
+			"location":{
+				"lat" : 52.5561241
+				"lon" : 13.3569964
+				},
+		"name": "City Toilette"
+		},
+}
+"5922346301": {
+		"address":{
+			"location":{
+				"lat" : 52.5324453
+				"lon" : 13.3940478
+				},
+		"opening_hours": "Mo-Do 08:00-15:00; Fr 08:00-13:00"
+		},
+}
+"5951752239": {
+		"address":{
+			"location":{
+				"lat" : 52.4583974
+				"lon" : 13.3047676
+				},
+		"fee": "no"
+		},
+}
