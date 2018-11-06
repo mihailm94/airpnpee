@@ -8,37 +8,6 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:72554858138:android:f072c8bdea085beb",
-        "android_client_info": {
-          "package_name": "com.airpeepee.app"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "72554858138-80rfqien142k6ikh2pd834h6ftps2bki.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyCrUSqZUkQRNlppN4vMhUUrtRDXm8p0Kkk"
-        }
-      ],
-      "services": {
-        "analytics_service": {
-          "status": 1
-        },
-        "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
-        },
-        "ads_service": {
-          "status": 2
-        }
-      }
-    },
-    {
-      "client_info": {
         "mobilesdk_app_id": "1:72554858138:android:cf6b0e249674169c",
         "android_client_info": {
           "package_name": "com.appspot.airpeepee.airpeepee"
@@ -46,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "72554858138-6rnfeu8ddlj167ugvu3hbc9qbt0ls34h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.appspot.airpeepee.airpeepee",
+            "certificate_hash": "80d029744e6387aee9334a80eb3888bc0d32fbd7"
+          }
+        },
+        {
           "client_id": "72554858138-80rfqien142k6ikh2pd834h6ftps2bki.apps.googleusercontent.com",
           "client_type": 3
         }
@@ -60,8 +37,13 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "72554858138-80rfqien142k6ikh2pd834h6ftps2bki.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         },
         "ads_service": {
           "status": 2
