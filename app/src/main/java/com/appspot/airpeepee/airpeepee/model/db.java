@@ -10,14 +10,16 @@ import com.google.firebase.database.ValueEventListener;
 
 public class db {
 
-    public String fee;
+    public String toilet;
     public String plz;
 
-    public db(String fee, String plz) {
+    public db(){};
+
+    public db(String toilet, String plz) {
 
         // Get a reference to our posts
         final FirebaseDatabase firedb = FirebaseDatabase.getInstance();
-        DatabaseReference ref = firedb.getReference("https://airpeepee.firebaseio.com/airpeepee/toilet");
+        DatabaseReference ref = firedb.getReference("/toilet");
 
         /* Attach a listener to read the data at our posts reference */
         ref.addValueEventListener(new
@@ -26,9 +28,13 @@ public class db {
                   @Override
                   public void onDataChange(DataSnapshot dataSnapshot) {
                       db database = dataSnapshot.getValue(db.class);
-                      System.out.println(database);
+
+                      System.out.println(dataSnapshot.getKey()); //das ist die Toilet collection (table toilet)
+                      System.out.println(dataSnapshot.getValue());  // das ist das Value von das Table. In diesem Fall - das ganze JSON
+
                       Log.d("db:", database.toString());
                   }
+
 
                   @Override
                   public void onCancelled(DatabaseError databaseError) {
