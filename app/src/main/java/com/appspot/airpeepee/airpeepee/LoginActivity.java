@@ -49,6 +49,7 @@ import com.google.android.gms.tasks.Task;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import com.appsport.airpeepee.airpeepee.model.test;
 
 import static android.Manifest.permission.READ_CONTACTS;
 
@@ -106,6 +107,17 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
 
 
     private void updateUI(@Nullable GoogleSignInAccount account) {
+
+        if (account != null) {
+            String personName = account.getDisplayName();
+            String personGivenName = account.getGivenName();
+            String personFamilyName = account.getFamilyName();
+            String personEmail = account.getEmail();
+            String personId = account.getId();
+            Uri personPhoto = account   .getPhotoUrl();
+        }
+
+
        /* if (account != null) {
             mStatusTextView.setText(getString(R.string.signed_in_fmt, account.getDisplayName()));
 
