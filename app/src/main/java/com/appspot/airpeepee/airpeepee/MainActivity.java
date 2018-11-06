@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.appspot.airpeepee.airpeepee.model.db;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -26,7 +28,10 @@ public class MainActivity extends AppCompatActivity {
                 // calling an activity using <intent-filter> action name
                 //  Intent inent = new Intent("com.hmkcode.android.ANOTHER_ACTIVITY");
 
+                db database = new db("yes", "10555");
                 startActivity(inent);
+
+
 
             }
         });
