@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-        db database = new db("29040668", "10555");
+        db database = new db();
 
 
 
