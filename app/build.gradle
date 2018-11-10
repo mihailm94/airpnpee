@@ -43,4 +43,9 @@ dependencies {
 
     // Dependency for the Firebase database
     implementation 'com.google.firebase:firebase-database:16.0.4'
+
+
+    // Search Activity
+    implementation 'com.android.support:design:23.0.1'
+    implementation 'com.android.support:appcompat-v7:23.0.1'
 }
