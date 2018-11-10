@@ -27,10 +27,12 @@ public class db {
 
         // First Query all Toilette with name "City Toilette"
         Query mQueryRef = ref.orderByChild("name").equalTo("City Toilette");
+
         mQueryRef.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 System.out.println(dataSnapshot.getChildrenCount()); // just 136 toilet with name "City Toilette"
+
             }
 
             @Override
