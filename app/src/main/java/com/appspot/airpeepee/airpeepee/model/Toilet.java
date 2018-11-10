@@ -21,6 +21,7 @@ public class Toilet {
 
     public Toilet(){
         // Default constructor required for calls to DataSnapshot.getValue(User.class)
+
     }
 
     public Toilet (int id,boolean fee,String name,String opening_hours,Location location,Address address,boolean wheelchair){

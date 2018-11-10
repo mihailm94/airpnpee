@@ -17,30 +17,22 @@ import java.util.List;
 
 public class db {
 
-    public Toilet toilet;
-    public List<Toilet> toiletList;
+    public List<Toilet> toiletList = new ArrayList<Toilet>();
 
-    public String plz;
 
     public db(){
-
-        toiletList = new ArrayList<Toilet>();
 
         final FirebaseDatabase database = FirebaseDatabase.getInstance();
         DatabaseReference toiletRef = database.getReference("/toilet");
 
-        public void 
         // Attach a listener to read the data at our posts reference
-        toiletRef.addValueEventListener(new ValueEventListener() {
-
+        toiletRef.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
-                //System.out.println(dataSnapshot.getChildrenCount());
                 for(DataSnapshot toiletSnapshot : dataSnapshot.getChildren()) {
-                    if(toiletSnapshot.getKey())
+                    Toilet toilet = toiletSnapshot.getValue(Toilet.class);
+                    toiletList.add(toilet);
                 }
-                //  toilet = dataSnapshot.getValue(Toilet.class);
-                //  System.out.println(toilet);
             }
 
             @Override
@@ -71,6 +63,8 @@ public class db {
         */
 
         };
+
+
 
     public db(String toilet, String plz) {
 
