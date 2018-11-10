@@ -1,24 +1,20 @@
 package com.appspot.airpeepee.airpeepee;
 
-<<<<<<< HEAD
 import android.location.Address;
 import android.location.Location;
-=======
 import android.location.Geocoder;
 import android.location.Location;
 import android.location.LocationListener;
->>>>>>> fb46904eb7477ad2cd63cdd36be3d6d2290da589
+
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
-<<<<<<< HEAD
+
 import com.appspot.airpeepee.airpeepee.model.Toilet;
-=======
 import com.appspot.airpeepee.airpeepee.model.MyLocationListener;
->>>>>>> 4e888ad1fdb96c5b89662473bf6fe826cc913b1d
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
@@ -26,7 +22,6 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
-import com.google.api.services.people.v1.model.Address;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -49,19 +44,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
 
-<<<<<<< HEAD
-        toiletList = new ArrayList<>();
-
-
-
-
-
-=======
-
         MyLocationListener myLocationListener =new MyLocationListener(this);
         Location location= myLocationListener.getLastBestLocation();
         System.out.println(location.getLatitude());
->>>>>>> 4e888ad1fdb96c5b89662473bf6fe826cc913b1d
     }
 
 
