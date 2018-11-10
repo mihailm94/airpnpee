@@ -1,8 +1,11 @@
 package com.appspot.airpeepee.airpeepee;
 
+import android.location.Address;
+import android.location.Location;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 
+import com.appspot.airpeepee.airpeepee.model.MyLocationListener;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
@@ -25,6 +28,11 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
+
+
+        MyLocationListener myLocationListener =new MyLocationListener(this);
+        Location location= myLocationListener.getLastBestLocation();
+        System.out.println(location.getLatitude());
     }
 
 
