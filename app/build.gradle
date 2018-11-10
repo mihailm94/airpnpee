@@ -46,4 +46,5 @@ dependencies {
     // Dependency for the Firebase database
     implementation 'com.google.firebase:firebase-database:16.0.4'
 
+
 }
