@@ -1,5 +1,6 @@
 package com.appspot.airpeepee.airpeepee;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -58,6 +59,7 @@ public class Search extends AppCompatActivity implements PlaceSelectionListener{
         });
     }
 
+    @SuppressLint("StringFormatMatches")
     @Override
     public void onPlaceSelected(Place place) {
         Log.i(LOG_TAG, "Place Selected: " + place.getName());

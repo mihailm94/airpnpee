@@ -33,20 +33,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="activity_main.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_main.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state />
-          </provider>
-          <provider editor-type-id="android-designer2">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="search.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="search.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/res/layout/search.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="106">
+            <state relative-caret-position="-296">
               <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
             </state>
           </provider>
@@ -117,16 +107,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Search.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Search.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/appspot/airpeepee/airpeepee/Search.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="66" column="312" selection-start-line="66" selection-start-column="312" selection-end-line="66" selection-end-column="312" />
+            <state relative-caret-position="229">
+              <caret line="67" column="49" selection-start-line="67" selection-start-column="40" selection-end-line="67" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1905#2592#0" expanded="true" />
-                <element signature="e#2591#2592#0" expanded="true" />
-                <element signature="e#2758#2950#0" expanded="true" />
+                <element signature="e#1945#2632#0" expanded="true" />
+                <element signature="e#2631#2632#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -2642,7 +2631,7 @@
       <window_info id="Build Variants" order="2" side_tool="true" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="right" id="Preview" order="3" weight="0.32988048" />
+      <window_info active="true" anchor="right" id="Preview" order="3" visible="true" weight="0.32988048" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Terminal" order="7" />
@@ -2650,7 +2639,7 @@
       <window_info id="Captures" order="2" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17768924" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17768924" />
       <window_info anchor="bottom" id="Build" order="7" visible="true" weight="0.32970452" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32970452" />
       <window_info anchor="right" id="Gradle" order="3" />
@@ -2741,9 +2730,8 @@
           <caret line="21" column="42" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1905#2592#0" expanded="true" />
-            <element signature="e#2591#2592#0" expanded="true" />
-            <element signature="e#2758#2950#0" expanded="true" />
+            <element signature="e#1945#2632#0" expanded="true" />
+            <element signature="e#2631#2632#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2818,9 +2806,8 @@
           <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1905#2592#0" expanded="true" />
-            <element signature="e#2591#2592#0" expanded="true" />
-            <element signature="e#2758#2950#0" expanded="true" />
+            <element signature="e#1945#2632#0" expanded="true" />
+            <element signature="e#2631#2632#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2963,27 +2950,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-places-16.0.0.aar/e88ff93a057f0d5018342f0e9ccc0d24/jars/classes.jar!/com/google/android/gms/location/places/Place.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2520">
+          <caret line="168" column="10" selection-start-line="168" selection-start-column="10" selection-end-line="168" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/appspot/airpeepee/airpeepee/Search.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="67" column="49" selection-start-line="67" selection-start-column="40" selection-end-line="67" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1945#2632#0" expanded="true" />
+            <element signature="e#2631#2632#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/search.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
+        <state relative-caret-position="-296">
           <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
         </state>
       </provider>
       <provider editor-type-id="android-designer2">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/appspot/airpeepee/airpeepee/Search.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="66" column="312" selection-start-line="66" selection-start-column="312" selection-end-line="66" selection-end-column="312" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1905#2592#0" expanded="true" />
-            <element signature="e#2591#2592#0" expanded="true" />
-            <element signature="e#2758#2950#0" expanded="true" />
-          </folding>
-        </state>
       </provider>
     </entry>
   </component>
