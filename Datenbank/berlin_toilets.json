@@ -1,5 +1,6 @@
 {
-	"toilet":{
+	"toilet":
+	{
 		"29040668": {
 			"fee": "yes",
 			"name": "City Toilette",
@@ -10322,5 +10323,19 @@
 				"lon" : 13.3047676    
 				}
 			}
+	
+	},
+	
+	"user":
+	{
+		"dummy" :
+		{
+			"email" : "dummy@dummy.com",
+			"username" : "dummy_dumb",
+			"password" : "dumb"
+		}
+		
+		
+		
 	}
 }
