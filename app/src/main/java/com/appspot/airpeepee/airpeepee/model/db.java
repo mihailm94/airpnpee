@@ -17,9 +17,6 @@ import java.util.List;
 
 public class db {
 
-    public List<Toilet> fullToiletList;
-
-
     public db(){
 
         final FirebaseDatabase database = FirebaseDatabase.getInstance();
@@ -48,7 +45,7 @@ public class db {
                     toiletList.add(new Toilet(id, fee, locationLat, locationLon, name, openingHours, plz, street, streetNo, wheelchair));
                 }
 
-                fullToiletList = toiletList;
+                DataHolder.getInstance().setData(toiletList);
             }
 
             @Override

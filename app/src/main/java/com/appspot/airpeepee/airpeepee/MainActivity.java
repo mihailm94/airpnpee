@@ -13,13 +13,14 @@ import com.appspot.airpeepee.airpeepee.model.db;
 public class MainActivity extends AppCompatActivity {
 
 
-
+    db database ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Button b2=(Button) findViewById(R.id.button2);
         Button b3=(Button) findViewById(R.id.button3);
+        database = new db();
         b3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -45,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-        db database = new db();
+
 
 
 
