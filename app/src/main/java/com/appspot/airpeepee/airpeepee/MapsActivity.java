@@ -1,38 +1,52 @@
 package com.appspot.airpeepee.airpeepee;
 
 <<<<<<< HEAD
+
+import android.location.Location;
+
+=======
 import android.location.Address;
 import android.location.Location;
-=======
 import android.location.Geocoder;
 import android.location.Location;
 import android.location.LocationListener;
->>>>>>> fb46904eb7477ad2cd63cdd36be3d6d2290da589
+>>>>>>> 38b0c2ab70faa3b6878ebeac7b1b929eebf053a1
+
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.View;
 import android.widget.Toast;
 
+
+<<<<<<< HEAD
+=======
+import com.appspot.airpeepee.airpeepee.model.Toilet;
+>>>>>>> 38b0c2ab70faa3b6878ebeac7b1b929eebf053a1
 import com.appspot.airpeepee.airpeepee.model.MyLocationListener;
+import com.appspot.airpeepee.airpeepee.model.db;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
-import com.google.api.services.people.v1.model.Address;
 
+<<<<<<< HEAD
+=======
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
+>>>>>>> 38b0c2ab70faa3b6878ebeac7b1b929eebf053a1
 
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
 
+    private Marker marker;
+    private List<Toilet> toiletList;
 
-
+    private db databaseToilets;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,10 +57,28 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
 
-
         MyLocationListener myLocationListener =new MyLocationListener(this);
+        if(myLocationListener.canGetLocation()) {
+
+            double latitude = myLocationListener.getLatitude();
+            double longitude = myLocationListener.getLongitude();
+
+            // \n is for new line
+            Toast.makeText(getApplicationContext(), "Your Location is - \nLat: " + latitude + "\nLong: " + longitude, Toast.LENGTH_LONG).show();
+        } else {
+            // Can't get location.
+            // GPS or network is not enabled.
+            // Ask user to enable GPS/network in settings.
+            myLocationListener.showSettingsAlert();
+        }
         Location location= myLocationListener.getLastBestLocation();
-        System.out.println(location.getLatitude());
+<<<<<<< HEAD
+       // System.out.println(location.getLatitude());
+=======
+        //System.out.println(location.getLatitude());
+
+        databaseToilets = new db();
+>>>>>>> 38b0c2ab70faa3b6878ebeac7b1b929eebf053a1
     }
 
 
@@ -63,9 +95,13 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
 
+        googleMap.setMapType(GoogleMap.MAP_TYPE_NORMAL);
+
+
+
         // Add a marker in Sydney and move the camera
-        LatLng sydney = new LatLng(-34, 151);
-        mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+        //LatLng sydney = new LatLng(-34, 151);
+        //mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
+        //mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
     }
 }

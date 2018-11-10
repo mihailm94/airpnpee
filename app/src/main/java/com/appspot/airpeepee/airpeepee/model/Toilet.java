@@ -11,19 +11,20 @@ import com.google.firebase.database.ValueEventListener;
 public class Toilet {
 
     protected int id;
-    protected boolean fee;
+    protected String fee;
     protected String name;
     protected String opening_hours;
     protected Location location;
     protected Address address;
-    protected boolean wheelchair;
+    protected String wheelchair;
 
 
     public Toilet(){
         // Default constructor required for calls to DataSnapshot.getValue(User.class)
+
     }
 
-    public Toilet (int id,boolean fee,String name,String opening_hours,Location location,Address address,boolean wheelchair){
+    public Toilet (int id,String fee,String name,String opening_hours,Location location,Address address,String wheelchair){
         this.id=id;
         this.fee=fee;
         this.name=name;
@@ -36,6 +37,8 @@ public class Toilet {
     }
 
 
+    /*
+
     public int getId() {
         return id;
     }
@@ -44,14 +47,13 @@ public class Toilet {
         this.id = id;
     }
 
-    public boolean isFee() {
+    public String isFee() {
         return fee;
     }
 
-    public void setFee(boolean fee) {
+    public void setFee(String fee) {
         this.fee = fee;
     }
-
 
     public String getName() {
         return name;
@@ -93,14 +95,14 @@ public class Toilet {
 
 
 
-    public boolean isWheelchair() {
+    public String isWheelchair() {
         return wheelchair;
     }
 
-    public void setWheelchair(boolean wheelchair) {
+    public void setWheelchair(String wheelchair) {
         this.wheelchair = wheelchair;
     }
 
-
+    */
 
 }
