@@ -17,22 +17,27 @@ import java.util.List;
 
 public class db {
 
-    public List<Toilet> toiletList = new ArrayList<Toilet>();
 
 
     public db(){
 
         final FirebaseDatabase database = FirebaseDatabase.getInstance();
-        DatabaseReference toiletRef = database.getReference("/toilet");
+        DatabaseReference toiletRef = database.getReference("/toilet/id");
 
-        // Attach a listener to read the data at our posts reference
+        // Attach a SINGLE READ listener to read the data at our posts reference
         toiletRef.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
+
+                List<Toilet> toiletList = new ArrayList<>();
+
                 for(DataSnapshot toiletSnapshot : dataSnapshot.getChildren()) {
                     Toilet toilet = toiletSnapshot.getValue(Toilet.class);
                     toiletList.add(toilet);
                 }
+
+                System.out.print(toiletList.size());
+
             }
 
             @Override

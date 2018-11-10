@@ -15,6 +15,7 @@ import android.widget.Toast;
 
 import com.appspot.airpeepee.airpeepee.model.Toilet;
 import com.appspot.airpeepee.airpeepee.model.MyLocationListener;
+import com.appspot.airpeepee.airpeepee.model.db;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
@@ -35,6 +36,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     private Marker marker;
     private List<Toilet> toiletList;
 
+    private db databaseToilets;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,7 +49,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
         MyLocationListener myLocationListener =new MyLocationListener(this);
         Location location= myLocationListener.getLastBestLocation();
-        System.out.println(location.getLatitude());
+        //System.out.println(location.getLatitude());
+
+        databaseToilets = new db();
     }
 
 
@@ -64,6 +69,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap = googleMap;
 
         googleMap.setMapType(GoogleMap.MAP_TYPE_NORMAL);
+
+
 
         // Add a marker in Sydney and move the camera
         //LatLng sydney = new LatLng(-34, 151);
