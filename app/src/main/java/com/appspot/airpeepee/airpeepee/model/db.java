@@ -12,22 +12,50 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class db {
 
     public Toilet toilet;
-    public List<Toilet> mtoilet;
+    public List<Toilet> toiletList;
 
     public String plz;
 
     public db(){
+
+        toiletList = new ArrayList<Toilet>();
+
         final FirebaseDatabase database = FirebaseDatabase.getInstance();
-        DatabaseReference ref = database.getReference("/toilet");
+        DatabaseReference toiletRef = database.getReference("/toilet");
+
+        public void 
+        // Attach a listener to read the data at our posts reference
+        toiletRef.addValueEventListener(new ValueEventListener() {
+
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                //System.out.println(dataSnapshot.getChildrenCount());
+                for(DataSnapshot toiletSnapshot : dataSnapshot.getChildren()) {
+                    if(toiletSnapshot.getKey())
+                }
+                //  toilet = dataSnapshot.getValue(Toilet.class);
+                //  System.out.println(toilet);
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+                System.out.println("The read failed: " + databaseError.getCode());
+            }
+
+        });
+
+
 
         // First Query all Toilette with name "City Toilette"
-        Query mQueryRef = ref.orderByChild("name").equalTo("City Toilette");
+        //Query mQueryRef = ref.orderByChild("name").equalTo("City Toilette");
 
+        /*
         mQueryRef.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
@@ -40,30 +68,9 @@ public class db {
 
             }
         });
+        */
 
-        // Attach a listener to read the data at our posts reference
-        ref.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-                System.out.println(dataSnapshot.getChildrenCount());
-
-              //  toilet = dataSnapshot.getValue(Toilet.class);
-              //  System.out.println(toilet);
-            }
-
-            @Override
-            public void onCancelled(DatabaseError databaseError) {
-                System.out.println("The read failed: " + databaseError.getCode());
-            }
-        });
-
-
-
-
-
-
-
-    };
+        };
 
     public db(String toilet, String plz) {
 

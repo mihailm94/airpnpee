@@ -52,7 +52,6 @@ public class Toilet {
         this.fee = fee;
     }
 
-
     public String getName() {
         return name;
     }
