@@ -1,26 +1,19 @@
 package com.appspot.airpeepee.airpeepee;
 
-<<<<<<< HEAD
+
 
 import android.location.Location;
 
-=======
-import android.location.Address;
-import android.location.Location;
-import android.location.Geocoder;
-import android.location.Location;
-import android.location.LocationListener;
->>>>>>> 38b0c2ab70faa3b6878ebeac7b1b929eebf053a1
+
 
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 import android.widget.Toast;
 
 
-<<<<<<< HEAD
-=======
+
 import com.appspot.airpeepee.airpeepee.model.Toilet;
->>>>>>> 38b0c2ab70faa3b6878ebeac7b1b929eebf053a1
+
 import com.appspot.airpeepee.airpeepee.model.MyLocationListener;
 import com.appspot.airpeepee.airpeepee.model.db;
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -31,13 +24,11 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 
-<<<<<<< HEAD
-=======
+
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
->>>>>>> 38b0c2ab70faa3b6878ebeac7b1b929eebf053a1
 
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
 
@@ -72,13 +63,10 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             myLocationListener.showSettingsAlert();
         }
         Location location= myLocationListener.getLastBestLocation();
-<<<<<<< HEAD
-       // System.out.println(location.getLatitude());
-=======
         //System.out.println(location.getLatitude());
 
         databaseToilets = new db();
->>>>>>> 38b0c2ab70faa3b6878ebeac7b1b929eebf053a1
+
     }
 
 
