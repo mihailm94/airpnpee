@@ -17,6 +17,7 @@ import java.util.List;
 
 public class db {
 
+    public List<Toilet> fullToiletList;
 
 
     public db(){
@@ -44,14 +45,10 @@ public class db {
                     double locationLat = (double) toiletSnapshot.child("location").child("lat").getValue();
                     double locationLon = (double) toiletSnapshot.child("location").child("lon").getValue();
 
-                    //new Toilet(id, fee, locationLat, locationLon, name, openingHours, plz, street, streetNo, wheelchair);
-
                     toiletList.add(new Toilet(id, fee, locationLat, locationLon, name, openingHours, plz, street, streetNo, wheelchair));
-
                 }
 
-                System.out.print(toiletList.size());
-
+                fullToiletList = toiletList;
             }
 
             @Override
@@ -61,27 +58,7 @@ public class db {
 
         });
 
-
-
-        // First Query all Toilette with name "City Toilette"
-        //Query mQueryRef = ref.orderByChild("name").equalTo("City Toilette");
-
-        /*
-        mQueryRef.addListenerForSingleValueEvent(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                System.out.println(dataSnapshot.getChildrenCount()); // just 136 toilet with name "City Toilette"
-
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError databaseError) {
-
-            }
-        });
-        */
-
-        };
+    }
 
 
 
