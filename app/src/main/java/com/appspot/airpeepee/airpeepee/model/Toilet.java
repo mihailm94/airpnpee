@@ -10,40 +10,65 @@ import com.google.firebase.database.ValueEventListener;
 
 public class Toilet {
 
-    protected int id;
+    protected String id;
     protected String fee;
+
+    public double getLocationLat() {
+        return locationLat;
+    }
+
+    public void setLocationLat(double locationLat) {
+        this.locationLat = locationLat;
+    }
+
+    protected double locationLat;
+
+    public double getLocationLon() {
+        return locationLon;
+    }
+
+    public void setLocationLon(double locationLon) {
+        this.locationLon = locationLon;
+    }
+
+    protected double locationLon;
     protected String name;
-    protected String opening_hours;
-    protected Location location;
-    protected Address address;
+    protected String openingHours;
+    protected String plz;
+    protected String street;
+    protected String streetNumber;
     protected String wheelchair;
 
+    //protected Location location;
+    //protected Address address;
 
     public Toilet(){
         // Default constructor required for calls to DataSnapshot.getValue(User.class)
 
     }
 
-    public Toilet (int id,String fee,String name,String opening_hours,Location location,Address address,String wheelchair){
+    public Toilet (String id, String fee, double locationLat, double locationLon, String name, String openingHours, String plz, String street, String streetNumber, String wheelchair){
         this.id=id;
         this.fee=fee;
+        this.locationLat=locationLat;
+        this.locationLon=locationLon;
         this.name=name;
-        this.opening_hours=opening_hours;
-        this.location=location;
-        this.address=address;
+        this.openingHours=openingHours;
+        this.plz = plz;
+        this.street = street;
+        this.streetNumber = streetNumber;
         this.wheelchair=wheelchair;
      // constracter code hier
 
     }
 
 
-    /*
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -65,33 +90,19 @@ public class Toilet {
 
 
 
-    public String getOpening_hours() {
-        return opening_hours;
+    public String getOpeninghours() {
+        return openingHours;
     }
 
-    public void setOpening_hours(String opening_hours) {
-        this.opening_hours = opening_hours;
-    }
-
-
-
-    public Location getLocation() {
-        return location;
-    }
-
-    public void setLocation(Location location) {
-        this.location = location;
+    public void setOpeninghours(String opening_hours) {
+        this.openingHours = opening_hours;
     }
 
 
 
-    public Address getAddress() {
-        return address;
-    }
 
-    public void setAddress(Address address) {
-        this.address = address;
-    }
+
+
 
 
 
@@ -103,6 +114,5 @@ public class Toilet {
         this.wheelchair = wheelchair;
     }
 
-    */
 
 }

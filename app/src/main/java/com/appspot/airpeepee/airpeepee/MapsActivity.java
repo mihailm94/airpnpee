@@ -1,14 +1,12 @@
 package com.appspot.airpeepee.airpeepee;
 
-
-
-import android.location.Location;
-
 import android.location.Address;
 import android.location.Location;
 import android.location.Geocoder;
 import android.location.Location;
 import android.location.LocationListener;
+import android.location.Location;
+
 
 
 import android.support.v4.app.FragmentActivity;
@@ -71,22 +69,25 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         }
         Location location= myLocationListener.getLastBestLocation();
        // System.out.println(location.getLatitude());
+
         //System.out.println(location.getLatitude());
 
         databaseToilets = new db();
 
         MarkerOptions markerPOI;
 
+
+
         // Toiltes from data to marker
-        for()
+        for(Toilet t : databaseToilets.fullToiletList)
         {
             markerPOI = new MarkerOptions();
-            markerPOI .position(new LatLng(mypoi .getLatitude(),mypoi .getLongitude()))
-                    .title(mypoi .getName())
-                    .snippet(mypoi .getCategory())
+            markerPOI.position(new LatLng(t.getLocationLat(),t.getLocationLon()))
+                    .title(t.getName());
 
             mMap.addMarker(markerPOI );
         }
+
 
     }
 
