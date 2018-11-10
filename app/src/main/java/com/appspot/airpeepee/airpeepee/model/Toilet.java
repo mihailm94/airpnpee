@@ -10,27 +10,35 @@ import com.google.firebase.database.ValueEventListener;
 
 public class Toilet {
 
-    protected int id;
+    protected String id;
     protected String fee;
+    protected double locationLat;
+    protected double locationLon;
     protected String name;
-    protected String opening_hours;
-    protected Location location;
-    protected Address address;
+    protected String openingHours;
+    protected String plz;
+    protected String street;
+    protected String streetNumber;
     protected String wheelchair;
 
+    //protected Location location;
+    //protected Address address;
 
     public Toilet(){
         // Default constructor required for calls to DataSnapshot.getValue(User.class)
 
     }
 
-    public Toilet (int id,String fee,String name,String opening_hours,Location location,Address address,String wheelchair){
+    public Toilet (String id, String fee, double locationLat, double locationLon, String name, String openingHours, String plz, String street, String streetNumber, String wheelchair){
         this.id=id;
         this.fee=fee;
+        this.locationLat=locationLat;
+        this.locationLon=locationLon;
         this.name=name;
-        this.opening_hours=opening_hours;
-        this.location=location;
-        this.address=address;
+        this.openingHours=openingHours;
+        this.plz = plz;
+        this.street = street;
+        this.streetNumber = streetNumber;
         this.wheelchair=wheelchair;
      // constracter code hier
 

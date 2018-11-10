@@ -22,18 +22,32 @@ public class db {
     public db(){
 
         final FirebaseDatabase database = FirebaseDatabase.getInstance();
-        DatabaseReference toiletRef = database.getReference("/toilet/id");
+        DatabaseReference toiletRef = database.getReference("/toilet");
 
         // Attach a SINGLE READ listener to read the data at our posts reference
         toiletRef.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
 
+                // declare the list inside onDataChange because the function fires asynchronously
                 List<Toilet> toiletList = new ArrayList<>();
 
                 for(DataSnapshot toiletSnapshot : dataSnapshot.getChildren()) {
-                    Toilet toilet = toiletSnapshot.getValue(Toilet.class);
-                    toiletList.add(toilet);
+                    String id = (String) toiletSnapshot.getKey();
+                    String fee = (String) toiletSnapshot.child("fee").getValue();
+                    String name = (String) toiletSnapshot.child("name").getValue();
+                    String openingHours = (String) toiletSnapshot.child("opening_hours").getValue();
+                    String plz = (String) toiletSnapshot.child("plz").getValue();
+                    String street = (String) toiletSnapshot.child("street").getValue();
+                    String streetNo = (String) toiletSnapshot.child("street_number").getValue();
+                    String wheelchair = (String) toiletSnapshot.child("wheelchair").getValue();
+                    double locationLat = (double) toiletSnapshot.child("location").child("lat").getValue();
+                    double locationLon = (double) toiletSnapshot.child("location").child("lon").getValue();
+
+                    //new Toilet(id, fee, locationLat, locationLon, name, openingHours, plz, street, streetNo, wheelchair);
+
+                    toiletList.add(new Toilet(id, fee, locationLat, locationLon, name, openingHours, plz, street, streetNo, wheelchair));
+
                 }
 
                 System.out.print(toiletList.size());
