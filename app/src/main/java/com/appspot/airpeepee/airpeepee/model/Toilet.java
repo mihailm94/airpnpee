@@ -2,6 +2,11 @@ package com.appspot.airpeepee.airpeepee.model;
 
 import android.location.Address;
 import android.location.Location;
+import android.util.Log;
+
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.ValueEventListener;
 
 public class Toilet {
 
@@ -14,6 +19,10 @@ public class Toilet {
     protected boolean wheelchair;
 
 
+    public Toilet(){
+        // Default constructor required for calls to DataSnapshot.getValue(User.class)
+    }
+
     public Toilet (int id,boolean fee,String name,String opening_hours,Location location,Address address,boolean wheelchair){
         this.id=id;
         this.fee=fee;
@@ -23,7 +32,6 @@ public class Toilet {
         this.address=address;
         this.wheelchair=wheelchair;
      // constracter code hier
-
 
     }
 
