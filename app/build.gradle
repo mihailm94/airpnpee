@@ -41,11 +41,8 @@ dependencies {
     implementation 'com.google.api-client:google-api-client-android:1.22.0'
     implementation 'com.google.apis:google-api-services-people:v1-rev139-1.22.0'
 
-
-
     // Dependency for the Firebase database
     implementation 'com.google.firebase:firebase-database:16.0.4'
-
 
 
 }
