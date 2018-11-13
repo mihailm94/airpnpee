@@ -18,7 +18,7 @@ import com.google.android.gms.maps.model.LatLngBounds;
 public class SearchActivity extends AppCompatActivity {
 
     private static final LatLngBounds BOUNDS_MOUNTAIN_VIEW = new LatLngBounds(
-            new LatLng(37.398160, -122.180831), new LatLng(37.430610, -121.972090));
+            new LatLng(52.352552, 13.053786), new LatLng(52.702921, 13.769575));
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
