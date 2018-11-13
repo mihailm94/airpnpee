@@ -5,7 +5,7 @@ android {
     compileSdkVersion 28
     defaultConfig {
         applicationId "com.appspot.airpeepee.airpeepee"
-        minSdkVersion 24
+        minSdkVersion 23
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"
@@ -45,7 +45,4 @@ dependencies {
     implementation 'com.google.firebase:firebase-database:16.0.4'
 
 
-    // Search Activity
-    implementation 'com.android.support:design:23.0.1'
-    implementation 'com.android.support:appcompat-v7:23.0.1'
 }

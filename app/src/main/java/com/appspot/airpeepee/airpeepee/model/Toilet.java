@@ -12,7 +12,25 @@ public class Toilet {
 
     protected String id;
     protected String fee;
+
+    public double getLocationLat() {
+        return locationLat;
+    }
+
+    public void setLocationLat(double locationLat) {
+        this.locationLat = locationLat;
+    }
+
     protected double locationLat;
+
+    public double getLocationLon() {
+        return locationLon;
+    }
+
+    public void setLocationLon(double locationLon) {
+        this.locationLon = locationLon;
+    }
+
     protected double locationLon;
     protected String name;
     protected String openingHours;
@@ -44,13 +62,17 @@ public class Toilet {
 
     }
 
+<<<<<<< HEAD:airpnpee/app/src/main/java/com/appspot/airpeepee/airpeepee/model/Toilet.java
     /*
+=======
 
-    public int getId() {
+>>>>>>> faa741eb5605b239c45ecaf10198a9387b8af015:app/src/main/java/com/appspot/airpeepee/airpeepee/model/Toilet.java
+
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -72,33 +94,19 @@ public class Toilet {
 
 
 
-    public String getOpening_hours() {
-        return opening_hours;
+    public String getOpeninghours() {
+        return openingHours;
     }
 
-    public void setOpening_hours(String opening_hours) {
-        this.opening_hours = opening_hours;
-    }
-
-
-
-    public Location getLocation() {
-        return location;
-    }
-
-    public void setLocation(Location location) {
-        this.location = location;
+    public void setOpeninghours(String opening_hours) {
+        this.openingHours = opening_hours;
     }
 
 
 
-    public Address getAddress() {
-        return address;
-    }
 
-    public void setAddress(Address address) {
-        this.address = address;
-    }
+
+
 
 
 
@@ -110,6 +118,5 @@ public class Toilet {
         this.wheelchair = wheelchair;
     }
 
-    */
 
 }

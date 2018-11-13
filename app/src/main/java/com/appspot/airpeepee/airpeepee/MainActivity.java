@@ -13,13 +13,15 @@ import com.appspot.airpeepee.airpeepee.model.db;
 public class MainActivity extends AppCompatActivity {
 
 
-
+    db database ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Button b2=(Button) findViewById(R.id.button2);
         Button b3=(Button) findViewById(R.id.button3);
+        Button b4=(Button) findViewById(R.id.button4);
+        database = new db();
         b3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -31,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(inent);
             }
         });
-                b2.setOnClickListener(new View.OnClickListener() {
+        b2.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View v) {
                 // TODO Auto-generated method stub
@@ -43,9 +45,21 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(inent);
             }
         });
+        b4.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+                Intent inent = new Intent(v.getContext(),SearchActivity.class);
+
+                // calling an activity using <intent-filter> action name
+                //  Intent inent = new Intent("com.hmkcode.android.ANOTHER_ACTIVITY");
+
+                startActivity(inent);
+            }
+        });
 
 
-        db database = new db();
+
 
 
 
