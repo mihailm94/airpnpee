@@ -71,14 +71,14 @@
         <activity
             android:name=".SearchActivity"
             android:label="Search" />
-<<<<<<< HEAD
+
         <activity android:name=".DirectionActivity"></activity>
-=======
+
         <activity
             android:name=".AddActivity"
             android:label="@string/title_activity_add"
             android:theme="@style/AppTheme.NoActionBar"></activity>
->>>>>>> b6fe504ac3ddc3b6934592b6aead3b0f276419a3
+
     </application>
 
 </manifest>

@@ -22,4 +22,9 @@
     </string>
     <string name="title_activity_maps">Map</string>
     <string name="title_activity_add">AddActivity</string>
+    <string name="add_private_toilet">Add private Toilet</string>
+    <string name="text">
+
+        Save
+    </string>
 </resources>
