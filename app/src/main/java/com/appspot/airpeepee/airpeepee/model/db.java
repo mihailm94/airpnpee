@@ -58,7 +58,6 @@ public class db {
     }
 
 
-
     public db(String toilet, String plz) {
 
         // Get a reference to our toilets

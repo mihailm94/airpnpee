@@ -1,0 +1,29 @@
+{
+  "comments" : {
+    "commentID_1" : {
+      "commentText" : "this toilet is the most amazing toilet ever",
+      "userID" : "dummy"
+    }
+  },
+  "description" : "this toilet will welcome you warmly even on your worst days",
+  "fee" : "yes",
+  "isPrivate" : "False",
+  "location" : {
+    "lat" : 52.5250054,
+    "lon" : 13.335496
+  },
+  "name" : "City Toilette",
+  "opening_hours" : "24/7",
+  "photoUrl" : "gs://airpeepee.appspot.com/toilet.png",
+  "plz" : "10555",
+  "rating" : {
+    "ratID_1" : {
+      "userID" : "dummy",
+      "userRating" : 1
+    }
+  },
+  "ratingTotal" : 5,
+  "street" : "Alt-Moabit",
+  "street_number" : "81",
+  "wheelchair" : "yes"
+}

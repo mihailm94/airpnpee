@@ -62,7 +62,11 @@ public class Toilet {
 
     }
 
+<<<<<<< HEAD:airpnpee/app/src/main/java/com/appspot/airpeepee/airpeepee/model/Toilet.java
+    /*
+=======
 
+>>>>>>> faa741eb5605b239c45ecaf10198a9387b8af015:app/src/main/java/com/appspot/airpeepee/airpeepee/model/Toilet.java
 
     public String getId() {
         return id;
