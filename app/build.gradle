@@ -44,5 +44,8 @@ dependencies {
     // Dependency for the Firebase database
     implementation 'com.google.firebase:firebase-database:16.0.4'
 
+    // Direction
+    implementation 'com.akexorcist:googledirectionlibrary:1.0.4'
+
 
 }
