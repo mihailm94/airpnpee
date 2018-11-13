@@ -21,4 +21,5 @@
         Name: %1$s\nAddress: %2$s\nPhone: %3$s\nWebsite: %4$s\nRating: %5$s\nId: %6$s\n
     </string>
     <string name="title_activity_maps">Map</string>
+    <string name="title_activity_add">AddActivity</string>
 </resources>
