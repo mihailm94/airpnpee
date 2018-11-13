@@ -20,6 +20,19 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Button b2=(Button) findViewById(R.id.button2);
         Button b3=(Button) findViewById(R.id.button3);
+        Button b4=(Button) findViewById(R.id.button4);
+        b4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent inent = new Intent(v.getContext(),SearchActivity.class);
+
+                // calling an activity using <intent-filter> action name
+                //  Intent inent = new Intent("com.hmkcode.android.ANOTHER_ACTIVITY");
+
+                startActivity(inent);
+            }
+        });
+
         database = new db();
         b3.setOnClickListener(new View.OnClickListener() {
             @Override
