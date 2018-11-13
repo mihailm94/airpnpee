@@ -20,21 +20,35 @@ public class SearchActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search);
+
+        //--------------------------------------
         PlaceAutocompleteFragment autocompleteFragment = (PlaceAutocompleteFragment)
                 getFragmentManager().findFragmentById(R.id.place_autocomplete_fragment);
         autocompleteFragment.setOnPlaceSelectedListener(new PlaceSelectionListener() {
             @Override
             public void onPlaceSelected(Place place) {
                 Toast.makeText(getApplicationContext(),place.getName().toString(),Toast.LENGTH_SHORT).show();
+
             }
 
             @Override
             public void onError(Status status) {
                 Toast.makeText(getApplicationContext(),status.toString(),Toast.LENGTH_SHORT).show();
-
             }
         });
     }
+/*
+    @Override
+    public void onPlaceSelected(Place place) {
+        Toast.makeText(getApplicationContext(),place.getName().toString(),Toast.LENGTH_SHORT).show();
+    }
 
-
+    @Override
+    public void onError(Status status) {
+        Toast.makeText(getApplicationContext(),status.toString(),Toast.LENGTH_SHORT).show();
+    }
+*/
 }
+
+
+
