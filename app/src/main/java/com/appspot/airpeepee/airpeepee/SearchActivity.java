@@ -12,8 +12,13 @@ import com.google.android.gms.location.places.Place;
 import com.google.android.gms.location.places.Places;
 import com.google.android.gms.location.places.ui.PlaceAutocompleteFragment;
 import com.google.android.gms.location.places.ui.PlaceSelectionListener;
+import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.LatLngBounds;
 
 public class SearchActivity extends AppCompatActivity {
+
+    private static final LatLngBounds BOUNDS_MOUNTAIN_VIEW = new LatLngBounds(
+            new LatLng(37.398160, -122.180831), new LatLng(37.430610, -121.972090));
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +29,8 @@ public class SearchActivity extends AppCompatActivity {
         //--------------------------------------
         PlaceAutocompleteFragment autocompleteFragment = (PlaceAutocompleteFragment)
                 getFragmentManager().findFragmentById(R.id.place_autocomplete_fragment);
+        autocompleteFragment.setHint("Standort eingeben");
+        autocompleteFragment.setBoundsBias(BOUNDS_MOUNTAIN_VIEW);
         autocompleteFragment.setOnPlaceSelectedListener(new PlaceSelectionListener() {
             @Override
             public void onPlaceSelected(Place place) {
