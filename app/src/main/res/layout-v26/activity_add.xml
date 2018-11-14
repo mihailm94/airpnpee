@@ -69,6 +69,7 @@
         android:id="@+id/include2"
         layout="@layout/content_add" />
 
+
     <View
         android:id="@+id/persistent_"
         android:layout_width="match_parent"
@@ -94,7 +95,6 @@
         app:layout_anchor="@+id/include2"
         app:layout_anchorGravity="right|bottom" />
     <!-- layout/*.xml -->
-
     <View
         android:id="@+id/button"
         android:layout_width="162dp"

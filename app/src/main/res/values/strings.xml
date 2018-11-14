@@ -24,8 +24,9 @@
     <string name="title_activity_maps">Map</string>
     <string name="title_activity_add">AddActivity</string>
     <string name="add_private_toilet">Add private Toilet</string>
-    <string name="text">
-
-        Save
-    </string>
+    <string name="Save">Save</string>
+    <string name="name">Name</string>
+    <string name="todo">TODO</string>
+    <string name="description">description</string>
+    <string name="opening_hours">opening hours</string>
 </resources>

@@ -53,4 +53,14 @@
         android:layout_marginBottom="103dp"
         android:text="Direction" />
 
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="43dp"
+        android:text="Add Toilet" />
+
 </RelativeLayout>

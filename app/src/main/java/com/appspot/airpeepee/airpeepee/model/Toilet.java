@@ -8,29 +8,18 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.ValueEventListener;
 
+import java.util.List;
+
 public class Toilet {
 
     protected String id;
     protected String fee;
-
-    public double getLocationLat() {
-        return locationLat;
-    }
-
-    public void setLocationLat(double locationLat) {
-        this.locationLat = locationLat;
-    }
-
+    protected List<Rating> Ratings;
+    protected double totalRating;
+    protected boolean isPrivate;
+    protected List<Comment> comments;
+    protected String description;
     protected double locationLat;
-
-    public double getLocationLon() {
-        return locationLon;
-    }
-
-    public void setLocationLon(double locationLon) {
-        this.locationLon = locationLon;
-    }
-
     protected double locationLon;
     protected String name;
     protected String openingHours;
@@ -38,9 +27,6 @@ public class Toilet {
     protected String street;
     protected String streetNumber;
     protected String wheelchair;
-
-    //protected Location location;
-    //protected Address address;
 
     public Toilet(){
         // Default constructor required for calls to DataSnapshot.getValue(User.class)
@@ -58,10 +44,26 @@ public class Toilet {
         this.street = street;
         this.streetNumber = streetNumber;
         this.wheelchair=wheelchair;
-     // constracter code hier
+        // constracter code hier
 
     }
 
+
+    public double getLocationLat() {
+        return locationLat;
+    }
+
+    public void setLocationLat(double locationLat) {
+        this.locationLat = locationLat;
+    }
+
+    public double getLocationLon() {
+        return locationLon;
+    }
+
+    public void setLocationLon(double locationLon) {
+        this.locationLon = locationLon;
+    }
 
     public String getId() {
         return id;
@@ -87,8 +89,6 @@ public class Toilet {
         this.name = name;
     }
 
-
-
     public String getOpeninghours() {
         return openingHours;
     }
@@ -97,13 +97,45 @@ public class Toilet {
         this.openingHours = opening_hours;
     }
 
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
 
 
+    public List<Rating> getRatings() {
+        return Ratings;
+    }
 
+    public void setRatings(List<Rating> ratings) {
+        Ratings = ratings;
+    }
 
+    public double getTotalRating() {
+        return totalRating;
+    }
 
+    public void setTotalRating(double totalRating) {
+        this.totalRating = totalRating;
+    }
 
+    public boolean isPrivate() {
+        return isPrivate;
+    }
 
+    public void setPrivate(boolean aPrivate) {
+        isPrivate = aPrivate;
+    }
+    public List<Comment> getComments() {
+        return comments;
+    }
+
+    public void setComments(List<Comment> comments) {
+        this.comments = comments;
+    }
 
     public String isWheelchair() {
         return wheelchair;

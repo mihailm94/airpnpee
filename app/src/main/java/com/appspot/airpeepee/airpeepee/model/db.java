@@ -4,6 +4,7 @@ import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.util.Log;
 
+import com.google.firebase.FirebaseException;
 import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -17,10 +18,11 @@ import java.util.List;
 
 public class db {
 
+    private static  DatabaseReference toiletRef ;
     public db(){
 
         final FirebaseDatabase database = FirebaseDatabase.getInstance();
-        DatabaseReference toiletRef = database.getReference("/toilet");
+        toiletRef = database.getReference("/toilet");
 
         // Attach a SINGLE READ listener to read the data at our posts reference
         toiletRef.addListenerForSingleValueEvent(new ValueEventListener() {
@@ -57,6 +59,26 @@ public class db {
 
     }
 
+    public static boolean addToilet(Toilet toilet)
+    {
+        try {
+            toiletRef.child(toilet.id).push();
+            toiletRef.child(toilet.id).child("name").setValue(toilet.getName());
+            toiletRef.child(toilet.id).child("fee").setValue(toilet.isFee());
+            toiletRef.child(toilet.id).child("description").setValue(toilet.getDescription());
+            toiletRef.child(toilet.id).child("isPrivate").setValue(toilet.isPrivate());
+            toiletRef.child(toilet.id).child("location").child("lat").setValue(toilet.getLocationLat());
+            toiletRef.child(toilet.id).child("location").child("lon").setValue(toilet.getLocationLon());
+            toiletRef.child(toilet.id).child("opening_hours").setValue(toilet.getOpeninghours());
+            toiletRef.child(toilet.id).child("wheelchair").setValue(toilet.isWheelchair());
+            return true;
+        }
+        catch (Exception e)
+        {
+            return false;
+        }
+
+    }
 
     public db(String toilet, String plz) {
 
