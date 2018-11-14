@@ -33,7 +33,7 @@ public class Toilet {
 
     }
 
-    public Toilet (String id, String fee, double locationLat, double locationLon, String name, String openingHours, String plz, String street, String streetNumber, String wheelchair){
+    public Toilet (String id, String fee, double locationLat, double locationLon, String name, String openingHours, String plz, String street, String streetNumber, String wheelchair,boolean isPrivate){
         this.id=id;
         this.fee=fee;
         this.locationLat=locationLat;
@@ -44,6 +44,7 @@ public class Toilet {
         this.street = street;
         this.streetNumber = streetNumber;
         this.wheelchair=wheelchair;
+        this.isPrivate=isPrivate;
         // constracter code hier
 
     }
