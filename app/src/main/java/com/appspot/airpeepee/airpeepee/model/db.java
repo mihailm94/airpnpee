@@ -71,6 +71,10 @@ public class db {
             toiletRef.child(toilet.id).child("location").child("lon").setValue(toilet.getLocationLon());
             toiletRef.child(toilet.id).child("opening_hours").setValue(toilet.getOpeninghours());
             toiletRef.child(toilet.id).child("wheelchair").setValue(toilet.isWheelchair());
+            toiletRef.child(toilet.id).child("ratingTotal").setValue(toilet.getTotalRating());
+            toiletRef.child(toilet.id).child("street").setValue(toilet.getStreet());
+            toiletRef.child(toilet.id).child("plz").setValue(toilet.getPlz());
+            toiletRef.child(toilet.id).child("photoUrl").setValue(toilet.getPhotoUrl());
             return true;
         }
         catch (Exception e)

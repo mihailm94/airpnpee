@@ -23,10 +23,17 @@ public class Toilet {
     protected double locationLon;
     protected String name;
     protected String openingHours;
+
+
     protected String plz;
     protected String street;
     protected String streetNumber;
     protected String wheelchair;
+
+
+
+
+    protected String photoUrl;
 
     public Toilet(){
         // Default constructor required for calls to DataSnapshot.getValue(User.class)
@@ -45,11 +52,18 @@ public class Toilet {
         this.streetNumber = streetNumber;
         this.wheelchair=wheelchair;
         this.isPrivate=isPrivate;
+
         // constracter code hier
 
     }
 
+    public String getPhotoUrl() {
+        return photoUrl;
+    }
 
+    public void setPhotoUrl(String photoUrl) {
+        this.photoUrl = photoUrl;
+    }
     public double getLocationLat() {
         return locationLat;
     }
@@ -144,6 +158,29 @@ public class Toilet {
 
     public void setWheelchair(String wheelchair) {
         this.wheelchair = wheelchair;
+    }
+    public String getPlz() {
+        return plz;
+    }
+
+    public void setPlz(String plz) {
+        this.plz = plz;
+    }
+
+    public String getStreet() {
+        return street;
+    }
+
+    public void setStreet(String street) {
+        this.street = street;
+    }
+
+    public String getStreetNumber() {
+        return streetNumber;
+    }
+
+    public void setStreetNumber(String streetNumber) {
+        this.streetNumber = streetNumber;
     }
 
 

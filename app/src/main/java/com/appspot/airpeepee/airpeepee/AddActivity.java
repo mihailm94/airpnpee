@@ -1,6 +1,8 @@
 package com.appspot.airpeepee.airpeepee;
 
 import android.annotation.SuppressLint;
+import android.location.Address;
+import android.location.Geocoder;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -23,6 +25,8 @@ import com.google.android.gms.maps.model.LatLngBounds;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
+import java.io.IOException;
+import java.util.List;
 import java.util.Random;
 
 public class AddActivity extends AppCompatActivity {
@@ -38,7 +42,7 @@ public class AddActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add);
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        final Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         toolbar.setTitle("");
         setSupportActionBar(toolbar);
 
@@ -59,12 +63,12 @@ public class AddActivity extends AppCompatActivity {
                 toilet.setName(name.getText().toString());
                 toilet.setDescription(des.getText().toString());
                 toilet.setOpeninghours(opening.getText().toString());
-               if(fee.getSplitTrack())
+               if(fee.isChecked())
                    toilet.setFee("yes");
                else
                    toilet.setFee("no");
-               toilet.setPrivate(isprivate.getShowText());
-               if(wheelchair.getSplitTrack())
+               toilet.setPrivate(isprivate.isChecked());
+               if(wheelchair.isChecked())
                    toilet.setWheelchair("yes");
                else
                    toilet.setWheelchair("no");
@@ -72,7 +76,9 @@ public class AddActivity extends AppCompatActivity {
                 Random rnd = new Random();
                 int n = 10000000 + rnd.nextInt(90000000);
                 toilet.setId(Integer.toString(n));
-                toilet.setTotalRating(0);
+                toilet.setPhotoUrl("gs://airpeepee.appspot.com/toilet.png");
+
+
 
                if(db.addToilet(toilet))
                    Toast.makeText(getApplicationContext(),"add success",Toast.LENGTH_SHORT).show();
@@ -90,9 +96,22 @@ public class AddActivity extends AppCompatActivity {
             @Override
             public void onPlaceSelected(Place place) {
 
+                Geocoder geocoder = new Geocoder(AddActivity.this);
+                try {
+
+                    List<Address> addresses =  geocoder.getFromLocation(place.getLatLng().latitude, place.getLatLng().longitude,1);
+                    if (addresses.size()>0)
+                    {
+                       toilet.setStreet(addresses.get(0).getAddressLine(0));
+                        //get postal code
+                        toilet.setPlz(addresses.get(0).getPostalCode());
+                    }
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
                 toilet.setLocationLat(place.getLatLng().latitude);
                 toilet.setLocationLon(place.getLatLng().longitude);
-
+                toilet.setTotalRating(place.getRating());
             }
 
             @Override
