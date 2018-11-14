@@ -57,12 +57,12 @@ public class AddActivity extends AppCompatActivity {
                 toilet.setName(name.getText().toString());
                 toilet.setDescription(des.getText().toString());
                 toilet.setOpeninghours(opening.getText().toString());
-               if(fee.getShowText())
+               if(fee.getSplitTrack())
                    toilet.setFee("yes");
                else
                    toilet.setFee("no");
                toilet.setPrivate(isprivate.getShowText());
-               if(wheelchair.getShowText())
+               if(wheelchair.getSplitTrack())
                    toilet.setWheelchair("yes");
                else
                    toilet.setWheelchair("no");
