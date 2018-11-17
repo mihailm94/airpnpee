@@ -1,9 +1,18 @@
 package com.appspot.airpeepee.airpeepee.model;
 
+import android.app.ProgressDialog;
+import android.content.Context;
+import android.net.Uri;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.util.Log;
+import android.widget.ProgressBar;
+import android.widget.Toast;
 
+import com.appspot.airpeepee.airpeepee.AddActivity;
+import com.appspot.airpeepee.airpeepee.MainActivity;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.FirebaseException;
 import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
@@ -12,17 +21,28 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.OnProgressListener;
+import com.google.firebase.storage.StorageReference;
+import com.google.firebase.storage.UploadTask;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.UUID;
 
 public class db {
 
-    private static  DatabaseReference toiletRef ;
+    private static DatabaseReference toiletRef ;
+    private static StorageReference storageRef;
+
+
     public db(){
 
         final FirebaseDatabase database = FirebaseDatabase.getInstance();
+        final FirebaseStorage databaseStorage = FirebaseStorage.getInstance();
+
         toiletRef = database.getReference("/toilet");
+        storageRef = databaseStorage.getReference();
 
         // Attach a SINGLE READ listener to read the data at our posts reference
         toiletRef.addListenerForSingleValueEvent(new ValueEventListener() {
@@ -43,8 +63,8 @@ public class db {
                     String wheelchair = (String) toiletSnapshot.child("wheelchair").getValue();
                     double locationLat = (double) toiletSnapshot.child("location").child("lat").getValue();
                     double locationLon = (double) toiletSnapshot.child("location").child("lon").getValue();
-                    boolean isprivate = Boolean.parseBoolean(toiletSnapshot.child("isPrivate").getValue().toString());
-                    toiletList.add(new Toilet(id, fee, locationLat, locationLon, name, openingHours, plz, street, streetNo, wheelchair,isprivate));
+                    boolean isPrivate = Boolean.parseBoolean(toiletSnapshot.child("isPrivate").getValue().toString());
+                    toiletList.add(new Toilet(id, fee, locationLat, locationLon, name, openingHours, plz, street, streetNo, wheelchair,isPrivate));
                 }
 
                 DataHolder.getInstance().setData(toiletList);
@@ -84,34 +104,46 @@ public class db {
 
     }
 
-    public db(String toilet, String plz) {
+    public String uploadImage(Uri filePath, final Context context) {
 
-        // Get a reference to our toilets
-        final FirebaseDatabase firedb = FirebaseDatabase.getInstance();
-        DatabaseReference toiletRef = firedb.getReference("/toilet");
+        String bucketResult = null;
 
-        /* Attach a listener to read the data at our posts reference */
-        toiletRef.addValueEventListener(new
+        if(filePath != null)
+        {
+            StorageReference ref = storageRef.child("images/"+ UUID.randomUUID().toString());
 
-              ValueEventListener() {
-                  @Override
-                  public void onDataChange(DataSnapshot dataSnapshot) {
-                      Toilet toilet = dataSnapshot.getValue(Toilet.class);
+            final ProgressDialog progressDialog = new ProgressDialog(context);
+            progressDialog.setTitle("Uploading...");
+            progressDialog.show();
 
-                      //Log.d("toilet:", String.valueOf(toilet));
-                      System.out.println(toilet);
-                      //System.out.println(dataSnapshot.getKey()); //das ist die Toilet collection (table toilet)
-                      //System.out.println(dataSnapshot.getValue());  // das ist das Value von das Table. In diesem Fall - das ganze JSON
+            ref.putFile(filePath)
+                    .addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
+                        @Override
+                        public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
+                            progressDialog.dismiss();
+                            Toast.makeText(context, "Successfully uploaded photo!", Toast.LENGTH_SHORT).show();
+                        }
+                    })
+                    .addOnFailureListener(new OnFailureListener() {
+                        @Override
+                        public void onFailure(@NonNull Exception e) {
+                            progressDialog.dismiss();
+                            Toast.makeText(context, "Failed "+e.getMessage(), Toast.LENGTH_SHORT).show();
+                        }
+                    })
+                    .addOnProgressListener(new OnProgressListener<UploadTask.TaskSnapshot>() {
+                        @Override
+                        public void onProgress(UploadTask.TaskSnapshot taskSnapshot) {
+                            double progress = (100.0*taskSnapshot.getBytesTransferred()/taskSnapshot
+                                    .getTotalByteCount());
+                            progressDialog.setMessage("Uploaded "+(int)progress+"%");
+                        }
+                    });
+            bucketResult = ref.getBucket();
+        }
 
-                      //Log.d("db:", toile.toString());
-                  }
-
-                  @Override
-                  public void onCancelled(DatabaseError databaseError) {
-                      System.out.println("The read failed: " + databaseError.getCode());
-                  }
-              });
-
+        return bucketResult;
     }
+
 
 }
