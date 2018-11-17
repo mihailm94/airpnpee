@@ -12,6 +12,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -29,6 +30,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.mvc.imagepicker.ImagePicker;
 
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.List;
 import java.util.Random;
 
@@ -36,6 +38,8 @@ public class AddActivity extends AppCompatActivity {
 
     private Toilet toilet =new Toilet();
     private db mDatabase;
+    private ImageView imageView;
+    private TextView textView;
 
     private static final LatLngBounds BOUNDS_MOUNTAIN_VIEW = new LatLngBounds(
             new LatLng(52.352552, 13.053786), new LatLng(52.702921, 13.769575));
@@ -53,11 +57,12 @@ public class AddActivity extends AppCompatActivity {
         mDatabase =  new db();
 
         //image picking for tha toilet
+        imageView = (ImageView) findViewById(R.id.imageView3);
+        textView = (TextView) findViewById(R.id.textViewPhoto);
         ImagePicker.setMinQuality(600, 600);
 
-
         @SuppressLint("WrongViewCast")
-        View save=(View) findViewById(R.id.buttonSaveToilet);
+        View save=(View) findViewById(R.id.button);
         save.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -142,7 +147,21 @@ public class AddActivity extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         Bitmap bitmap = ImagePicker.getImageFromResult(this, requestCode, resultCode, data);
-        // TODO do something with the bitmap
+        if (bitmap != null) {
+            imageView.setImageBitmap(bitmap);
+        }
+        InputStream is = ImagePicker.getInputStreamFromResult(this, requestCode, resultCode, data);
+        if (is != null) {
+            textView.setText("Got input stream!");
+            try {
+                is.close();
+            } catch (IOException ex) {
+                // ignore
+            }
+        } else {
+            textView.setText("Failed to get input stream!");
+        }
+        super.onActivityResult(requestCode, resultCode, data);
     }
 
     public void onPickImage(View view) {
