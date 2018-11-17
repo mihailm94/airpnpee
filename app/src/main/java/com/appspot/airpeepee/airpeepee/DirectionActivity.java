@@ -32,8 +32,8 @@ public class DirectionActivity extends AppCompatActivity implements OnMapReadyCa
     private GoogleMap googleMap;
     private String serverKey = "AIzaSyCwG-ebJNdh97djEIizZFmMw_FlowuaMGs";
     //Test Values
-    private LatLng origin = new LatLng(37.7849569, -122.4068995);
-    private LatLng destination = new LatLng(37.7832982, -122.7893218);
+    private LatLng origin = new LatLng(52.503992, 13.470375);
+    private LatLng destination = new LatLng(52.511810, 13.475371);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,6 +48,7 @@ public class DirectionActivity extends AppCompatActivity implements OnMapReadyCa
     @Override
     public void onMapReady(GoogleMap googleMap) {
         this.googleMap = googleMap;
+
     }
 
     @Override
@@ -64,7 +65,7 @@ public class DirectionActivity extends AppCompatActivity implements OnMapReadyCa
         GoogleDirection.withServerKey(serverKey)
                 .from(origin)
                 .to(destination)
-                .transitMode(TransportMode.DRIVING)
+                .transitMode(TransportMode.WALKING)
                 .execute(this);
     }
 
