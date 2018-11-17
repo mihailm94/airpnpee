@@ -39,6 +39,7 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
+<<<<<<< HEAD
     <string name="emailpassword_status_fmt">Email User: %1$s (verified: %2$b)</string>
     <string name="emailpassword_title_text">Email and Password</string>
 
@@ -59,4 +60,6 @@
     <string name="verify_email">verify email</string>
     <string name="loading">Loading</string>
     <string name="auth_failed">auth failed</string>
+=======
+>>>>>>> d4325fbcba046f6f06be0f88967ba2ee6968e0ae
 </resources>
