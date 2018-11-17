@@ -291,7 +291,7 @@ public class LoginActivity extends   AppCompatActivity implements View.OnClickLi
                     user.getEmail(), user.isEmailVerified()));
             mDetailTextView.setText(getString(R.string.firebase_status_fmt, user.getUid()));
 
-            findViewById(R.id.emailPasswordButtons).setVisibility(View.GONE);
+        //    findViewById(R.id.emailPasswordButtons).setVisibility(View.GONE);
             findViewById(R.id.email_login_form).setVisibility(View.GONE);
             findViewById(R.id.signedInButtons).setVisibility(View.VISIBLE);
 
@@ -300,7 +300,7 @@ public class LoginActivity extends   AppCompatActivity implements View.OnClickLi
             mStatusTextView.setText(R.string.signed_out);
             mDetailTextView.setText(null);
 
-            findViewById(R.id.emailPasswordButtons).setVisibility(View.VISIBLE);
+        //    findViewById(R.id.emailPasswordButtons).setVisibility(View.VISIBLE);
             findViewById(R.id.email_login_form).setVisibility(View.VISIBLE);
             findViewById(R.id.signedInButtons).setVisibility(View.GONE);
         }
