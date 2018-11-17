@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_profile"
+            android:title="Profile" />
+        <item
+            android:id="@+id/nav_statistic"
+            android:icon="@drawable/ic_statistic"
+            android:title="Statistic" />
+        <item
+            android:id="@+id/nav_privToilet"
+            android:icon="@drawable/ic_toilet"
+            android:title="Add Private Toilet" />
+        <item
+            android:id="@+id/nav_addCoupon"
+            android:icon="@drawable/ic_coupon"
+            android:title="Add Coupon" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Settings" />
+    </group>
+
+    <item android:title="Settings   ">
+        <menu>
+            <item
+                android:id="@+id/nav_anbieter"
+                android:title="Anbieter"
+                app:actionLayout="@layout/switch_item"
+                android:icon="@drawable/ic_fart"
+                />
+            <item
+                app:actionLayout="@layout/switch_item"
+                android:id="@+id/nav_notification"
+                android:icon="@drawable/ic_notification"
+                android:title="Notification" />
+        </menu>
+    </item>
+
+</menu>
