@@ -1,6 +1,8 @@
 package com.appspot.airpeepee.airpeepee;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
+import android.graphics.Bitmap;
 import android.location.Address;
 import android.location.Geocoder;
 import android.os.Bundle;
@@ -24,6 +26,7 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.LatLngBounds;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.mvc.imagepicker.ImagePicker;
 
 import java.io.IOException;
 import java.util.List;
@@ -33,6 +36,7 @@ public class AddActivity extends AppCompatActivity {
 
     private Toilet toilet =new Toilet();
     private db mDatabase;
+
     private static final LatLngBounds BOUNDS_MOUNTAIN_VIEW = new LatLngBounds(
             new LatLng(52.352552, 13.053786), new LatLng(52.702921, 13.769575));
 
@@ -48,8 +52,12 @@ public class AddActivity extends AppCompatActivity {
 
         mDatabase =  new db();
 
+        //image picking for tha toilet
+        ImagePicker.setMinQuality(600, 600);
+
+
         @SuppressLint("WrongViewCast")
-        View save=(View) findViewById(R.id.button);
+        View save=(View) findViewById(R.id.buttonSaveToilet);
         save.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -128,6 +136,18 @@ public class AddActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });*/
+    }
+
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        Bitmap bitmap = ImagePicker.getImageFromResult(this, requestCode, resultCode, data);
+        // TODO do something with the bitmap
+    }
+
+    public void onPickImage(View view) {
+        // Click on image button
+        ImagePicker.pickImage(this, "Select your image:");
     }
 
 }

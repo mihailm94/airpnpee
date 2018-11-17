@@ -47,5 +47,6 @@ dependencies {
     // Direction
     implementation 'com.akexorcist:googledirectionlibrary:1.0.4'
 
-
+    //gallery photo Picker
+    implementation 'com.github.Mariovc:ImagePicker:1.2.2'
 }
