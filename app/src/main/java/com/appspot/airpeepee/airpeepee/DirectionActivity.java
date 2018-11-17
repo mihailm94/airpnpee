@@ -27,7 +27,7 @@ import com.akexorcist.googledirection.util.DirectionConverter;
 import java.util.ArrayList;
 
 
-abstract public class DirectionActivity extends AppCompatActivity implements OnMapReadyCallback, View.OnClickListener, DirectionCallback{
+public class DirectionActivity extends AppCompatActivity implements OnMapReadyCallback, View.OnClickListener, DirectionCallback{
     private Button btnRequestDirection;
     private GoogleMap googleMap;
     private String serverKey = "AIzaSyCwG-ebJNdh97djEIizZFmMw_FlowuaMGs";
@@ -45,8 +45,8 @@ abstract public class DirectionActivity extends AppCompatActivity implements OnM
         ((SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map)).getMapAsync(this);
     }
 
-//    @Override
-    public void OnMapReady(GoogleMap googleMap) {
+    @Override
+    public void onMapReady(GoogleMap googleMap) {
         this.googleMap = googleMap;
     }
 
@@ -58,7 +58,7 @@ abstract public class DirectionActivity extends AppCompatActivity implements OnM
         }
     }
 
-//    @Override
+
     public void requestDirection() {
         Snackbar.make(btnRequestDirection, "Direction Requesting...", Snackbar.LENGTH_SHORT).show();
         GoogleDirection.withServerKey(serverKey)
@@ -86,8 +86,8 @@ abstract public class DirectionActivity extends AppCompatActivity implements OnM
         }
     }
 
-//    @Override
-    public void OnDirectionFailure(Throwable t) {
+    @Override
+    public void onDirectionFailure(Throwable t) {
         Snackbar.make(btnRequestDirection, t.getMessage(), Snackbar.LENGTH_SHORT).show();
     }
 
