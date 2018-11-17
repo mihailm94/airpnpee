@@ -1,6 +1,8 @@
 package com.appspot.airpeepee.airpeepee;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
+import android.graphics.Bitmap;
 import android.location.Address;
 import android.location.Geocoder;
 import android.os.Bundle;
@@ -10,6 +12,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -24,8 +27,10 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.LatLngBounds;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.mvc.imagepicker.ImagePicker;
 
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.List;
 import java.util.Random;
 
@@ -33,6 +38,9 @@ public class AddActivity extends AppCompatActivity {
 
     private Toilet toilet =new Toilet();
     private db mDatabase;
+    private ImageView imageView;
+    private TextView textView;
+
     private static final LatLngBounds BOUNDS_MOUNTAIN_VIEW = new LatLngBounds(
             new LatLng(52.352552, 13.053786), new LatLng(52.702921, 13.769575));
 
@@ -47,6 +55,11 @@ public class AddActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         mDatabase =  new db();
+
+        //image picking for tha toilet
+        imageView = (ImageView) findViewById(R.id.imageView3);
+        textView = (TextView) findViewById(R.id.textViewPhoto);
+        ImagePicker.setMinQuality(600, 600);
 
         @SuppressLint("WrongViewCast")
         View save=(View) findViewById(R.id.button);
@@ -128,6 +141,32 @@ public class AddActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });*/
+    }
+
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        Bitmap bitmap = ImagePicker.getImageFromResult(this, requestCode, resultCode, data);
+        if (bitmap != null) {
+            imageView.setImageBitmap(bitmap);
+        }
+        InputStream is = ImagePicker.getInputStreamFromResult(this, requestCode, resultCode, data);
+        if (is != null) {
+            textView.setText("Got input stream!");
+            try {
+                is.close();
+            } catch (IOException ex) {
+                // ignore
+            }
+        } else {
+            textView.setText("Failed to get input stream!");
+        }
+        super.onActivityResult(requestCode, resultCode, data);
+    }
+
+    public void onPickImage(View view) {
+        // Click on image button
+        ImagePicker.pickImage(this, "Select your image:");
     }
 
 }

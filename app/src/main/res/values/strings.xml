@@ -29,6 +29,16 @@
     <string name="todo">TODO</string>
     <string name="description">description</string>
     <string name="opening_hours">opening hours</string>
+<<<<<<< HEAD
     <string name="action_sign_up">Sign Up</string>
     <string name="create_account">Create Account</string>
+=======
+    <string name="title_activity_menu">MenuActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+>>>>>>> b00f69adabb786d56f18f1e425bd243f0f1a271f
 </resources>

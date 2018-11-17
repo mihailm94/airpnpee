@@ -32,6 +32,7 @@
         </item>
 
     </style>
+
     <style name="text">
 
         <item name="android:textSize">
@@ -43,6 +44,7 @@
         </item>
 
     </style>
+
     <style name="smal_label">
 
         <item name="android:textSize">
