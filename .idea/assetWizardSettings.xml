@@ -33,20 +33,44 @@
                                   </option>
                                   <option name="values">
                                     <map>
-                                      <entry key="imageAsset" value="$PROJECT_DIR$/../icons/coupon.png" />
-                                      <entry key="outputName" value="ic_notification" />
+                                      <entry key="assetType" value="IMAGE" />
+                                      <entry key="imageAsset" value="$PROJECT_DIR$/../icons/toilet_paper-512.png" />
+                                      <entry key="outputName" value="ic_launcher_round" />
                                       <entry key="theme" value="CUSTOM" />
-                                      <entry key="themeColor" value="774a20" />
+                                      <entry key="themeColor" value="f1c232" />
                                     </map>
                                   </option>
                                 </PersistentState>
                               </value>
                             </entry>
-                          </map>
-                        </option>
-                        <option name="values">
-                          <map>
-                            <entry key="outputIconType" value="ACTIONBAR" />
+                            <entry key="launcher">
+                              <value>
+                                <PersistentState>
+                                  <option name="children">
+                                    <map>
+                                      <entry key="foregroundImage">
+                                        <value>
+                                          <PersistentState>
+                                            <option name="values">
+                                              <map>
+                                                <entry key="scalingPercent" value="44" />
+                                              </map>
+                                            </option>
+                                          </PersistentState>
+                                        </value>
+                                      </entry>
+                                    </map>
+                                  </option>
+                                  <option name="values">
+                                    <map>
+                                      <entry key="backgroundAssetType" value="COLOR" />
+                                      <entry key="backgroundColor" value="f1c232" />
+                                      <entry key="foregroundImage" value="$PROJECT_DIR$/../icons/fart.png" />
+                                    </map>
+                                  </option>
+                                </PersistentState>
+                              </value>
+                            </entry>
                           </map>
                         </option>
                       </PersistentState>
