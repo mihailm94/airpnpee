@@ -61,7 +61,8 @@
                     android:imeOptions="actionUnspecified"
                     android:inputType="textPassword"
                     android:maxLines="1"
-                    android:singleLine="true" />
+                    android:singleLine="true"
+                  />
 
             </android.support.design.widget.TextInputLayout>
 
@@ -89,11 +90,18 @@
                 android:layout_centerInParent="true"
                 android:text="@string/google_sign_up"
                 android:gravity="left|center"
-
                 app:isDarkTheme="true" />
-
                 />
 
+            <Button
+                android:id="@+id/email_sign_up_button"
+                style="?android:textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/create_account"
+                android:theme="@style/ThemeOverlay.MyDarkButton"
+                android:textStyle="bold" />
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>

@@ -29,4 +29,6 @@
     <string name="todo">TODO</string>
     <string name="description">description</string>
     <string name="opening_hours">opening hours</string>
+    <string name="action_sign_up">Sign Up</string>
+    <string name="create_account">Create Account</string>
 </resources>
