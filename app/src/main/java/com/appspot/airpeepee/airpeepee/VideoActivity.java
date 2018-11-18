@@ -28,7 +28,7 @@ public class VideoActivity extends AppCompatActivity {
                 mp.setLooping(true);
             }
         });
-        
+
         mvideoView.start();
 
 
