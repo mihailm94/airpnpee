@@ -78,6 +78,27 @@
     </style>
 
     <style name="NoActionBar" parent="Theme.AppCompat.Light.NoActionBar" ></style>
+    <style name="ship_to_">
 
+        <item name="android:textSize">
+            14sp
+        </item>
+
+        <item name="android:textColor">
+            #DE774A20
+        </item>
+
+    </style>
+    <style name="far_far_awa">
+
+        <item name="android:textSize">
+            13sp
+        </item>
+
+        <item name="android:textColor">
+            #FFFFFF00
+        </item>
+
+    </style>
 
 </resources>

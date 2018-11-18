@@ -60,5 +60,12 @@
     <string name="loading">Loading</string>
     <string name="auth_failed">auth failed</string>
 
+    <string name="ship_to_">
 
+				Details :
+			</string>
+    <string name="far_far_awa">
+
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna wirl aliqua. Up exlaborum incididunt quis nostrud exercitatn.
+			</string>
 </resources>

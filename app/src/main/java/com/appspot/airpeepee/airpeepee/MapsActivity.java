@@ -1,7 +1,9 @@
 package com.appspot.airpeepee.airpeepee;
 
 import android.Manifest;
+import android.content.Context;
 import android.content.pm.PackageManager;
+import android.content.res.Resources;
 import android.location.Address;
 import android.location.Location;
 import android.location.Geocoder;
@@ -10,10 +12,14 @@ import android.location.LocationListener;
 import android.location.Location;
 
 
+import android.os.Handler;
 import android.support.annotation.NonNull;
+import android.support.design.widget.BottomSheetBehavior;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
+import android.util.DisplayMetrics;
+import android.view.View;
 import android.widget.Toast;
 
 
@@ -34,6 +40,7 @@ import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.maps.model.Polygon;
 import com.google.android.gms.maps.model.PolygonOptions;
+import com.github.zagum.expandicon.ExpandIconView;
 
 
 import java.io.IOException;
@@ -46,6 +53,11 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     private GoogleMap mMap;
     private Location mlocation;
     private Marker marker;
+    private View mBottomSheet;
+    private BottomSheetBehavior mBottomSheetBehavior;
+    private ExpandIconView mExpandIconView;
+
+    private float mSlideOffset = 0;
 
 
     @Override
@@ -61,7 +73,70 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         MyLocationListener myLocationListener = new MyLocationListener(this);
         mlocation = myLocationListener.getLastBestLocation();
 
+        findViews();
+        setUpViews();
+        findViewById(R.id.bottom_sheet).setVisibility(View.GONE);
+
     }
+
+
+
+    private void findViews() {
+        mBottomSheet = findViewById(R.id.bottom_sheet);
+        mExpandIconView = (ExpandIconView) mBottomSheet.findViewById(R.id.expandIconView);
+    }
+
+    private void setUpViews() {
+        mExpandIconView.setState(ExpandIconView.LESS, true);
+        mBottomSheetBehavior = BottomSheetBehavior.from(mBottomSheet);
+        mBottomSheetBehavior.setBottomSheetCallback(new BottomSheetBehavior.BottomSheetCallback() {
+
+            @Override
+            public void onStateChanged(@NonNull View bottomSheet, int newState) {
+                if (newState == BottomSheetBehavior.STATE_COLLAPSED) {
+                    mExpandIconView.setState(ExpandIconView.LESS, true);
+                } else if (newState == BottomSheetBehavior.STATE_EXPANDED) {
+                    mExpandIconView.setState(ExpandIconView.MORE, true);
+                }
+            }
+
+            @Override
+            public void onSlide(@NonNull View bottomSheet, final float slideOffset) {
+                mSlideOffset = slideOffset;
+                new Handler().postDelayed(new Runnable() {
+
+                    @Override
+                    public void run() {
+                        float dis = (mSlideOffset - slideOffset) * 10;
+                        if (dis > 1) {
+                            dis = 1;
+                        } else if (dis < -1) {
+                            dis = -1;
+                        }
+                        if (mBottomSheetBehavior.getState() == BottomSheetBehavior.STATE_DRAGGING) {
+                            mExpandIconView.setFraction(.5f + dis * .5f, false);
+                        }
+                    }
+                }, 150);
+            }
+        });
+        mBottomSheetBehavior.setPeekHeight((int) convertDpToPixel(100, this));
+        mBottomSheetBehavior.setState(BottomSheetBehavior.STATE_COLLAPSED);
+    }
+
+    public DisplayMetrics getDisplayMetrics(Context context) {
+        Resources resources = context.getResources();
+        return resources.getDisplayMetrics();
+    }
+
+    public float convertDpToPixel(float dp, Context context) {
+        return dp * (getDisplayMetrics(context).densityDpi / 160f);
+    }
+
+
+
+
+
 
 
     /**
@@ -80,6 +155,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         googleMap.setMapType(GoogleMap.MAP_TYPE_NORMAL);
         mMap.setMapType(GoogleMap.MAP_TYPE_NORMAL);
         MarkerOptions markerPOI;
+
+
+
         // Toiltes from data to marker
         for (Toilet t : DataHolder.getInstance().getData()) {
             markerPOI = new MarkerOptions();
@@ -113,7 +191,14 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap.setMyLocationEnabled(true);
         mMap.setOnMyLocationButtonClickListener(this);
         mMap.setOnMyLocationClickListener(this);
-
+        mMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
+            @Override
+            public boolean onMarkerClick(Marker marker) {
+                //Toast.makeText(getContext(),"YOU CLICKED ON "+marker.getTitle(),Toast.LENGTH_LONG).show();
+                findViewById(R.id.bottom_sheet).setVisibility(View.VISIBLE);
+                return false;
+            }
+        });
         // Add a marker in Sydney and move the camera
         //LatLng sydney = new LatLng(-34, 151);
         //mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
@@ -125,6 +210,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         Toast.makeText(this, "MyLocation button clicked", Toast.LENGTH_SHORT).show();
         // Return false so that we don't consume the event and the default behavior still occurs
         // (the camera animates to the user's current position).
+
         return false;
     }
 
