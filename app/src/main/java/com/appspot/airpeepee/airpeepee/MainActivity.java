@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
         Button b4=(Button) findViewById(R.id.button4);
         Button b5=(Button) findViewById(R.id.button5);
         Button b6=(Button) findViewById(R.id.button6);
+        Button b7=(Button) findViewById(R.id.button7);
         database = new db();
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -89,6 +90,18 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 // TODO Auto-generated method stub
                 Intent inent = new Intent(v.getContext(),MenuActivity.class);
+
+                // calling an activity using <intent-filter> action name
+                //  Intent inent = new Intent("com.hmkcode.android.ANOTHER_ACTIVITY");
+
+                startActivity(inent);
+            }
+        });
+        b7.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+                Intent inent = new Intent(v.getContext(),VideoActivity.class);
 
                 // calling an activity using <intent-filter> action name
                 //  Intent inent = new Intent("com.hmkcode.android.ANOTHER_ACTIVITY");
