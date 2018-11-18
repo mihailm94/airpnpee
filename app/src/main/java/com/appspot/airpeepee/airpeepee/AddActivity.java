@@ -5,7 +5,9 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.location.Address;
 import android.location.Geocoder;
+import android.net.Uri;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
@@ -38,8 +40,14 @@ public class AddActivity extends AppCompatActivity {
 
     private Toilet toilet =new Toilet();
     private db mDatabase;
+
+    //Photo upload stuff
     private ImageView imageView;
     private TextView textView;
+    private final int PICK_IMAGE_REQUEST = 71;
+    private Uri filePath;
+
+
 
     private static final LatLngBounds BOUNDS_MOUNTAIN_VIEW = new LatLngBounds(
             new LatLng(52.352552, 13.053786), new LatLng(52.702921, 13.769575));
@@ -61,9 +69,23 @@ public class AddActivity extends AppCompatActivity {
         textView = (TextView) findViewById(R.id.textViewPhoto);
         ImagePicker.setMinQuality(600, 600);
 
+        imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setType("image/*");
+                intent.setAction(Intent.ACTION_GET_CONTENT);
+                //startActivityForResult(ImagePicker.getPickImageIntent(this, "Please select your photo"), PICK_IMAGE_REQUEST);
+                //ImagePicker.pickImage(AddActivity.this, PICK_IMAGE_REQUEST);
+                startActivityForResult(Intent.createChooser(intent, "Select Picture"), PICK_IMAGE_REQUEST);
+
+            }
+        });
+
         @SuppressLint("WrongViewCast")
         View save=(View) findViewById(R.id.button);
         save.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View v) {
                 TextView name = (TextView) findViewById(R.id.name);
@@ -89,8 +111,9 @@ public class AddActivity extends AppCompatActivity {
                 Random rnd = new Random();
                 int n = 10000000 + rnd.nextInt(90000000);
                 toilet.setId(Integer.toString(n));
-                toilet.setPhotoUrl("gs://airpeepee.appspot.com/toilet.png");
 
+
+                toilet.setPhotoUrl(mDatabase.uploadImage(filePath, AddActivity.this));
 
 
                if(db.addToilet(toilet))
@@ -146,27 +169,30 @@ public class AddActivity extends AppCompatActivity {
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        Bitmap bitmap = ImagePicker.getImageFromResult(this, requestCode, resultCode, data);
-        if (bitmap != null) {
-            imageView.setImageBitmap(bitmap);
-        }
-        InputStream is = ImagePicker.getInputStreamFromResult(this, requestCode, resultCode, data);
-        if (is != null) {
-            textView.setText("Got input stream!");
-            try {
-                is.close();
-            } catch (IOException ex) {
-                // ignore
-            }
-        } else {
-            textView.setText("Failed to get input stream!");
-        }
         super.onActivityResult(requestCode, resultCode, data);
+        if(requestCode == PICK_IMAGE_REQUEST && resultCode == RESULT_OK
+                && data != null && data.getData() != null )
+        {
+            filePath = data.getData();
+            try {
+                Bitmap bitmap = MediaStore.Images.Media.getBitmap(getContentResolver(), filePath);
+                imageView.setImageBitmap(bitmap);
+            }
+            catch (IOException e)
+            {
+                e.printStackTrace();
+            }
+        }
     }
-
+/*
     public void onPickImage(View view) {
         // Click on image button
-        ImagePicker.pickImage(this, "Select your image:");
+        //ImagePicker.pickImage(this, "Select your image:");
+        //startActivityForResult(chooseImageIntent, 234);
+        ImagePicker.pickImage(this);
     }
+*/
+
+
 
 }
