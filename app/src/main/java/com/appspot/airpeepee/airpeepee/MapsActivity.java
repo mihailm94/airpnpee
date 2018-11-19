@@ -73,11 +73,11 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
-
         ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, 1);
         MyLocationListener myLocationListener = new MyLocationListener(this);
         mlocation = myLocationListener.getLastBestLocation();
-
+        if (mlocation == null)
+            mlocation = myLocationListener.currentBestLocation;
         findViews();
         setUpViews();
         findViewById(R.id.bottom_sheet).setVisibility(View.GONE);
@@ -200,25 +200,40 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
             @Override
             public boolean onMarkerClick(Marker marker) {
-                //Toast.makeText(getContext(),"YOU CLICKED ON "+marker.getTitle(),Toast.LENGTH_LONG).show();
                 findViewById(R.id.bottom_sheet).setVisibility(View.VISIBLE);
                 findViewById(R.id.direction_btn).setVisibility(View.VISIBLE);
-                TextView name =(TextView) findViewById(R.id.toiletName);
-
-                // toilet name zeigen
-                if(isNullOrEmpty(marker.getTitle()))
-                    name.setText("öffentlicher toilette");
-                else
-                    name.setText(marker.getTitle());
-
+                putToiletInfo(marker);
                 return false;
             }
         });
+
         // Add a marker in Sydney and move the camera
         //LatLng sydney = new LatLng(-34, 151);
         //mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
         //mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
     }
+
+    public void putToiletInfo(Marker marker)
+    {
+        TextView name =(TextView) findViewById(R.id.toiletName);
+        TextView type =(TextView) findViewById(R.id.toilet_type);
+        TextView totalrating = (TextView) findViewById(R.id.reviews);
+        // toilet name zeigen
+        if(isNullOrEmpty(marker.getTitle()))
+            name.setText("öffentlicher toilette");
+        else
+            name.setText(marker.getTitle());
+        Toilet toilet = DataHolder.getInstance().findToiletbyLatLng(marker.getPosition());
+        if (toilet.isPrivate())
+            type.setText("Private Toilet");
+        else
+            type.setText("Public Toilet");
+
+        totalrating.setText("Reviews : "+toilet.getTotalRating());
+
+    }
+
+
 
     @Override
     public boolean onMyLocationButtonClick() {

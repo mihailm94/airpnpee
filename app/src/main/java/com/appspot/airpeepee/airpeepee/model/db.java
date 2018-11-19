@@ -64,7 +64,8 @@ public class db {
                     double locationLat = (double) toiletSnapshot.child("location").child("lat").getValue();
                     double locationLon = (double) toiletSnapshot.child("location").child("lon").getValue();
                     boolean isPrivate = Boolean.parseBoolean(toiletSnapshot.child("isPrivate").getValue().toString());
-                    toiletList.add(new Toilet(id, fee, locationLat, locationLon, name, openingHours, plz, street, streetNo, wheelchair,isPrivate));
+                    Toilet temp =new Toilet(id, fee, locationLat, locationLon, name, openingHours, plz, street, streetNo, wheelchair,isPrivate);
+                    toiletList.add(temp);
                 }
 
                 DataHolder.getInstance().setData(toiletList);
