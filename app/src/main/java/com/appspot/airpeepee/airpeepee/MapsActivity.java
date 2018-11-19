@@ -76,6 +76,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         findViews();
         setUpViews();
         findViewById(R.id.bottom_sheet).setVisibility(View.GONE);
+        findViewById(R.id.direction_btn).setVisibility(View.GONE);
 
     }
 
@@ -120,7 +121,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 }, 150);
             }
         });
-        mBottomSheetBehavior.setPeekHeight((int) convertDpToPixel(100, this));
+        mBottomSheetBehavior.setPeekHeight((int) convertDpToPixel(140, this));
         mBottomSheetBehavior.setState(BottomSheetBehavior.STATE_COLLAPSED);
     }
 
@@ -196,6 +197,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             public boolean onMarkerClick(Marker marker) {
                 //Toast.makeText(getContext(),"YOU CLICKED ON "+marker.getTitle(),Toast.LENGTH_LONG).show();
                 findViewById(R.id.bottom_sheet).setVisibility(View.VISIBLE);
+                findViewById(R.id.direction_btn).setVisibility(View.VISIBLE);
                 return false;
             }
         });
