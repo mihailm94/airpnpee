@@ -20,6 +20,7 @@ import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 
 
@@ -43,10 +44,14 @@ import com.google.android.gms.maps.model.PolygonOptions;
 import com.github.zagum.expandicon.ExpandIconView;
 
 
+import java.io.Console;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
+
+import static com.google.common.base.Strings.isNullOrEmpty;
+
 
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback, GoogleMap.OnMyLocationButtonClickListener, GoogleMap.OnMyLocationClickListener {
 
@@ -198,6 +203,14 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 //Toast.makeText(getContext(),"YOU CLICKED ON "+marker.getTitle(),Toast.LENGTH_LONG).show();
                 findViewById(R.id.bottom_sheet).setVisibility(View.VISIBLE);
                 findViewById(R.id.direction_btn).setVisibility(View.VISIBLE);
+                TextView name =(TextView) findViewById(R.id.toiletName);
+
+                // toilet name zeigen
+                if(isNullOrEmpty(marker.getTitle()))
+                    name.setText("öffentlicher toilette");
+                else
+                    name.setText(marker.getTitle());
+
                 return false;
             }
         });
