@@ -83,6 +83,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     private LatLng origin;
     private LatLng destination;
     private FloatingActionButton btnRequestDirection;
+    MyLocationListener myLocationListener;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -92,6 +93,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         btnRequestDirection.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                mlocation = myLocationListener.getLastBestLocation();
                 origin = new LatLng(mlocation.getLatitude(), mlocation.getLongitude());
                 requestDirection();
             }
@@ -101,7 +103,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
         ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, 1);
-        MyLocationListener myLocationListener = new MyLocationListener(this);
+        myLocationListener = new MyLocationListener(this);
         mlocation = myLocationListener.getLastBestLocation();
         if (mlocation == null)
             mlocation = myLocationListener.currentBestLocation;

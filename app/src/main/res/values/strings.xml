@@ -71,4 +71,17 @@
     <string name="Toilet_name">
                 Toiletten Am Volkspark
             </string>
+    <string name="edit_profile">edit Profile</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="user_name">User Name</string>
+    <string name="birthday">Birthday</string>
+    <string name="phone">Phone</string>
+    <string name="gender">gender</string>
+    <string name="address">address</string>
+    <string-array name="gender_array">
+        <item>male</item>
+        <item>female</item>
+        <item>other</item>
+    </string-array>
 </resources>
