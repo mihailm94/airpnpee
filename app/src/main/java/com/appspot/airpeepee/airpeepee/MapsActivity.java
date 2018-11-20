@@ -2,8 +2,10 @@ package com.appspot.airpeepee.airpeepee;
 
 import android.Manifest;
 import android.content.Context;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.res.Resources;
+import android.graphics.Color;
 import android.location.Address;
 import android.location.Location;
 import android.location.Geocoder;
@@ -15,15 +17,24 @@ import android.location.Location;
 import android.os.Handler;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomSheetBehavior;
+import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.Snackbar;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
 
+import com.akexorcist.googledirection.DirectionCallback;
+import com.akexorcist.googledirection.GoogleDirection;
+import com.akexorcist.googledirection.constant.TransportMode;
+import com.akexorcist.googledirection.model.Direction;
+import com.akexorcist.googledirection.model.Route;
+import com.akexorcist.googledirection.util.DirectionConverter;
 import com.appspot.airpeepee.airpeepee.model.DataHolder;
 import com.appspot.airpeepee.airpeepee.model.Toilet;
 
@@ -37,6 +48,7 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.LatLngBounds;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.maps.model.Polygon;
@@ -53,10 +65,12 @@ import java.util.Locale;
 import static com.google.common.base.Strings.isNullOrEmpty;
 
 
-public class MapsActivity extends FragmentActivity implements OnMapReadyCallback, GoogleMap.OnMyLocationButtonClickListener, GoogleMap.OnMyLocationClickListener {
+public class MapsActivity extends FragmentActivity implements OnMapReadyCallback, GoogleMap.OnMyLocationButtonClickListener, GoogleMap.OnMyLocationClickListener, DirectionCallback{
 
     private GoogleMap mMap;
+    // User Location
     private Location mlocation;
+    //Toilette
     private Marker marker;
     private View mBottomSheet;
     private BottomSheetBehavior mBottomSheetBehavior;
@@ -64,11 +78,24 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     private float mSlideOffset = 0;
 
+    //Direction
+    private String serverKey = "AIzaSyCwG-ebJNdh97djEIizZFmMw_FlowuaMGs";
+    private LatLng origin;
+    private LatLng destination;
+    private FloatingActionButton btnRequestDirection;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_maps);
+        btnRequestDirection = findViewById(R.id.direction_btn);
+        btnRequestDirection.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                origin = new LatLng(mlocation.getLatitude(), mlocation.getLongitude());
+                requestDirection();
+            }
+        });
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
@@ -82,9 +109,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         setUpViews();
         findViewById(R.id.bottom_sheet).setVisibility(View.GONE);
         findViewById(R.id.direction_btn).setVisibility(View.GONE);
-
     }
-
 
 
     private void findViews() {
@@ -140,11 +165,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     }
 
 
-
-
-
-
-
     /**
      * Manipulates the map once available.
      * This callback is triggered when the map is ready to be used.
@@ -163,14 +183,13 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         MarkerOptions markerPOI;
 
 
-
         // Toiltes from data to marker
         for (Toilet t : DataHolder.getInstance().getData()) {
             markerPOI = new MarkerOptions();
             markerPOI.position(new LatLng(t.getLocationLat(), t.getLocationLon()))
                     .title(t.getName());
 
-            if(t.isPrivate())
+            if (t.isPrivate())
                 markerPOI.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_BLUE));
             else
                 markerPOI.icon(BitmapDescriptorFactory.defaultMarker());
@@ -200,6 +219,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
             @Override
             public boolean onMarkerClick(Marker marker) {
+                destination = marker.getPosition();
                 findViewById(R.id.bottom_sheet).setVisibility(View.VISIBLE);
                 findViewById(R.id.direction_btn).setVisibility(View.VISIBLE);
                 putToiletInfo(marker);
@@ -213,13 +233,12 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         //mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
     }
 
-    public void putToiletInfo(Marker marker)
-    {
-        TextView name =(TextView) findViewById(R.id.toiletName);
-        TextView type =(TextView) findViewById(R.id.toilet_type);
+    public void putToiletInfo(Marker marker) {
+        TextView name = (TextView) findViewById(R.id.toiletName);
+        TextView type = (TextView) findViewById(R.id.toilet_type);
         TextView totalrating = (TextView) findViewById(R.id.reviews);
         // toilet name zeigen
-        if(isNullOrEmpty(marker.getTitle()))
+        if (isNullOrEmpty(marker.getTitle()))
             name.setText("öffentlicher toilette");
         else
             name.setText(marker.getTitle());
@@ -229,10 +248,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         else
             type.setText("Public Toilet");
 
-        totalrating.setText("Reviews : "+toilet.getTotalRating());
+        totalrating.setText("Reviews : " + toilet.getTotalRating());
 
     }
-
 
 
     @Override
@@ -249,4 +267,56 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         Toast.makeText(this, "Current location:\n" + location, Toast.LENGTH_LONG).show();
 
     }
+
+    //--------------------------------------------
+    //Direction
+    //--------------------------------------------
+  /*  @Override
+    public void onClick(View v){
+        int id = v.getId();
+        if(id == R.id.direction_btn){
+            requestDirection();
+        }
+    }
+*/
+    public void requestDirection() {
+        Snackbar.make(btnRequestDirection, "Direction Requesting...", Snackbar.LENGTH_SHORT).show();
+        GoogleDirection.withServerKey(serverKey)
+                .from(origin)
+                .to(destination)
+                .transitMode(TransportMode.WALKING)
+                .execute(this);
+    }
+
+    @Override
+    public void onDirectionSuccess(Direction direction, String rawBody) {
+        Snackbar.make(btnRequestDirection, "Success with status: " + direction.getStatus(), Snackbar.LENGTH_SHORT).show();
+        if(direction.isOK()){
+            Route route = direction.getRouteList().get(0);
+            mMap.addMarker(new MarkerOptions().position(origin));
+            mMap.addMarker(new MarkerOptions().position(destination));
+
+            ArrayList<LatLng> directionPositionList = route.getLegList().get(0).getDirectionPoint();
+            mMap.addPolyline(DirectionConverter.createPolyline(this, directionPositionList, 5, Color.RED));
+            setCameraWithCoordinationBounds(route);
+
+            btnRequestDirection.setVisibility(View.GONE);
+        } else {
+            Snackbar.make(btnRequestDirection, direction.getStatus(), Snackbar.LENGTH_SHORT).show();
+        }
+    }
+
+    @Override
+    public void onDirectionFailure(Throwable t) {
+        Snackbar.make(btnRequestDirection, t.getMessage(), Snackbar.LENGTH_SHORT).show();
+    }
+
+    public void setCameraWithCoordinationBounds(Route route) {
+        LatLng southwest = route.getBound().getSouthwestCoordination().getCoordination();
+        LatLng northeast = route.getBound().getNortheastCoordination().getCoordination();
+        LatLngBounds bounds = new LatLngBounds(southwest, northeast);
+        mMap.animateCamera(CameraUpdateFactory.newLatLngBounds(bounds, 100));
+    }
+
+
 }
