@@ -144,7 +144,8 @@ public class db {
                             //progressDialog.setMessage("Uploaded "+(int)progress+"%");
                         }
                     });
-            bucketResult = ref.getBucket();
+            bucketResult = ref.toString();
+
         }
 
         return bucketResult;
