@@ -38,7 +38,9 @@ public class db {
 
     public db(){
 
+        //db ref
         final FirebaseDatabase database = FirebaseDatabase.getInstance();
+        //db storage ref
         final FirebaseStorage databaseStorage = FirebaseStorage.getInstance();
 
         toiletRef = database.getReference("/toilet");
@@ -64,7 +66,9 @@ public class db {
                     double locationLat = (double) toiletSnapshot.child("location").child("lat").getValue();
                     double locationLon = (double) toiletSnapshot.child("location").child("lon").getValue();
                     boolean isPrivate = Boolean.parseBoolean(toiletSnapshot.child("isPrivate").getValue().toString());
+
                     Toilet temp =new Toilet(id, fee, locationLat, locationLon, name, openingHours, plz, street, streetNo, wheelchair,isPrivate);
+
                     toiletList.add(temp);
                 }
 
@@ -105,30 +109,30 @@ public class db {
 
     }
 
-    public String uploadImage(Uri filePath, final Context context) {
+    public static String uploadImage(Uri filePath, final Context context) {
 
-        String bucketResult = null;
+        String bucketResult = "";
 
         if(filePath != null)
         {
             StorageReference ref = storageRef.child("images/"+ UUID.randomUUID().toString());
 
-            final ProgressDialog progressDialog = new ProgressDialog(context);
-            progressDialog.setTitle("Uploading...");
-            progressDialog.show();
+            //final ProgressDialog progressDialog = new ProgressDialog(context);
+            //progressDialog.setTitle("Uploading...");
+            //progressDialog.show();
 
             ref.putFile(filePath)
                     .addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
                         @Override
                         public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
-                            progressDialog.dismiss();
+                            //progressDialog.dismiss();
                             Toast.makeText(context, "Successfully uploaded photo!", Toast.LENGTH_SHORT).show();
                         }
                     })
                     .addOnFailureListener(new OnFailureListener() {
                         @Override
                         public void onFailure(@NonNull Exception e) {
-                            progressDialog.dismiss();
+                            //progressDialog.dismiss();
                             Toast.makeText(context, "Failed "+e.getMessage(), Toast.LENGTH_SHORT).show();
                         }
                     })
@@ -137,7 +141,7 @@ public class db {
                         public void onProgress(UploadTask.TaskSnapshot taskSnapshot) {
                             double progress = (100.0*taskSnapshot.getBytesTransferred()/taskSnapshot
                                     .getTotalByteCount());
-                            progressDialog.setMessage("Uploaded "+(int)progress+"%");
+                            //progressDialog.setMessage("Uploaded "+(int)progress+"%");
                         }
                     });
             bucketResult = ref.getBucket();

@@ -35,7 +35,7 @@ def main():
 		f.write("\t\t\t\t" + "}" + "\n")
 		f.write("\t\t\t" + "}," + "\n")
 
-		f.write("\t\t\t" + "\"ratingTotal\"" + " : " + "\"\"" + ", \n")
+		f.write("\t\t\t" + "\"ratingTotal\"" + " : " + "0" + ", \n")
 
 		for node in osm.iter('tag'):
 			if(node.attrib['k'] == "addr:postcode"):

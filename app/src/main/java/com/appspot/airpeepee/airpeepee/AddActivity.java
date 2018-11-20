@@ -177,9 +177,6 @@ public class AddActivity extends AppCompatActivity implements OnMapReadyCallback
         mAutocompleteTextView.setAdapter(mPlaceArrayAdapter);
 
 
-
-
-
         //image picking for tha toilet
         imageView = (ImageView) findViewById(R.id.imageView3);
         textView = (TextView) findViewById(R.id.textViewPhoto);
@@ -200,6 +197,7 @@ public class AddActivity extends AppCompatActivity implements OnMapReadyCallback
 
         @SuppressLint("WrongViewCast")
         View save=(View) findViewById(R.id.button);
+
         save.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -214,28 +212,29 @@ public class AddActivity extends AppCompatActivity implements OnMapReadyCallback
                 toilet.setName(name.getText().toString());
                 toilet.setDescription(des.getText().toString());
                 toilet.setOpeninghours(opening.getText().toString());
-               if(fee.isChecked())
-                   toilet.setFee("yes");
-               else
-                   toilet.setFee("no");
-               toilet.setPrivate(isprivate.isChecked());
-               if(wheelchair.isChecked())
-                   toilet.setWheelchair("yes");
-               else
-                   toilet.setWheelchair("no");
+
+                if(fee.isChecked())
+                    toilet.setFee("yes");
+                else
+                    toilet.setFee("no");
+                toilet.setPrivate(isprivate.isChecked());
+
+                if(wheelchair.isChecked())
+                    toilet.setWheelchair("yes");
+                else
+                    toilet.setWheelchair("no");
 
                 Random rnd = new Random();
                 int n = 10000000 + rnd.nextInt(90000000);
                 toilet.setId(Integer.toString(n));
 
+                toilet.setPhotoUrl(mDatabase.uploadImage(filePath, getApplicationContext()));
 
-                toilet.setPhotoUrl(mDatabase.uploadImage(filePath, AddActivity.this));
 
-
-               if(db.addToilet(toilet))
-                   Toast.makeText(getApplicationContext(),"add success",Toast.LENGTH_SHORT).show();
+                if(db.addToilet(toilet))
+                    Toast.makeText(getApplicationContext(),"add success",Toast.LENGTH_SHORT).show();
                 else
-                   Toast.makeText(getApplicationContext(),"add not success",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(),"add not success",Toast.LENGTH_SHORT).show();
 
             }
         });
@@ -286,8 +285,7 @@ public class AddActivity extends AppCompatActivity implements OnMapReadyCallback
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        if(requestCode == PICK_IMAGE_REQUEST && resultCode == RESULT_OK
-                && data != null && data.getData() != null )
+        if(requestCode == PICK_IMAGE_REQUEST && resultCode == RESULT_OK && data != null && data.getData() != null )
         {
             filePath = data.getData();
             try {
