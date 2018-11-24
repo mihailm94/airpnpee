@@ -91,7 +91,7 @@
                     android:id="@+id/is_anbieter"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
-                    android:text="Switch" />
+                    android:text="@string/anbieter" />
 
             </LinearLayout>
         </ScrollView>
