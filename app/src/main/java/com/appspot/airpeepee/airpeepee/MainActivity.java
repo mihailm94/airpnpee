@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
         Button b5=(Button) findViewById(R.id.button5);
         Button b6=(Button) findViewById(R.id.button6);
         Button b7=(Button) findViewById(R.id.button7);
+        Button b8= (Button) findViewById(R.id.button9);
         database = new db();
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -109,7 +110,18 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(inent);
             }
         });
+        b8.setOnClickListener(new View.OnClickListener() {
 
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+                Intent inent = new Intent(v.getContext(),EditProfileActivity.class);
+
+                // calling an activity using <intent-filter> action name
+                //  Intent inent = new Intent("com.hmkcode.android.ANOTHER_ACTIVITY");
+
+                startActivity(inent);
+            }
+        });
 
 
 

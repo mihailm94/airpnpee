@@ -68,7 +68,7 @@
                     android:inputType="date"
                     tools:targetApi="o" />
                 <AutoCompleteTextView
-                    android:id="@+id/autoCompleteTextView"
+                    android:id="@+id/address"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/address" />
@@ -93,7 +93,7 @@
                     android:id="@+id/is_anbieter"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
-                    android:text="Anbieter" />
+                    android:text="@string/anbieter" />
 
             </LinearLayout>
         </ScrollView>

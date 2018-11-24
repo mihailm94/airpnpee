@@ -34,6 +34,10 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.appspot.airpeepee.airpeepee.model.DataHolder;
+import com.appspot.airpeepee.airpeepee.model.User;
+import com.appspot.airpeepee.airpeepee.model.db;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -46,6 +50,7 @@ import com.facebook.FacebookException;
 import com.facebook.FacebookSdk;
 import com.facebook.appevents.AppEventsLogger;
 import com.facebook.login.LoginResult;
+import com.facebook.login.LoginManager;
 import com.facebook.login.widget.LoginButton;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
@@ -149,8 +154,8 @@ public class LoginActivity extends   AppCompatActivity implements View.OnClickLi
         //onStart Called
         // Check for existing Google Sign In account, if the user is already signed in
         // the GoogleSignInAccount will be non-null.
-        GoogleSignInAccount account = GoogleSignIn.getLastSignedInAccount(this);
-        updateUI(account);
+        //GoogleSignInAccount account = GoogleSignIn.getLastSignedInAccount(this);
+        //updateUI(account);
         // Check if user is signed in (non-null) and update UI accordingly.
 
 
@@ -294,8 +299,10 @@ public class LoginActivity extends   AppCompatActivity implements View.OnClickLi
         //    findViewById(R.id.emailPasswordButtons).setVisibility(View.GONE);
             findViewById(R.id.email_login_form).setVisibility(View.GONE);
             findViewById(R.id.signedInButtons).setVisibility(View.VISIBLE);
-
             findViewById(R.id.verifyEmailButton).setEnabled(!user.isEmailVerified());
+            DataHolder.getInstance().setUser(new User());
+            db.findUserbyemail(user.getEmail());
+            DataHolder.getInstance().getUser().setFirebaseUser(user);
         } else {
             mStatusTextView.setText(R.string.signed_out);
             mDetailTextView.setText(null);
@@ -402,7 +409,8 @@ public class LoginActivity extends   AppCompatActivity implements View.OnClickLi
         mEmailSignInButton.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
-                attemptLogin();
+                //attemptLogin();
+                signIn(mEmailField.getText().toString(), mPasswordField.getText().toString());
             }
         });
 
@@ -418,6 +426,9 @@ public class LoginActivity extends   AppCompatActivity implements View.OnClickLi
         loginButton.registerCallback(callbackManager, new FacebookCallback<LoginResult>() {
             @Override
             public void onSuccess(LoginResult loginResult) {
+
+
+
                 // App code
             }
 

@@ -76,7 +76,11 @@
                     android:autofillHints="Phone"
                     android:hint="@string/phone"
                     android:inputType="phone" />
-
+                <AutoCompleteTextView
+                    android:id="@+id/address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/address" />
                 <Spinner
                     android:id="@+id/gender"
                     android:layout_width="match_parent"
@@ -84,7 +88,7 @@
 
                 </Spinner>
                 <Switch
-                    android:id="@+id/switch4"
+                    android:id="@+id/is_anbieter"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
                     android:text="Switch" />

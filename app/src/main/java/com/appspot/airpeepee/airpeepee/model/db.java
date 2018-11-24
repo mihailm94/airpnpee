@@ -26,6 +26,8 @@ import com.google.firebase.storage.OnProgressListener;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
@@ -107,6 +109,36 @@ public class db {
             return false;
         }
 
+    }
+
+
+
+    public static void findUserbyemail(String email)
+    {
+        Query query = FirebaseDatabase.getInstance().getReference("/user").orderByChild("email").equalTo(email);
+        query.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                for (DataSnapshot d: dataSnapshot.getChildren()) {
+                    DataHolder.getInstance().getUser().setFirstname((String) d.child("firstname").getValue());
+                    DataHolder.getInstance().getUser().setLastname((String) d.child("lastname").getValue());
+                    DataHolder.getInstance().getUser().setUsername((String)d.child("username").getValue());
+                    DataHolder.getInstance().getUser().setPhone((String)d.child("phone").getValue());
+                    DataHolder.getInstance().getUser().setBirthday((String)d.child("birthday").getValue());
+                    DataHolder.getInstance().getUser().setGender((String)d.child("gender").getValue());
+                    DataHolder.getInstance().getUser().setUID((String)d.child("password").getValue());
+                    DataHolder.getInstance().getUser().setEmail((String)d.child("email").getValue());
+                    DataHolder.getInstance().getUser().setAddress((String)d.child("address").getValue());
+                    DataHolder.getInstance().getUser().setAnbieter((boolean)d.child("isAnbieter").getValue());
+
+                }
+               }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
     }
 
     public static String uploadImage(Uri filePath, final Context context) {
