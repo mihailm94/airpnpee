@@ -163,6 +163,15 @@ public class AddActivity extends AppCompatActivity implements OnMapReadyCallback
 
         mDatabase =  new db();
 
+        ImageView backbutton =(ImageView) findViewById(R.id.shape);
+        backbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
+
+
         //search without google logo
 
         mGoogleApiClient = new GoogleApiClient.Builder(AddActivity.this)

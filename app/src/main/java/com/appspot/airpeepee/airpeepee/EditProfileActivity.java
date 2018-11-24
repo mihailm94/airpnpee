@@ -12,6 +12,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.Switch;
 import com.appspot.airpeepee.airpeepee.model.db;
@@ -82,6 +83,14 @@ public class EditProfileActivity extends AppCompatActivity implements OnMapReady
 
         final Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         toolbar.setTitle("");
+
+        ImageView backbutton =(ImageView) findViewById(R.id.shape);
+        backbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
 
         View button =(View) findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {
