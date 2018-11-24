@@ -1,6 +1,6 @@
 package com.appspot.airpeepee.airpeepee;
 
-import android.support.annotation.NonNull;
+
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
@@ -14,7 +14,7 @@ import android.widget.AutoCompleteTextView;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Switch;
-import android.widget.TextView;
+import com.appspot.airpeepee.airpeepee.model.db;
 import android.widget.Toast;
 
 import com.appspot.airpeepee.airpeepee.model.DataHolder;
@@ -45,7 +45,8 @@ public class EditProfileActivity extends AppCompatActivity implements OnMapReady
     @Override
     protected void onStart(){
         super.onStart();
-        setUserData();
+        if(DataHolder.getInstance().getUser() != null)
+            setUserData();
 
     }
 
@@ -81,6 +82,46 @@ public class EditProfileActivity extends AppCompatActivity implements OnMapReady
 
         final Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         toolbar.setTitle("");
+
+        View button =(View) findViewById(R.id.button);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                User user = DataHolder.getInstance().getUser();
+                String firstname =((EditText)findViewById(R.id.first_name)).getText().toString();
+                String lastname =((EditText)findViewById(R.id.last_name)).getText().toString();
+                String usertname =((EditText)findViewById(R.id.user_name)).getText().toString();
+                String phone =((EditText)findViewById(R.id.phone)).getText().toString();
+                String birthday =((EditText)findViewById(R.id.birthday)).getText().toString();
+                String address =((EditText)findViewById(R.id.address)).getText().toString();
+                String gender =((Spinner)findViewById(R.id.gender)).getSelectedItem().toString();
+                boolean is_anbieter = ((Switch)findViewById(R.id.is_anbieter)).isChecked();
+
+                if (firstname.equals("") ||
+                        lastname.equals("") ||
+                        usertname.equals("") ||
+                        phone.equals("") ||
+                        birthday.equals("") ||
+                        address.equals("")){
+                }
+                else {
+                    user.setFirstname(firstname);
+                    user.setLastname(lastname);
+                    user.setUsername(usertname);
+                    user.setPhone(phone);
+                    user.setBirthday(birthday);
+                    user.setAddress(address);
+                    user.setGender(gender);
+                    user.setAnbieter(is_anbieter);
+                }
+                DataHolder.getInstance().setUser(user);
+
+                if( db.editUserData())
+                    Toast.makeText(getApplicationContext(),"Edit success",Toast.LENGTH_SHORT).show();
+                else
+                    Toast.makeText(getApplicationContext(),"Edit not success",Toast.LENGTH_SHORT).show();
+            }
+        });
 
         Spinner spinner = (Spinner) findViewById(R.id.gender);
         // Create an ArrayAdapter using the string array and a default spinner layout

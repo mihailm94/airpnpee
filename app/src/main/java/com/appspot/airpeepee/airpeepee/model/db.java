@@ -35,6 +35,7 @@ import java.util.UUID;
 public class db {
 
     private static DatabaseReference toiletRef ;
+    private static DatabaseReference userRef ;
     private static StorageReference storageRef;
 
 
@@ -46,6 +47,7 @@ public class db {
         final FirebaseStorage databaseStorage = FirebaseStorage.getInstance();
 
         toiletRef = database.getReference("/toilet");
+        userRef   = database.getReference("/user");
         storageRef = databaseStorage.getReference();
 
         // Attach a SINGLE READ listener to read the data at our posts reference
@@ -111,7 +113,25 @@ public class db {
 
     }
 
+    public static boolean editUserData()
+    {
+        try
+        {
+            userRef.child(DataHolder.getInstance().getUser().getId()).child("firstname").setValue(DataHolder.getInstance().getUser().getFirstname());
+            userRef.child(DataHolder.getInstance().getUser().getId()).child("lastname").setValue(DataHolder.getInstance().getUser().getLastname());
+            userRef.child(DataHolder.getInstance().getUser().getId()).child("username").setValue(DataHolder.getInstance().getUser().getUsername());
+            userRef.child(DataHolder.getInstance().getUser().getId()).child("phone").setValue(DataHolder.getInstance().getUser().getPhone());
+            userRef.child(DataHolder.getInstance().getUser().getId()).child("birthday").setValue(DataHolder.getInstance().getUser().getBirthday());
+            userRef.child(DataHolder.getInstance().getUser().getId()).child("address").setValue(DataHolder.getInstance().getUser().getAddress());
+            userRef.child(DataHolder.getInstance().getUser().getId()).child("gender").setValue(DataHolder.getInstance().getUser().getGender());
+            userRef.child(DataHolder.getInstance().getUser().getId()).child("isAnbieter").setValue(DataHolder.getInstance().getUser().isAnbieter());
+            return true;
+        }catch (Exception e )
+        {
+            return false;
+        }
 
+    }
 
     public static void findUserbyemail(String email)
     {
@@ -130,6 +150,7 @@ public class db {
                     DataHolder.getInstance().getUser().setEmail((String)d.child("email").getValue());
                     DataHolder.getInstance().getUser().setAddress((String)d.child("address").getValue());
                     DataHolder.getInstance().getUser().setAnbieter((boolean)d.child("isAnbieter").getValue());
+                    DataHolder.getInstance().getUser().setId((String)d.getKey());
 
                 }
                }
