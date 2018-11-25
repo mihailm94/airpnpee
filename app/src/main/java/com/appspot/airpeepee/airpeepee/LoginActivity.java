@@ -160,7 +160,7 @@ public class LoginActivity extends   AppCompatActivity implements View.OnClickLi
 
 
     }
-    private void createAccount(String email, String password) {
+    private void createAccount(final String email, final String password) {
         Log.d(TAG, "createAccount:" + email);
         if (!validateForm()) {
             return;
@@ -175,6 +175,7 @@ public class LoginActivity extends   AppCompatActivity implements View.OnClickLi
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
                             // Sign in success, update UI with the signed-in user's information
+                            db.addUser(email ,mAuth.getUid());
                             Log.d(TAG, "createUserWithEmail:success");
                             FirebaseUser user = mAuth.getCurrentUser();
                             updateUI(user);

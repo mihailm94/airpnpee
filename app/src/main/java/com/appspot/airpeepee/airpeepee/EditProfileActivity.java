@@ -54,20 +54,46 @@ public class EditProfileActivity extends AppCompatActivity implements OnMapReady
     private void setUserData()
     {
         User user = DataHolder.getInstance().getUser();
-        ((EditText)findViewById(R.id.first_name)).setText(user.getFirstname());
-        ((EditText)findViewById(R.id.last_name)).setText(user.getLastname());
-        ((EditText)findViewById(R.id.user_name)).setText(user.getUsername());
+        if(user.getFirstname()==null)
+        {
+            ((EditText)findViewById(R.id.first_name)).setText("");
+        }else
+            ((EditText)findViewById(R.id.first_name)).setText(user.getFirstname());
+        if (user.getLastname()==null)
+        {
+            ((EditText)findViewById(R.id.last_name)).setText("");
+        }else
+            ((EditText)findViewById(R.id.last_name)).setText(user.getLastname());
+        if (user.getUsername() == null)
+        {
+            ((EditText)findViewById(R.id.user_name)).setText("");
+        }else
+            ((EditText)findViewById(R.id.user_name)).setText(user.getUsername());
+        if (user.getBirthday() == null)
+        {
+            ((EditText)findViewById(R.id.birthday)).setText("");
+        }else
         ((EditText)findViewById(R.id.birthday)).setText(user.getBirthday());
+        if (user.getAddress()== null){
+            ((EditText)findViewById(R.id.address)).setText("");
+        }else
         ((AutoCompleteTextView)findViewById(R.id.address)).setText(user.getAddress());
+        if (user.getPhone() == null){
+            ((EditText)findViewById(R.id.phone)).setText("");
+        }else
         ((EditText)findViewById(R.id.phone)).setText(user.getPhone());
          Spinner spinner =(Spinner) findViewById(R.id.gender);
-        if (user.getGender().equals("male")) {
-            spinner.setSelection(0);
-        } else {
-            if ( user.getGender().equals("female"))
-                     spinner.setSelection(1);
-            else
-                spinner.setSelection(2);
+        if ( user.getGender() == null )
+        {  spinner.setSelection(0);}
+        else {
+            if (user.getGender().equals("male")) {
+                spinner.setSelection(0);
+            } else {
+                if (user.getGender().equals("female"))
+                    spinner.setSelection(1);
+                else
+                    spinner.setSelection(2);
+            }
         }
         Switch sw = (Switch)findViewById(R.id.is_anbieter);
         sw.setChecked(user.isAnbieter());

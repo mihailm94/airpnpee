@@ -35,6 +35,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 import java.util.UUID;
 
 public class db {
@@ -96,6 +97,28 @@ public class db {
         });
 
     }
+
+    public static boolean addUser(String email,String password)
+    {
+        try {
+            Random rnd = new Random();
+            int n = 10000000 + rnd.nextInt(90000000);
+            userRef.child(Integer.toString(n)).push();
+            userRef.child(Integer.toString(n)).child("email").setValue(email);
+            userRef.child(Integer.toString(n)).child("password").setValue(password);
+            userRef.child(Integer.toString(n)).child("username").setValue("user_"+Integer.toString(n));
+            userRef.child(Integer.toString(n)).child("isAnbieter").setValue(false);
+            return true;
+        }
+        catch (Exception e)
+        {
+            return false;
+        }
+
+    }
+
+
+
 
     public static boolean addToilet(Toilet toilet)
     {

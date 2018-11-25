@@ -134,5 +134,17 @@ public class User {
         this.facebookAccessToken = facebookAccessToken;
     }
 
-    public User(){}
+    public User(){
+        address="";
+        birthday="";
+        email="";
+        firstname="";
+        lastname="";
+        gender="male";
+        isAnbieter=false;
+        UID="";
+        phone="";
+        username="";
+        id="";
+    }
 }
