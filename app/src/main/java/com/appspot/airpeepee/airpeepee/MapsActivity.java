@@ -2,18 +2,13 @@ package com.appspot.airpeepee.airpeepee;
 
 import android.Manifest;
 import android.content.Context;
-import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.res.Resources;
 import android.graphics.Color;
-import android.location.Address;
-import android.location.Location;
-import android.location.Geocoder;
-import android.location.Location;
-import android.location.LocationListener;
 import android.location.Location;
 
 
+import android.net.Uri;
 import android.os.Handler;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomSheetBehavior;
@@ -24,10 +19,13 @@ import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.view.View;
-import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.appspot.airpeepee.airpeepee.model.GlideApp;
+import com.bumptech.glide.annotation.GlideModule;
+import com.bumptech.glide.module.AppGlideModule;
 
 import com.akexorcist.googledirection.DirectionCallback;
 import com.akexorcist.googledirection.GoogleDirection;
@@ -39,8 +37,6 @@ import com.appspot.airpeepee.airpeepee.model.DataHolder;
 import com.appspot.airpeepee.airpeepee.model.Toilet;
 
 import com.appspot.airpeepee.airpeepee.model.MyLocationListener;
-import com.appspot.airpeepee.airpeepee.model.db;
-import com.google.android.gms.internal.maps.zzw;
 import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -51,16 +47,14 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.LatLngBounds;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
-import com.google.android.gms.maps.model.Polygon;
-import com.google.android.gms.maps.model.PolygonOptions;
 import com.github.zagum.expandicon.ExpandIconView;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
 
-
-import java.io.Console;
-import java.io.IOException;
+import java.io.File;
+import java.net.URI;
 import java.util.ArrayList;
-import java.util.List;
-import java.util.Locale;
+
 
 import static com.google.common.base.Strings.isNullOrEmpty;
 
@@ -239,6 +233,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         TextView name = (TextView) findViewById(R.id.toiletName);
         TextView type = (TextView) findViewById(R.id.toilet_type);
         TextView totalrating = (TextView) findViewById(R.id.reviews);
+        ImageView imageView = (ImageView) findViewById(R.id.imageView2);
+
         // toilet name zeigen
         if (isNullOrEmpty(marker.getTitle()))
             name.setText("öffentlicher toilette");
@@ -251,6 +247,20 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             type.setText("Public Toilet");
 
         totalrating.setText("Reviews : " + toilet.getTotalRating());
+
+        // Reference to an image file in Cloud Storage
+        StorageReference storageReference = FirebaseStorage.getInstance().getReference(toilet.getPhotoUrl());
+
+
+        // Download directly from StorageReference using Glide
+        // (See MyAppGlideModule for Loader registration)
+        GlideApp.with(this /* context */)
+                .load(storageReference)
+                .into(imageView);
+
+        TextView information=(TextView) findViewById(R.id.information);
+        information.setText(toilet.getDescription());
+
 
     }
 

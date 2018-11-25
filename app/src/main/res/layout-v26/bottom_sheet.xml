@@ -86,7 +86,7 @@
                 android:textAppearance="@style/ship_to_" />
 
             <TextView
-                android:id="@+id/far_far_awa"
+                android:id="@+id/information"
                 android:layout_width="match_parent"
                 android:layout_height="90dp"
                 android:lineSpacingExtra="9sp"

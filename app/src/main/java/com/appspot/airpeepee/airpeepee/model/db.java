@@ -11,6 +11,10 @@ import android.widget.Toast;
 
 import com.appspot.airpeepee.airpeepee.AddActivity;
 import com.appspot.airpeepee.airpeepee.MainActivity;
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.Registry;
+import com.bumptech.glide.annotation.GlideModule;
+import com.bumptech.glide.module.AppGlideModule;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.FirebaseException;
@@ -25,7 +29,8 @@ import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.OnProgressListener;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
-
+import com.firebase.ui.storage.images.*;
+import java.io.InputStream;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -70,9 +75,11 @@ public class db {
                     double locationLat = (double) toiletSnapshot.child("location").child("lat").getValue();
                     double locationLon = (double) toiletSnapshot.child("location").child("lon").getValue();
                     boolean isPrivate = Boolean.parseBoolean(toiletSnapshot.child("isPrivate").getValue().toString());
-
+                    String photourl = (String) toiletSnapshot.child("photoUrl").getValue();
+                    String description =(String) toiletSnapshot.child("description").getValue();
                     Toilet temp =new Toilet(id, fee, locationLat, locationLon, name, openingHours, plz, street, streetNo, wheelchair,isPrivate);
-
+                    temp.setPhotoUrl(photourl);
+                    temp.setDescription(description);
                     toiletList.add(temp);
                 }
 
@@ -197,7 +204,8 @@ public class db {
                             //progressDialog.setMessage("Uploaded "+(int)progress+"%");
                         }
                     });
-            bucketResult = ref.toString();
+            bucketResult = ref.getPath();
+
 
         }
 
