@@ -262,6 +262,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         information.setText(toilet.getDescription());
 
 
+
+
     }
 
 

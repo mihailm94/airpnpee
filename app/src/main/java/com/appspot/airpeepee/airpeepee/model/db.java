@@ -77,9 +77,11 @@ public class db {
                     boolean isPrivate = Boolean.parseBoolean(toiletSnapshot.child("isPrivate").getValue().toString());
                     String photourl = (String) toiletSnapshot.child("photoUrl").getValue();
                     String description =(String) toiletSnapshot.child("description").getValue();
+                    double totalrating = Double.parseDouble(toiletSnapshot.child("ratingTotal").getValue().toString());
                     Toilet temp =new Toilet(id, fee, locationLat, locationLon, name, openingHours, plz, street, streetNo, wheelchair,isPrivate);
                     temp.setPhotoUrl(photourl);
                     temp.setDescription(description);
+                    temp.setTotalRating(totalrating);
                     toiletList.add(temp);
                 }
 
