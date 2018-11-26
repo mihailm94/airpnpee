@@ -97,10 +97,10 @@
                 tools:layout_editor_absoluteY="20dp" />
 
             <Button
-                android:id="@+id/button8"
+                android:id="@+id/edit_toilet"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Button" />
+                android:text="Edit Toilet" />
 
             <TextView
                 android:id="@+id/rating"

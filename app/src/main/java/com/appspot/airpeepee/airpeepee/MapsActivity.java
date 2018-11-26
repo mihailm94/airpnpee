@@ -18,6 +18,7 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.ActivityCompat;
+import android.support.v4.app.DialogFragment;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 import android.support.v4.view.GravityCompat;
@@ -32,6 +33,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AutoCompleteTextView;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -80,7 +82,12 @@ import java.util.ArrayList;
 import static com.google.common.base.Strings.isNullOrEmpty;
 
 
-public class MapsActivity extends AppCompatActivity implements  NavigationView.OnNavigationItemSelectedListener, OnMapReadyCallback,GoogleApiClient.OnConnectionFailedListener, GoogleApiClient.ConnectionCallbacks , GoogleMap.OnMyLocationButtonClickListener, GoogleMap.OnMyLocationClickListener, DirectionCallback{
+public class MapsActivity extends AppCompatActivity implements  NavigationView.OnNavigationItemSelectedListener,
+        OnMapReadyCallback,GoogleApiClient.OnConnectionFailedListener, GoogleApiClient.ConnectionCallbacks ,
+        GoogleMap.OnMyLocationButtonClickListener, GoogleMap.OnMyLocationClickListener, DirectionCallback ,
+EditToiletActivity.NoticeDialogListener
+{
+
 
     private GoogleMap mMap;
     // User Location
@@ -160,6 +167,13 @@ public class MapsActivity extends AppCompatActivity implements  NavigationView.O
             }
         });
 
+        Button edit_toilet =(Button) findViewById(R.id.edit_toilet);
+        edit_toilet.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showNoticeDialog();
+            }
+        });
 
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
@@ -527,5 +541,26 @@ public class MapsActivity extends AppCompatActivity implements  NavigationView.O
     public void onConnectionSuspended(int i) {
         mPlaceArrayAdapter.setGoogleApiClient(null);
         Log.e("Location", "Google Places API connection suspended.");
+    }
+
+    public void showNoticeDialog() {
+        // Create an instance of the dialog fragment and show it
+        DialogFragment dialog = new EditToiletActivity();
+        dialog.show(getSupportFragmentManager(), "NoticeDialogFragment");
+    }
+
+    // The dialog fragment receives a reference to this Activity through the
+    // Fragment.onAttach() callback, which it uses to call the following methods
+    // defined by the NoticeDialogFragment.NoticeDialogListener interface
+    @Override
+    public void onDialogPositiveClick(DialogFragment dialog) {
+        // User touched the dialog's positive button
+
+    }
+
+    @Override
+    public void onDialogNegativeClick(DialogFragment dialog) {
+        // User touched the dialog's negative button
+
     }
 }

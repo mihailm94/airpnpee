@@ -87,6 +87,9 @@
             android:name=".EditProfileActivity"
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
+        <activity android:name=".EditToiletActivity"
+                  android:theme="@android:style/Theme.Holo.Dialog">
+        </activity>
     </application>
 
 </manifest>

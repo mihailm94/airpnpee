@@ -245,6 +245,8 @@ public class AddActivity extends AppCompatActivity implements OnMapReadyCallback
                 else
                     Toast.makeText(getApplicationContext(),"add not success",Toast.LENGTH_SHORT).show();
 
+                finish();
+
             }
         });
 
