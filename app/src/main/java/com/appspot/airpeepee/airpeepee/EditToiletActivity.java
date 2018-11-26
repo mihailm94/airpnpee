@@ -192,9 +192,9 @@ public class EditToiletActivity extends DialogFragment  {
         String opening_hours = ((EditText)view.findViewById(R.id.edit_opening_hours)).getText().toString();
         String description = ((EditText)view.findViewById(R.id.edit_description)).getText().toString();
         String comment = ((EditText)view.findViewById(R.id.add_comment)).getText().toString();
-        boolean wheelchair=((Switch)view.findViewById(R.id.edit_wheelchair)).isSelected();
-        boolean outoforder=((Switch)view.findViewById(R.id.add_ausser_betrieb)).isSelected();
-        boolean fee=((Switch)view.findViewById(R.id.edit_fee)).isSelected();
+        boolean wheelchair=((Switch)view.findViewById(R.id.edit_wheelchair)).isChecked();
+        boolean outoforder=((Switch)view.findViewById(R.id.add_ausser_betrieb)).isChecked();
+        boolean fee=((Switch)view.findViewById(R.id.edit_fee)).isChecked();
         double cost =Double.parseDouble(((EditText)view.findViewById(R.id.add_cost)).getText().toString());
         int rating = Integer.parseInt(((Spinner)view.findViewById(R.id.spinner_rating)).getSelectedItem().toString());
 
