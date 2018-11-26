@@ -77,7 +77,7 @@ public class db {
                     boolean isPrivate = Boolean.parseBoolean(toiletSnapshot.child("isPrivate").getValue().toString());
                     String photourl = (String) toiletSnapshot.child("photoUrl").getValue();
                     String description =(String) toiletSnapshot.child("description").getValue();
-                    double totalrating = Double.parseDouble(toiletSnapshot.child("ratingTotal").getValue().toString());
+                    double totalrating = 0;//Double.parseDouble(toiletSnapshot.child("ratingTotal").getValue().toString());
                     Toilet temp =new Toilet(id, fee, locationLat, locationLon, name, openingHours, plz, street, streetNo, wheelchair,isPrivate);
                     for(DataSnapshot commentSnapshot : toiletSnapshot.child("comments").getChildren())
                     {
@@ -86,8 +86,10 @@ public class db {
                     }
                     for(DataSnapshot ratingSnapshot : toiletSnapshot.child("rating").getChildren())
                     {
-                        if(!ratingSnapshot.child("userRating").getValue().toString().equals(" "))
-                        temp.getRatings().add(new Rating(ratingSnapshot.child("userID").getValue().toString(),Integer.parseInt(ratingSnapshot.child("userRating").getValue().toString())));
+                        if(!ratingSnapshot.child("userRating").getValue().toString().equals(" ")) {
+                            temp.getRatings().add(new Rating(ratingSnapshot.child("userID").getValue().toString(), Integer.parseInt(ratingSnapshot.child("userRating").getValue().toString())));
+                            totalrating += Double.parseDouble(ratingSnapshot.child("userRating").getValue().toString());
+                        }
                     }
                     if(toiletSnapshot.child("cost").getValue() != null) {
                         double cost = Double.parseDouble(toiletSnapshot.child("cost").getValue().toString());
@@ -95,6 +97,8 @@ public class db {
                     }
                     temp.setPhotoUrl(photourl);
                     temp.setDescription(description);
+                    if( temp.getRatings().size() !=0)
+                        totalrating=totalrating/temp.getRatings().size();
                     temp.setTotalRating(totalrating);
                     toiletList.add(temp);
                 }

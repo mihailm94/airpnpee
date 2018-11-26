@@ -331,7 +331,7 @@ EditToiletActivity.NoticeDialogListener
         else
             type.setText("Public Toilet");
 
-        totalrating.setText("Reviews : " + toilet.getTotalRating());
+        totalrating.setText("Reviews : " + Double.toString(toilet.getTotalRating()));
 
         // Reference to an image file in Cloud Storage
         StorageReference storageReference = FirebaseStorage.getInstance().getReference(toilet.getPhotoUrl());
