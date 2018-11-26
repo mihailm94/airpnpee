@@ -52,6 +52,7 @@ public class EditToiletActivity extends DialogFragment  {
     private TextView textView;
     private final int PICK_IMAGE_REQUEST = 71;
     private Uri filePath;
+    private boolean newphoto=false;
 
     private LatLng latLng;
 
@@ -116,6 +117,7 @@ public class EditToiletActivity extends DialogFragment  {
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                newphoto =true;
                 Intent intent = new Intent();
                 intent.setType("image/*");
                 intent.setAction(Intent.ACTION_GET_CONTENT);
@@ -216,7 +218,8 @@ public class EditToiletActivity extends DialogFragment  {
         toilet.setOutoforder(outoforder);
         if(rating!=0)
             toilet.getRatings().add(new Rating("user_id",rating));
-        toilet.setPhotoUrl(db.uploadImage(filePath, getApplicationContext()));
+        if(newphoto)
+            toilet.setPhotoUrl(db.uploadImage(filePath, getApplicationContext()));
         db.editToilet(toilet);
         db.updateData();
     }
