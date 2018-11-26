@@ -171,15 +171,19 @@ public class EditToiletActivity extends DialogFragment  {
         ((EditText)view.findViewById(R.id.edit_name)).setText(toilet.getName());
         ((EditText)view.findViewById(R.id.edit_opening_hours)).setText(toilet.getOpeninghours());
         ((EditText)view.findViewById(R.id.edit_description)).setText(toilet.getDescription());
-        if(toilet.isWheelchair().equals("yes"))
-            ((Switch)view.findViewById(R.id.edit_wheelchair)).setChecked(true);
-        else
-            ((Switch)view.findViewById(R.id.edit_wheelchair)).setChecked(false);
+        if(toilet.isWheelchair()!= null) {
+            if (toilet.isWheelchair().equals("yes"))
+                ((Switch) view.findViewById(R.id.edit_wheelchair)).setChecked(true);
+            else
+                ((Switch) view.findViewById(R.id.edit_wheelchair)).setChecked(false);
+        }
         ((Switch)view.findViewById(R.id.add_ausser_betrieb)).setChecked(toilet.isOutoforder());
-        if (toilet.isFee().equals("yes"))
-            ((Switch)view.findViewById(R.id.edit_fee)).setChecked(true);
-        else
-            ((Switch)view.findViewById(R.id.edit_fee)).setChecked(false);
+        if(toilet.isFee() != null) {
+            if (toilet.isFee().equals("yes"))
+                ((Switch) view.findViewById(R.id.edit_fee)).setChecked(true);
+            else
+                ((Switch) view.findViewById(R.id.edit_fee)).setChecked(false);
+        }
         ((EditText)view.findViewById(R.id.add_cost)).setText(Double.toString(toilet.getCost()));
 
     }
@@ -193,7 +197,7 @@ public class EditToiletActivity extends DialogFragment  {
         String description = ((EditText)view.findViewById(R.id.edit_description)).getText().toString();
         String comment = ((EditText)view.findViewById(R.id.add_comment)).getText().toString();
         boolean wheelchair=((Switch)view.findViewById(R.id.edit_wheelchair)).isChecked();
-        boolean outoforder=((Switch)view.findViewById(R.id.add_ausser_betrieb)).isChecked();
+        boolean outOforder=((Switch)view.findViewById(R.id.add_ausser_betrieb)).isChecked();
         boolean fee=((Switch)view.findViewById(R.id.edit_fee)).isChecked();
         double cost =Double.parseDouble(((EditText)view.findViewById(R.id.add_cost)).getText().toString());
         int rating = Integer.parseInt(((Spinner)view.findViewById(R.id.spinner_rating)).getSelectedItem().toString());
@@ -208,14 +212,14 @@ public class EditToiletActivity extends DialogFragment  {
         else
             toilet.setWheelchair("no");
         if(fee) {
-            toilet.setWheelchair("yes");
+            toilet.setFee("yes");
             toilet.setCost(cost);
         }
         else {
-            toilet.setWheelchair("no");
+            toilet.setFee("no");
             toilet.setCost(0);
         }
-        toilet.setOutoforder(outoforder);
+        toilet.setOutoforder(outOforder);
         if(rating!=0)
             toilet.getRatings().add(new Rating("user_id",rating));
         if(newphoto)

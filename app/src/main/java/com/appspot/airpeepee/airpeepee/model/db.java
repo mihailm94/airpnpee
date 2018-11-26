@@ -89,6 +89,10 @@ public class db {
                         if(!ratingSnapshot.child("userRating").getValue().toString().equals(" "))
                         temp.getRatings().add(new Rating(ratingSnapshot.child("userID").getValue().toString(),Integer.parseInt(ratingSnapshot.child("userRating").getValue().toString())));
                     }
+                    if(toiletSnapshot.child("cost").getValue() != null) {
+                        double cost = Double.parseDouble(toiletSnapshot.child("cost").getValue().toString());
+                        temp.setCost(cost);
+                    }
                     temp.setPhotoUrl(photourl);
                     temp.setDescription(description);
                     temp.setTotalRating(totalrating);
@@ -172,13 +176,16 @@ public class db {
         toiletRef.child(toilet.id).child("photoUrl").setValue(toilet.getPhotoUrl());
         toiletRef.child(toilet.id).child("out_of_order").setValue(toilet.isOutoforder());
         toiletRef.child(toilet.id).child("cost").setValue(toilet.getCost());
-        toiletRef.child(toilet.id).child("comments").child(Integer.toString(toilet.getComments().size() - 1)).push();
-        toiletRef.child(toilet.id).child("comments").child(Integer.toString(toilet.getComments().size() - 1)).child("commentUserID").setValue(toilet.getComments().get(toilet.getComments().size() - 1).getId());
-        toiletRef.child(toilet.id).child("comments").child(Integer.toString(toilet.getComments().size() - 1)).child("commentText").setValue(toilet.getComments().get(toilet.getComments().size() - 1).getCommentText());
-        toiletRef.child(toilet.id).child("rating").child(Integer.toString(toilet.getRatings().size() - 1)).push();
-        toiletRef.child(toilet.id).child("rating").child(Integer.toString(toilet.getRatings().size() - 1)).child("userID").setValue(toilet.getRatings().get(toilet.getRatings().size() - 1).getId());
-        toiletRef.child(toilet.id).child("rating").child(Integer.toString(toilet.getRatings().size() - 1)).child("userRating").setValue(toilet.getRatings().get(toilet.getRatings().size() - 1).getUserRating());
-        return true;
+        if(toilet.getComments().size() !=0) {
+            toiletRef.child(toilet.id).child("comments").child(Integer.toString(toilet.getComments().size() - 1)).push();
+            toiletRef.child(toilet.id).child("comments").child(Integer.toString(toilet.getComments().size() - 1)).child("commentUserID").setValue(toilet.getComments().get(toilet.getComments().size() - 1).getId());
+            toiletRef.child(toilet.id).child("comments").child(Integer.toString(toilet.getComments().size() - 1)).child("commentText").setValue(toilet.getComments().get(toilet.getComments().size() - 1).getCommentText());
+        }if(toilet.getRatings().size() != 0) {
+                toiletRef.child(toilet.id).child("rating").child(Integer.toString(toilet.getRatings().size() - 1)).push();
+                toiletRef.child(toilet.id).child("rating").child(Integer.toString(toilet.getRatings().size() - 1)).child("userID").setValue(toilet.getRatings().get(toilet.getRatings().size() - 1).getId());
+                toiletRef.child(toilet.id).child("rating").child(Integer.toString(toilet.getRatings().size() - 1)).child("userRating").setValue(toilet.getRatings().get(toilet.getRatings().size() - 1).getUserRating());
+            }
+            return true;
     }
         catch (Exception e)
         {
