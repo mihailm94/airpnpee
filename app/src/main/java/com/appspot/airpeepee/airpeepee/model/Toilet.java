@@ -9,6 +9,7 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.ValueEventListener;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Toilet {
@@ -25,6 +26,25 @@ public class Toilet {
     protected String name;
     protected String openingHours;
 
+    public double getCost() {
+        return cost;
+    }
+
+    public void setCost(double cost) {
+        this.cost = cost;
+    }
+
+    protected double cost;
+
+    public boolean isOutoforder() {
+        return outoforder;
+    }
+
+    public void setOutoforder(boolean outoforder) {
+        this.outoforder = outoforder;
+    }
+
+    protected boolean outoforder;
 
     protected String plz;
     protected String street;
@@ -38,6 +58,8 @@ public class Toilet {
 
     public Toilet(){
         // Default constructor required for calls to DataSnapshot.getValue(User.class)
+        comments = new ArrayList<Comment>();
+        Ratings = new ArrayList<Rating>();
 
     }
 
@@ -53,6 +75,8 @@ public class Toilet {
         this.streetNumber = streetNumber;
         this.wheelchair=wheelchair;
         this.isPrivate=isPrivate;
+        comments = new ArrayList<Comment>();
+        Ratings = new ArrayList<Rating>();
 
         // constracter code hier
 

@@ -10,6 +10,11 @@ public class Comment {
         this.commentText=commentText;
 
     }
+    public Comment(String id,String commentText){
+        this.id=id;
+        this.commentText=commentText;
+
+    }
 
     public String getId() {
         return id;

@@ -94,6 +94,7 @@ EditToiletActivity.NoticeDialogListener
     private Location mlocation;
     //Toilette
     private Marker marker;
+    private Marker m_marker;
     private View mBottomSheet;
     private BottomSheetBehavior mBottomSheetBehavior;
     private ExpandIconView mExpandIconView;
@@ -298,6 +299,7 @@ EditToiletActivity.NoticeDialogListener
         mMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
             @Override
             public boolean onMarkerClick(Marker marker) {
+                m_marker=marker;
                 destination = marker.getPosition();
                 findViewById(R.id.bottom_sheet).setVisibility(View.VISIBLE);
                 findViewById(R.id.direction_btn).setVisibility(View.VISIBLE);
@@ -545,7 +547,7 @@ EditToiletActivity.NoticeDialogListener
 
     public void showNoticeDialog() {
         // Create an instance of the dialog fragment and show it
-        DialogFragment dialog = new EditToiletActivity();
+        DialogFragment dialog = new EditToiletActivity(m_marker.getPosition());
         dialog.show(getSupportFragmentManager(), "NoticeDialogFragment");
     }
 

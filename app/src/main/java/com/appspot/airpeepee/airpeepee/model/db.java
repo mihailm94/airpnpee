@@ -63,9 +63,8 @@ public class db {
 
                 // declare the list inside onDataChange because the function fires asynchronously
                 List<Toilet> toiletList = new ArrayList<>();
-
                 for(DataSnapshot toiletSnapshot : dataSnapshot.getChildren()) {
-                    String id = (String) toiletSnapshot.getKey();
+                    String id =toiletSnapshot.getKey();
                     String fee = (String) toiletSnapshot.child("fee").getValue();
                     String name = (String) toiletSnapshot.child("name").getValue();
                     String openingHours = (String) toiletSnapshot.child("opening_hours").getValue();
@@ -80,6 +79,16 @@ public class db {
                     String description =(String) toiletSnapshot.child("description").getValue();
                     double totalrating = Double.parseDouble(toiletSnapshot.child("ratingTotal").getValue().toString());
                     Toilet temp =new Toilet(id, fee, locationLat, locationLon, name, openingHours, plz, street, streetNo, wheelchair,isPrivate);
+                    for(DataSnapshot commentSnapshot : toiletSnapshot.child("comments").getChildren())
+                    {
+                        if(!commentSnapshot.child("commentText").getValue().toString().equals(" "))
+                            temp.getComments().add(new Comment(commentSnapshot.child("commentUserID").getValue().toString(),commentSnapshot.child("commentText").getValue().toString()));
+                    }
+                    for(DataSnapshot ratingSnapshot : toiletSnapshot.child("rating").getChildren())
+                    {
+                        if(!ratingSnapshot.child("userRating").getValue().toString().equals(" "))
+                        temp.getRatings().add(new Rating(ratingSnapshot.child("userID").getValue().toString(),Integer.parseInt(ratingSnapshot.child("userRating").getValue().toString())));
+                    }
                     temp.setPhotoUrl(photourl);
                     temp.setDescription(description);
                     temp.setTotalRating(totalrating);
@@ -143,6 +152,38 @@ public class db {
             return false;
         }
 
+    }
+
+    public static boolean updateData()
+    {
+
+        toiletRef.orderByChild("name");
+        return true;
+    }
+
+    public static boolean editToilet(Toilet toilet)
+    {
+        try{
+        toiletRef.child(toilet.id).child("name").setValue(toilet.getName());
+        toiletRef.child(toilet.id).child("fee").setValue(toilet.isFee());
+        toiletRef.child(toilet.id).child("description").setValue(toilet.getDescription());
+        toiletRef.child(toilet.id).child("opening_hours").setValue(toilet.getOpeninghours());
+        toiletRef.child(toilet.id).child("wheelchair").setValue(toilet.isWheelchair());
+        toiletRef.child(toilet.id).child("photoUrl").setValue(toilet.getPhotoUrl());
+        toiletRef.child(toilet.id).child("out_of_order").setValue(toilet.isOutoforder());
+        toiletRef.child(toilet.id).child("cost").setValue(toilet.getCost());
+        toiletRef.child(toilet.id).child("comments").child(Integer.toString(toilet.getComments().size() - 1)).push();
+        toiletRef.child(toilet.id).child("comments").child(Integer.toString(toilet.getComments().size() - 1)).child("commentUserID").setValue(toilet.getComments().get(toilet.getComments().size() - 1).getId());
+        toiletRef.child(toilet.id).child("comments").child(Integer.toString(toilet.getComments().size() - 1)).child("commentText").setValue(toilet.getComments().get(toilet.getComments().size() - 1).getCommentText());
+        toiletRef.child(toilet.id).child("rating").child(Integer.toString(toilet.getRatings().size() - 1)).push();
+        toiletRef.child(toilet.id).child("rating").child(Integer.toString(toilet.getRatings().size() - 1)).child("userID").setValue(toilet.getRatings().get(toilet.getRatings().size() - 1).getId());
+        toiletRef.child(toilet.id).child("rating").child(Integer.toString(toilet.getRatings().size() - 1)).child("userRating").setValue(toilet.getRatings().get(toilet.getRatings().size() - 1).getUserRating());
+        return true;
+    }
+        catch (Exception e)
+        {
+            return false;
+        }
     }
 
     public static boolean editUserData()
