@@ -80,6 +80,7 @@
     <string name="gender">gender</string>
     <string name="address">address</string>
     <string name="anbieter">Anbieter</string>
+    <string name="search">Search</string>
     <string-array name="gender_array">
         <item>male</item>
         <item>female</item>
