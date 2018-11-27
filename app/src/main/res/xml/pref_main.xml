@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory android:title="Settings">
+
+
+        <Preference
+            android:key="@string/key_edit_profile"
+            android:title="@string/title_edit_profile"/>
+
+
+
+
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="@string/key_user"
+            android:summary="@string/summary_user"
+            android:title="@string/title_user" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/pref_title_support">
+
+
+        <Preference
+            android:key="@string/key_send_feedback"
+            android:summary="@string/summary_support"
+            android:title="@string/title_send_feedback" />
+
+        <Preference
+            android:title="@string/pref_header_about"
+            android:summary="@string/summary_about"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

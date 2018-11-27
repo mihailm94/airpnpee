@@ -19,7 +19,6 @@ import android.support.design.widget.NavigationView;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.DialogFragment;
-import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -40,9 +39,6 @@ import android.widget.Toast;
 
 import com.appspot.airpeepee.airpeepee.model.GlideApp;
 import com.appspot.airpeepee.airpeepee.model.PlaceArrayAdapter;
-import com.bumptech.glide.annotation.GlideModule;
-import com.bumptech.glide.module.AppGlideModule;
-
 import com.akexorcist.googledirection.DirectionCallback;
 import com.akexorcist.googledirection.GoogleDirection;
 import com.akexorcist.googledirection.constant.TransportMode;
@@ -319,7 +315,6 @@ EditToiletActivity.NoticeDialogListener
         TextView type = (TextView) findViewById(R.id.toilet_type);
         TextView totalrating = (TextView) findViewById(R.id.reviews);
         ImageView imageView = (ImageView) findViewById(R.id.imageView2);
-
         // toilet name zeigen
         if (isNullOrEmpty(marker.getTitle()))
             name.setText("öffentlicher toilette");
@@ -330,8 +325,8 @@ EditToiletActivity.NoticeDialogListener
             type.setText("Private Toilet");
         else
             type.setText("Public Toilet");
-
-        totalrating.setText("Reviews : " + Double.toString(toilet.getTotalRating()));
+        String total = "Reviews : " +  String.format( "%.1f", toilet.getTotalRating()) + " ("+toilet.getRatings().size()+") ";
+        totalrating.setText(total);
 
         // Reference to an image file in Cloud Storage
         StorageReference storageReference = FirebaseStorage.getInstance().getReference(toilet.getPhotoUrl());
@@ -345,9 +340,6 @@ EditToiletActivity.NoticeDialogListener
 
         TextView information=(TextView) findViewById(R.id.information);
         information.setText(toilet.getDescription());
-
-
-
 
     }
 
