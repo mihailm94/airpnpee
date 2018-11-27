@@ -193,6 +193,7 @@ EditToiletActivity.NoticeDialogListener
         mExpandIconView = (ExpandIconView) mBottomSheet.findViewById(R.id.expandIconView);
     }
 
+
     private void setUpViews() {
         mExpandIconView.setState(ExpandIconView.LESS, true);
         mBottomSheetBehavior = BottomSheetBehavior.from(mBottomSheet);
@@ -386,10 +387,10 @@ EditToiletActivity.NoticeDialogListener
     public void onDirectionSuccess(Direction direction, String rawBody) {
         Snackbar.make(btnRequestDirection, "Success with status: " + direction.getStatus(), Snackbar.LENGTH_SHORT).show();
         if(direction.isOK()){
+            refreshMarker();
             Route route = direction.getRouteList().get(0);
             mMap.addMarker(new MarkerOptions().position(origin));
             mMap.addMarker(new MarkerOptions().position(destination));
-
             ArrayList<LatLng> directionPositionList = route.getLegList().get(0).getDirectionPoint();
             mMap.addPolyline(DirectionConverter.createPolyline(this, directionPositionList, 5, Color.RED));
             setCameraWithCoordinationBounds(route);
@@ -556,5 +557,21 @@ EditToiletActivity.NoticeDialogListener
     public void onDialogNegativeClick(DialogFragment dialog) {
         // User touched the dialog's negative button
 
+    }
+    public void refreshMarker() {
+        mMap.clear();
+        MarkerOptions markerPOI;
+        for (Toilet t : DataHolder.getInstance().getData()) {
+            markerPOI = new MarkerOptions();
+            markerPOI.position(new LatLng(t.getLocationLat(), t.getLocationLon()))
+                    .title(t.getName());
+
+            if (t.isPrivate())
+                markerPOI.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_BLUE));
+            else
+                markerPOI.icon(BitmapDescriptorFactory.defaultMarker());
+
+            mMap.addMarker(markerPOI);
+        }
     }
 }
