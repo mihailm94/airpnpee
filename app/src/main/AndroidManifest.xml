@@ -87,8 +87,15 @@
             android:name=".EditProfileActivity"
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
-        <activity android:name=".EditToiletActivity"
+        <DialogFragment android:name=".EditToiletActivity"
                   android:theme="@android:style/Theme.Holo.Dialog">
+        </DialogFragment>
+        <activity android:name=".SettingsActivity"
+            android:label="Settings"
+            android:parentActivityName=".MapsActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MapsActivity"/>
         </activity>
     </application>
 
