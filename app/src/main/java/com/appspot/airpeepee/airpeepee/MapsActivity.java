@@ -441,6 +441,7 @@ EditToiletActivity.NoticeDialogListener
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+
             startActivity(new Intent(MapsActivity.this,SettingsActivity.class));
             return true;
         }
