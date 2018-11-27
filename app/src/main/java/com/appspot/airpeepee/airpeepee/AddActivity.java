@@ -204,7 +204,7 @@ public class AddActivity extends AppCompatActivity implements OnMapReadyCallback
             }
         });
 
-        @SuppressLint("WrongViewCast")
+        //@SuppressLint("WrongViewCast")
         View save=(View) findViewById(R.id.button);
 
         save.setOnClickListener(new View.OnClickListener() {

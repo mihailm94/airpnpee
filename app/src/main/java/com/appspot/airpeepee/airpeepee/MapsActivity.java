@@ -73,6 +73,7 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import java.io.File;
 import java.net.URI;
 import java.util.ArrayList;
+import android.content.Intent;
 
 
 import static com.google.common.base.Strings.isNullOrEmpty;
@@ -440,6 +441,7 @@ EditToiletActivity.NoticeDialogListener
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+            startActivity(new Intent(MapsActivity.this,SettingsActivity.class));
             return true;
         }
 
