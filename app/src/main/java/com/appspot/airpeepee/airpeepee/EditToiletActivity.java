@@ -47,6 +47,8 @@ public class EditToiletActivity extends DialogFragment  {
        this.latLng=latLng;
     }
 
+    EditToiletActivity(){ } //default constructor
+
     //Photo upload stuff
     private ImageView imageView;
     private TextView textView;
