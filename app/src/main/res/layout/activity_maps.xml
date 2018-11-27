@@ -54,6 +54,7 @@
             map:layout_anchorGravity="right|center" />
 
 
+
     </android.support.design.widget.CoordinatorLayout>
 
 

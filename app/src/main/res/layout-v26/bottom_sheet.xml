@@ -83,7 +83,7 @@
             <TextView
                 android:id="@+id/information"
                 android:layout_width="match_parent"
-                android:layout_height="90dp"
+                android:layout_height="wrap_content"
                 android:lineSpacingExtra="9sp"
                 android:text="@string/far_far_awa"
                 android:textAppearance="@style/far_far_awa"
