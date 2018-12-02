@@ -75,6 +75,15 @@
                     android:layout_marginLeft="5dp"
                     app:srcCompat="@drawable/ic_euro"
                      />
+
+                <TextView
+                    android:id="@+id/view_cost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="21dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="21dp"
+                    android:textAppearance="@style/reviews_2" />
+
                 <ImageView
                     android:id="@+id/ic_out_of_order"
                     android:layout_width="wrap_content"

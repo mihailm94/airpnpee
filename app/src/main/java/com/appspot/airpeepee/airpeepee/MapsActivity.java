@@ -319,6 +319,7 @@ EditToiletActivity.NoticeDialogListener
         TextView name = (TextView) findViewById(R.id.toiletName);
         TextView type = (TextView) findViewById(R.id.toilet_type);
         TextView totalrating = (TextView) findViewById(R.id.reviews);
+        TextView cost=findViewById(R.id.view_cost);
         ImageView imageView = (ImageView) findViewById(R.id.imageView2);
         // toilet name zeigen
         if (isNullOrEmpty(marker.getTitle()))
@@ -331,6 +332,15 @@ EditToiletActivity.NoticeDialogListener
         else
             type.setText("Public Toilet");
         String total="";
+
+        if(toilet.getCost()==0.0)
+        {
+            cost.setText("");
+        }
+        else
+        cost.setText("("+toilet.getCost()+" €)");
+
+
         if((int)toilet.getTotalRating()==0)
         {
             total = "Reviews : " + "" + " ("+toilet.getRatings().size()+") ";
