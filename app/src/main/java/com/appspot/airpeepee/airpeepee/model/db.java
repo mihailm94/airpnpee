@@ -75,6 +75,10 @@ public class db {
                     double locationLat = (double) toiletSnapshot.child("location").child("lat").getValue();
                     double locationLon = (double) toiletSnapshot.child("location").child("lon").getValue();
                     boolean isPrivate = Boolean.parseBoolean(toiletSnapshot.child("isPrivate").getValue().toString());
+                    boolean isoutoforder=false;
+                    if(toiletSnapshot.child("out_of_order").getValue() != null ) {
+                        isoutoforder = Boolean.parseBoolean(toiletSnapshot.child("out_of_order").getValue().toString());
+                    }
                     String photourl = (String) toiletSnapshot.child("photoUrl").getValue();
                     String description =(String) toiletSnapshot.child("description").getValue();
                     double totalRating = 0;//Double.parseDouble(toiletSnapshot.child("ratingTotal").getValue().toString());
@@ -100,6 +104,7 @@ public class db {
                     if( temp.getRatings().size() !=0)
                         totalRating=totalRating/temp.getRatings().size();
                     temp.setTotalRating(totalRating);
+                    temp.setOutoforder(isoutoforder);
                     toiletList.add(temp);
                 }
 

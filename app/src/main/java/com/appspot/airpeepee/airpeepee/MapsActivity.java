@@ -186,6 +186,9 @@ EditToiletActivity.NoticeDialogListener
         setUpViews();
         findViewById(R.id.bottom_sheet).setVisibility(View.GONE);
         findViewById(R.id.direction_btn).setVisibility(View.GONE);
+        findViewById(R.id.ic_euro).setVisibility(View.GONE);
+        findViewById(R.id.ic_wheelchair).setVisibility(View.GONE);
+        findViewById(R.id.ic_out_of_order).setVisibility(View.GONE);
     }
 
 
@@ -327,8 +330,27 @@ EditToiletActivity.NoticeDialogListener
             type.setText("Private Toilet");
         else
             type.setText("Public Toilet");
-        String total = "Reviews : " +  String.format( "%.1f", toilet.getTotalRating()) + " ("+toilet.getRatings().size()+") ";
-        totalrating.setText(total);
+        String total="";
+        if((int)toilet.getTotalRating()==0)
+        {
+            total = "Reviews : " + "" + " ("+toilet.getRatings().size()+") ";
+        }
+        if((int)toilet.getTotalRating()==1){
+            total = "Reviews : " + "\uD83D\uDCA6" + " ("+toilet.getRatings().size()+") ";
+        }
+        if((int)toilet.getTotalRating()==2){
+            total = "Reviews : " + "\uD83D\uDCA6\uD83D\uDCA6" + " ("+toilet.getRatings().size()+") ";
+        }
+        if((int)toilet.getTotalRating()==3){
+            total = "Reviews : " + "\uD83D\uDCA6\uD83D\uDCA6\uD83D\uDCA6" + " ("+toilet.getRatings().size()+") ";
+        }
+        if((int)toilet.getTotalRating()==4){
+            total = "Reviews : " + "\uD83D\uDCA6\uD83D\uDCA6\uD83D\uDCA6\uD83D\uDCA6" + " ("+toilet.getRatings().size()+") ";
+        }
+        if((int)toilet.getTotalRating()==5){
+            total = "Reviews : " + "\uD83D\uDCA6\uD83D\uDCA6\uD83D\uDCA6\uD83D\uDCA6\uD83D\uDCA6" + " ("+toilet.getRatings().size()+") ";
+        }
+       totalrating.setText(total);
 
         // Reference to an image file in Cloud Storage
         StorageReference storageReference = FirebaseStorage.getInstance().getReference(toilet.getPhotoUrl());
@@ -342,6 +364,52 @@ EditToiletActivity.NoticeDialogListener
 
         TextView information=(TextView) findViewById(R.id.information);
         information.setText(toilet.getDescription());
+
+        if(toilet.isOutoforder())
+        {
+            if( findViewById(R.id.ic_out_of_order).getVisibility()==View.GONE)
+                findViewById(R.id.ic_out_of_order).setVisibility(View.VISIBLE);
+        }
+        else
+        {
+            if( findViewById(R.id.ic_out_of_order).getVisibility()==View.VISIBLE)
+                findViewById(R.id.ic_out_of_order).setVisibility(View.GONE);
+        }
+
+
+        if(toilet.isFee()==null) {
+            if (((ImageView) findViewById(R.id.ic_euro)).getVisibility() == View.VISIBLE)
+                ((ImageView) findViewById(R.id.ic_euro)).setVisibility(View.GONE);
+        }
+        else{
+        if(toilet.isFee().equals("yes")) {
+            if(((ImageView) findViewById(R.id.ic_euro)).getVisibility() == View.GONE)
+                 ((ImageView) findViewById(R.id.ic_euro)).setVisibility(View.VISIBLE);
+        }
+            if (toilet.isFee().equals("no")) {
+                if (((ImageView) findViewById(R.id.ic_euro)).getVisibility() == View.VISIBLE)
+                    ((ImageView) findViewById(R.id.ic_euro)).setVisibility(View.GONE);
+            }
+
+
+        }
+
+        if(toilet.isWheelchair() == null){
+            if(((ImageView) findViewById(R.id.ic_wheelchair)).getVisibility() == View.VISIBLE)
+                ((ImageView) findViewById(R.id.ic_wheelchair)).setVisibility(View.GONE);
+
+        }else{
+        if(toilet.isWheelchair().equals("yes")) {
+            if(((ImageView) findViewById(R.id.ic_wheelchair)).getVisibility() == View.GONE)
+                ((ImageView) findViewById(R.id.ic_wheelchair)).setVisibility(View.VISIBLE);
+
+        }
+            if (toilet.isWheelchair().equals("no")) {
+                if (((ImageView) findViewById(R.id.ic_wheelchair)).getVisibility() == View.VISIBLE)
+                    ((ImageView) findViewById(R.id.ic_wheelchair)).setVisibility(View.GONE);
+            }
+
+        }
 
     }
 
