@@ -83,7 +83,7 @@ public class MapsActivity extends AppCompatActivity implements  NavigationView.O
 EditToiletActivity.NoticeDialogListener
 {
 
-
+    private boolean mendtrip=true;
     private GoogleMap mMap;
     // User Location
     private Location mlocation;
@@ -163,7 +163,10 @@ EditToiletActivity.NoticeDialogListener
             @Override
             public void onClick(View v) {
                // mlocation = myLocationListener.getLastBestLocation();
+                mendtrip =false;
+                findViewById(R.id.imageView5).setVisibility(View.VISIBLE);
                 origin = new LatLng(mlocation.getLatitude(), mlocation.getLongitude());
+                destination = m_marker.getPosition();
                 requestDirection();
             }
         });
@@ -173,6 +176,17 @@ EditToiletActivity.NoticeDialogListener
             @Override
             public void onClick(View v) {
                 showNoticeDialog();
+            }
+        });
+
+        ImageView cancel= findViewById(R.id.imageView5);
+        cancel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mendtrip=true;
+                findViewById(R.id.bottom_sheet).setVisibility(View.GONE);
+                findViewById(R.id.imageView5).setVisibility(View.GONE);
+                refreshMarker();
             }
         });
 
@@ -192,6 +206,7 @@ EditToiletActivity.NoticeDialogListener
         findViewById(R.id.ic_euro).setVisibility(View.GONE);
         findViewById(R.id.ic_wheelchair).setVisibility(View.GONE);
         findViewById(R.id.ic_out_of_order).setVisibility(View.GONE);
+        findViewById(R.id.imageView5).setVisibility(View.GONE);
     }
 
 
@@ -298,6 +313,30 @@ EditToiletActivity.NoticeDialogListener
             return;
         }
         mMap.setMyLocationEnabled(true);
+        mMap.setOnMyLocationChangeListener(new GoogleMap.OnMyLocationChangeListener() {
+            @Override
+            public void onMyLocationChange(Location location) {
+               if(!mendtrip)
+               {
+                origin = new LatLng(location.getLatitude(), location.getLongitude());
+                if(destination !=null) {
+                    Location locationOne = new Location("");
+                    locationOne.setLatitude(destination.latitude);
+                    locationOne.setLongitude(destination.longitude);
+                    float distanceInMetersOne = location.distanceTo(locationOne);
+                    if (distanceInMetersOne <30) {
+                        //destination = null;
+                        mendtrip=true;
+                        findViewById(R.id.bottom_sheet).setVisibility(View.GONE);
+                        refreshMarker();
+                        return;
+                    }
+                    requestDirection();
+                }
+               }
+
+            }
+        });
         mMap.setOnMyLocationButtonClickListener(this);
         mMap.setOnMyLocationClickListener(this);
         mMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
@@ -305,7 +344,6 @@ EditToiletActivity.NoticeDialogListener
             public boolean onMarkerClick(Marker marker) {
 
                 m_marker=marker;
-                destination = marker.getPosition();
                 findViewById(R.id.bottom_sheet).setVisibility(View.VISIBLE);
                 findViewById(R.id.direction_btn).setVisibility(View.VISIBLE);
                 putToiletInfo(marker);
@@ -468,7 +506,7 @@ EditToiletActivity.NoticeDialogListener
     }
 */
     public void requestDirection() {
-        Snackbar.make(btnRequestDirection, "Direction Requesting...", Snackbar.LENGTH_SHORT).show();
+        //Snackbar.make(btnRequestDirection, "Direction Requesting...", Snackbar.LENGTH_SHORT).show();
         GoogleDirection.withServerKey(serverKey)
                 .from(origin)
                 .to(destination)
@@ -481,14 +519,13 @@ EditToiletActivity.NoticeDialogListener
     @SuppressLint("RestrictedApi")
     @Override
     public void onDirectionSuccess(Direction direction, String rawBody) {
-        Snackbar.make(btnRequestDirection, "Success with status: " + direction.getStatus(), Snackbar.LENGTH_SHORT).show();
+        //Snackbar.make(btnRequestDirection, "Success with status: " + direction.getStatus(), Snackbar.LENGTH_SHORT).show();
         if(direction.isOK()){
-            refreshMarker();
+            mMap.clear();
+          //  refreshMarker();
             Route route = direction.getRouteList().get(0);
-            mMap.addMarker(new MarkerOptions().position(origin));
-            mMap.addMarker(new MarkerOptions().position(destination));
             ArrayList<LatLng> directionPositionList = route.getLegList().get(0).getDirectionPoint();
-            mMap.addPolyline(DirectionConverter.createPolyline(this, directionPositionList, 5, Color.RED));
+            mMap.addPolyline(DirectionConverter.createPolyline(this, directionPositionList, 5, Color.BLUE));
             setCameraWithCoordinationBounds(route);
 
             btnRequestDirection.setVisibility(View.GONE);
