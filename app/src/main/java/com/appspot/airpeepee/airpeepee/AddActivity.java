@@ -51,6 +51,7 @@ import com.mvc.imagepicker.ImagePicker;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.List;
+import java.util.Locale;
 import java.util.Random;
 
 public class AddActivity extends AppCompatActivity implements OnMapReadyCallback, GoogleApiClient.OnConnectionFailedListener, GoogleApiClient.ConnectionCallbacks {
@@ -119,9 +120,23 @@ public class AddActivity extends AppCompatActivity implements OnMapReadyCallback
             }
             // Selecting the first object buffer.
             final Place place = places.get(0);
+            toilet.setStreet(place.getName().toString());
+            Geocoder geocoder = new Geocoder(AddActivity.this);
+            try {
 
-            Log.i("name", place.getName().toString());
-            Log.i("coordinates", place.getLatLng().toString());
+                List<Address> addresses =  geocoder.getFromLocation(place.getLatLng().latitude, place.getLatLng().longitude,1);
+                if (addresses.size()>0)
+                {
+                    toilet.setStreet(addresses.get(0).getAddressLine(0));
+                    //get postal code
+                    toilet.setPlz(addresses.get(0).getPostalCode());
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            toilet.setLocationLat(place.getLatLng().latitude);
+            toilet.setLocationLon(place.getLatLng().longitude);
+            toilet.setTotalRating(place.getRating());
         }
     };
 
@@ -186,6 +201,7 @@ public class AddActivity extends AppCompatActivity implements OnMapReadyCallback
         mAutocompleteTextView.setAdapter(mPlaceArrayAdapter);
 
 
+
         //image picking for tha toilet
         imageView = (ImageView) findViewById(R.id.imageView3);
         textView = (TextView) findViewById(R.id.textViewPhoto);
@@ -240,56 +256,19 @@ public class AddActivity extends AppCompatActivity implements OnMapReadyCallback
                 toilet.setPhotoUrl(mDatabase.uploadImage(filePath, getApplicationContext()));
 
 
-                if(db.addToilet(toilet))
+                if(db.addToilet(toilet)) {
                     Toast.makeText(getApplicationContext(),"add success",Toast.LENGTH_SHORT).show();
+                    db d=new db();
+                    finish();
+                }
                 else
                     Toast.makeText(getApplicationContext(),"add not success",Toast.LENGTH_SHORT).show();
 
-                finish();
+
 
             }
         });
 
-        PlaceAutocompleteFragment autocompleteFragment = (PlaceAutocompleteFragment)
-                getFragmentManager().findFragmentById(R.id.place_autocomplete_fragment);
-        autocompleteFragment.setHint("adresse");
-        autocompleteFragment.setBoundsBias(BOUNDS_MOUNTAIN_VIEW);
-        autocompleteFragment.setOnPlaceSelectedListener(new PlaceSelectionListener() {
-            @Override
-            public void onPlaceSelected(Place place) {
-
-                Geocoder geocoder = new Geocoder(AddActivity.this);
-                try {
-
-                    List<Address> addresses =  geocoder.getFromLocation(place.getLatLng().latitude, place.getLatLng().longitude,1);
-                    if (addresses.size()>0)
-                    {
-                       toilet.setStreet(addresses.get(0).getAddressLine(0));
-                        //get postal code
-                        toilet.setPlz(addresses.get(0).getPostalCode());
-                    }
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-                toilet.setLocationLat(place.getLatLng().latitude);
-                toilet.setLocationLon(place.getLatLng().longitude);
-                toilet.setTotalRating(place.getRating());
-            }
-
-            @Override
-            public void onError(Status status) {
-                Toast.makeText(getApplicationContext(),status.toString(),Toast.LENGTH_SHORT).show();
-            }
-        });
-
-     /*   FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });*/
     }
 
 
@@ -315,14 +294,6 @@ public class AddActivity extends AppCompatActivity implements OnMapReadyCallback
     public void onMapReady(GoogleMap googleMap) {
 
     }
-/*
-    public void onPickImage(View view) {
-        // Click on image button
-        //ImagePicker.pickImage(this, "Select your image:");
-        //startActivityForResult(chooseImageIntent, 234);
-        ImagePicker.pickImage(this);
-    }
-*/
 
 
 

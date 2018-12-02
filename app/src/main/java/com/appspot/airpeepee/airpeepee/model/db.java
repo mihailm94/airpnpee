@@ -146,6 +146,7 @@ public class db {
     {
         try {
             toiletRef.child(toilet.id).push();
+            toiletRef.child(toilet.id).child("userId").setValue(DataHolder.getInstance().getUser().getId());
             toiletRef.child(toilet.id).child("name").setValue(toilet.getName());
             toiletRef.child(toilet.id).child("fee").setValue(toilet.isFee());
             toiletRef.child(toilet.id).child("description").setValue(toilet.getDescription());

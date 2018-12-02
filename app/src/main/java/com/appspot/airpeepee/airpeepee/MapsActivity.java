@@ -7,12 +7,8 @@ import android.content.pm.PackageManager;
 import android.content.res.Resources;
 import android.graphics.Color;
 import android.location.Location;
-
-
-import android.net.Uri;
 import android.os.Handler;
 import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
 import android.support.design.widget.BottomSheetBehavior;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
@@ -24,6 +20,8 @@ import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.util.DisplayMetrics;
 import android.util.Log;
@@ -36,7 +34,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
-
+import com.appspot.airpeepee.airpeepee.model.CommentAdapter;
 import com.appspot.airpeepee.airpeepee.model.GlideApp;
 import com.appspot.airpeepee.airpeepee.model.PlaceArrayAdapter;
 import com.akexorcist.googledirection.DirectionCallback;
@@ -47,8 +45,9 @@ import com.akexorcist.googledirection.model.Route;
 import com.akexorcist.googledirection.util.DirectionConverter;
 import com.appspot.airpeepee.airpeepee.model.DataHolder;
 import com.appspot.airpeepee.airpeepee.model.Toilet;
-
 import com.appspot.airpeepee.airpeepee.model.MyLocationListener;
+import com.appspot.airpeepee.airpeepee.model.User;
+import com.appspot.airpeepee.airpeepee.model.db;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.common.api.PendingResult;
@@ -67,11 +66,10 @@ import com.google.android.gms.maps.model.LatLngBounds;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.github.zagum.expandicon.ExpandIconView;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
-import android.support.v7.app.ActionBarDrawerToggle;
-import java.io.File;
-import java.net.URI;
 import java.util.ArrayList;
 import android.content.Intent;
 
@@ -114,6 +112,12 @@ EditToiletActivity.NoticeDialogListener
     private static final LatLngBounds BOUNDS_MOUNTAIN_VIEW = new LatLngBounds(new LatLng(37.398160, -122.180831), new LatLng(37.430610, -121.972090));
 
 
+    //Comment
+    private RecyclerView mRecyclerView;
+    private RecyclerView.Adapter mAdapter;
+    private RecyclerView.LayoutManager mLayoutManager;
+
+    private FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -132,7 +136,14 @@ EditToiletActivity.NoticeDialogListener
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-
+        // lOGIN
+        mAuth = FirebaseAuth.getInstance();
+        FirebaseUser currentUser = mAuth.getCurrentUser();
+        if (currentUser != null) {
+            DataHolder.getInstance().setUser(new User());
+            db.findUserbyemail(currentUser.getEmail());
+            DataHolder.getInstance().getUser().setFirebaseUser(currentUser);
+        }
         // Search
         mGoogleApiClient = new GoogleApiClient.Builder(MapsActivity.this)
                 .addApi(Places.GEO_DATA_API)
@@ -292,6 +303,7 @@ EditToiletActivity.NoticeDialogListener
         mMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
             @Override
             public boolean onMarkerClick(Marker marker) {
+
                 m_marker=marker;
                 destination = marker.getPosition();
                 findViewById(R.id.bottom_sheet).setVisibility(View.VISIBLE);
@@ -413,6 +425,19 @@ EditToiletActivity.NoticeDialogListener
 
         }
 
+        mRecyclerView = (RecyclerView) findViewById(R.id.my_recycler_view);
+        // use this setting to improve performance if you know that changes
+        // in content do not change the layout size of the RecyclerView
+        mRecyclerView.setHasFixedSize(true);
+
+        // use a linear layout manager
+        mLayoutManager = new LinearLayoutManager(MapsActivity.this);
+        mRecyclerView.setLayoutManager(mLayoutManager);
+
+        // specify an adapter (see also next example)
+        mAdapter = new CommentAdapter(toilet.getComments());
+        mRecyclerView.setAdapter(mAdapter);
+
     }
 
 
@@ -525,14 +550,47 @@ EditToiletActivity.NoticeDialogListener
         int id = item.getItemId();
 
         if (id == R.id.nav_profile) {
+            if(DataHolder.getInstance().getUser() != null) {
+                startActivity(new Intent(MapsActivity.this, EditProfileActivity.class));
+            }
+            else
+            {
+                startActivity(new Intent(MapsActivity.this, LoginActivity.class));
+            }
+
             // Handle the profile action
         } else if (id == R.id.nav_privToilet) {
+            if(DataHolder.getInstance().getUser() != null) {
+                if(DataHolder.getInstance().getUser().isAnbieter())
+                    startActivity(new Intent(MapsActivity.this, AddActivity.class));
+            }
+            else
+            {
+                startActivity(new Intent(MapsActivity.this, LoginActivity.class));
+            }
 
         } else if (id == R.id.nav_addCoupon) {
+            if(DataHolder.getInstance().getUser() != null) {
+                if(DataHolder.getInstance().getUser().isAnbieter())
+                startActivity(new Intent(MapsActivity.this, EditProfileActivity.class));
+            }
+            else
+            {
+                startActivity(new Intent(MapsActivity.this, LoginActivity.class));
+            }
 
         } else if (id == R.id.nav_statistic) {
+            if(DataHolder.getInstance().getUser() != null) {
+                if(DataHolder.getInstance().getUser().isAnbieter())
+                startActivity(new Intent(MapsActivity.this, EditProfileActivity.class));
+            }
+            else
+            {
+                startActivity(new Intent(MapsActivity.this, LoginActivity.class));
+            }
 
         } else if (id == R.id.nav_settings) {
+            startActivity(new Intent(MapsActivity.this,SettingsActivity.class));
 
         } else if (id == R.id.nav_notification) {
 

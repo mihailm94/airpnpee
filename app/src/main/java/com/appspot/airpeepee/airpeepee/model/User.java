@@ -134,6 +134,14 @@ public class User {
         this.facebookAccessToken = facebookAccessToken;
     }
 
+    public boolean isLogin()
+    {
+        if(firebaseUser != null)
+            return true;
+        else
+            return false;
+    }
+
     public User(){
         address="";
         birthday="";

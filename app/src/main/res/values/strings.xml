@@ -129,6 +129,7 @@ our successful semester project. We are Glad to Help in anyway!</string>
     <string name="key_notifications_new_message_ringtone">key_notifications_new_message_ringtone</string>
     <string name="key_user">User</string>
     <string name="key_send_feedback">key_send_feedback</string>
+    <string name="add_image">add Image</string>
     <string-array name="gender_array">
         <item>male</item>
         <item>female</item>
