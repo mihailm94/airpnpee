@@ -121,7 +121,9 @@ our successful semester project. We are Glad to Help in anyway!</string>
     <string name="title_gallery_storage">Default Storage</string>
     <string name="title_new_notification_sound">New message notification</string>
     <string name="title_user">User</string>
-    <string name="summary_user">Switch to Provider</string>
+    <string name="summary_userOff">Switch to Provider</string>
+    <string name="summary_userOn">Switch to Client</string>
+
     <string name="key_upload_over_wifi">key_upload_over_wifi</string>
     <string name="key_gallery_name">key_gallery_name</string>
     <string name="key_edit_profile">key_edit_profile</string>

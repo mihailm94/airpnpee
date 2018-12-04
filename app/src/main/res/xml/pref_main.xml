@@ -8,15 +8,22 @@
         <Preference
             android:key="@string/key_edit_profile"
             android:title="@string/title_edit_profile">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:targetPackage="com.appspot.airpeepee.airpeepee"
+                android:targetClass="com.appspot.airpeepee.airpeepee.EditProfileActivity"
+                />
         </Preference>
 
 
 
-
         <SwitchPreference
-            android:defaultValue="true"
+            android:defaultValue="false"
             android:key="@string/key_user"
-            android:summary="@string/summary_user"
+            android:summaryOff="@string/summary_userOff"
+            android:summaryOn ="@string/summary_userOn"
+            android:switchTextOff="User"
+            android:switchTextOn="Provider"
             android:title="@string/title_user" />
 
     </PreferenceCategory>
