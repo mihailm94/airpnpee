@@ -86,7 +86,9 @@
         <activity android:name=".VideoActivity" />
         <activity
             android:name=".EditProfileActivity"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
         <activity
             android:name=".SettingsActivity"
             android:label="Settings"
@@ -95,7 +97,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MapsActivity" />
         </activity>
-        <activity android:name=".AddReviewActivity"></activity>
+
     </application>
 
 </manifest>

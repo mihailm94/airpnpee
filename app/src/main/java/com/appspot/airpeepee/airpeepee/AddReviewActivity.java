@@ -21,6 +21,9 @@ public class AddReviewActivity extends DialogFragment {
 
     private LatLng latLng;
 
+    public AddReviewActivity() {super();}
+
+
     @SuppressLint("ValidFragment")
     AddReviewActivity(LatLng latLng){
         super();

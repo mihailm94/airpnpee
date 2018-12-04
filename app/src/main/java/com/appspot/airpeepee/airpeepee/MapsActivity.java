@@ -194,7 +194,7 @@ EditToiletActivity.NoticeDialogListener
         review_toilet.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                showNoticeDialog();
+                showNoticeDialogReview();
             }
         });
 
@@ -718,8 +718,13 @@ EditToiletActivity.NoticeDialogListener
     }
 
     public void showNoticeDialog() {
+    // Create an instance of the dialog fragment and show it
+    DialogFragment dialog = new EditToiletActivity(m_marker.getPosition());
+    dialog.show(getSupportFragmentManager(), "NoticeDialogFragment");
+}
+    public void showNoticeDialogReview() {
         // Create an instance of the dialog fragment and show it
-        DialogFragment dialog = new EditToiletActivity(m_marker.getPosition());
+        DialogFragment dialog = new AddReviewActivity();
         dialog.show(getSupportFragmentManager(), "NoticeDialogFragment");
     }
 
