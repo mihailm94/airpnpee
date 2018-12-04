@@ -40,6 +40,30 @@
                 android:layout_margin="24dp"
                 android:orientation="vertical">
 
+
+            <TextView
+                android:id="@+id/rating"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:lineSpacingExtra="4sp"
+                android:text="Rating"
+                android:textAppearance="@style/ship_to_"
+                tools:ignore="DuplicateIds" />
+
+            <Button
+                android:id="@+id/review_toilet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add Toilet Review" />
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                card_view:cardCornerRadius="4dp" />
+
                 <TextView
                     android:id="@+id/toiletName"
                     android:layout_width="wrap_content"
@@ -136,7 +160,8 @@
                     android:layout_height="20dp"
                     android:lineSpacingExtra="4sp"
                     android:text="Rating"
-                    android:textAppearance="@style/ship_to_" />
+                    android:textAppearance="@style/ship_to_"
+                    tools:ignore="DuplicateIds" />
 
                 <android.support.v7.widget.RecyclerView xmlns:card_view="http://schemas.android.com/apk/res-auto"
                     android:id="@+id/my_recycler_view"

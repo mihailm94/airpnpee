@@ -190,6 +190,15 @@ EditToiletActivity.NoticeDialogListener
             }
         });
 
+        Button review_toilet = (Button) findViewById(R.id.review_toilet);
+        review_toilet.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showNoticeDialog();
+            }
+        });
+
+
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
@@ -203,11 +212,14 @@ EditToiletActivity.NoticeDialogListener
         setUpViews();
         findViewById(R.id.bottom_sheet).setVisibility(View.GONE);
         findViewById(R.id.direction_btn).setVisibility(View.GONE);
+
         findViewById(R.id.ic_euro).setVisibility(View.GONE);
         findViewById(R.id.ic_wheelchair).setVisibility(View.GONE);
         findViewById(R.id.ic_out_of_order).setVisibility(View.GONE);
         findViewById(R.id.imageView5).setVisibility(View.GONE);
     }
+
+
 
 
     private void findViews() {
