@@ -47,7 +47,7 @@ public class EditToiletActivity extends DialogFragment  {
        this.latLng=latLng;
     }
 
-    EditToiletActivity(){ } //default constructor
+    EditToiletActivity(){super(); } //default constructor
 
     //Photo upload stuff
     private ImageView imageView;
@@ -167,6 +167,7 @@ public class EditToiletActivity extends DialogFragment  {
             }
         }
     }
+
     public void loadToiletData(View view)
     {
         Toilet toilet = DataHolder.getInstance().findToiletbyLatLng(latLng);

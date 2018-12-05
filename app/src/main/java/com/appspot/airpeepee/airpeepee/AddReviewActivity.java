@@ -17,7 +17,7 @@ import android.widget.AdapterView;
 import com.google.android.gms.maps.model.LatLng;
 
 @SuppressLint("ValidFragment")
-public class AddReviewActivity extends DialogFragment {
+public class AddReviewActivity extends DialogFragment  {
 
     private LatLng latLng;
 
@@ -41,7 +41,7 @@ public class AddReviewActivity extends DialogFragment {
     }
 
     // Use this instance of the interface to deliver action events
-    NoticeDialogListener mListener;
+    public  NoticeDialogListener mListener;
 
     // Override the Fragment.onAttach() method to instantiate the NoticeDialogListener
     @Override
@@ -50,7 +50,7 @@ public class AddReviewActivity extends DialogFragment {
         // Verify that the host activity implements the callback interface
         try {
             // Instantiate the NoticeDialogListener so we can send events to the host
-            mListener = (NoticeDialogListener) context;
+            mListener = (AddReviewActivity.NoticeDialogListener) context;
         } catch (ClassCastException e) {
             // The activity doesn't implement the interface, throw exception
             throw new ClassCastException(this.toString()
@@ -80,6 +80,7 @@ public class AddReviewActivity extends DialogFragment {
                     public void onClick(DialogInterface dialog, int id) {
                         reviewToilet(view);
 
+
                     }
                 })
                 .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
@@ -90,6 +91,8 @@ public class AddReviewActivity extends DialogFragment {
 
         return builder.create();
     }
+
+
 
     public void reviewToilet(View view){
 

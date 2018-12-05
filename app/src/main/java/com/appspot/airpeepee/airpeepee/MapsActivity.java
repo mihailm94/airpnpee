@@ -80,7 +80,7 @@ import static com.google.common.base.Strings.isNullOrEmpty;
 public class MapsActivity extends AppCompatActivity implements  NavigationView.OnNavigationItemSelectedListener,
         OnMapReadyCallback,GoogleApiClient.OnConnectionFailedListener, GoogleApiClient.ConnectionCallbacks ,
         GoogleMap.OnMyLocationButtonClickListener, GoogleMap.OnMyLocationClickListener, DirectionCallback ,
-EditToiletActivity.NoticeDialogListener
+EditToiletActivity.NoticeDialogListener , AddReviewActivity.NoticeDialogListener
 {
 
     private boolean mendtrip=true;
@@ -724,7 +724,7 @@ EditToiletActivity.NoticeDialogListener
 }
     public void showNoticeDialogReview() {
         // Create an instance of the dialog fragment and show it
-        DialogFragment dialog = new AddReviewActivity();
+        DialogFragment dialog = new AddReviewActivity(m_marker.getPosition());
         dialog.show(getSupportFragmentManager(), "NoticeDialogFragment");
     }
 
