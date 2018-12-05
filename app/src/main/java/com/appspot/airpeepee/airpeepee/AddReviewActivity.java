@@ -5,15 +5,22 @@ import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.DialogFragment;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.RatingBar;
 import android.widget.TextView;
 import android.widget.AdapterView;
 
 
+import com.appspot.airpeepee.airpeepee.model.Comment;
+import com.appspot.airpeepee.airpeepee.model.DataHolder;
+import com.appspot.airpeepee.airpeepee.model.Rating;
+import com.appspot.airpeepee.airpeepee.model.Toilet;
+import com.appspot.airpeepee.airpeepee.model.db;
 import com.google.android.gms.maps.model.LatLng;
 
 @SuppressLint("ValidFragment")
@@ -68,8 +75,10 @@ public class AddReviewActivity extends DialogFragment  {
 
         RatingBar cleanRating = (RatingBar) view.findViewById(R.id.ratingBarClean);
         RatingBar ratingRating = (RatingBar) view.findViewById(R.id.ratingBarRating);
-        TextView toiletComment = (TextView) view.findViewById(R.id.textCommentInput);
+        //TextView toiletComment = (TextView) view.findViewById(R.id.textCommentInput);
 
+        cleanRating.setRating(5);
+        ratingRating.setRating(5);
 
         // Inflate and set the layout for the dialog
         // Pass null as the parent view because its going in the dialog layout
@@ -89,15 +98,40 @@ public class AddReviewActivity extends DialogFragment  {
                     }
                 });
 
+
+
+
+
+
         return builder.create();
     }
 
 
 
-    public void reviewToilet(View view){
+    protected void reviewToilet(View view){
 
-        
+        Toilet toilet = DataHolder.getInstance().findToiletbyLatLng(latLng);
+
+        int cleanliness = Integer.parseInt(view.findViewById(R.id.ratingBarClean).toString());
+        int rating = Integer.parseInt(view.findViewById(R.id.ratingBarRating).toString());
+        String comment = ((EditText)view.findViewById(R.id.textCommentInput)).getText().toString();
+
+        if(!comment.equals("")) {
+            toilet.getComments().add(new Comment("user_id", comment));
+        }
+
+        if(rating!=0)
+            toilet.getRatings().add(new Rating("user_id",rating));
+
+        if(cleanliness!=0)
+
+
+
+        db.editToilet(toilet);
+        db.updateData();
+
     }
+
 
 
 }
