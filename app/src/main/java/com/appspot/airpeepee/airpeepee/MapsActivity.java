@@ -110,7 +110,7 @@ EditToiletActivity.NoticeDialogListener , AddReviewActivity.NoticeDialogListener
     private PlaceArrayAdapter mPlaceArrayAdapter;
     private AutoCompleteTextView mAutocompleteTextView;
     private static final LatLngBounds BOUNDS_MOUNTAIN_VIEW = new LatLngBounds(new LatLng(37.398160, -122.180831), new LatLng(37.430610, -121.972090));
-
+    private boolean isSearch=false;
 
     //Comment
     private RecyclerView mRecyclerView;
@@ -328,7 +328,7 @@ EditToiletActivity.NoticeDialogListener , AddReviewActivity.NoticeDialogListener
         mMap.setOnMyLocationChangeListener(new GoogleMap.OnMyLocationChangeListener() {
             @Override
             public void onMyLocationChange(Location location) {
-               if(!mendtrip)
+               if(!mendtrip && !isSearch)
                {
                 origin = new LatLng(location.getLatitude(), location.getLongitude());
                 if(destination !=null) {
@@ -497,6 +497,7 @@ EditToiletActivity.NoticeDialogListener , AddReviewActivity.NoticeDialogListener
         // Return false so that we don't consume the event and the default behavior still occurs
         // (the camera animates to the user's current position).
         mlocation = myLocationListener.getLastBestLocation();
+        isSearch =false;
         return false;
     }
 
@@ -687,7 +688,7 @@ EditToiletActivity.NoticeDialogListener , AddReviewActivity.NoticeDialogListener
             mMap.animateCamera(location);
             mlocation.setLatitude(sydney.latitude);
             mlocation.setLongitude(sydney.longitude);
-
+            isSearch=true;
             Log.i("name", place.getName().toString());
             Log.i("coordinates", place.getLatLng().toString());
         }
