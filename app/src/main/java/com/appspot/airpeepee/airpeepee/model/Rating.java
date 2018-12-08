@@ -3,13 +3,13 @@ package com.appspot.airpeepee.airpeepee.model;
 public class Rating {
 
     public Rating(){}
-    public Rating(String id,User user,int userRating){
+    public Rating(String id,User user,float userRating){
         this.id=id;
         this.user=user;
         this.userRating=userRating;
 
     }
-    public Rating(String id,int userRating){
+    public Rating(String id,float userRating){
         this.id=id;
         this.userRating=userRating;
 
@@ -17,7 +17,7 @@ public class Rating {
 
     private String id;
     private User user;
-    private int userRating;
+    private float userRating;
 
     public String getId() {
         return id;
@@ -34,11 +34,11 @@ public class Rating {
         this.user = user;
     }
 
-    public int getUserRating() {
+    public float getUserRating() {
         return userRating;
     }
 
-    public void setUserRating(int userRating) {
+    public void setUserRating(float userRating) {
         this.userRating = userRating;
     }
 }

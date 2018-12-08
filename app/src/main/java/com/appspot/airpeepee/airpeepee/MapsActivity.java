@@ -8,6 +8,7 @@ import android.content.res.Resources;
 import android.graphics.Color;
 import android.location.Location;
 import android.os.Handler;
+import android.provider.ContactsContract;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomSheetBehavior;
 import android.support.design.widget.FloatingActionButton;
@@ -206,7 +207,13 @@ EditToiletActivity.NoticeDialogListener , AddReviewActivity.NoticeDialogListener
         review_toilet.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                showNoticeDialogReview();
+                if(DataHolder.getInstance().getUser() != null){
+                    showNoticeDialogReview();
+
+                } else {
+                    startActivity(new Intent(MapsActivity.this, LoginActivity.class));
+
+                }
             }
         });
 
