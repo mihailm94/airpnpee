@@ -20,6 +20,7 @@ import com.appspot.airpeepee.airpeepee.model.Comment;
 import com.appspot.airpeepee.airpeepee.model.DataHolder;
 import com.appspot.airpeepee.airpeepee.model.Rating;
 import com.appspot.airpeepee.airpeepee.model.Toilet;
+import com.appspot.airpeepee.airpeepee.model.User;
 import com.appspot.airpeepee.airpeepee.model.db;
 import com.google.android.gms.maps.model.LatLng;
 
@@ -112,18 +113,20 @@ public class AddReviewActivity extends DialogFragment  {
 
         Toilet toilet = DataHolder.getInstance().findToiletbyLatLng(latLng);
 
-        int cleanliness = Integer.parseInt(view.findViewById(R.id.ratingBarClean).toString());
-        int rating = Integer.parseInt(view.findViewById(R.id.ratingBarRating).toString());
+        User user = DataHolder.getInstance().getUser();
+
+        //float cleanliness = (((RatingBar)view.findViewById(R.id.ratingBarClean)).getRating());
+
+        float rating = (((RatingBar)view.findViewById(R.id.ratingBarRating)).getRating());
+
         String comment = ((EditText)view.findViewById(R.id.textCommentInput)).getText().toString();
 
         if(!comment.equals("")) {
-            toilet.getComments().add(new Comment("user_id", comment));
+            toilet.getComments().add(new Comment(user.getId(), comment));
         }
 
         if(rating!=0)
-            toilet.getRatings().add(new Rating("user_id",rating));
-
-        if(cleanliness!=0)
+            toilet.getRatings().add(new Rating(user.getId(),rating));
 
 
 
