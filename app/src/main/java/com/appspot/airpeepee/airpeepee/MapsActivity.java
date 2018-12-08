@@ -1,13 +1,19 @@
 package com.appspot.airpeepee.airpeepee;
 
 import android.Manifest;
+import android.animation.Animator;
 import android.annotation.SuppressLint;
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.pm.PackageManager;
 import android.content.res.Resources;
 import android.graphics.Color;
 import android.location.Location;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Handler;
+import android.os.NetworkOnMainThreadException;
 import android.provider.ContactsContract;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomSheetBehavior;
@@ -29,10 +35,14 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.AdapterView;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 import com.appspot.airpeepee.airpeepee.model.CommentAdapter;
@@ -84,6 +94,16 @@ public class MapsActivity extends AppCompatActivity implements  NavigationView.O
 EditToiletActivity.NoticeDialogListener , AddReviewActivity.NoticeDialogListener
 {
 
+    // error handler
+    private ProgressBar progressBar;
+    private int progressStatus = 0;
+    private Handler handler = new Handler();
+    private  Thread thread;
+    db database ;
+    String TAG;
+
+
+
     private boolean mendtrip=true;
     private GoogleMap mMap;
     // User Location
@@ -120,25 +140,165 @@ EditToiletActivity.NoticeDialogListener , AddReviewActivity.NoticeDialogListener
 
     private FirebaseAuth mAuth;
 
+
+    public boolean isOnline() {
+        try {
+            ConnectivityManager cm =
+                    (ConnectivityManager)this.getSystemService(Context.CONNECTIVITY_SERVICE);
+
+            NetworkInfo activeNetwork = cm.getActiveNetworkInfo();
+            boolean isConnected = activeNetwork != null &&
+                    activeNetwork.isConnectedOrConnecting();
+            return isConnected;
+        } catch (NetworkOnMainThreadException e) {
+            return false; }
+    }
+
+
+    @SuppressLint("RestrictedApi")
+    public void visibleAll()
+    {
+
+        FloatingActionButton mfab =(FloatingActionButton) findViewById(R.id.floatingActionButton);
+        mfab.setVisibility(View.VISIBLE);
+        findViewById(R.id.map).setVisibility(View.VISIBLE);
+        findViewById(R.id.imageView5).setEnabled(true);
+        findViewById(R.id.map).setEnabled(true);
+        findViewById(R.id.toolbar).setVisibility(View.VISIBLE);
+        mapReady(m_google_map);
+
+    }
+
+
+    @SuppressLint("RestrictedApi")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_maps);
 
+
+        //error handler
+        if(isOnline()) {
+            progressBar = (ProgressBar) findViewById(R.id.progressBar);
+            thread = new Thread(new Runnable() {
+                public void run() {
+                    while (progressStatus < 100) {
+                        progressStatus += 30;
+                        // Update the progress bar and display the
+                        //current value in the text view
+                        handler.post(new Runnable() {
+                            public void run() {
+                                progressBar.setProgress(progressStatus);
+                                database = new db();
+                                if (progressStatus > 100) {
+                                    visibleAll();
+                                    progressBar.setVisibility(View.GONE);
+                                    thread.interrupt();
+                                }
+                            }
+                        });
+                        try {
+                            // Sleep for 200 milliseconds.
+                            Thread.sleep(1500);
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                }
+            });
+            thread.start();
+
+        }
+        else
+        {
+            try {
+                AlertDialog alertDialog = new AlertDialog.Builder(this).create();
+                alertDialog.setTitle("Info");
+                alertDialog.setMessage("Internet not available, Cross check your internet connectivity and try again");
+                alertDialog.setIcon(android.R.drawable.ic_dialog_alert);
+                alertDialog.setButton("OK", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                        finish();
+
+                    }
+                });
+
+                alertDialog.show();
+            } catch (Exception e) {
+                Log.d(this.TAG, "Show Dialog: " + e.getMessage());
+            }
+        }
+
+
+
+
+
+
+
+
         //filter
-        FloatingActionButton mfab =(FloatingActionButton) findViewById(R.id.floatingActionButton);
+        final FloatingActionButton mfaball =(FloatingActionButton) findViewById(R.id.filter_all);
+        final FloatingActionButton mfabfee =(FloatingActionButton) findViewById(R.id.filter_fee);
+        final FloatingActionButton mfabwheelchair =(FloatingActionButton) findViewById(R.id.filter_wheelchair);
+        final FloatingActionButton mfab =(FloatingActionButton) findViewById(R.id.floatingActionButton);
+        final LinearLayout linearLayout =(LinearLayout) findViewById(R.id.filter_layout);
+        final Animation mShowButton =AnimationUtils.loadAnimation(MapsActivity.this,R.anim.show_button);
+        final Animation mhideButton =AnimationUtils.loadAnimation(MapsActivity.this,R.anim.hide_button);
+        final Animation mShowlayout =AnimationUtils.loadAnimation(MapsActivity.this,R.anim.show_layout);
+        final Animation mhidelayout =AnimationUtils.loadAnimation(MapsActivity.this,R.anim.hide_layout);
+
+        mfab.setVisibility(View.GONE);
+        mfaball.setVisibility(View.GONE);
+        mfabfee.setVisibility(View.GONE);
+        mfabwheelchair.setVisibility(View.GONE);
+        linearLayout.setVisibility(View.GONE);
+
         mfab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if (linearLayout.getVisibility() == View.VISIBLE)
+                {   linearLayout.startAnimation(mhidelayout);
+                    linearLayout.setVisibility(View.GONE);
+                    mfabwheelchair.setVisibility(View.GONE);
+                    mfaball.setVisibility(View.GONE);
+                    mfabfee.setVisibility(View.GONE);
 
+                    mfab.startAnimation(mhideButton);
+                }
+                else
+                {  linearLayout.setVisibility(View.VISIBLE);
+                    mfabwheelchair.setVisibility(View.VISIBLE);
+                    mfaball.setVisibility(View.VISIBLE);
+                    mfabfee.setVisibility(View.VISIBLE);
+                    linearLayout.startAnimation(mShowlayout);
+                    mfab.startAnimation(mShowButton);}
             }
         });
 
-
+        mfaball.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                refreshMarker();
+            }
+        });
+        mfabfee.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                refreshMarker(true);
+            }
+        });
+        mfabwheelchair.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                refreshMarker(false);
+            }
+        });
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         toolbar.setTitle("");
+        toolbar.setVisibility(View.GONE);
          setSupportActionBar(toolbar);
+
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -178,6 +338,7 @@ EditToiletActivity.NoticeDialogListener , AddReviewActivity.NoticeDialogListener
                // mlocation = myLocationListener.getLastBestLocation();
                 mendtrip =false;
                 findViewById(R.id.imageView5).setVisibility(View.VISIBLE);
+                findViewById(R.id.floatingActionButton).setVisibility(View.GONE);
                 origin = new LatLng(mlocation.getLatitude(), mlocation.getLongitude());
                 destination = m_marker.getPosition();
                 requestDirection();
@@ -193,12 +354,14 @@ EditToiletActivity.NoticeDialogListener , AddReviewActivity.NoticeDialogListener
         });
 
         ImageView cancel= findViewById(R.id.imageView5);
+        cancel.setEnabled(false);
         cancel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 mendtrip=true;
                 findViewById(R.id.bottom_sheet).setVisibility(View.GONE);
                 findViewById(R.id.imageView5).setVisibility(View.GONE);
+                findViewById(R.id.floatingActionButton).setVisibility(View.VISIBLE);
                 refreshMarker();
             }
         });
@@ -231,11 +394,12 @@ EditToiletActivity.NoticeDialogListener , AddReviewActivity.NoticeDialogListener
         setUpViews();
         findViewById(R.id.bottom_sheet).setVisibility(View.GONE);
         findViewById(R.id.direction_btn).setVisibility(View.GONE);
-
         findViewById(R.id.ic_euro).setVisibility(View.GONE);
         findViewById(R.id.ic_wheelchair).setVisibility(View.GONE);
         findViewById(R.id.ic_out_of_order).setVisibility(View.GONE);
         findViewById(R.id.imageView5).setVisibility(View.GONE);
+        findViewById(R.id.map).setEnabled(false);
+        findViewById(R.id.map).setVisibility(View.GONE);
     }
 
 
@@ -306,6 +470,16 @@ EditToiletActivity.NoticeDialogListener , AddReviewActivity.NoticeDialogListener
      */
     @Override
     public void onMapReady(GoogleMap googleMap) {
+        // Add a marker in Sydney and move the camera
+        //LatLng sydney = new LatLng(-34, 151);
+        //mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
+        //mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+        m_google_map =googleMap;
+    }
+    GoogleMap m_google_map;
+
+    public void mapReady(GoogleMap googleMap)
+    {
         mMap = googleMap;
 
         googleMap.setMapType(GoogleMap.MAP_TYPE_NORMAL);
@@ -313,18 +487,20 @@ EditToiletActivity.NoticeDialogListener , AddReviewActivity.NoticeDialogListener
         MarkerOptions markerPOI;
 
 
-        // Toiltes from data to marker
-        for (Toilet t : DataHolder.getInstance().getData()) {
-            markerPOI = new MarkerOptions();
-            markerPOI.position(new LatLng(t.getLocationLat(), t.getLocationLon()))
-                    .title(t.getName());
+        if ( DataHolder.getInstance().getData()!=null) {
+            // Toiltes from data to marker
+            for (Toilet t : DataHolder.getInstance().getData()) {
+                markerPOI = new MarkerOptions();
+                markerPOI.position(new LatLng(t.getLocationLat(), t.getLocationLon()))
+                        .title(t.getName());
 
-            if (t.isPrivate())
-                markerPOI.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_BLUE));
-            else
-                markerPOI.icon(BitmapDescriptorFactory.defaultMarker());
+                if (t.isPrivate())
+                    markerPOI.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_BLUE));
+                else
+                    markerPOI.icon(BitmapDescriptorFactory.defaultMarker());
 
-            mMap.addMarker(markerPOI);
+                mMap.addMarker(markerPOI);
+            }
         }
 
         LatLng sydney = new LatLng(mlocation.getLatitude(), mlocation.getLongitude());
@@ -347,24 +523,25 @@ EditToiletActivity.NoticeDialogListener , AddReviewActivity.NoticeDialogListener
         mMap.setOnMyLocationChangeListener(new GoogleMap.OnMyLocationChangeListener() {
             @Override
             public void onMyLocationChange(Location location) {
-               if(!mendtrip && !isSearch)
-               {
-                origin = new LatLng(location.getLatitude(), location.getLongitude());
-                if(destination !=null) {
-                    Location locationOne = new Location("");
-                    locationOne.setLatitude(destination.latitude);
-                    locationOne.setLongitude(destination.longitude);
-                    float distanceInMetersOne = location.distanceTo(locationOne);
-                    if (distanceInMetersOne <30) {
-                        //destination = null;
-                        mendtrip=true;
-                        findViewById(R.id.bottom_sheet).setVisibility(View.GONE);
-                        refreshMarker();
-                        return;
+                if(!mendtrip && !isSearch)
+                {
+                    origin = new LatLng(location.getLatitude(), location.getLongitude());
+                    if(destination !=null) {
+                        Location locationOne = new Location("");
+                        locationOne.setLatitude(destination.latitude);
+                        locationOne.setLongitude(destination.longitude);
+                        float distanceInMetersOne = location.distanceTo(locationOne);
+                        if (distanceInMetersOne <30) {
+                            //destination = null;
+                            mendtrip=true;
+                            findViewById(R.id.bottom_sheet).setVisibility(View.GONE);
+                            findViewById(R.id.floatingActionButton).setVisibility(View.VISIBLE);
+                            refreshMarker();
+                            return;
+                        }
+                        requestDirection();
                     }
-                    requestDirection();
                 }
-               }
 
             }
         });
@@ -382,10 +559,8 @@ EditToiletActivity.NoticeDialogListener , AddReviewActivity.NoticeDialogListener
             }
         });
 
-        // Add a marker in Sydney and move the camera
-        //LatLng sydney = new LatLng(-34, 151);
-        //mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
-        //mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+
+
     }
 
     public void putToiletInfo(Marker marker) {
@@ -778,4 +953,35 @@ EditToiletActivity.NoticeDialogListener , AddReviewActivity.NoticeDialogListener
             mMap.addMarker(markerPOI);
         }
     }
+    public void refreshMarker(boolean fee) {
+        mMap.clear();
+        MarkerOptions markerPOI;
+        for (Toilet t : DataHolder.getInstance().getData()) {
+            markerPOI = new MarkerOptions();
+            markerPOI.position(new LatLng(t.getLocationLat(), t.getLocationLon()))
+                    .title(t.getName());
+            if(fee) {
+                if(t.isFee()!=null){
+                if(t.isFee().equals("yes")) {
+                    if (t.isPrivate())
+                        markerPOI.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_BLUE));
+                    else
+                        markerPOI.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW));
+                }
+                }
+            }else
+            {
+                if(t.isWheelchair()!=null) {
+                    if (t.isWheelchair().equals("yes")) {
+                        if (t.isPrivate())
+                            markerPOI.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_BLUE));
+                        else
+                            markerPOI.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_GREEN));
+                    }
+                }
+            }
+            mMap.addMarker(markerPOI);
+        }
+    }
+
 }
