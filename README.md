@@ -16,8 +16,13 @@ Mihail Milchev
 Inhaltsverzeichnis
 
 1. [Einführung](#introduction)
-2. [Implementierung der Datenbank in Firebase](#db)
-3. 
+2. [Implementierung der Datenbank in Firebase](#dbFirebase)
+3. [Implementierung der Datenbank in Android Studio](#dbJava)
+   1. [build.gradle](#build.gradle)
+   2. [db.java](#db.java)
+   3. [Toilet.java](#Toilet.java)
+4. s
+5. 
 
 
 
@@ -25,7 +30,7 @@ Inhaltsverzeichnis
 
 
 
-## Implementierung der Datenbank in Firebase <a name="db"></a>
+## Implementierung der Datenbank in Firebase <a name="dbFirebase"></a>
 
 Um die Daten über bestehenden öffentlichen Toiletten zu sammeln, wurden einen Schnappschuss der OpenStreetMap Datenbank - die **Planet.osm** Datei, benutzt. Planet.osm ist die Sammlung von Nodes, Ways, Relationen und Änderungssätze in der Datenbank, inklusive aller Tags. Planet.osm ist eine XML-Datei im .osm-Format, was ein OpenStreetMap spezifisches Dateiformat ist. Die Datei enthällt alle vorhandenen Daten in OpenStreetMap und beschreibt somit die komplette Erde. Mittlerweile ist die Planet.osm Datei 803GB, was für unser Projekt nicht gut geeignet ist. Kleinere Auszüge der Datenbank, die von verschiedenene Anbietern ebenfalls im .osm-Format zur Verfügung gestellt wurden, haben wir für unsere Zwecke benutzt. 
 
@@ -78,30 +83,34 @@ Das haben wir als ungünstig betrachtet und haben mit der Entwicklung unseres Pa
 
 Der Parser wurde in Python umgesetzt, da viele Bibliotheken zur Verarbeitung von `.xml`Dateien zur Verfügung stehen. Die Dokumentation von `xml.etree.ElementTree` (und die C Implementation davon `xml.etree.cElementTree` ) war sehr ausführlich und wir konnten schnell uns damit vertraut machen. `ElementTree` ist vielleicht die bekannteste API zur Verarbeitung von `.xml` Dateien.
 
+
+
 ```python
 import xml.etree.cElementTree as et
 
 parsed_xml = et.parse("berlin_toilets.xml")
 ```
 
+Um `.xml`Dateien zu erfassen, ist die `xml.etree.ElementTree.parse()` vorhanden. Somit konnte die weitere Bearbeitung und Manipulation der `.xml`Datei fortgesetzt werden.
 
 
-Um `.xml`Dateien zu erfassen, ist die `xml.etree.ElementTree.parse()` vorhanden. Somit kann die weitere Bearbeitung und Manipulation der `.xml`Datei fortgesetzt werden.
 
 Der Parser legt eine Datei mit der `.json ` Erweiterung im Schreibemodus an, und schreibt in dieser Datei mittels der `write()` Funktion.
 
 ```pyth
 f = file("berlin_toilets.json", "w")
-	f.write("{\n")
-	f.write("\t\"toilet\":{\n")
+f.write("{\n")
+f.write("\t\"toilet\":{\n")
 ```
+
+
 
 Eine Iterationsstruktur wurde anschließend benutzt um durch den Datensatz zu iterieren und entsprechend eine Liste von `Toilet` Objekten zu erstellen.
 
 ```python
 for osm in parsed_xml.iter('node'):
 		f.write("\t\t\"" + osm.attrib['id'] + "\": {\n")
-		.
+        .
         .
         .
         for node in osm.iter('tag'):
@@ -111,28 +120,28 @@ for osm in parsed_xml.iter('node'):
 				f.write("\t\t\t\"street\": \"")
 				f.write(node.attrib['v'].encode('utf-8'))
 				f.write("\",\n")
-         	.
-            .
-            .
+                .
+            	.
+            	.
             if(node.attrib['k'] == "name"):
 				f.write("\t\t\t\"name\": \""+ node.attrib['v'].encode('utf-8') + "\",\n")
-            .
-            .
-            .
+            	.
+            	.
+                .
             
         .
         .
         .
         f.write("}")
-
-		f.close()
+        
+        f.close()
 ```
 
-Jedes Toilet-Objekt besitzt ein einzigartiges 'id', was wir als Primärschlüssel betrachten können. 
+Jedes Toilet-Objekt besitzt ein einzigartiges 'id', was wir als Primärschlüssel betrachtet haben. 
 
 
 
-Die allgemeine Struktur eines Toiletten-Objektes hat die folgende Struktur:
+Informationen über Adresse, Gebühr, Name, Öffnungszeiten weichen bei manchen Objekten ab, oder fehlen komplett. Alle Objekte besitzen immer Informationen über Längen- und Breitengrad. Jedes Toiletten-Objekt hat im Allgemeinen die folgende Struktur:
 
 ```python
 {
@@ -170,12 +179,175 @@ Die allgemeine Struktur eines Toiletten-Objektes hat die folgende Struktur:
 Nachdem wir erfolgreich die ~1800 Objekten zu `.json` Konvertiert hatten, konnten wir sie in der Datenbank hochladen. Das war besonders einfach, da Firebase über die Funktion **import JSON file** verfügt. 
 
 
+## Implementierung der Datenbank in Android Studio <a name="dbJava"></a>
+
+Nachdem die Datenbank angelegt wurde, und alle Toiletten-Objekte sich dort befinden, konnten wir die Verbindung zwischen unserem Datenbestand und Code herstellen.
+
+<a name="build.gradle"></a>Als erstes müssen die Abhängigkeiten (Dependencies) in dem **build.gradle** (Projektebene):
+
+```java
+dependencies {
+    	...
+        classpath 'com.google.gms:google-services:4.0.1'
+        ...
+    }
+```
+
+ und in dem **build.gradle** (app-Ebene) ergänzt werden
+
+```java
+...
+//Firebase
+implementation 'com.google.firebase:firebase-auth:16.0.5'
+implementation 'com.google.firebase:firebase-storage:16.0.5'
+implementation 'com.google.firebase:firebase-database:16.0.5'
+implementation 'com.google.firebase:firebase-core:16.0.5'
+...
+```
 
 
 
+<a name="db.java"></a>Zwei Instanzen der Firebase-Platform  existieren im Konstruktor der `db.java` Klasse unserer App.
+
+```java
+//db instance
+        final FirebaseDatabase database = FirebaseDatabase.getInstance();
+
+//db storage instance
+        final FirebaseStorage databaseStorage = FirebaseStorage.getInstance();
+```
+
+Das erste Objekt ist die Datenbank, das zweite - die Datenbank Speicherbereich. Um Fotos hoch- und herunterladen zu können, wird eine Instanz der Speicherbereich der Datenbank benötigt.
+
+Die Referenzen die wir in unserer `db.java` Klassen kann man als Pointer zu Objekten in der Datenbank annehmen. 
+
+```java
+toiletRef = database.getReference("/toilet");
+userRef   = database.getReference("/user");
+storageRef = databaseStorage.getReference();
+```
+
+`toiletRef`und `userRef` laden jeweils die Listen von Toiletten- und Userobjekten herunter. Sie ermöglichen zusätzlich das Hinzufügen von Toiletten- und Userobjekten.
+
+ 
+
+Durch `toiletRef.addListenerForSingleValueEvent(new ValueEventListener() {...}` wird ein Listener zu der Datenbankreferenz beigefügt. Das ermöglicht die Ausführung der `onDataChange(){...}`  Funktion, welche eine Liste von Toiletten die asynchron von der Datenbank herunterlädt. Informationen wie Gebühr, Öffnungszeiten, PLZ, Adresse, usw. werden den einzelnen Toilettenobjekten zugewiesen.
 
 ```
+...
+
+toiletRef.addListenerForSingleValueEvent(new ValueEventListener() {
+    @Override
+    public void onDataChange(DataSnapshot dataSnapshot) {
+
+        // declare the list inside onDataChange because the function fires asynchronously
+        List<Toilet> toiletList = new ArrayList<>();
+        for(DataSnapshot toiletSnapshot : dataSnapshot.getChildren()) {
+            String id =toiletSnapshot.getKey();
+            String fee = (String) toiletSnapshot.child("fee").getValue();
+            String name = (String) toiletSnapshot.child("name").getValue();
+            String openingHours = (String) toiletSnapshot.child("opening_hours").getValue();
+            String plz = (String) toiletSnapshot.child("plz").getValue();
+            String street = (String) toiletSnapshot.child("street").getValue();
+            ...
+            ...
+            
+            DataHolder.getInstance().setData(toiletList);
+            ...
+            }
+
+}
+...            
+```
+
+
+
+Das Hinzufügen von einem Toiletten-Objekt erfolgt durch die `addToilet(){...}` Methode. 
+
+```java
+public static boolean addToilet(Toilet toilet)
+{
+    try {
+        toiletRef.child(toilet.id).push();
+        toiletRef.child(toilet.id).child("userId").setValue(DataHolder.getInstance().getUser().getId());
+        toiletRef.child(toilet.id).child("name").setValue(toilet.getName());
+        toiletRef.child(toilet.id).child("fee").setValue(toilet.isFee());
+        ...
+        ...
+        return true;
+          
+    } catch (Exception e) {
+            return false;
+}
+```
+
+
+
+`storageRef` ist die Referenz zur Speicherbereich unserer Datenbank. Nach erfolgreichem Hochladevorgang durch die Methode `storageRef.putFile();`, kann auf den Dateipfad der hochgeladenen Datei durch die Methode `storageRef.getPath();` zugegriffen werden. 
+
+Der Hochladevorgang ist in der `uploadImage(Uri filePath, final Context context){...}` Methode vollständig beschrieben. Der Rückgabewert dieser Methode ist ein `String`, welches als Wert den Datenpfad der hochgeladenen Datei bekommt.
+
+Jedes Bild  bekommt einen einzigartigen Namen beim Hochladen. Die `UUID.randomUUID()` Funktion generiert einen 36-Zeichen-langen String und setzt ihn als den Namen des Fotos. Die Wahrscheinlichkeit, dass zwei Fotos denselben Namen bekommen besteht, ist aber sehr, sehr klein, da der String alphanumerisch ist.
+```java
+StorageReference ref = storageRef.child("images/"+ UUID.randomUUID().toString());
+```
+
+ Drei Listener werden zu der `putFile()` Funktion beigefügt und somit den Erfolg- und Fehlerfall abgefangen. Der `OnProgressListener` wurde in der letzten Version des Codes nicht benutzt, wie von Google empfohlen, da der `progressDialog` die Oberfläche blockiert und keine Eingabe erlaubt. `bucketResult` ist der String, der den Datenpfad beinhaltet.
+
+```java
+ ...
+ 
+ ref.putFile(filePath)
+            .addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
+                @Override
+                public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
+                    //progressDialog.dismiss();
+                    Toast.makeText(context, "Successfully uploaded photo!", Toast.LENGTH_SHORT).show();
+                }
+            })
+            .addOnFailureListener(new OnFailureListener() {
+                @Override
+                public void onFailure(@NonNull Exception e) {
+                    //progressDialog.dismiss();
+                    Toast.makeText(context, "Failed "+e.getMessage(), Toast.LENGTH_SHORT).show();
+                }
+            })
+            .addOnProgressListener(new OnProgressListener<UploadTask.TaskSnapshot>() {
+                @Override
+                public void onProgress(UploadTask.TaskSnapshot taskSnapshot) {
+                    double progress = (100.0*taskSnapshot.getBytesTransferred()/taskSnapshot
+                            .getTotalByteCount());
+                    //progressDialog.setMessage("Uploaded "+(int)progress+"%");
+                }
+            });
+    bucketResult = ref.getPath();
+
+
+}
+
+return bucketResult;
+
+...
+```
+
+
+
+
+
+
+
+<a name="Toilet.java"></a> Die `Toilet.java` Klasse beschreibt ein Toiletten-Objekt
+
+
+
+
+
+
+
+
+
 # Table of contents
+
 1. [Introduction](#introduction)
 2. [Some paragraph](#paragraph1)
     1. [Sub paragraph](#subparagraph1)
@@ -198,3 +370,5 @@ The second paragraph text
 
 
 
+
+```
