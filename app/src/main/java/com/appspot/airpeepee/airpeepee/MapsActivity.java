@@ -123,6 +123,18 @@ EditToiletActivity.NoticeDialogListener , AddReviewActivity.NoticeDialogListener
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_maps);
+
+        //filter
+        FloatingActionButton mfab =(FloatingActionButton) findViewById(R.id.floatingActionButton);
+        mfab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         toolbar.setTitle("");
          setSupportActionBar(toolbar);
