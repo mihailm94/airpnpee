@@ -8,8 +8,8 @@ public class Comment {
         this.id=id;
         this.user=user;
         this.commentText=commentText;
-
     }
+
     public Comment(String id,String commentText){
         this.id=id;
         this.commentText=commentText;

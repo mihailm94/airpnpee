@@ -3,12 +3,13 @@ package com.appspot.airpeepee.airpeepee.model;
 public class Rating {
 
     public Rating(){}
+
     public Rating(String id,User user,float userRating){
         this.id=id;
         this.user=user;
         this.userRating=userRating;
-
     }
+
     public Rating(String id,float userRating){
         this.id=id;
         this.userRating=userRating;

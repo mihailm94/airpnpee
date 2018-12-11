@@ -25,6 +25,11 @@ public class Toilet {
     protected double locationLon;
     protected String name;
     protected String openingHours;
+    protected boolean outoforder;
+    protected String plz;
+    protected String street;
+    protected String streetNumber;
+    protected String wheelchair;
 
     public double getCost() {
         return cost;
@@ -43,13 +48,6 @@ public class Toilet {
     public void setOutoforder(boolean outoforder) {
         this.outoforder = outoforder;
     }
-
-    protected boolean outoforder;
-
-    protected String plz;
-    protected String street;
-    protected String streetNumber;
-    protected String wheelchair;
 
 
 
