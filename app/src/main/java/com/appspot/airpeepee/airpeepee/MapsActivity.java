@@ -339,6 +339,9 @@ EditToiletActivity.NoticeDialogListener , AddReviewActivity.NoticeDialogListener
                 mendtrip =false;
                 findViewById(R.id.imageView5).setVisibility(View.VISIBLE);
                 findViewById(R.id.floatingActionButton).setVisibility(View.GONE);
+                findViewById(R.id.filter_all).setVisibility(View.GONE);
+                findViewById(R.id.filter_fee).setVisibility(View.GONE);
+                findViewById(R.id.filter_wheelchair).setVisibility(View.GONE);
                 origin = new LatLng(mlocation.getLatitude(), mlocation.getLongitude());
                 destination = m_marker.getPosition();
                 requestDirection();
@@ -826,7 +829,7 @@ EditToiletActivity.NoticeDialogListener , AddReviewActivity.NoticeDialogListener
         } else if (id == R.id.nav_statistic) {
             if(DataHolder.getInstance().getUser() != null) {
                 if(DataHolder.getInstance().getUser().isAnbieter())
-                startActivity(new Intent(MapsActivity.this, EditProfileActivity.class));
+                startActivity(new Intent(MapsActivity.this, LoginActivity.class));
             }
             else
             {

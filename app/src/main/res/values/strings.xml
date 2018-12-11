@@ -26,7 +26,6 @@
     <string name="add_private_toilet">Add private Toilet</string>
     <string name="Save">Save</string>
     <string name="name">Name</string>
-    <string name="todo">TODO</string>
     <string name="description">description</string>
     <string name="opening_hours">opening hours</string>
     <string name="action_sign_up">Sign Up</string>
@@ -86,7 +85,6 @@
     <string name="wheelchair">wheelchair</string>
     <string name="fee">fee</string>
     <string name="out_of_order">out of order</string>
-    <string name="rating">Rating</string>
     <string name="sauberkeit">Sauberkeit</string>
     <string name="photo">Photo</string>
 
@@ -132,6 +130,11 @@ our successful semester project. We are Glad to Help in anyway!</string>
     <string name="key_user">User</string>
     <string name="key_send_feedback">key_send_feedback</string>
     <string name="add_image">add Image</string>
+    <string name="toilet_type">toilet type</string>
+    <string name="edit_toilet">Edit Toilet</string>
+    <string name="add_toilet_review">Add Toilet Review</string>
+    <string name="rating">Rating</string>
+    <string name="todo">TODO</string>
     <string-array name="gender_array">
         <item>male</item>
         <item>female</item>
