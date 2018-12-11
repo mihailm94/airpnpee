@@ -6,17 +6,21 @@ HTW Berlin
 
 
 
-##### Elnaz Bezdoodeh
+##### [Elnaz Bezdoodeh](https://github.com/ElnazBezdoodeh)
 
-##### Osama Alabaji
+##### [Osama Alabaji](https://github.com/osamax2)
+
+##### [Leonard Berresheim](https://github.com/leoEAB)
 
 ##### Leonard Berresheim
 
-##### Mihail Milchev
+##### [Mihail Milchev](https://github.com/mihailm94)
 
 
 
-Inhaltsverzeichnis
+
+
+#### Inhaltsverzeichnis
 
 1. [Einführung](#introduction)
 2. [Implementierung der Datenbank in Firebase](#dbFirebase)
