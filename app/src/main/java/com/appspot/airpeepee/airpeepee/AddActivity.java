@@ -53,6 +53,7 @@ import java.io.InputStream;
 import java.util.List;
 import java.util.Locale;
 import java.util.Random;
+import java.util.UUID;
 
 public class AddActivity extends AppCompatActivity implements OnMapReadyCallback, GoogleApiClient.OnConnectionFailedListener, GoogleApiClient.ConnectionCallbacks {
 
@@ -249,9 +250,8 @@ public class AddActivity extends AppCompatActivity implements OnMapReadyCallback
                 else
                     toilet.setWheelchair("no");
 
-                Random rnd = new Random();
-                int n = 10000000 + rnd.nextInt(90000000);
-                toilet.setId(Integer.toString(n));
+                String n =UUID.randomUUID().toString();
+                toilet.setId(n);
 
                 toilet.setPhotoUrl(mDatabase.uploadImage(filePath, getApplicationContext()));
 
