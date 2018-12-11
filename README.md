@@ -12,8 +12,6 @@ HTW Berlin
 
 ##### [Leonard Berresheim](https://github.com/leoEAB)
 
-##### Leonard Berresheim
-
 ##### [Mihail Milchev](https://github.com/mihailm94)
 
 
