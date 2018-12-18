@@ -23,18 +23,18 @@
             android:layout_gravity="center"
             app:layout_anchorGravity="top|center" />
 
-        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:app="http://schemas.android.com/apk/res-auto"
-            xmlns:tools="http://schemas.android.com/tools"
+        <fragment
             android:id="@+id/map"
             android:name="com.google.android.gms.maps.SupportMapFragment"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
             tools:context=".MapsActivity" />
 
+
         <include
             layout="@layout/bottom_sheet" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -84,6 +84,16 @@
                     app:srcCompat="@drawable/ic_filter" />
             </LinearLayout>
 
+            <TextView
+                android:id="@+id/Kilometers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_margin="@dimen/fab_margin"
+                app:layout_anchorGravity="right|center"
+                app:layout_anchor="@+id/bottom_sheet"
+                android:theme="@style/KiloStyle"/>
+
             <android.support.design.widget.FloatingActionButton
                 android:id="@+id/floatingActionButton"
                 android:layout_width="wrap_content"
@@ -109,10 +119,13 @@
 
     </android.support.design.widget.CoordinatorLayout>
 
+
+
     <include
         layout="@layout/app_bar_menu"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
+
 
     <android.support.design.widget.NavigationView
         android:id="@+id/nav_view"
@@ -124,6 +137,7 @@
         app:menu="@menu/activity_menu_drawer" >
 
     </android.support.design.widget.NavigationView>
+
 
 
 </android.support.v4.widget.DrawerLayout>

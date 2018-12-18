@@ -78,8 +78,10 @@ public class AddReviewActivity extends DialogFragment  {
         RatingBar ratingRating = (RatingBar) view.findViewById(R.id.ratingBarRating);
         //TextView toiletComment = (TextView) view.findViewById(R.id.textCommentInput);
 
-        cleanRating.setRating(5);
-        ratingRating.setRating(5);
+        cleanRating.setNumStars(5);
+        ratingRating.setNumStars(5);
+        cleanRating.setMax(5);
+        ratingRating.setMax(5);
 
         // Inflate and set the layout for the dialog
         // Pass null as the parent view because its going in the dialog layout

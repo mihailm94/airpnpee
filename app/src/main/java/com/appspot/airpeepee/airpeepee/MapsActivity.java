@@ -4,6 +4,7 @@ import android.Manifest;
 import android.animation.Animator;
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
+import android.content.ClipData;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.pm.PackageManager;
@@ -81,6 +82,8 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
+
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import android.content.Intent;
 
@@ -93,6 +96,8 @@ public class MapsActivity extends AppCompatActivity implements  NavigationView.O
         GoogleMap.OnMyLocationButtonClickListener, GoogleMap.OnMyLocationClickListener, DirectionCallback ,
 EditToiletActivity.NoticeDialogListener , AddReviewActivity.NoticeDialogListener
 {
+
+    Menu optionMenu;
 
     // error handler
     private ProgressBar progressBar;
@@ -139,6 +144,7 @@ EditToiletActivity.NoticeDialogListener , AddReviewActivity.NoticeDialogListener
     private RecyclerView.LayoutManager mLayoutManager;
 
     private FirebaseAuth mAuth;
+
 
 
     public boolean isOnline() {
@@ -231,7 +237,7 @@ EditToiletActivity.NoticeDialogListener , AddReviewActivity.NoticeDialogListener
 
 
 
-
+        findViewById(R.id.Kilometers).setVisibility(View.GONE);
 
 
 
@@ -309,14 +315,7 @@ EditToiletActivity.NoticeDialogListener , AddReviewActivity.NoticeDialogListener
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-        // lOGIN
-        mAuth = FirebaseAuth.getInstance();
-        FirebaseUser currentUser = mAuth.getCurrentUser();
-        if (currentUser != null) {
-            DataHolder.getInstance().setUser(new User());
-            db.findUserbyemail(currentUser.getEmail());
-            DataHolder.getInstance().getUser().setFirebaseUser(currentUser);
-        }
+
         // Search
         mGoogleApiClient = new GoogleApiClient.Builder(MapsActivity.this)
                 .addApi(Places.GEO_DATA_API)
@@ -342,8 +341,11 @@ EditToiletActivity.NoticeDialogListener , AddReviewActivity.NoticeDialogListener
                 findViewById(R.id.filter_all).setVisibility(View.GONE);
                 findViewById(R.id.filter_fee).setVisibility(View.GONE);
                 findViewById(R.id.filter_wheelchair).setVisibility(View.GONE);
+                findViewById(R.id.Kilometers).setVisibility(View.VISIBLE);
+                findViewById(R.id.Kilometers).setPadding(0,0,0,110);
                 origin = new LatLng(mlocation.getLatitude(), mlocation.getLongitude());
                 destination = m_marker.getPosition();
+
                 requestDirection();
             }
         });
@@ -364,6 +366,7 @@ EditToiletActivity.NoticeDialogListener , AddReviewActivity.NoticeDialogListener
                 mendtrip=true;
                 findViewById(R.id.bottom_sheet).setVisibility(View.GONE);
                 findViewById(R.id.imageView5).setVisibility(View.GONE);
+                findViewById(R.id.Kilometers).setVisibility(View.GONE);
                 findViewById(R.id.floatingActionButton).setVisibility(View.VISIBLE);
                 refreshMarker();
             }
@@ -534,6 +537,13 @@ EditToiletActivity.NoticeDialogListener , AddReviewActivity.NoticeDialogListener
                         locationOne.setLatitude(destination.latitude);
                         locationOne.setLongitude(destination.longitude);
                         float distanceInMetersOne = location.distanceTo(locationOne);
+
+                        BigDecimal result;
+                        result = round(distanceInMetersOne/1000 ,2);
+                        BigDecimal time = round((float) ((distanceInMetersOne/1000)*16.7),0);
+                        String result1 = result+" km/ "+ time+" min";
+                        ((TextView)findViewById(R.id.Kilometers)).setText(result1);
+
                         if (distanceInMetersOne <30) {
                             //destination = null;
                             mendtrip=true;
@@ -735,7 +745,7 @@ EditToiletActivity.NoticeDialogListener , AddReviewActivity.NoticeDialogListener
           //  refreshMarker();
             Route route = direction.getRouteList().get(0);
             ArrayList<LatLng> directionPositionList = route.getLegList().get(0).getDirectionPoint();
-            mMap.addPolyline(DirectionConverter.createPolyline(this, directionPositionList, 5, Color.BLUE));
+            mMap.addPolyline(DirectionConverter.createPolyline(this, directionPositionList, 5, R.color.colorAccent));
             setCameraWithCoordinationBounds(route);
 
             btnRequestDirection.setVisibility(View.GONE);
@@ -771,6 +781,24 @@ EditToiletActivity.NoticeDialogListener , AddReviewActivity.NoticeDialogListener
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu, menu);
+        // lOGIN
+        mAuth = FirebaseAuth.getInstance();
+        FirebaseUser currentUser = mAuth.getCurrentUser();
+        if (currentUser != null) {
+
+
+            DataHolder.getInstance().setUser(new User());
+            db.findUserbyemail(currentUser.getEmail());
+            DataHolder.getInstance().getUser().setFirebaseUser(currentUser);
+             MenuItem   item    =  menu.findItem(R.id.nav_statistic);
+
+            item.setTitle("Log out " +DataHolder.getInstance().getUser().getFirstname() );
+        }
+        else{
+            MenuItem   item    =  menu.findItem(R.id.nav_statistic);
+           item.setTitle("Log in");
+
+        }
         return true;
     }
 
@@ -985,6 +1013,11 @@ EditToiletActivity.NoticeDialogListener , AddReviewActivity.NoticeDialogListener
             }
             mMap.addMarker(markerPOI);
         }
+    }
+    public static BigDecimal round(float d, int decimalPlace) {
+        BigDecimal bd = new BigDecimal(Float.toString(d));
+        bd = bd.setScale(decimalPlace, BigDecimal.ROUND_HALF_UP);
+        return bd;
     }
 
 }

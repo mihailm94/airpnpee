@@ -26,8 +26,8 @@
     <string name="add_private_toilet">Add private Toilet</string>
     <string name="Save">Save</string>
     <string name="name">Name</string>
-    <string name="description">description</string>
-    <string name="opening_hours">opening hours</string>
+    <string name="description">Description</string>
+    <string name="opening_hours">Opening hours</string>
     <string name="action_sign_up">Sign Up</string>
     <string name="create_account">Create Account</string>
     <string name="title_activity_menu">MenuActivity</string>
@@ -82,10 +82,10 @@
     <string name="search">Search</string>
     <string name="comment">Comment</string>
     <string name="more_info">More Info</string>
-    <string name="wheelchair">wheelchair</string>
-    <string name="fee">fee</string>
-    <string name="out_of_order">out of order</string>
-    <string name="sauberkeit">Sauberkeit</string>
+    <string name="wheelchair">Wheelchair</string>
+    <string name="fee">Fee</string>
+    <string name="out_of_order">Out of Service</string>
+    <string name="sauberkeit">Cleanliness</string>
     <string name="photo">Photo</string>
 
     //Settings
