@@ -88,6 +88,7 @@ import java.util.ArrayList;
 import android.content.Intent;
 
 
+import static com.appspot.airpeepee.airpeepee.R.*;
 import static com.google.common.base.Strings.isNullOrEmpty;
 
 
@@ -165,12 +166,12 @@ EditToiletActivity.NoticeDialogListener , AddReviewActivity.NoticeDialogListener
     public void visibleAll()
     {
 
-        FloatingActionButton mfab =(FloatingActionButton) findViewById(R.id.floatingActionButton);
+        FloatingActionButton mfab =(FloatingActionButton) findViewById(id.floatingActionButton);
         mfab.setVisibility(View.VISIBLE);
-        findViewById(R.id.map).setVisibility(View.VISIBLE);
-        findViewById(R.id.imageView5).setEnabled(true);
-        findViewById(R.id.map).setEnabled(true);
-        findViewById(R.id.toolbar).setVisibility(View.VISIBLE);
+        findViewById(id.map).setVisibility(View.VISIBLE);
+        findViewById(id.imageView5).setEnabled(true);
+        findViewById(id.map).setEnabled(true);
+        findViewById(id.toolbar).setVisibility(View.VISIBLE);
         mapReady(m_google_map);
 
     }
@@ -180,12 +181,12 @@ EditToiletActivity.NoticeDialogListener , AddReviewActivity.NoticeDialogListener
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_maps);
+        setContentView(layout.activity_maps);
 
 
         //error handler
         if(isOnline()) {
-            progressBar = (ProgressBar) findViewById(R.id.progressBar);
+            progressBar = (ProgressBar) findViewById(id.progressBar);
             thread = new Thread(new Runnable() {
                 public void run() {
                     while (progressStatus < 100) {
@@ -237,21 +238,21 @@ EditToiletActivity.NoticeDialogListener , AddReviewActivity.NoticeDialogListener
 
 
 
-        findViewById(R.id.Kilometers).setVisibility(View.GONE);
+        findViewById(id.Kilometers).setVisibility(View.GONE);
 
 
 
 
         //filter
-        final FloatingActionButton mfaball =(FloatingActionButton) findViewById(R.id.filter_all);
-        final FloatingActionButton mfabfee =(FloatingActionButton) findViewById(R.id.filter_fee);
-        final FloatingActionButton mfabwheelchair =(FloatingActionButton) findViewById(R.id.filter_wheelchair);
-        final FloatingActionButton mfab =(FloatingActionButton) findViewById(R.id.floatingActionButton);
-        final LinearLayout linearLayout =(LinearLayout) findViewById(R.id.filter_layout);
-        final Animation mShowButton =AnimationUtils.loadAnimation(MapsActivity.this,R.anim.show_button);
-        final Animation mhideButton =AnimationUtils.loadAnimation(MapsActivity.this,R.anim.hide_button);
-        final Animation mShowlayout =AnimationUtils.loadAnimation(MapsActivity.this,R.anim.show_layout);
-        final Animation mhidelayout =AnimationUtils.loadAnimation(MapsActivity.this,R.anim.hide_layout);
+        final FloatingActionButton mfaball =(FloatingActionButton) findViewById(id.filter_all);
+        final FloatingActionButton mfabfee =(FloatingActionButton) findViewById(id.filter_fee);
+        final FloatingActionButton mfabwheelchair =(FloatingActionButton) findViewById(id.filter_wheelchair);
+        final FloatingActionButton mfab =(FloatingActionButton) findViewById(id.floatingActionButton);
+        final LinearLayout linearLayout =(LinearLayout) findViewById(id.filter_layout);
+        final Animation mShowButton =AnimationUtils.loadAnimation(MapsActivity.this,anim.show_button);
+        final Animation mhideButton =AnimationUtils.loadAnimation(MapsActivity.this,anim.hide_button);
+        final Animation mShowlayout =AnimationUtils.loadAnimation(MapsActivity.this,anim.show_layout);
+        final Animation mhidelayout =AnimationUtils.loadAnimation(MapsActivity.this,anim.hide_layout);
 
         mfab.setVisibility(View.GONE);
         mfaball.setVisibility(View.GONE);
@@ -300,19 +301,19 @@ EditToiletActivity.NoticeDialogListener , AddReviewActivity.NoticeDialogListener
             }
         });
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        Toolbar toolbar = (Toolbar) findViewById(id.toolbar);
         toolbar.setTitle("");
         toolbar.setVisibility(View.GONE);
          setSupportActionBar(toolbar);
 
 
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        DrawerLayout drawer = (DrawerLayout) findViewById(id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
-                this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+                this, drawer, toolbar, string.navigation_drawer_open, string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
         toggle.syncState();
 
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        NavigationView navigationView = (NavigationView) findViewById(id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
 
@@ -322,7 +323,7 @@ EditToiletActivity.NoticeDialogListener , AddReviewActivity.NoticeDialogListener
                 .enableAutoManage(this, GOOGLE_API_CLIENT_ID, this)
                 .addConnectionCallbacks(this)
                 .build();
-        mAutocompleteTextView = (AutoCompleteTextView) findViewById(R.id.search_view);
+        mAutocompleteTextView = (AutoCompleteTextView) findViewById(id.search_view);
         mAutocompleteTextView.setThreshold(2);
         mAutocompleteTextView.setOnItemClickListener(mAutocompleteClickListener);
         mPlaceArrayAdapter = new PlaceArrayAdapter(this, android.R.layout.simple_list_item_1, BOUNDS_MOUNTAIN_VIEW, null);
@@ -330,19 +331,19 @@ EditToiletActivity.NoticeDialogListener , AddReviewActivity.NoticeDialogListener
 
 
 
-        btnRequestDirection = findViewById(R.id.direction_btn);
+        btnRequestDirection = findViewById(id.direction_btn);
         btnRequestDirection.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                // mlocation = myLocationListener.getLastBestLocation();
                 mendtrip =false;
-                findViewById(R.id.imageView5).setVisibility(View.VISIBLE);
-                findViewById(R.id.floatingActionButton).setVisibility(View.GONE);
-                findViewById(R.id.filter_all).setVisibility(View.GONE);
-                findViewById(R.id.filter_fee).setVisibility(View.GONE);
-                findViewById(R.id.filter_wheelchair).setVisibility(View.GONE);
-                findViewById(R.id.Kilometers).setVisibility(View.VISIBLE);
-                findViewById(R.id.Kilometers).setPadding(0,0,0,110);
+                findViewById(id.imageView5).setVisibility(View.VISIBLE);
+                findViewById(id.floatingActionButton).setVisibility(View.GONE);
+                findViewById(id.filter_all).setVisibility(View.GONE);
+                findViewById(id.filter_fee).setVisibility(View.GONE);
+                findViewById(id.filter_wheelchair).setVisibility(View.GONE);
+                findViewById(id.Kilometers).setVisibility(View.VISIBLE);
+                findViewById(id.Kilometers).setPadding(0,0,0,110);
                 origin = new LatLng(mlocation.getLatitude(), mlocation.getLongitude());
                 destination = m_marker.getPosition();
 
@@ -350,7 +351,7 @@ EditToiletActivity.NoticeDialogListener , AddReviewActivity.NoticeDialogListener
             }
         });
 
-        Button edit_toilet =(Button) findViewById(R.id.edit_toilet);
+        Button edit_toilet =(Button) findViewById(id.edit_toilet);
         edit_toilet.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -358,21 +359,21 @@ EditToiletActivity.NoticeDialogListener , AddReviewActivity.NoticeDialogListener
             }
         });
 
-        ImageView cancel= findViewById(R.id.imageView5);
+        ImageView cancel= findViewById(id.imageView5);
         cancel.setEnabled(false);
         cancel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 mendtrip=true;
-                findViewById(R.id.bottom_sheet).setVisibility(View.GONE);
-                findViewById(R.id.imageView5).setVisibility(View.GONE);
-                findViewById(R.id.Kilometers).setVisibility(View.GONE);
-                findViewById(R.id.floatingActionButton).setVisibility(View.VISIBLE);
+                findViewById(id.bottom_sheet).setVisibility(View.GONE);
+                findViewById(id.imageView5).setVisibility(View.GONE);
+                findViewById(id.Kilometers).setVisibility(View.GONE);
+                findViewById(id.floatingActionButton).setVisibility(View.VISIBLE);
                 refreshMarker();
             }
         });
 
-        Button review_toilet = (Button) findViewById(R.id.review_toilet);
+        Button review_toilet = (Button) findViewById(id.review_toilet);
         review_toilet.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -389,7 +390,7 @@ EditToiletActivity.NoticeDialogListener , AddReviewActivity.NoticeDialogListener
 
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
-                .findFragmentById(R.id.map);
+                .findFragmentById(id.map);
         mapFragment.getMapAsync(this);
         ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, 1);
         myLocationListener = new MyLocationListener(this);
@@ -398,22 +399,22 @@ EditToiletActivity.NoticeDialogListener , AddReviewActivity.NoticeDialogListener
             mlocation = myLocationListener.currentBestLocation;
         findViews();
         setUpViews();
-        findViewById(R.id.bottom_sheet).setVisibility(View.GONE);
-        findViewById(R.id.direction_btn).setVisibility(View.GONE);
-        findViewById(R.id.ic_euro).setVisibility(View.GONE);
-        findViewById(R.id.ic_wheelchair).setVisibility(View.GONE);
-        findViewById(R.id.ic_out_of_order).setVisibility(View.GONE);
-        findViewById(R.id.imageView5).setVisibility(View.GONE);
-        findViewById(R.id.map).setEnabled(false);
-        findViewById(R.id.map).setVisibility(View.GONE);
+        findViewById(id.bottom_sheet).setVisibility(View.GONE);
+        findViewById(id.direction_btn).setVisibility(View.GONE);
+        findViewById(id.ic_euro).setVisibility(View.GONE);
+        findViewById(id.ic_wheelchair).setVisibility(View.GONE);
+        findViewById(id.ic_out_of_order).setVisibility(View.GONE);
+        findViewById(id.imageView5).setVisibility(View.GONE);
+        findViewById(id.map).setEnabled(false);
+        findViewById(id.map).setVisibility(View.GONE);
     }
 
 
 
 
     private void findViews() {
-        mBottomSheet = findViewById(R.id.bottom_sheet);
-        mExpandIconView = (ExpandIconView) mBottomSheet.findViewById(R.id.expandIconView);
+        mBottomSheet = findViewById(id.bottom_sheet);
+        mExpandIconView = (ExpandIconView) mBottomSheet.findViewById(id.expandIconView);
     }
 
 
@@ -542,13 +543,13 @@ EditToiletActivity.NoticeDialogListener , AddReviewActivity.NoticeDialogListener
                         result = round(distanceInMetersOne/1000 ,2);
                         BigDecimal time = round((float) ((distanceInMetersOne/1000)*16.7),0);
                         String result1 = result+" km/ "+ time+" min";
-                        ((TextView)findViewById(R.id.Kilometers)).setText(result1);
+                        ((TextView)findViewById(id.Kilometers)).setText(result1);
 
                         if (distanceInMetersOne <30) {
                             //destination = null;
                             mendtrip=true;
-                            findViewById(R.id.bottom_sheet).setVisibility(View.GONE);
-                            findViewById(R.id.floatingActionButton).setVisibility(View.VISIBLE);
+                            findViewById(id.bottom_sheet).setVisibility(View.GONE);
+                            findViewById(id.floatingActionButton).setVisibility(View.VISIBLE);
                             refreshMarker();
                             return;
                         }
@@ -565,8 +566,8 @@ EditToiletActivity.NoticeDialogListener , AddReviewActivity.NoticeDialogListener
             public boolean onMarkerClick(Marker marker) {
 
                 m_marker=marker;
-                findViewById(R.id.bottom_sheet).setVisibility(View.VISIBLE);
-                findViewById(R.id.direction_btn).setVisibility(View.VISIBLE);
+                findViewById(id.bottom_sheet).setVisibility(View.VISIBLE);
+                findViewById(id.direction_btn).setVisibility(View.VISIBLE);
                 putToiletInfo(marker);
                 return false;
             }
@@ -577,11 +578,11 @@ EditToiletActivity.NoticeDialogListener , AddReviewActivity.NoticeDialogListener
     }
 
     public void putToiletInfo(Marker marker) {
-        TextView name = (TextView) findViewById(R.id.toiletName);
-        TextView type = (TextView) findViewById(R.id.toilet_type);
-        TextView totalrating = (TextView) findViewById(R.id.reviews);
-        TextView cost=findViewById(R.id.view_cost);
-        ImageView imageView = (ImageView) findViewById(R.id.imageView2);
+        TextView name = (TextView) findViewById(id.toiletName);
+        TextView type = (TextView) findViewById(id.toilet_type);
+        TextView totalrating = (TextView) findViewById(id.reviews);
+        TextView cost=findViewById(id.view_cost);
+        ImageView imageView = (ImageView) findViewById(id.imageView2);
         // toilet name zeigen
         if (isNullOrEmpty(marker.getTitle()))
             name.setText("öffentlicher toilette");
@@ -633,56 +634,56 @@ EditToiletActivity.NoticeDialogListener , AddReviewActivity.NoticeDialogListener
                 .load(storageReference)
                 .into(imageView);
 
-        TextView information=(TextView) findViewById(R.id.information);
+        TextView information=(TextView) findViewById(id.information);
         information.setText(toilet.getDescription());
 
         if(toilet.isOutoforder())
         {
-            if( findViewById(R.id.ic_out_of_order).getVisibility()==View.GONE)
-                findViewById(R.id.ic_out_of_order).setVisibility(View.VISIBLE);
+            if( findViewById(id.ic_out_of_order).getVisibility()==View.GONE)
+                findViewById(id.ic_out_of_order).setVisibility(View.VISIBLE);
         }
         else
         {
-            if( findViewById(R.id.ic_out_of_order).getVisibility()==View.VISIBLE)
-                findViewById(R.id.ic_out_of_order).setVisibility(View.GONE);
+            if( findViewById(id.ic_out_of_order).getVisibility()==View.VISIBLE)
+                findViewById(id.ic_out_of_order).setVisibility(View.GONE);
         }
 
 
         if(toilet.isFee()==null) {
-            if (((ImageView) findViewById(R.id.ic_euro)).getVisibility() == View.VISIBLE)
-                ((ImageView) findViewById(R.id.ic_euro)).setVisibility(View.GONE);
+            if (((ImageView) findViewById(id.ic_euro)).getVisibility() == View.VISIBLE)
+                ((ImageView) findViewById(id.ic_euro)).setVisibility(View.GONE);
         }
         else{
         if(toilet.isFee().equals("yes")) {
-            if(((ImageView) findViewById(R.id.ic_euro)).getVisibility() == View.GONE)
-                 ((ImageView) findViewById(R.id.ic_euro)).setVisibility(View.VISIBLE);
+            if(((ImageView) findViewById(id.ic_euro)).getVisibility() == View.GONE)
+                 ((ImageView) findViewById(id.ic_euro)).setVisibility(View.VISIBLE);
         }
             if (toilet.isFee().equals("no")) {
-                if (((ImageView) findViewById(R.id.ic_euro)).getVisibility() == View.VISIBLE)
-                    ((ImageView) findViewById(R.id.ic_euro)).setVisibility(View.GONE);
+                if (((ImageView) findViewById(id.ic_euro)).getVisibility() == View.VISIBLE)
+                    ((ImageView) findViewById(id.ic_euro)).setVisibility(View.GONE);
             }
 
 
         }
 
         if(toilet.isWheelchair() == null){
-            if(((ImageView) findViewById(R.id.ic_wheelchair)).getVisibility() == View.VISIBLE)
-                ((ImageView) findViewById(R.id.ic_wheelchair)).setVisibility(View.GONE);
+            if(((ImageView) findViewById(id.ic_wheelchair)).getVisibility() == View.VISIBLE)
+                ((ImageView) findViewById(id.ic_wheelchair)).setVisibility(View.GONE);
 
         }else{
         if(toilet.isWheelchair().equals("yes")) {
-            if(((ImageView) findViewById(R.id.ic_wheelchair)).getVisibility() == View.GONE)
-                ((ImageView) findViewById(R.id.ic_wheelchair)).setVisibility(View.VISIBLE);
+            if(((ImageView) findViewById(id.ic_wheelchair)).getVisibility() == View.GONE)
+                ((ImageView) findViewById(id.ic_wheelchair)).setVisibility(View.VISIBLE);
 
         }
             if (toilet.isWheelchair().equals("no")) {
-                if (((ImageView) findViewById(R.id.ic_wheelchair)).getVisibility() == View.VISIBLE)
-                    ((ImageView) findViewById(R.id.ic_wheelchair)).setVisibility(View.GONE);
+                if (((ImageView) findViewById(id.ic_wheelchair)).getVisibility() == View.VISIBLE)
+                    ((ImageView) findViewById(id.ic_wheelchair)).setVisibility(View.GONE);
             }
 
         }
 
-        mRecyclerView = (RecyclerView) findViewById(R.id.my_recycler_view);
+        mRecyclerView = (RecyclerView) findViewById(id.my_recycler_view);
         // use this setting to improve performance if you know that changes
         // in content do not change the layout size of the RecyclerView
         mRecyclerView.setHasFixedSize(true);
@@ -745,7 +746,7 @@ EditToiletActivity.NoticeDialogListener , AddReviewActivity.NoticeDialogListener
           //  refreshMarker();
             Route route = direction.getRouteList().get(0);
             ArrayList<LatLng> directionPositionList = route.getLegList().get(0).getDirectionPoint();
-            mMap.addPolyline(DirectionConverter.createPolyline(this, directionPositionList, 5, R.color.colorAccent));
+            mMap.addPolyline(DirectionConverter.createPolyline(this, directionPositionList, 5, color.colorAccent));
             setCameraWithCoordinationBounds(route);
 
             btnRequestDirection.setVisibility(View.GONE);
@@ -769,7 +770,7 @@ EditToiletActivity.NoticeDialogListener , AddReviewActivity.NoticeDialogListener
 
     @Override
     public void onBackPressed() {
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        DrawerLayout drawer = (DrawerLayout) findViewById(id.drawer_layout);
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
         } else {
@@ -777,6 +778,7 @@ EditToiletActivity.NoticeDialogListener , AddReviewActivity.NoticeDialogListener
         }
     }
 
+    @SuppressLint("ResourceType")
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -784,18 +786,19 @@ EditToiletActivity.NoticeDialogListener , AddReviewActivity.NoticeDialogListener
         // lOGIN
         mAuth = FirebaseAuth.getInstance();
         FirebaseUser currentUser = mAuth.getCurrentUser();
+        NavigationView navigationView=(NavigationView)findViewById(R.id.nav_view);
+        optionMenu =navigationView.getMenu();
         if (currentUser != null) {
-
-
             DataHolder.getInstance().setUser(new User());
             db.findUserbyemail(currentUser.getEmail());
             DataHolder.getInstance().getUser().setFirebaseUser(currentUser);
-             MenuItem   item    =  menu.findItem(R.id.nav_statistic);
+            // error fix me
 
+            MenuItem item  =  optionMenu.findItem(id.nav_statistic);
             item.setTitle("Log out " +DataHolder.getInstance().getUser().getFirstname() );
         }
         else{
-            MenuItem   item    =  menu.findItem(R.id.nav_statistic);
+            MenuItem item  =  optionMenu.findItem(id.nav_statistic);
            item.setTitle("Log in");
 
         }

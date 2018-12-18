@@ -14,6 +14,7 @@ public class DataHolder {
     }
 
     private List<Toilet> data;
+    private User user;
 
     public User getUser() {
         return user;
@@ -23,7 +24,7 @@ public class DataHolder {
         this.user = user;
     }
 
-    private User user;
+
 
     private static final DataHolder holder = new DataHolder();
     public static DataHolder getInstance(){return holder;}
