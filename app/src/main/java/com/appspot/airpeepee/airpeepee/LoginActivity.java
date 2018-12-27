@@ -375,6 +375,19 @@ public class LoginActivity extends   AppCompatActivity implements View.OnClickLi
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
+        TextView forgetpass =findViewById(R.id.forgitPassword);
+        forgetpass.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+                Intent inent = new Intent(v.getContext(),forgetPassword.class);
+
+                // calling an activity using <intent-filter> action name
+                //  Intent inent = new Intent("com.hmkcode.android.ANOTHER_ACTIVITY");
+
+                startActivity(inent);
+            }
+        });
 
         mStatusTextView = findViewById(R.id.status);
         mDetailTextView = findViewById(R.id.detail);

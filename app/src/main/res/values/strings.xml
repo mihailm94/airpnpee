@@ -135,6 +135,7 @@ our successful semester project. We are Glad to Help in anyway!</string>
     <string name="add_toilet_review">Add Toilet Review</string>
     <string name="rating">Rating</string>
     <string name="todo">TODO</string>
+    <string name="forget_your_password">Forget your Password ?</string>
     <string-array name="gender_array">
         <item>male</item>
         <item>female</item>

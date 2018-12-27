@@ -107,7 +107,10 @@
 
 
 
-
+            <TextView
+                android:id="@+id/forgitPassword"
+                style="@style/ThemeOverlay.MyTextDetail"
+                android:text="@string/forget_your_password" />
 
             <TextView
                 android:id="@+id/status"

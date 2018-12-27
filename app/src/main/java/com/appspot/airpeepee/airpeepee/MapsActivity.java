@@ -792,6 +792,7 @@ EditToiletActivity.NoticeDialogListener , AddReviewActivity.NoticeDialogListener
             DataHolder.getInstance().setUser(new User());
             db.findUserbyemail(currentUser.getEmail());
             DataHolder.getInstance().getUser().setFirebaseUser(currentUser);
+
             // error fix me
 
             MenuItem item  =  optionMenu.findItem(id.nav_statistic);
