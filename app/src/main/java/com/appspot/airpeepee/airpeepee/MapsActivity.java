@@ -842,6 +842,21 @@ EditToiletActivity.NoticeDialogListener , AddReviewActivity.NoticeDialogListener
             if(DataHolder.getInstance().getUser() != null) {
                 if(DataHolder.getInstance().getUser().isAnbieter())
                     startActivity(new Intent(MapsActivity.this, AddActivity.class));
+                else
+                {
+                    AlertDialog alertDialog = new AlertDialog.Builder(this).create();
+                    alertDialog.setTitle("Info");
+                    alertDialog.setMessage("The Current User is not a provider you can change in Profile Edit");
+                    alertDialog.setIcon(android.R.drawable.ic_dialog_alert);
+                    alertDialog.setButton("OK", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+
+                        }
+                    });
+
+                    alertDialog.show();
+                }
             }
             else
             {
