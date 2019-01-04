@@ -35,6 +35,21 @@ HTW Berlin
 
 ## Einführung <a name="introduction"></a>
 
+## Informelle Beschreibung 
+.....
+
+## UML
+
+1. Use Cases
+
+![use cases](https://i.imgur.com/uPlLLtv.png)
+
+3. ERD
+
+
+2. Class Diagram
+
+
 
 
 ## Implementierung der Datenbank in Firebase <a name="dbFirebase"></a>
