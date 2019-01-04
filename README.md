@@ -44,10 +44,10 @@ HTW Berlin
 
 ![use cases](https://i.imgur.com/uPlLLtv.png)
 
-3. ERD
+2. ERD
 
 
-2. Class Diagram
+3. Class Diagram
 
 
 
