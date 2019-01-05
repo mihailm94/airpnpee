@@ -46,8 +46,10 @@ HTW Berlin
 
 2. ERD
 
+![ERD](https://i.imgur.com/qoYTfPa.png)
 
 3. Class Diagram
+
 ![Class Diagram](https://i.imgur.com/nhf4shar.jpg)
 
 
