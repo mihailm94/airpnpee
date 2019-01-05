@@ -61,6 +61,7 @@ import com.appspot.airpeepee.airpeepee.model.MyLocationListener;
 import com.appspot.airpeepee.airpeepee.model.User;
 import com.appspot.airpeepee.airpeepee.model.db;
 import com.google.android.gms.common.ConnectionResult;
+import com.google.android.gms.common.GoogleApiAvailability;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.common.api.PendingResult;
 import com.google.android.gms.common.api.ResultCallback;
@@ -875,7 +876,6 @@ EditToiletActivity.NoticeDialogListener , AddReviewActivity.NoticeDialogListener
 
         } else if (id == R.id.nav_statistic) {
             if(DataHolder.getInstance().getUser() != null) {
-                if(DataHolder.getInstance().getUser().isAnbieter())
                 startActivity(new Intent(MapsActivity.this, LoginActivity.class));
             }
             else

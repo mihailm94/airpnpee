@@ -24,7 +24,7 @@ public class Comment {
         this.id = id;
     }
 
-    private String id;
+
 
     public String getCommentText() {
         return commentText;
@@ -34,7 +34,7 @@ public class Comment {
         this.commentText = commentText;
     }
 
-    private String commentText;
+
 
     public User getUser() {
         return user;
@@ -45,6 +45,8 @@ public class Comment {
     }
 
     private User user;
+    private String commentText;
+    private String id;
 
 
 
