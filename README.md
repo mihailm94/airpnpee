@@ -511,6 +511,54 @@ public class Rating {
 Die Konstruktoren von beiden bekommen einen String `id` zur Identifizierung in der Datenbank, ein User, der zu einem oder mehreren Ratings bzw Kommentaren gebunden ist und einen `commentText`  bzw. `userRating` . 
 
 
+## Login useing firebase 
+
+Benutzer in Firebase-Projekten
+Ein Firebase-Benutzerobjekt stellt das Konto eines Benutzers dar, der sich bei Ihrem Firebase-Projekt bei einer App angemeldet hat. In der Regel haben Apps viele registrierte Benutzer, und jede App in einem Firebase-Projekt verwendet eine Benutzerdatenbank.
+
+Eine Firebase-Benutzerinstanz ist unabhängig von einer Firebase-Auth-Instanz. Dies bedeutet, dass Sie mehrere Verweise auf verschiedene Benutzer innerhalb desselben Kontexts haben und trotzdem eine ihrer Methoden aufrufen können.
+
+Wenn sich ein Benutzer zum ersten Mal bei unsere App anmeldet, werden die Profildaten des Benutzers mit den verfügbaren Informationen aufgefüllt:
+
+Wenn sich der Benutzer mit einer E-Mail-Adresse und einem Kennwort angemeldet hat, wird nur die Eigenschaft der primären E-Mail-Adresse eingetragen
+
+Wenn sich der Benutzer bei einem Anbieter für Verbundidentität wie Google oder Facebook angemeldet hat, werden die vom Anbieter zur Verfügung gestellten Kontoinformationen dazu verwendet, das Profil des Firebase-Benutzers aufzufüllen
+
+wir haben drei funktionen email,Google und Facebook nutzen zu anmelden .
+
+*Login Code*
+zuerst die Packages :
+
+```java
+// Firebase Bibliothek
+import com.google.firebase.auth.AuthCredential;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FacebookAuthProvider;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.auth.GoogleAuthProvider;
+
+// Facebook Bibliothek
+import com.facebook.AccessToken;
+import com.facebook.CallbackManager;
+import com.facebook.FacebookCallback;
+import com.facebook.FacebookException;
+import com.facebook.FacebookSdk;
+import com.facebook.appevents.AppEventsLogger;
+import com.facebook.login.LoginResult;
+import com.facebook.login.LoginManager;
+import com.facebook.login.widget.LoginButton;
+
+// Google Bibliothek
+import com.google.android.gms.auth.api.signin.GoogleSignIn;
+import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
+import com.google.android.gms.auth.api.signin.GoogleSignInClient;
+import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
+import com.google.android.gms.common.SignInButton;
+import com.google.android.gms.common.api.ApiException;
+
+
+```
 
 ## Google Map Api Konfiguration
 
