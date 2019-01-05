@@ -48,7 +48,7 @@ HTW Berlin
 
 
 3. Class Diagram
-
+![Class Diagram](https://i.imgur.com/nhf4shar.jpg)
 
 
 
