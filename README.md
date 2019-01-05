@@ -1,19 +1,26 @@
-# AirPee&Pee
+<img height="150px" width="250px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Logo_HTW_Berlin.svg/2000px-Logo_HTW_Berlin.svg.png"/>
 
-### Projekt Softwareentwicklung - WiSe 18/19
+<div align="center">
+	<center>
+	
+# AirPee&Pee 
+
+### Projekt Softwareentwicklung - WiSe 18/19 
 
 HTW Berlin
 
 
 
-##### [Elnaz Bezdoodeh](https://github.com/ElnazBezdoodeh)
+##### [Elnaz Bezdoodeh](https://github.com/ElnazBezdoodeh) 
 
-##### [Osama Alabaji](https://github.com/osamax2)
+##### [Osama Alabaji](https://github.com/osamax2) 
 
-##### [Leonard Berresheim](https://github.com/leoEAB)
+##### [Leonard Berresheim](https://github.com/leoEAB) 
 
-##### [Mihail Milchev](https://github.com/mihailm94)
+##### [Mihail Milchev](https://github.com/mihailm94) 
 
+</center>
+</div>
 
 
 
