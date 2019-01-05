@@ -509,3 +509,48 @@ public class Rating {
 ```
 
 Die Konstruktoren von beiden bekommen einen String `id` zur Identifizierung in der Datenbank, ein User, der zu einem oder mehreren Ratings bzw Kommentaren gebunden ist und einen `commentText`  bzw. `userRating` . 
+
+
+
+## Google Map Api Konfiguration
+
+Um die Umstellung zu vollziehen, braucht man einen neuen "Maps API Key".
+von hier https://cloud.google.com/maps-platform/#get-started
+
+der API-Schlüssel wird In AndroidManifest.xml eingestellt 
+
+```xml
+ <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDilhmAZ-rUga7gKnXkrWWfXPhnCAhuyrA" />
+```
+
+Google Maps API aktivieren, braucht man app's SHA-1 fingerprint 
+
+um den app's SHA-1 fingerprint zu bekommen
+```shell
+
+keytool -list -v -keystore "%USERPROFILE%\.android\debug.keystore" -alias androiddebugkey -storepass android -keypass android
+
+```
+API Key erhalten und kopieren in android app setting Schlüssel absichern
+####Specify Android permissions
+Specify the permissions your application needs, by adding <uses-permission> elements as children of the <manifest> element in AndroidManifest.xml.
+
+### Location permissions
+permissions to the app manifest
+the coarse location permission:
+```xml
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+<uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+```
+Hinweis: Wenn Ihre App auf API-Level 23 (Android 6.0) abzielt, für das Laufzeitberechtigungen erforderlich sind, sollten Sie sich auf Version 8.3 oder höher des Google Play Services-SDK beziehen.
+
+Berechtigungen werden automatisch in Ihr Manifest eingefügt
+Die folgenden Berechtigungen sind im Manifest der Google Play-Dienste definiert und werden beim Erstellen automatisch in das Manifest Ihrer App eingefügt. Sie müssen sie nicht explizit zu Ihrem manifest hinzufügen:
+
+```xml
+android.permission.INTERNET - Used by the API to download map tiles from Google Maps servers.
+android.permission.ACCESS_NETWORK_STATE - Allows the API to check the connection status in order to determine whether data can be downloaded.
+```
