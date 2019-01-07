@@ -525,6 +525,7 @@ Wenn sich der Benutzer mit einer E-Mail-Adresse und einem Kennwort angemeldet ha
 Wenn sich der Benutzer bei einem Anbieter für Verbundidentität wie Google oder Facebook angemeldet hat, werden die vom Anbieter zur Verfügung gestellten Kontoinformationen dazu verwendet, das Profil des Firebase-Benutzers aufzufüllen
 
 wir haben drei funktionen email,Google und Facebook nutzen zu anmelden .
+![Login Firebase](https://i.imgur.com/T2IXrFhr.png)
 
 *Login Code*
 zuerst die Packages :
