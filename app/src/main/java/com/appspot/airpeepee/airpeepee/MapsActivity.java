@@ -505,12 +505,14 @@ EditToiletActivity.NoticeDialogListener , AddReviewActivity.NoticeDialogListener
                 mMap.addMarker(markerPOI);
             }
         }
+        if(mlocation != null) {
+            LatLng sydney = new LatLng(mlocation.getLatitude(), mlocation.getLongitude());
 
-        LatLng sydney = new LatLng(mlocation.getLatitude(), mlocation.getLongitude());
-        CameraUpdate location = CameraUpdateFactory.newLatLngZoom(
-                sydney, 15);
-        mMap.animateCamera(location);
+            CameraUpdate location = CameraUpdateFactory.newLatLngZoom(
+                    sydney, 15);
 
+            mMap.animateCamera(location);
+        }
 
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             // TODO: Consider calling
