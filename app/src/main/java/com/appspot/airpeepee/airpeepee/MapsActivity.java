@@ -747,7 +747,7 @@ EditToiletActivity.NoticeDialogListener , AddReviewActivity.NoticeDialogListener
           //  refreshMarker();
             Route route = direction.getRouteList().get(0);
             ArrayList<LatLng> directionPositionList = route.getLegList().get(0).getDirectionPoint();
-            mMap.addPolyline(DirectionConverter.createPolyline(this, directionPositionList, 5, color.colorAccent));
+            mMap.addPolyline(DirectionConverter.createPolyline(this, directionPositionList, 5, 0xFFF16232));
             setCameraWithCoordinationBounds(route);
 
             btnRequestDirection.setVisibility(View.GONE);

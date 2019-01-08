@@ -31,7 +31,7 @@
                 android:imeOptions="actionNext"
                 android:popupBackground="@color/grey_100"
                 android:singleLine="true"
-                android:textSize="20sp" />
+                android:textSize="15sp" />
         </android.support.v7.widget.Toolbar>
 
     </android.support.design.widget.AppBarLayout>
