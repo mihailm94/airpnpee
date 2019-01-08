@@ -92,6 +92,100 @@ A.2.1 Die AirPnP-App kann das Hinzufügen von öffentlichen Toiletten durch eine
 A.2.2 Die AirPnP-App soll eine öffentliche Toilette automatisch entfernen wenn sie mehrmals (TBD) gemeldet worden ist.
 
 
+Die Definitionsphäse besteht aus dem Pflichtenheft. Die Kriterien in dem Pflichtenheft beschreiben sehr einfach und strukturiert wie das App-Backend funktioniert. Dadurch wurden uns die Aufgaben, die wir erledigen müssen, klar und konnten jedem Mitglied unseres Team eine Hauptaufgabe zuweisen.
+
+B.1.1 
+
+B.1.1.1 Die AirPnP-App soll eine auf Android-Betriebssystem basierte mobile Anwendung sein.
+
+B.1.1.2 Die AirPnP-App soll laufen auf allen offiziellen Android-Versionen (Android 9.0 und früher bis 5.0)
+
+B.1.1.3 Für die Entwicklung der AirPnP-App soll Android-Studio benutzt werden.
+
+B.1.1.4 Für die Entwicklung der AirPnP-App soll Java benutzt werden.
+
+B.1.2
+
+B.1.2.1 Die AirPnP-App-GUI soll die Material-Design-Libraries benutzen.
+
+B.1.2.2 Die AirPnP-App-GUI soll eine SignUp-Seite haben.
+
+B.1.2.2.1 Die AirPnP-App-GUI-SignUp-Seite soll dem User die Möglichkeit geben sich zu Registrieren über Google, Facebook oder Email.
+
+B.1.2.2.2 Bei Reigistrieren mit Email soll AirPnP-App den User nach einem und Passwort fragen.
+
+B.1.2.2.3 Bei Reigistrieren mit Google oder Facebook soll die AirPnP-App das entsprechende API aufrufen.
+
+B.1.2.3 Die AirPnP-App-GUI soll eine Login-Seite haben.
+
+B.1.2.3.1 Die AirPnP-App-Gui-Login-Seite soll dem User die Möglichkeit geben sich anzumelden über Google, Facebook oder Email.
+
+B.1.2.4 Die AirPnP-App-GUI soll eine Hauptseite haben.
+
+B.1.2.4.1 Die AirPnP-App-Gui-Hauptseite soll in einem GoogleMaps-Fenster die öffentlichen und privaten Toiletten in einem Umkreis um den gewählten Standort anzeigen.
+
+B.1.2.4.2 Die AirPnP-App-Gui-Hauptseite soll Navigations-Buttons besitzen
+
+B.1.2.4.2.1 Ein Menu-Button der das Menu aufruft.
+
+B.1.2.4.2.1.1 Das Menu zeigt folgende Optionen an: Profil, Settings, Switch, Abmelden, About.
+
+B.1.2.4.2.2 Ein Search-Feld mit Search-Button.
+
+B.1.2.4.3 Bei Klicken auf einen Toilette-Marker soll die AirPnP-App auf der Hauptseite ein Card anzeigen mit Informationen zu der ausgewählten Toilette.
+
+B.1.2.4.4 Bei Klicken auf das Information-Card soll die AirPnP-App die Toilette-Profil-Seite öffnen.
+
+B.1.2.5 Die AirPnP-App soll zu jeder Toilette eine Toilette-Pofil-Seite haben (TBD - siehe Dateien (bald)).
+
+B.1.2.5.1 Die Die AirPnP-App-Gui-Toilet-Profil-Seite soll einen Direction Button besitzten.
+
+B.1.2.5.2 Bei klicken auf den Direction Button, wird eine Seite aufgerufen mit Google-Navigation zu der ausgewählten Toilette.
+
+B.1.2.6 Nach einen bestimmten Zeitraum(TBD) nach erfolgreischer Beendigung soll ein Bewertungs-PopUp aufpoppen.
+
+B.1.2.6.1 Der User soll in dem Bewertungs-PopUp eine Bewertung (TBD) und Rezession abgeben können.
+...
+
+B.1.3
+
+B.1.3.1 Aus OpenStreet-Map API sollen die öffentlichen Toiletten in Berlin extrahiert werden und in einer zentralen Datenbank importiert werden.
+
+B.1.3.2 In der Datenbank sollen zu jeder Toilette informationen gespeichert sein zu Standort (Längengrad/Höhengrad), Preis, Bewertung, Accesibility, Öffnungszeiten. (TBC)
+
+B.1.4 
+
+B.1.4.1 Bei erfolgreicher Registrierung werden die Benutzerdaten in einer Datenbank gespeichert.
+
+B.1.4.1.1 Benutzerdaten sind: Email, Nickname, Passwort (TBC)
+
+B.1.4.2 Der Zugriff auf die Funktionen der App sind erst nach Registrierung möglich.
+
+B.1.5 
+
+B.1.5.1 Die AirPnP-App soll Zugriff auf die GPS-Funktion der App haben.
+
+B.1.6
+
+B.1.6.1 Die AirPnP-App soll die GPS-Daten (zzg. Umkreis) mit zentralen Datenbank abgleichen und entsprechend die Ergebnisse auf der GoogleMaps-Karte auf der Hauptseite Anzeigen.
+
+B.1.7
+
+B.1.7.1 Die App soll dem eingebenen Standort GPS-Daten finden mit hilfe GoogleMaps API.
+
+B.1.7.2 Die AirPnP-App soll die GPS-Daten der eingebenen Adresse (zzg. Umkreis) mit zentralen Datenbank abgleichen und entsprechend die Ergebnisse auf der GoogleMaps-Karte auf der Hauptseite Anzeigen.
+
+B.1.8
+
+B.1.8.1 Die App soll die Bewertung der User in Datenbank der User und der Toiletten gespeichert werden.
+
+B.1.9
+
+B.1.9.1 Die App legt für Anbieter eine von der User-Tabelle getrennte Tabelle an.
+
+B.1.10
+
+B.1.10.1 Beim Hinzufügen einer privaten Toilette durch einen Anbieter fügt die AirPnP-App die Information zu der Toilette in einer privaten-Toiletten-Tabelle hinzu.
 
 
 ## Informelle Beschreibung 
