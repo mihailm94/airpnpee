@@ -547,6 +547,10 @@ EditToiletActivity.NoticeDialogListener , AddReviewActivity.NoticeDialogListener
                             findViewById(id.bottom_sheet).setVisibility(View.GONE);
                             findViewById(id.floatingActionButton).setVisibility(View.VISIBLE);
                             refreshMarker();
+                            if (DataHolder.getInstance().getUser()!= null) {
+                                DialogFragment dialog = new AddReviewActivity(m_marker.getPosition());
+                                dialog.show(getSupportFragmentManager(), "NoticeDialogFragment");
+                            }
                             return;
                         }
                         requestDirection();
