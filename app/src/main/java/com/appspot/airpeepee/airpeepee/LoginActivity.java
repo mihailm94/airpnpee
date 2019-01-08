@@ -237,6 +237,7 @@ public class LoginActivity extends   AppCompatActivity implements View.OnClickLi
     private void signOut() {
         mAuth.signOut();
         LoginManager.getInstance().logOut();
+        DataHolder.getInstance().setUser(null);
         // Google sign out
         mGoogleSignInClient.signOut().addOnCompleteListener(this,
                 new OnCompleteListener<Void>() {

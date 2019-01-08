@@ -964,13 +964,27 @@ EditToiletActivity.NoticeDialogListener , AddReviewActivity.NoticeDialogListener
 
     public void showNoticeDialog() {
     // Create an instance of the dialog fragment and show it
-    DialogFragment dialog = new EditToiletActivity(m_marker.getPosition());
-    dialog.show(getSupportFragmentManager(), "NoticeDialogFragment");
+        if(DataHolder.getInstance().getUser() != null) {
+            DialogFragment dialog = new EditToiletActivity(m_marker.getPosition());
+            dialog.show(getSupportFragmentManager(), "NoticeDialogFragment");
+        }
+        else
+        {
+            startActivity(new Intent(MapsActivity.this, LoginActivity.class));
+        }
+
 }
     public void showNoticeDialogReview() {
         // Create an instance of the dialog fragment and show it
-        DialogFragment dialog = new AddReviewActivity(m_marker.getPosition());
-        dialog.show(getSupportFragmentManager(), "NoticeDialogFragment");
+        if(DataHolder.getInstance().getUser() != null) {
+            DialogFragment dialog = new AddReviewActivity(m_marker.getPosition());
+            dialog.show(getSupportFragmentManager(), "NoticeDialogFragment");
+        }
+        else
+        {
+            startActivity(new Intent(MapsActivity.this, LoginActivity.class));
+        }
+
     }
 
     // The dialog fragment receives a reference to this Activity through the
