@@ -46,6 +46,7 @@ die AirPee&Pee App ist das Ergebnis unseres Softwareprojektes für den Kurs Soft
 
 Um die Aufgaben richtig unter uns zu verteilen, haben wir die Projekt-Management Kentnisse von dem Modul Computer Systems Engineering Projekt benutzt und den Entwicklungsvorgang in 5 Phasen unterteilt:
 
+```
 1.Konzeptphase
 
 2.Definitionsphase
@@ -55,7 +56,7 @@ Um die Aufgaben richtig unter uns zu verteilen, haben wir die Projekt-Management
 4.Fertigungsphase
 
 5.Wartungsphase
-
+```
 
 In der Konzeptphase haben wir uns mit der Projektidee und Lastenheft beschäftigt.
 
@@ -64,6 +65,7 @@ AirPee&Pee ist eine Android App, die eine Dienstleistung die beim Finden von öf
 Die App muss die folgenden Muss/Soll-Kriterien erfolgreich erfüllen. Nicht alle Kann-Kriterien sind erfüllt. 
 
 #### Muss/Soll-Kriterien
+```
 A.1.1 Die AirPnP-Funktionen sollen in einer mobilen Android-Applikation umgesetzt werden.
 
 A.1.2 Die AirPnP-App soll über ein benutzerfreundliches GUI (Graphical User Interface) bedient werden.
@@ -84,16 +86,19 @@ A.1.8 Die AirPnP-App soll dem User die Funktion anbieten eine Toilette zu bewert
 A.1.9 Die AirPnP-App soll das Anlegen eines Anbieter-Account anbieten.
 
 A.1.10 Die AirPnP-App soll dem Anbieter-User das Hinzufügen einer privaten Toilette ermöglichen.
+```
 
 #### Kann-Kriterien
 
+```
 A.2.1 Die AirPnP-App kann das Hinzufügen von öffentlichen Toiletten durch einen User anbieten.
 
 A.2.2 Die AirPnP-App soll eine öffentliche Toilette automatisch entfernen wenn sie mehrmals (TBD) gemeldet worden ist.
-
+```
 
 Die Definitionsphäse besteht aus dem Pflichtenheft. Die Kriterien in dem Pflichtenheft beschreiben sehr einfach und strukturiert wie das App-Backend funktioniert. Dadurch wurden uns die Aufgaben, die wir erledigen müssen, klar und konnten jedem Mitglied unseres Team eine Hauptaufgabe zuweisen.
 
+```
 B.1.1 
 
 B.1.1.1 Die AirPnP-App soll eine auf Android-Betriebssystem basierte mobile Anwendung sein.
@@ -186,7 +191,7 @@ B.1.9.1 Die App legt für Anbieter eine von der User-Tabelle getrennte Tabelle a
 B.1.10
 
 B.1.10.1 Beim Hinzufügen einer privaten Toilette durch einen Anbieter fügt die AirPnP-App die Information zu der Toilette in einer privaten-Toiletten-Tabelle hinzu.
-
+```
 
 ## Informelle Beschreibung 
 .....
