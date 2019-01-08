@@ -63,7 +63,7 @@ AirPee&Pee ist eine Android App, die eine Dienstleistung die beim Finden von öf
 
 Die App muss die folgenden Muss/Soll-Kriterien erfolgreich erfüllen. Nicht alle Kann-Kriterien sind erfüllt. 
 
-# Muss/Soll-Kriterien
+#### Muss/Soll-Kriterien
 A.1.1 Die AirPnP-Funktionen sollen in einer mobilen Android-Applikation umgesetzt werden.
 
 A.1.2 Die AirPnP-App soll über ein benutzerfreundliches GUI (Graphical User Interface) bedient werden.
@@ -85,7 +85,7 @@ A.1.9 Die AirPnP-App soll das Anlegen eines Anbieter-Account anbieten.
 
 A.1.10 Die AirPnP-App soll dem Anbieter-User das Hinzufügen einer privaten Toilette ermöglichen.
 
-# Kann-Kriterien
+#### Kann-Kriterien
 
 A.2.1 Die AirPnP-App kann das Hinzufügen von öffentlichen Toiletten durch einen User anbieten.
 
