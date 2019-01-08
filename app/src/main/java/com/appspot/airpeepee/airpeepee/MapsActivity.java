@@ -543,7 +543,7 @@ EditToiletActivity.NoticeDialogListener , AddReviewActivity.NoticeDialogListener
                         BigDecimal result;
                         result = round(distanceInMetersOne/1000 ,2);
                         BigDecimal time = round((float) ((distanceInMetersOne/1000)*16.7),0);
-                        String result1 = result+" km/ "+ time+" min";
+                        String result1 = time+" min"+ " ("+result+" km)";
                         ((TextView)findViewById(id.Kilometers)).setText(result1);
 
                         if (distanceInMetersOne <30) {

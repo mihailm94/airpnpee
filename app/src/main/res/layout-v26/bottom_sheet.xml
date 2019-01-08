@@ -40,7 +40,15 @@
                 android:layout_margin="24dp"
                 android:orientation="vertical">
 
-
+                <TextView
+                    android:id="@+id/Kilometers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|top"
+                    android:layout_margin="@dimen/fab_margin"
+                    app:layout_anchorGravity="right|center"
+                    app:layout_anchor="@+id/bottom_sheet"
+                    android:theme="@style/KiloStyle"/>
                 <android.support.v7.widget.CardView
                 xmlns:card_view="http://schemas.android.com/apk/res-auto"
                 android:id="@+id/card_view"

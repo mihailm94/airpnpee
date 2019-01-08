@@ -84,16 +84,6 @@
                     app:srcCompat="@drawable/ic_filter" />
             </LinearLayout>
 
-            <TextView
-                android:id="@+id/Kilometers"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="bottom|end"
-                android:layout_margin="@dimen/fab_margin"
-                app:layout_anchorGravity="right|center"
-                app:layout_anchor="@+id/bottom_sheet"
-                android:theme="@style/KiloStyle"/>
-
             <android.support.design.widget.FloatingActionButton
                 android:id="@+id/floatingActionButton"
                 android:layout_width="wrap_content"

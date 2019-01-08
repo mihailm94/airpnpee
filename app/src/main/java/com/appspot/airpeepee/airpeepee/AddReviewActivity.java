@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.support.v4.app.DialogFragment;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RatingBar;
 import android.widget.TextView;
@@ -66,6 +67,7 @@ public class AddReviewActivity extends DialogFragment  {
         }
     }
 
+    @SuppressLint("ResourceType")
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
@@ -76,6 +78,7 @@ public class AddReviewActivity extends DialogFragment  {
 
         RatingBar cleanRating = (RatingBar) view.findViewById(R.id.ratingBarClean);
         RatingBar ratingRating = (RatingBar) view.findViewById(R.id.ratingBarRating);
+
         //TextView toiletComment = (TextView) view.findViewById(R.id.textCommentInput);
 
         cleanRating.setNumStars(5);
@@ -87,19 +90,22 @@ public class AddReviewActivity extends DialogFragment  {
         // Pass null as the parent view because its going in the dialog layout
         builder.setView(view)
                 // Add action buttons
-                .setPositiveButton("Edit", new DialogInterface.OnClickListener() {
+
+                .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        AddReviewActivity.this.getDialog().cancel();
+                    }
+                })
+
+                .setPositiveButton("Submit", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int id) {
                         reviewToilet(view);
 
 
                     }
-                })
-                .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog, int id) {
-                        AddReviewActivity.this.getDialog().cancel();
-                    }
                 });
+
 
 
 
