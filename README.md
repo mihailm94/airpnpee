@@ -42,6 +42,40 @@ HTW Berlin
 
 ## Einführung <a name="introduction"></a>
 
+die AirPee&Pee App ist das Ergebnis unseres Softwareprojektes für den Kurs Softwareentwicklung im Wintersemester 18/19 an der HTW Berlin. Unser Team bestand aus 4 Personen. Jeder von uns hatte sich mit einer Hauptaufgabe beschäftigt und im folgenden dokumentiert.
+
+Um die Aufgaben richtig unter uns zu verteilen, haben wir die Projekt-Management Kentnisse von dem Modul Computer Systems Engineering Projekt benutzt und den Entwicklungsvorgang in 5 Phasen unterteilt:
+1.Konzeptphase
+2.Definitionsphase
+3.Entwurfsphase
+4.Fertigungsphase
+5.Wartungsphase
+
+In der Konzeptphase haben wir uns mit der Projektidee und Lastenheft beschäftigt.
+
+AirPee&Pee ist eine Android App, die eine Dienstleistung die beim Finden von öffentlichen Toiletten hilft, repräsentiert. Alle öffentlich zugänglichen Toiletten in der Nähe des Benutzers werden gezeigt, inklusiv Preis, Öffnunszeiten, ob sie für Behinderte zugänglich sind, Ratings und Kommentare.
+
+Die App muss die folgenden Muss/Soll-Kriterien erfolgreich erfüllen. Nicht alle Kann-Kriterien sind erfüllt. 
+
+# Muss/Soll-Kriterien
+A.1.1 Die AirPnP-Funktionen sollen in einer mobilen Android-Applikation umgesetzt werden.
+A.1.2 Die AirPnP-App soll über ein benutzerfreundliches GUI (Graphical User Interface) bedient werden.
+A.1.3 Die AirPnP-App soll auf Informationen über öffentliche Toiletten in Berlin zugreifen.
+A.1.4 Die AirPnP-App soll das Erstellen eines User-Accounts erzwingen.
+A.1.5 Die AirPnP-App soll auf Standort zugreifen können.
+A.1.6 Die AirPnP-App soll dem User öffentlische und private Toiletten in einem Umkreis(TBD) um seinen Standort auf einer Karte anzeigen.
+A.1.7 Die AirPnP-App soll dem User öffentliche und private Toiletten in einem Umkreis(TBD) um einen benutzerdefinierten Standort auf einer Karte anzeigen.
+A.1.8 Die AirPnP-App soll dem User die Funktion anbieten eine Toilette zu bewerten.
+A.1.9 Die AirPnP-App soll das Anlegen eines Anbieter-Account anbieten.
+A.1.10 Die AirPnP-App soll dem Anbieter-User das Hinzufügen einer privaten Toilette ermöglichen.
+
+# Kann-Kriterien
+A.2.1 Die AirPnP-App kann das Hinzufügen von öffentlichen Toiletten durch einen User anbieten.
+A.2.2 Die AirPnP-App soll eine öffentliche Toilette automatisch entfernen wenn sie mehrmals (TBD) gemeldet worden ist.
+
+
+
+
 ## Informelle Beschreibung 
 .....
 
