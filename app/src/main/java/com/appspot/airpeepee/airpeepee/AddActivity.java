@@ -1,7 +1,8 @@
 package com.appspot.airpeepee.airpeepee;
 
+import com.appspot.airpeepee.airpeepee.model.DB;
 import com.appspot.airpeepee.airpeepee.model.PlaceArrayAdapter;
-import android.annotation.SuppressLint;
+
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.location.Address;
@@ -9,10 +10,6 @@ import android.location.Geocoder;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
@@ -21,44 +18,33 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AutoCompleteTextView;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.appspot.airpeepee.airpeepee.model.PlaceArrayAdapter;
 import com.appspot.airpeepee.airpeepee.model.Toilet;
-import com.appspot.airpeepee.airpeepee.model.db;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.common.api.PendingResult;
 import com.google.android.gms.common.api.ResultCallback;
-import com.google.android.gms.common.api.Status;
 import com.google.android.gms.location.places.Place;
 import com.google.android.gms.location.places.PlaceBuffer;
 import com.google.android.gms.location.places.Places;
-import com.google.android.gms.location.places.ui.PlaceAutocompleteFragment;
-import com.google.android.gms.location.places.ui.PlaceSelectionListener;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.LatLngBounds;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
 import com.mvc.imagepicker.ImagePicker;
 
 import java.io.IOException;
-import java.io.InputStream;
 import java.util.List;
-import java.util.Locale;
-import java.util.Random;
 import java.util.UUID;
 
 public class AddActivity extends AppCompatActivity implements OnMapReadyCallback, GoogleApiClient.OnConnectionFailedListener, GoogleApiClient.ConnectionCallbacks {
 
     private Toilet toilet =new Toilet();
-    private db mDatabase;
+    private DB mDatabase;
 
     //Search without google logo
     private static final int GOOGLE_API_CLIENT_ID = 0;
@@ -177,7 +163,7 @@ public class AddActivity extends AppCompatActivity implements OnMapReadyCallback
         toolbar.setTitle("");
         setSupportActionBar(toolbar);
 
-        mDatabase =  new db();
+        mDatabase =  new DB();
 
         ImageView backbutton =(ImageView) findViewById(R.id.shape);
         backbutton.setOnClickListener(new View.OnClickListener() {
@@ -256,9 +242,9 @@ public class AddActivity extends AppCompatActivity implements OnMapReadyCallback
                 toilet.setPhotoUrl(mDatabase.uploadImage(filePath, getApplicationContext()));
 
 
-                if(db.addToilet(toilet)) {
+                if(DB.addToilet(toilet)) {
                     Toast.makeText(getApplicationContext(),"add success",Toast.LENGTH_SHORT).show();
-                    db d=new db();
+                    DB d=new DB();
                     finish();
                 }
                 else

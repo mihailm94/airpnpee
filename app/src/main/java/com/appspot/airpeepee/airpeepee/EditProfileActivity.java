@@ -15,7 +15,9 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.Switch;
-import com.appspot.airpeepee.airpeepee.model.db;
+
+import com.appspot.airpeepee.airpeepee.model.DB;
+
 import android.widget.Toast;
 
 import com.appspot.airpeepee.airpeepee.model.DataHolder;
@@ -151,7 +153,7 @@ public class EditProfileActivity extends AppCompatActivity implements OnMapReady
                 }
                 DataHolder.getInstance().setUser(user);
 
-                if( db.editUserData())
+                if( DB.editUserData())
                     Toast.makeText(getApplicationContext(),"Edit success",Toast.LENGTH_SHORT).show();
                 else
                     Toast.makeText(getApplicationContext(),"Edit not success",Toast.LENGTH_SHORT).show();

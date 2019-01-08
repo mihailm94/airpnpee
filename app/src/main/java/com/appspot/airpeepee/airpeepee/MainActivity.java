@@ -3,13 +3,11 @@ package com.appspot.airpeepee.airpeepee;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
-import android.content.DialogInterface.OnCancelListener;
 import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Handler;
 import android.os.NetworkOnMainThreadException;
-import android.provider.SyncStateContract;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -17,13 +15,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ProgressBar;
 
-import com.appspot.airpeepee.airpeepee.model.db;
-import com.google.android.gms.common.internal.Constants;
-
-import java.io.IOException;
-import java.net.InetSocketAddress;
-import java.net.Socket;
-import java.net.SocketAddress;
+import com.appspot.airpeepee.airpeepee.model.DB;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -59,7 +51,7 @@ String TAG;
             return false; }
     }
 
-    db database ;
+    DB database ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -92,7 +84,7 @@ String TAG;
                         handler.post(new Runnable() {
                             public void run() {
                                 progressBar.setProgress(progressStatus);
-                                database = new db();
+                                database = new DB();
                                if(progressStatus > 100) {
                                    b1.setVisibility(View.VISIBLE);
                                    b2.setVisibility(View.VISIBLE);
@@ -119,7 +111,7 @@ String TAG;
            thread.start();
 
 
-            // database = new db();
+            // database = new DB();
             b1.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {

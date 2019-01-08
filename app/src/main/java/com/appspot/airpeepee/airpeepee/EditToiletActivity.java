@@ -1,24 +1,21 @@
 package com.appspot.airpeepee.airpeepee;
 
+import com.appspot.airpeepee.airpeepee.model.DB;
 import com.appspot.airpeepee.airpeepee.model.DataHolder;
-import  com.appspot.airpeepee.airpeepee.model.db;
 
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.Context;
-import android.content.ContextWrapper;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.net.Uri;
 import android.provider.MediaStore;
-import android.support.annotation.Nullable;
 import android.support.v4.app.DialogFragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
@@ -226,8 +223,8 @@ public class EditToiletActivity extends DialogFragment  {
         if(rating!=0)
             toilet.getRatings().add(new Rating("user_id",rating));
         if(newphoto)
-            toilet.setPhotoUrl(db.uploadImage(filePath, getApplicationContext()));
-        db.editToilet(toilet);
-        db.updateData();
+            toilet.setPhotoUrl(DB.uploadImage(filePath, getApplicationContext()));
+        DB.editToilet(toilet);
+        DB.updateData();
     }
 }

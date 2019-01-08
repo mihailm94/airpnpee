@@ -1,21 +1,17 @@
 package com.appspot.airpeepee.airpeepee;
 
 import android.Manifest;
-import android.animation.Animator;
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
-import android.content.ClipData;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.pm.PackageManager;
 import android.content.res.Resources;
-import android.graphics.Color;
 import android.location.Location;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Handler;
 import android.os.NetworkOnMainThreadException;
-import android.provider.ContactsContract;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomSheetBehavior;
 import android.support.design.widget.FloatingActionButton;
@@ -47,6 +43,7 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 import com.appspot.airpeepee.airpeepee.model.CommentAdapter;
+import com.appspot.airpeepee.airpeepee.model.DB;
 import com.appspot.airpeepee.airpeepee.model.GlideApp;
 import com.appspot.airpeepee.airpeepee.model.PlaceArrayAdapter;
 import com.akexorcist.googledirection.DirectionCallback;
@@ -59,9 +56,7 @@ import com.appspot.airpeepee.airpeepee.model.DataHolder;
 import com.appspot.airpeepee.airpeepee.model.Toilet;
 import com.appspot.airpeepee.airpeepee.model.MyLocationListener;
 import com.appspot.airpeepee.airpeepee.model.User;
-import com.appspot.airpeepee.airpeepee.model.db;
 import com.google.android.gms.common.ConnectionResult;
-import com.google.android.gms.common.GoogleApiAvailability;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.common.api.PendingResult;
 import com.google.android.gms.common.api.ResultCallback;
@@ -106,7 +101,7 @@ EditToiletActivity.NoticeDialogListener , AddReviewActivity.NoticeDialogListener
     private int progressStatus = 0;
     private Handler handler = new Handler();
     private  Thread thread;
-    db database ;
+    DB database ;
     String TAG;
 
 
@@ -197,7 +192,7 @@ EditToiletActivity.NoticeDialogListener , AddReviewActivity.NoticeDialogListener
                         handler.post(new Runnable() {
                             public void run() {
                                 progressBar.setProgress(progressStatus);
-                                database = new db();
+                                database = new DB();
                                 if (progressStatus > 100) {
                                     visibleAll();
                                     progressBar.setVisibility(View.GONE);
@@ -791,7 +786,7 @@ EditToiletActivity.NoticeDialogListener , AddReviewActivity.NoticeDialogListener
         optionMenu =navigationView.getMenu();
         if (currentUser != null) {
             DataHolder.getInstance().setUser(new User());
-            db.findUserbyemail(currentUser.getEmail());
+            DB.findUserbyemail(currentUser.getEmail());
             DataHolder.getInstance().getUser().setFirebaseUser(currentUser);
 
             // error fix me

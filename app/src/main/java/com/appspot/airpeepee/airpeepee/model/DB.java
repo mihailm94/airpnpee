@@ -38,18 +38,18 @@ import java.util.List;
 import java.util.Random;
 import java.util.UUID;
 
-public class db {
+public class DB {
 
     private static DatabaseReference toiletRef ;
     private static DatabaseReference userRef ;
     private static StorageReference storageRef;
 
 
-    public db(){
+    public DB(){
 
-        //db ref
+        //DB ref
         final FirebaseDatabase database = FirebaseDatabase.getInstance();
-        //db storage ref
+        //DB storage ref
         final FirebaseStorage databaseStorage = FirebaseStorage.getInstance();
 
         toiletRef = database.getReference("/toilet");

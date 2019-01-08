@@ -34,9 +34,10 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.appspot.airpeepee.airpeepee.model.DB;
 import com.appspot.airpeepee.airpeepee.model.DataHolder;
 import com.appspot.airpeepee.airpeepee.model.User;
-import com.appspot.airpeepee.airpeepee.model.db;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthCredential;
@@ -177,7 +178,7 @@ public class LoginActivity extends   AppCompatActivity implements View.OnClickLi
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
                             // Sign in success, update UI with the signed-in user's information
-                            db.addUser(email ,mAuth.getUid());
+                            DB.addUser(email ,mAuth.getUid());
                             Log.d(TAG, "createUserWithEmail:success");
                             FirebaseUser user = mAuth.getCurrentUser();
                             updateUI(user);
@@ -327,7 +328,7 @@ public class LoginActivity extends   AppCompatActivity implements View.OnClickLi
             findViewById(R.id.signedInButtons).setVisibility(View.VISIBLE);
             findViewById(R.id.verifyEmailButton).setEnabled(!user.isEmailVerified());
             DataHolder.getInstance().setUser(new User());
-            db.findUserbyemail(user.getEmail());
+            DB.findUserbyemail(user.getEmail());
             DataHolder.getInstance().getUser().setFirebaseUser(user);
         } else {
             mStatusTextView.setText(R.string.signed_out);
