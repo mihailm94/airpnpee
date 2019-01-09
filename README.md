@@ -38,8 +38,11 @@ HTW Berlin
    3. [Toilet.java](#Toilet.java)
       1. [Comment.java](#Comment&Rating)
       2. [Rating.java](#Comment&Rating)
-4. 
-5. 
+4. [Log-in using firebase](#login)
+5. [Implementierung der Karte](#karte)
+	1. [Google Map Api](#api)
+	2. [Location permissions](#location)
+	3. [Data anzeigen auf Karte](#DataAufKarte)
 
 
 
@@ -561,7 +564,7 @@ public class Rating {
 Die Konstruktoren von beiden bekommen einen String `id` (Toiletten-ID) zur Identifizierung in der Datenbank, ein User, der zu einem oder mehreren Ratings bzw Kommentaren gebunden ist und einen `commentText`  bzw. `userRating` . 
 
 
-## Log-in using firebase 
+## Log-in using firebase <a name="login"></a>
 
 Benutzer in Firebase-Projekten
 Ein Firebase-Benutzerobjekt stellt das Konto eines Benutzers dar, der sich bei Ihrem Firebase-Projekt bei einer App angemeldet hat. In der Regel haben Apps viele registrierte Benutzer, und jede App in einem Firebase-Projekt verwendet eine kopie der Benutzerdatenbank.
@@ -578,41 +581,147 @@ wir haben drei Funktionen - Email,Google und Facebook, die unsere Benutzer zur A
 ![Login Firebase](https://i.imgur.com/T2IXrFhr.png)
 
 *Login Code*
-zuerst die Packages :
+
+Benutzerkonto anlegen :
+
+zuerst Email und Password wird bestätigt (nicht Null), danach E-Mail-Bestätigung wird gesendet dann Aktualisieren wir nach diesem erfolgreichen Anmelden die Benutzeroberfläche mit den Informationen des angemeldeten Benutzers und "Benutzer in Daten einfügen"
+
+
+1. Email und Password wird bestätigt
 
 ```java
-// Firebase Bibliothek
-import com.google.firebase.auth.AuthCredential;
-import com.google.firebase.auth.AuthResult;
-import com.google.firebase.auth.FacebookAuthProvider;
-import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.auth.GoogleAuthProvider;
+    ...
+    private boolean isEmailValid(String email) {
+        //TODO: Replace this with your own logic
+        return email.contains("@");
+    }
 
-// Facebook Bibliothek
-import com.facebook.AccessToken;
-import com.facebook.CallbackManager;
-import com.facebook.FacebookCallback;
-import com.facebook.FacebookException;
-import com.facebook.FacebookSdk;
-import com.facebook.appevents.AppEventsLogger;
-import com.facebook.login.LoginResult;
-import com.facebook.login.LoginManager;
-import com.facebook.login.widget.LoginButton;
+    private boolean isPasswordValid(String password) {
+        //TODO: Replace this with your own logic
+        return password.length() > 4;
+    } 
+ 
+private void createAccount(final String email, final String password) {
+        Log.d(TAG, "createAccount:" + email);
+        if (!validateForm()) {
+            return;
+        }
 
-// Google Bibliothek
-import com.google.android.gms.auth.api.signin.GoogleSignIn;
-import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
-import com.google.android.gms.auth.api.signin.GoogleSignInClient;
-import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
-import com.google.android.gms.common.SignInButton;
-import com.google.android.gms.common.api.ApiException;
+        showProgressDialog();
 
+        // [START create_user_with_email]
+        mAuth.createUserWithEmailAndPassword(email, password)
+                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+                    @Override
+                    public void onComplete(@NonNull Task<AuthResult> task) {
+                        if (task.isSuccessful()) {
+                            // Sign in success, update UI with the signed-in user's information and Insert User in Data
+                            DB.addUser(email ,mAuth.getUid());
+                            Log.d(TAG, "createUserWithEmail:success");
+                            FirebaseUser user = mAuth.getCurrentUser();
+                            updateUI(user);
+		       }
+                       .
+		       .
+		       .
+    }
+
+```
+ 2. E-Mail-Bestätigung wird gesendet mit hilfe von Toast [Toast Docs Hier](https://developer.android.com/guide/topics/ui/notifiers/toasts)
+ 
+ ```java
+
+ 
+ private void sendEmailVerification() {
+       .
+       .
+        // Send verification email
+        // [START send_email_verification]
+        final FirebaseUser user = mAuth.getCurrentUser();
+        user.sendEmailVerification()
+                .addOnCompleteListener(this, new OnCompleteListener<Void>() {
+                    @Override
+                    public void onComplete(@NonNull Task<Void> task) {
+                        // [START_EXCLUDE]
+                        // Re-enable button
+                        findViewById(R.id.verifyEmailButton).setEnabled(true);
+
+                        if (task.isSuccessful()) {
+                            Toast.makeText(LoginActivity.this,
+                                    "Verification email sent to " + user.getEmail(),
+                                    Toast.LENGTH_SHORT).show();
+                        } else {
+                            Log.e(TAG, "sendEmailVerification", task.getException());
+                            Toast.makeText(LoginActivity.this,
+                                    "Failed to send verification email.",
+                                    Toast.LENGTH_SHORT).show();
+                        }
+                        // [END_EXCLUDE]
+                    }
+                });
+        // [END send_email_verification]
+    }
+ ```
+3. aktualisierung des Benutzeroberfläche : 
+
+```java
+ private void updateUI(FirebaseUser user) {
+      .
+      ...
+            DataHolder.getInstance().setUser(new User());
+            DB.findUserbyemail(user.getEmail());
+            DataHolder.getInstance().getUser().setFirebaseUser(user);
+      .
+      ...
+    }
+
+```
+4. mit facebook und google login, wir behandeln die auth dann update UI :
+
+```java
+
+ private void handleFacebookAccessToken(AccessToken token) {
+	....
+	 FirebaseUser user = mAuth.getCurrentUser();
+	  updateUI(user);
+	...
+}
+
+ private void firebaseAuthWithGoogle(GoogleSignInAccount acct) {
+	...
+	 FirebaseUser user = mAuth.getCurrentUser();
+	 updateUI(user);
+	...
+}
 
 ```
 
-## Google Map Api Konfiguration
+5. SingOut Function wird Alle daten von User Freigelassen
 
+```java
+ private void signOut() {
+        mAuth.signOut();
+        LoginManager.getInstance().logOut();
+        DataHolder.getInstance().setUser(null);
+        // Google sign out
+        mGoogleSignInClient.signOut().addOnCompleteListener(this,
+                new OnCompleteListener<Void>() {
+                    @Override
+                    public void onComplete(@NonNull Task<Void> task) {
+                        updateUI((FirebaseUser) null);
+                    }
+                });
+        updateUI((FirebaseUser) null);
+    }
+
+```
+
+## Implementierung der Karte <a name="karte"></a>
+
+
+### Google Map Api Konfiguration <a name="api"></a>
+
+Damit die Karte und der Marker (Toilette) darauf erscheinen, benötigen wir eine Google Api
 Um die Umstellung zu vollziehen, braucht man einen neuen "Maps API Key".
 von hier https://cloud.google.com/maps-platform/#get-started
 
@@ -636,7 +745,7 @@ API Key erhalten und kopieren in android app setting Schlüssel absichern
 ####Specify Android permissions
 Specify the permissions your application needs, by adding <uses-permission> elements as children of the <manifest> element in AndroidManifest.xml.
 
-### Location permissions
+### Location permissions <a name="location"></a>
 permissions to the app manifest
 the coarse location permission:
 ```xml
@@ -653,3 +762,26 @@ Die folgenden Berechtigungen sind im Manifest der Google Play-Dienste definiert 
 android.permission.INTERNET - Used by the API to download map tiles from Google Maps servers.
 android.permission.ACCESS_NETWORK_STATE - Allows the API to check the connection status in order to determine whether data can be downloaded.
 ```
+
+### Data anzeigen auf Karte <a name="DataAufKarte"></a>
+
+
+```java
+
+ if ( DataHolder.getInstance().getData()!=null) {
+            // Toiltes from data to marker
+            for (Toilet t : DataHolder.getInstance().getData()) {
+                markerPOI = new MarkerOptions();
+                markerPOI.position(new LatLng(t.getLocationLat(), t.getLocationLon()))
+                        .title(t.getName());
+
+                if (t.isPrivate())
+                    markerPOI.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_BLUE));
+                else
+                    markerPOI.icon(BitmapDescriptorFactory.defaultMarker());
+
+                mMap.addMarker(markerPOI);
+            }
+        }
+```
+
