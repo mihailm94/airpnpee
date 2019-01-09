@@ -522,6 +522,7 @@ EditToiletActivity.NoticeDialogListener , AddReviewActivity.NoticeDialogListener
             //                                          int[] grantResults)
             // to handle the case where the user grants the permission. See the documentation
             // for ActivityCompat#requestPermissions for more details.
+            this.recreate();
             return;
         }
         mMap.setMyLocationEnabled(true);

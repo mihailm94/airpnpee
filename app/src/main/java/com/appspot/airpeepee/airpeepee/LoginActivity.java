@@ -147,8 +147,7 @@ public class LoginActivity extends   AppCompatActivity implements View.OnClickLi
 
 
     @Override
-    protected void onStart()
-    {
+    protected void onStart() {
 
         super.onStart();
 
@@ -177,7 +176,7 @@ public class LoginActivity extends   AppCompatActivity implements View.OnClickLi
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
-                            // Sign in success, update UI with the signed-in user's information
+                            // Sign in success, update UI with the signed-in user's information and Insert in Data
                             DB.addUser(email ,mAuth.getUid());
                             Log.d(TAG, "createUserWithEmail:success");
                             FirebaseUser user = mAuth.getCurrentUser();
@@ -350,19 +349,6 @@ public class LoginActivity extends   AppCompatActivity implements View.OnClickLi
             String personId = account.getId();
             Uri personPhoto = account.getPhotoUrl();
         }
-
-
-       /* if (account != null) {
-            mStatusTextView.setText(getString(R.string.signed_in_fmt, account.getDisplayName()));
-
-            findViewById(R.id.sign_in_button).setVisibility(View.GONE);
-            findViewById(R.id.sign_out_and_disconnect).setVisibility(View.VISIBLE);
-        } else {
-            mStatusTextView.setText(R.string.signed_out);
-
-            findViewById(R.id.sign_in_button).setVisibility(View.VISIBLE);
-            findViewById(R.id.sign_out_and_disconnect).setVisibility(View.GONE);
-        } */
     }
 
     // google signIn function
