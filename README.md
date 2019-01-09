@@ -28,6 +28,9 @@ HTW Berlin
 #### Inhaltsverzeichnis
 
 1. [Einführung](#introduction)
+	1. [Muss/Soll-Kriterien](#mussSoll)
+	2. [Kann-Kriterien](#kann)
+	3. [UML](#uml)
 2. [Implementierung der Datenbank in Firebase](#dbFirebase)
 3. [Implementierung der Datenbank in Android Studio](#dbJava)
    1. [build.gradle](#build.gradle)
@@ -44,7 +47,9 @@ HTW Berlin
 
 die AirPee&Pee App ist das Ergebnis unseres Softwareprojektes für den Kurs Softwareentwicklung im Wintersemester 18/19 an der HTW Berlin. Unser Team bestand aus 4 Personen. Jeder von uns hatte sich mit einer Hauptaufgabe beschäftigt und im folgenden dokumentiert.
 
-Um die Aufgaben richtig unter uns zu verteilen, haben wir die Projekt-Management Kentnisse von dem Modul Computer Systems Engineering Projekt benutzt und den Entwicklungsvorgang in 5 Phasen unterteilt:
+AirPee&Pee ist eine Android App die eine Dienstleistung repräsentiert. Alle öffentlich zugänglichen Toiletten in der Nähe des Benutzers werden gezeigt, inklusiv Preis, Öffnunszeiten, ob sie für Behinderte zugänglich sind, sowie Ratings und Kommentare für die jeweilige Toilette.
+
+Um die Aufgaben richtig unter unserem Team zu verteilen, haben wir die Projekt-Management Kentnisse von dem Modul Computer Systems Engineering Projekt benutzt und den Entwicklungsvorgang in 5 Phasen unterteilt:
 
 ```
 1.Konzeptphase
@@ -55,12 +60,16 @@ Um die Aufgaben richtig unter uns zu verteilen, haben wir die Projekt-Management
 ```
 
 In der Konzeptphase haben wir uns mit der Projektidee und Lastenheft beschäftigt.
+In der Definitionsphase wurde das Pflichtenheft erstellt.
+Die Entwurfsphase ist durch die Use Cases, ERD und Klassendiagramm gekennzeichnet.
+Die Fertigungsphase ist die Entwicklung.
+In der Wartungsphase haben wir uns damit beschäftigt das Code zu "reinigen", sowie die Wiki des Projektes vollständigen.
 
-AirPee&Pee ist eine Android App, die eine Dienstleistung die beim Finden von öffentlichen Toiletten hilft, repräsentiert. Alle öffentlich zugänglichen Toiletten in der Nähe des Benutzers werden gezeigt, inklusiv Preis, Öffnunszeiten, ob sie für Behinderte zugänglich sind, Ratings und Kommentare.
+
 
 Die App muss die folgenden Muss/Soll-Kriterien erfolgreich erfüllen. Nicht alle Kann-Kriterien sind erfüllt. 
 
-#### Muss/Soll-Kriterien
+#### Muss/Soll-Kriterien <a name="mussSoll"></a>
 ```
 A.1.1 Die AirPnP-Funktionen sollen in einer mobilen Android-Applikation umgesetzt werden.
 A.1.2 Die AirPnP-App soll über ein benutzerfreundliches GUI (Graphical User Interface) bedient werden.
@@ -75,7 +84,7 @@ A.1.9 Die AirPnP-App soll das Anlegen eines Anbieter-Account anbieten.
 A.1.10 Die AirPnP-App soll dem Anbieter-User das Hinzufügen einer privaten Toilette ermöglichen.
 ```
 
-#### Kann-Kriterien
+#### Kann-Kriterien <a name="kann"></a>
 
 ```
 A.2.1 Die AirPnP-App kann das Hinzufügen von öffentlichen Toiletten durch einen User anbieten.
@@ -151,10 +160,8 @@ B.1.10
 	B.1.10.1 Beim Hinzufügen einer privaten Toilette durch einen Anbieter fügt die AirPnP-App die Information zu der Toilette in einer privaten-Toiletten-Tabelle hinzu.
 ```
 
-## Informelle Beschreibung 
-.....
 
-## UML
+## UML <a name="uml"></a>
 
 1. Use Cases
 
@@ -172,7 +179,7 @@ B.1.10
 
 ## Implementierung der Datenbank in Firebase <a name="dbFirebase"></a>
 
-Um die Daten über bestehenden öffentlichen Toiletten zu sammeln, wurden einen Schnappschuss der OpenStreetMap Datenbank - die **Planet.osm** Datei, benutzt. Planet.osm ist die Sammlung von Nodes, Ways, Relationen und Änderungssätze in der Datenbank, inklusive aller Tags. Planet.osm ist eine XML-Datei im .osm-Format, was ein OpenStreetMap spezifisches Dateiformat ist. Die Datei enthällt alle vorhandenen Daten in OpenStreetMap und beschreibt somit die komplette Erde. Mittlerweile ist die Planet.osm Datei 803GB, was für unser Projekt nicht gut geeignet ist. Kleinere Auszüge der Datenbank, die von verschiedenene Anbietern ebenfalls im .osm-Format zur Verfügung gestellt wurden, haben wir für unsere Zwecke benutzt.
+Um die Daten über bestehenden öffentlichen Toiletten zu sammeln, wurde einen Schnappschuss der OpenStreetMap Datenbank - die **Planet.osm** Datei, benutzt. Planet.osm ist die Sammlung von Nodes, Ways, Relationen und Änderungssätze als Datenbank, inklusive aller Tags. Planet.osm ist eine XML-Datei im .osm-Format, was ein OpenStreetMap spezifisches Dateiformat ist. Die Datei enthällt alle vorhandenen Daten in OpenStreetMap und beschreibt somit die komplette Erde. Mittlerweile ist die Planet.osm Datei 803GB, was für unser Projekt nicht gut geeignet ist. Kleinere Auszüge der Datenbank, die von verschiedenenen Anbietern ebenfalls im .osm-Format zur Verfügung gestellt wurden, haben wir für unseren Zweck benutzt.
 
 Von dem Geofabrik-Downloadserver (https://download.geofabrik.de) wurde der Berlin-Auszug des Planet.osm-Schnappschusses heruntergeladen.  Geofabrik bietet diese Datei in dem `.osm.pbf` Dateiformat. Das erforderte erstmal eine Konvertierung von `.osm.pbf` zu `osm`, und somit das Dekomprimieren der Datei. Um das gewährzuleisten wurde ein Werkzeug namens **osmconvert** benutzt. Die Eingabe erfolgt durch die Kommandozeile. Um unsere Datei zu konvertieren wurde folgendes Kommando benutzt:
 ```
@@ -204,10 +211,10 @@ Nach ein paar Minuten wurde die Ausgangsdatei generiert, deren Größe nur 302KB
 
 Die bereitgestellten Tools zur Verarbeitung von den OpenStreetMap spezifischen Dateiformaten (`.osm, .osc, .o5m, .o5c, .osm.pbf`) haben sich als sehr nützlich und bedienerfreundlich bewiesen, und aus diesem Grund war die Konvertierung vom `.osm` zum `.xml` Format durchgeführt, erst nachdem alle unbrauchbaren Dateien rausgefiltert wurden.
 
-Als Datenbank haben wir für unser Pojekt die Firebase-Platform gewählt. Das Einbeziehen von Firebase in Android-Studio is einfach, da diese Funktionalität als Modul in dem Softwarepaket schon zur Verfügung steht, nach entsprechender Aktivierung in den Einstellungen.
-Firebase ist eine Realtime NoSQL Datenbank. Realtime bedeutet in diesem Fall, dass alle Endbenutzer (Devices) eine und dieselbe Datenbank-Instanz gemeinsam benutzen und asynchron den neusten Stand der Daten herunterladen. In der Datenbank werden die Daten in dem JavaScript Object Notation (JSON) Format gespeichert.
+Als Datenbank haben wir für unser Pojekt die Firebase-Platform gewählt. Das Einbeziehen von Firebase in Android-Studio is einfach, da diese Funktionalität als Modul in dem Android Studio Softwarepaket schon zur Verfügung steht, nach entsprechender Aktivierung in den Einstellungen.
+Firebase ist eine Realtime NoSQL Datenbank. Realtime bedeutet, in diesem Fall, dass alle Endbenutzer (Devices) eine und dieselbe Datenbank-Instanz gemeinsam benutzen und asynchron den neusten Stand der Daten herunterladen. In der Datenbank werden die Daten in dem JavaScript Object Notation (JSON) Format gespeichert.
 
-Die nächste Aufgabe war die Konvertierung von `.xml` zu `.json`. Nach Recherche und Ausprobieren von mehreren Programmen, die frei online zugänglich sind, kamen wir zu der Überzeugung, dass wenn wir eine dauernd stabile Ausgangsstruktur erzielen wollen, die an unseren Eingabedaten angepasst ist, mussten wir einen eigenen Parser entwickeln.
+Die nächste Aufgabe war die Konvertierung von `.xml` zu `.json`. Nach Recherche und Ausprobieren von mehreren Programmen, die kostenlos online zugänglich sind, kamen wir zu der Überzeugung, dass wenn wir eine dauernd stabile Ausgangsstruktur erzielen wollen, die an unseren Eingabedaten angepasst ist, mussten wir einen eigenen Parser entwickeln.
 
 Das eigentliche Problem bestand darin , dass alle Atributen der `.osm` Datei die Struktur 
 `<tag k="--Bezeichnung--" v="--Wert--" />`
@@ -221,8 +228,7 @@ trugen, was bei der Konvertierung zu JSON folgendes ergab:
 ```
 Das haben wir als ungünstig betrachtet und haben mit der Entwicklung unseres Parsers angefangen. 
 
-Der Parser wurde in Python umgesetzt, da viele Bibliotheken zur Verarbeitung von `.xml` Dateien schon zur Verfügung stehen. Die Dokumentation von `xml.etree.ElementTree` (und die C Implementation davon `xml.etree.cElementTree` ) war sehr ausführlich und wir konnten schnell uns damit vertraut machen. `ElementTree` ist vielleicht die bekannteste API zur Verarbeitung von `.xml` Dateien.
-
+Der Parser wurde in Python umgesetzt, da viele Bibliotheken zur Verarbeitung von `.xml` Dateien schon zur Verfügung stehen. Die Dokumentation von `xml.etree.ElementTree` (und die C Implementation davon `xml.etree.cElementTree` ) war sehr ausführlich und wir konnten uns schnell damit vertraut machen. `cElementTree` ist vielleicht die bekannteste Bibliothek zur Verarbeitung von `.xml` Dateien.
 
 
 ```python
@@ -231,8 +237,7 @@ import xml.etree.cElementTree as et
 parsed_xml = et.parse("berlin_toilets.xml")
 ```
 
-Um `.xml`Dateien zu erfassen, ist die `xml.etree.cElementTree.parse()` vorhanden. Somit konnte die weitere Bearbeitung und Manipulation der `.xml`Datei fortgesetzt werden.
-
+Um `.xml`Dateien zu erfassen, ist die `xml.etree.cElementTree.parse()` vorhanden. Somit konnte die weitere Bearbeitung der `.xml`Datei fortgesetzt werden.
 
 
 Der Parser legt eine Datei mit der `.json ` Erweiterung im Schreibemodus an, und schreibt in dieser Datei mittels der `write()` Funktion weiter.
@@ -242,7 +247,6 @@ f = file("berlin_toilets.json", "w")
 f.write("{\n")
 f.write("\t\"toilet\":{\n")
 ```
-
 
 
 Eine Iterationsstruktur wurde anschließend benutzt um durch den Datensatz zu iterieren und entsprechend eine Liste von `Toilet` Objekten zu erstellen.
@@ -277,11 +281,11 @@ for osm in parsed_xml.iter('node'):
         f.close()
 ```
 
-Jedes Toilet-Objekt besitzt ein einzigartiges 'id', was wir für Übersichtlichkeit als Primärschlüssel betrachtet haben. 
+Jedes Toilet-Objekt besitzt ein einzigartiges 'id', was wir für Übersichtlichkeit als Primärschlüssel betrachten können. 
 
 
 
-Informationen über Adresse, Gebühr, Name, Öffnungszeiten weichen bei manchen Objekten ab, oder fehlen komplett. Alle Objekte besitzen immer Informationen über Längen- und Breitengrad. Jedes Toiletten-Objekt hat im Allgemeinen die folgende Struktur:
+Nach Parsen, besitzt jedes Toiletten-Objekt im Allgemeinen folgende Struktur. Informationen über Adresse, Gebühr, Name, Öffnungszeiten weichen bei manchen Objekten ab, oder fehlen komplett. Alle Objekte besitzen aber, schon im Voraus, Informationen über Längen- und Breitengrad.
 
 ```python
 {
@@ -316,7 +320,7 @@ Informationen über Adresse, Gebühr, Name, Öffnungszeiten weichen bei manchen 
 
 ```
 
-Nachdem wir erfolgreich die ~1800 Objekten zu `.json` Konvertiert hatten, konnten wir sie in der Datenbank hochladen. Das war besonders einfach, da Firebase über die Funktion **import JSON file** verfügt. 
+Nachdem wir erfolgreich die ~1800 Objekten zu `.json` Konvertiert hatten, konnten wir sie in der Datenbank hochladen. Das war besonders einfach, da die Firebase-Konsole über die Funktion **import JSON file** verfügt. 
 
 
 
@@ -377,7 +381,7 @@ userRef   = database.getReference("/user");
 storageRef = databaseStorage.getReference();
 ```
 
-`toiletRef`und `userRef` laden jeweils die Listen von Toiletten- und Userobjekten herunter. Sie ermöglichen zusätzlich das Hinzufügen von Toiletten- und Userobjekten in unserer App.
+`toiletRef`und `userRef` laden jeweils die Listen von Toiletten- und Userobjekten herunter. Sie ermöglichen zusätzlich das Hinzufügen von Toiletten- und Userobjekten in der Datenbank.
 
  
 
@@ -437,7 +441,7 @@ public static boolean addToilet(Toilet toilet)
 
 Der Hochladevorgang ist in der `uploadImage(Uri filePath, final Context context){...}` Methode vollständig beschrieben. Der Rückgabewert dieser Methode ist ein `String`, welchem Wert den Datenpfad der hochgeladenen Datei ist.
 
-Jedes Bild  bekommt einen einzigartigen Namen beim Hochladen. Die `UUID.randomUUID()` Funktion generiert einen 36-Zeichen-langen alphanumerischen String und setzt ihn als den Namen des Fotos. Die Wahrscheinlichkeit, dass zwei Fotos denselben Namen bekommen besteht, ist aber sehr, sehr, sehr klein. (https://en.wikipedia.org/w/index.php?title=Universally_unique_identifier&oldid=755882275#Random_UUID_probability_of_duplicates)
+Jedes Bild  bekommt einen einzigartigen Namen beim Hochladen. Die `UUID.randomUUID()` Funktion generiert einen 36-Zeichen-langen alphanumerischen String und setzt ihn als den Namen des Fotos. Die Wahrscheinlichkeit, dass zwei Fotos denselben Namen bekommen besteht zwar, ist aber sehr, sehr, sehr klein. (https://en.wikipedia.org/w/index.php?title=Universally_unique_identifier&oldid=755882275#Random_UUID_probability_of_duplicates)
 ```java
 StorageReference ref = storageRef.child("images/"+ UUID.randomUUID().toString());
 ```
@@ -446,7 +450,7 @@ StorageReference ref = storageRef.child("images/"+ UUID.randomUUID().toString())
 
 
 
-Drei Listener werden zu der `putFile()` Funktion beigefügt und somit wird den Erfolg- bzw. Fehlerfall abgefangen. Der `OnProgressListener` wurde in der letzten Version des Codes nicht benutzt, wie von Google empfohlen, da der `progressDialog` die Oberfläche blockiert und keine Eingabe erlaubt. `bucketResult` ist der String, der den Datenpfad beinhaltet.
+Drei Listener werden zu der `putFile()` Funktion beigefügt und somit wird den Erfolg- bzw. Fehlerfall abgefangen. Der `OnProgressListener` wurde in der letzten Version des Codes nicht benutzt, wie von Google empfohlen, da der `progressDialog` die Oberfläche blockiert und keine Eingabe während des Hochlade-Vorganges erlaubt. `bucketResult` ist der String, der den Datenpfad beinhaltet.
 
 ```java
  ...
@@ -497,7 +501,7 @@ Ein Toiletten-Objekt kann unter den folgenden Umständen auf der Client-Seite er
 
 
 
-In beiden Fällen bekommt eine Toilette die folgenden Eigenschaften :
+In beiden Fällen bekommt eine Toilette die folgenden Eigenschaften. Die entsprechenden Getter- und Setterfunktionen für diese Attributen wurden auch implementiert.
 
 ```java
 protected String id;
@@ -517,69 +521,6 @@ protected String street;
 protected String streetNumber;
 protected String wheelchair;
 ```
-
-
-
-Die entsprechenden Getter- und Setterfunktionen wurden auch implementiert.
-
-```java
-public double getCost();
-public void setCost(double cost);
-
-public boolean isOutoforder();
-public void setOutoforder(boolean outoforder);
-
-public String getPhotoUrl();
-public void setPhotoUrl(String photoUrl);
-
-public double getLocationLat();
-public double getLocationLon();
-public void setLocationLat(double locationLat);
-public void setLocationLon(double locationLon);
-
-public String getId();
-public void setId(String id);
-
-public String isFee();
-public void setFee(String fee);
-
-public String getName();
-public void setName(String name);
-
-public String getOpeninghours();
-public void setOpeninghours(String opening_hours);
-
-public String getDescription();
-public void setDescription(String description);
-
-public List<Rating> getRatings();
-public void setRatings(List<Rating> ratings);
-
-public double getTotalRating();
-public void setTotalRating(double totalRating);
-
-public boolean isPrivate();
-public void setPrivate(boolean aPrivate);
-
-public List<Comment> getComments();
-public void setComments(List<Comment> comments);
-
-public String isWheelchair();
-public void setWheelchair(String wheelchair);
-
-public String getPlz();
-public void setPlz(String plz);
-
-public String getStreet();
-public void setStreet(String street);
-
-public String getStreetNumber();
-public void setStreetNumber(String streetNumber);
-```
-
-Die Funktionen sind als `public` implementiert und damit frei zugänglich innderhalb des `com.appspot.airpeepee.airpeepee` - Package. 
-
-
 
 
 ## Comment.java & Rating.java <a name="Comment&Rating"></a>
@@ -617,23 +558,23 @@ public class Rating {
     ...
 ```
 
-Die Konstruktoren von beiden bekommen einen String `id` zur Identifizierung in der Datenbank, ein User, der zu einem oder mehreren Ratings bzw Kommentaren gebunden ist und einen `commentText`  bzw. `userRating` . 
+Die Konstruktoren von beiden bekommen einen String `id` (Toiletten-ID) zur Identifizierung in der Datenbank, ein User, der zu einem oder mehreren Ratings bzw Kommentaren gebunden ist und einen `commentText`  bzw. `userRating` . 
 
 
-## Login useing firebase 
+## Log-in using firebase 
 
 Benutzer in Firebase-Projekten
-Ein Firebase-Benutzerobjekt stellt das Konto eines Benutzers dar, der sich bei Ihrem Firebase-Projekt bei einer App angemeldet hat. In der Regel haben Apps viele registrierte Benutzer, und jede App in einem Firebase-Projekt verwendet eine Benutzerdatenbank.
+Ein Firebase-Benutzerobjekt stellt das Konto eines Benutzers dar, der sich bei Ihrem Firebase-Projekt bei einer App angemeldet hat. In der Regel haben Apps viele registrierte Benutzer, und jede App in einem Firebase-Projekt verwendet eine kopie der Benutzerdatenbank.
 
 Eine Firebase-Benutzerinstanz ist unabhängig von einer Firebase-Auth-Instanz. Dies bedeutet, dass Sie mehrere Verweise auf verschiedene Benutzer innerhalb desselben Kontexts haben und trotzdem eine ihrer Methoden aufrufen können.
 
-Wenn sich ein Benutzer zum ersten Mal bei unsere App anmeldet, werden die Profildaten des Benutzers mit den verfügbaren Informationen aufgefüllt:
+Wenn sich ein Benutzer zum ersten Mal bei unserer App anmeldet, werden die Profildaten des Benutzers mit den verfügbaren Informationen aufgefüllt:
 
 Wenn sich der Benutzer mit einer E-Mail-Adresse und einem Kennwort angemeldet hat, wird nur die Eigenschaft der primären E-Mail-Adresse eingetragen
 
 Wenn sich der Benutzer bei einem Anbieter für Verbundidentität wie Google oder Facebook angemeldet hat, werden die vom Anbieter zur Verfügung gestellten Kontoinformationen dazu verwendet, das Profil des Firebase-Benutzers aufzufüllen
 
-wir haben drei funktionen email,Google und Facebook nutzen zu anmelden .
+wir haben drei Funktionen - Email,Google und Facebook, die unsere Benutzer zur Anmeldung benutzen können.
 ![Login Firebase](https://i.imgur.com/T2IXrFhr.png)
 
 *Login Code*
