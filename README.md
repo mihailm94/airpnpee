@@ -43,8 +43,18 @@ HTW Berlin
 	1. [Google Map Api](#api)
 	2. [Location permissions](#location)
 	3. [Data anzeigen auf Karte](#DataAufKarte)
+		1. [Marker als Toilet](#Marker)
+		2. [Toilet Informationen](#ToiletInformationen)
+	4. [Richtungsfunktion](#Richtungsfunktion)
+		1. [ ](# )
+		2. [ ](# )
+		3. [ ](# )
 6. [Fehlerhandler](#error)
 	1. [Ohne GPS-Berechtigung](#OhneGPS-Berechtigung)
+		1. [Suchfunktion](#Suchfunktion)
+			1. [ ](# )
+			2. [ ](# )
+			3. [ ](# )
 	2. [Netzwerkfehler](#Netzwerkfehler)
 
 
@@ -767,7 +777,12 @@ android.permission.ACCESS_NETWORK_STATE - Allows the API to check the connection
 ```
 
 ### Data anzeigen auf Karte <a name="DataAufKarte"></a>
-Berlin öffentliche und private Toiletten auf einer Google-Karte werden dargestellt.
+
+Berlin öffentliche und private Toiletten auf einer Google-Karte werden dargestellt,
+und Informationen über Toiletten werden angezeigt.
+
+#### Marker als Toilet <a name="Marker" ></a>
+
 Daten vom Server werden zuerst geholt und werden in Objekte und Marker umgetautsch, amende werden sie auf die Karte gesetzt.
 
 ```java
@@ -819,11 +834,114 @@ Daten vom Server werden zuerst geholt und werden in Objekte und Marker umgetauts
     }
 ```
 
+#### Toilet Informationen <a name="ToiletInformationen" ></a>
+Jedes Toilet-Objekt besitzt mehrere informationen name,type,ratings,image, .....
+die Datei wird erzeugt, wenn man auf dem Marker klickt.
+
+```java
+
+ public void onMapReady(GoogleMap googleMap) {
+ .....
+mMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
+            @Override
+            public boolean onMarkerClick(Marker marker) {
+                m_marker=marker;
+                findViewById(id.bottom_sheet).setVisibility(View.VISIBLE);
+                findViewById(id.direction_btn).setVisibility(View.VISIBLE);
+               // Data erzeugen 
+	       putToiletInfo(marker);
+                return false;
+            }
+        });
+	....
+}
+
+
+ public void putToiletInfo(Marker marker) {
+        TextView name = (TextView) findViewById(id.toiletName);
+        TextView type = (TextView) findViewById(id.toilet_type);
+        TextView totalrating = (TextView) findViewById(id.reviews);
+        TextView cost=findViewById(id.view_cost);
+        ImageView imageView = (ImageView) findViewById(id.imageView2);
+       .
+       .
+       .....
+
+    }
+
+
+
+```
+
+### Richtungsfunktion <a name="Richtungsfunktion"> </a>
+
+#### 1.
+
+#### 2.
+
+#### 3.
+
+
 ## Fehlerhandler <a name="error"> </a>
 
-### Ohne GPS-Berechtigung <a name="#OhneGPS-Berechtigung"></a>
+### Ohne GPS-Berechtigung <a name="OhneGPS-Berechtigung"></a>
 
-### Netzwerkfehler <a name="Netwerkfehler"> </a>
+#### Suchfunktion <a name="Suchfunktion"></a>
+
+##### 1.
+
+##### 2.
+
+##### 3.
 
 
+### Netzwerkfehler <a name="Netzwerkfehler"> </a>
+Airpee&pee hängt von Netzwerk an, Es muss mit dem Server kommunizieren ,um Daten zu nehmen.
+und konnte nicht ohne Netzwerk funktionieren,
+mit hilfe ConnectivityManager wird die Netwerkfehler behandelt und Error Dialog wird erzeugen. [ConnectivityManager doc hier](https://developer.android.com/reference/android/net/ConnectivityManager) 
+
+```java
+ public boolean isOnline() {
+        try {
+            ConnectivityManager cm =
+                    (ConnectivityManager)this.getSystemService(Context.CONNECTIVITY_SERVICE);
+
+            NetworkInfo activeNetwork = cm.getActiveNetworkInfo();
+            boolean isConnected = activeNetwork != null &&
+                    activeNetwork.isConnectedOrConnecting();
+            return isConnected;
+        } catch (NetworkOnMainThreadException e) {
+            return false; }
+    }
+    
+    @SuppressLint("RestrictedApi")
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(layout.activity_maps);
+    if(isOnline())
+    {
+    ....
+    }
+     else
+        {
+            try {
+                AlertDialog alertDialog = new AlertDialog.Builder(this).create();
+                alertDialog.setTitle("Info");
+                alertDialog.setMessage("Internet not available, Cross check your internet connectivity and try again");
+                alertDialog.setIcon(android.R.drawable.ic_dialog_alert);
+                alertDialog.setButton("OK", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                        finish();
+
+                    }
+                });
+
+                alertDialog.show();
+            } catch (Exception e) {
+                Log.d(this.TAG, "Show Dialog: " + e.getMessage());
+            }
+        }
+}
+```
 
