@@ -43,6 +43,9 @@ HTW Berlin
 	1. [Google Map Api](#api)
 	2. [Location permissions](#location)
 	3. [Data anzeigen auf Karte](#DataAufKarte)
+6. [Fehlerhandler](#error)
+	1. [Ohne GPS-Berechtigung](#OhneGPS-Berechtigung)
+	2. [Netzwerkfehler](#Netzwerkfehler)
 
 
 
@@ -764,24 +767,63 @@ android.permission.ACCESS_NETWORK_STATE - Allows the API to check the connection
 ```
 
 ### Data anzeigen auf Karte <a name="DataAufKarte"></a>
-
+Berlin öffentliche und private Toiletten auf einer Google-Karte werden dargestellt.
+Daten vom Server werden zuerst geholt und werden in Objekte und Marker umgetautsch, amende werden sie auf die Karte gesetzt.
 
 ```java
+// Data vom Server 
+// Attach a SINGLE READ listener to read the data at our posts reference
+        toiletRef.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
 
- if ( DataHolder.getInstance().getData()!=null) {
-            // Toiltes from data to marker
-            for (Toilet t : DataHolder.getInstance().getData()) {
-                markerPOI = new MarkerOptions();
-                markerPOI.position(new LatLng(t.getLocationLat(), t.getLocationLon()))
-                        .title(t.getName());
-
-                if (t.isPrivate())
-                    markerPOI.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_BLUE));
-                else
-                    markerPOI.icon(BitmapDescriptorFactory.defaultMarker());
-
-                mMap.addMarker(markerPOI);
+                // declare the list inside onDataChange because the function fires asynchronously
+                List<Toilet> toiletList = new ArrayList<>();
+                for(DataSnapshot toiletSnapshot : dataSnapshot.getChildren()) {
+                    String id =toiletSnapshot.getKey();
+                    String fee = (String) toiletSnapshot.child("fee").getValue();
+                    ....
+		    ..
+		    .
+                    toiletList.add(temp);
+                }
+		
+                DataHolder.getInstance().setData(toiletList);
             }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+                System.out.println("The read failed: " + databaseError.getCode());
+            }
+
+        });
+
+
+
+// Toilet to Marker
+ public void refreshMarker() {
+        mMap.clear();
+        MarkerOptions markerPOI;
+        for (Toilet t : DataHolder.getInstance().getData()) {
+            markerPOI = new MarkerOptions();
+            markerPOI.position(new LatLng(t.getLocationLat(), t.getLocationLon()))
+                    .title(t.getName());
+
+            if (t.isPrivate())
+                markerPOI.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_BLUE));
+            else
+                markerPOI.icon(BitmapDescriptorFactory.defaultMarker());
+
+            mMap.addMarker(markerPOI);
         }
+    }
 ```
+
+## Fehlerhandler <a name="error"> </a>
+
+### Ohne GPS-Berechtigung <a name="#OhneGPS-Berechtigung"></a>
+
+### Netzwerkfehler <a name="Netwerkfehler"> </a>
+
+
 
