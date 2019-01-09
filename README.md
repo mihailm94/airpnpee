@@ -173,7 +173,7 @@ B.1.10
 
 3. Class Diagram
 
-![Class Diagram](https://i.imgur.com/nhf4shar.jpg)
+![Class Diagram](https://i.imgur.com/JJM3IWqr.jpg)
 
 
 
