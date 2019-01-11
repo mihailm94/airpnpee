@@ -105,7 +105,7 @@ EditToiletActivity.NoticeDialogListener , AddReviewActivity.NoticeDialogListener
     String TAG;
 
 
-
+    private boolean searchmod =false;
     private boolean mendtrip=true;
     private GoogleMap mMap;
     // User Location
@@ -505,14 +505,7 @@ EditToiletActivity.NoticeDialogListener , AddReviewActivity.NoticeDialogListener
                 mMap.addMarker(markerPOI);
             }
         }
-        if(mlocation != null) {
-            LatLng sydney = new LatLng(mlocation.getLatitude(), mlocation.getLongitude());
 
-            CameraUpdate location = CameraUpdateFactory.newLatLngZoom(
-                    sydney, 15);
-
-            mMap.animateCamera(location);
-        }
 
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             // TODO: Consider calling
@@ -522,10 +515,22 @@ EditToiletActivity.NoticeDialogListener , AddReviewActivity.NoticeDialogListener
             //                                          int[] grantResults)
             // to handle the case where the user grants the permission. See the documentation
             // for ActivityCompat#requestPermissions for more details.
-            this.recreate();
-            return;
+            searchmod = true;
         }
-        mMap.setMyLocationEnabled(true);
+        if(mlocation != null) {
+            LatLng sydney = new LatLng(mlocation.getLatitude(), mlocation.getLongitude());
+
+            CameraUpdate location = CameraUpdateFactory.newLatLngZoom(
+                    sydney, 15);
+
+            mMap.animateCamera(location);
+        }
+        if(!searchmod) {
+            mMap.setMyLocationEnabled(true);
+            mMap.setOnMyLocationButtonClickListener(this);
+            mMap.setOnMyLocationClickListener(this);
+
+        }
         mMap.setOnMyLocationChangeListener(new GoogleMap.OnMyLocationChangeListener() {
             @Override
             public void onMyLocationChange(Location location) {
@@ -562,8 +567,6 @@ EditToiletActivity.NoticeDialogListener , AddReviewActivity.NoticeDialogListener
 
             }
         });
-        mMap.setOnMyLocationButtonClickListener(this);
-        mMap.setOnMyLocationClickListener(this);
         mMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
             @Override
             public boolean onMarkerClick(Marker marker) {
@@ -1019,6 +1022,8 @@ EditToiletActivity.NoticeDialogListener , AddReviewActivity.NoticeDialogListener
             mMap.addMarker(markerPOI);
         }
     }
+
+    // refreshMarker with filter
     public void refreshMarker(boolean fee) {
         mMap.clear();
         MarkerOptions markerPOI;
