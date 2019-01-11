@@ -529,44 +529,44 @@ EditToiletActivity.NoticeDialogListener , AddReviewActivity.NoticeDialogListener
             mMap.setMyLocationEnabled(true);
             mMap.setOnMyLocationButtonClickListener(this);
             mMap.setOnMyLocationClickListener(this);
+            mMap.setOnMyLocationChangeListener(new GoogleMap.OnMyLocationChangeListener() {
+                @Override
+                public void onMyLocationChange(Location location) {
+                    if(!mendtrip && !isSearch)
+                    {
+                        origin = new LatLng(location.getLatitude(), location.getLongitude());
+                        if(destination !=null) {
+                            Location locationOne = new Location("");
+                            locationOne.setLatitude(destination.latitude);
+                            locationOne.setLongitude(destination.longitude);
+                            float distanceInMetersOne = location.distanceTo(locationOne);
 
-        }
-        mMap.setOnMyLocationChangeListener(new GoogleMap.OnMyLocationChangeListener() {
-            @Override
-            public void onMyLocationChange(Location location) {
-                if(!mendtrip && !isSearch)
-                {
-                    origin = new LatLng(location.getLatitude(), location.getLongitude());
-                    if(destination !=null) {
-                        Location locationOne = new Location("");
-                        locationOne.setLatitude(destination.latitude);
-                        locationOne.setLongitude(destination.longitude);
-                        float distanceInMetersOne = location.distanceTo(locationOne);
+                            BigDecimal result;
+                            result = round(distanceInMetersOne/1000 ,2);
+                            BigDecimal time = round((float) ((distanceInMetersOne/1000)*16.7),0);
+                            String result1 = time+" min"+ " ("+result+" km)";
+                            ((TextView)findViewById(id.Kilometers)).setText(result1);
 
-                        BigDecimal result;
-                        result = round(distanceInMetersOne/1000 ,2);
-                        BigDecimal time = round((float) ((distanceInMetersOne/1000)*16.7),0);
-                        String result1 = time+" min"+ " ("+result+" km)";
-                        ((TextView)findViewById(id.Kilometers)).setText(result1);
-
-                        if (distanceInMetersOne <30) {
-                            //destination = null;
-                            mendtrip=true;
-                            findViewById(id.bottom_sheet).setVisibility(View.GONE);
-                            findViewById(id.floatingActionButton).setVisibility(View.VISIBLE);
-                            refreshMarker();
-                            if (DataHolder.getInstance().getUser()!= null) {
-                                DialogFragment dialog = new AddReviewActivity(m_marker.getPosition());
-                                dialog.show(getSupportFragmentManager(), "NoticeDialogFragment");
+                            if (distanceInMetersOne <30) {
+                                //destination = null;
+                                mendtrip=true;
+                                findViewById(id.bottom_sheet).setVisibility(View.GONE);
+                                findViewById(id.floatingActionButton).setVisibility(View.VISIBLE);
+                                refreshMarker();
+                                if (DataHolder.getInstance().getUser()!= null) {
+                                    DialogFragment dialog = new AddReviewActivity(m_marker.getPosition());
+                                    dialog.show(getSupportFragmentManager(), "NoticeDialogFragment");
+                                }
+                                return;
                             }
-                            return;
+                            requestDirection();
                         }
-                        requestDirection();
                     }
-                }
 
-            }
-        });
+                }
+            });
+        }
+
         mMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
             @Override
             public boolean onMarkerClick(Marker marker) {
