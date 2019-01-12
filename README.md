@@ -1046,7 +1046,8 @@ mit hilfe ConnectivityManager wird die Netwerkfehler behandelt und Error Dialog 
         }
 }
 ```
-##fazit <a name="Fazit"> </a>
+## fazit <a name="Fazit"> </a>
+
 An dieser Stelle wollen wir noch kurz darauf eingehen, was wir im laufe dieses Projektes, dass für die meisten von uns das erste größere Softwareprojekt war, gelernt haben. 
 Den ersten Wochen haben unseren Schwerpunkt auf den Projekt-Management-Anteil des Projektes gesetzt. Um von vornehinein ein klares Ziel zu setzten (Lastenheft) und dieses im Detail auszuformulieren (Pflichtenheft) und in folge dessen auch eine klare Aufgabenverteilung zu erstellen. Und um eine reibungsfreie Kommunikations sicherzustellen haben wir auch sofort ein Github-Repository erstellt sowie eine Slack-Gruppe. Dies hat sich im laufe des Projektes als enorm Hilfreich herausgestellt. Die Kommunikation hat in unserer Gruppe hervoragend funktionniert und zusammen mit der detaillierten Plannung zu einem erfolgreichen und pünktlichen Beenden unseres Projektes geführt.
 
