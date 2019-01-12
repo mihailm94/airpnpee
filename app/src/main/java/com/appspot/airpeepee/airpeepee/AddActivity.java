@@ -239,8 +239,12 @@ public class AddActivity extends AppCompatActivity implements OnMapReadyCallback
                 String n =UUID.randomUUID().toString();
                 toilet.setId(n);
 
-                toilet.setPhotoUrl(mDatabase.uploadImage(filePath, getApplicationContext()));
-
+                if (filePath ==null)
+                {
+                    toilet.setPhotoUrl("/images/default.jpg");
+                }else {
+                    toilet.setPhotoUrl(mDatabase.uploadImage(filePath, getApplicationContext()));
+                }
 
                 if(DB.addToilet(toilet)) {
                     Toast.makeText(getApplicationContext(),"add success",Toast.LENGTH_SHORT).show();
