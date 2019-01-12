@@ -8,6 +8,7 @@ import android.content.DialogInterface;
 import android.content.pm.PackageManager;
 import android.content.res.Resources;
 import android.location.Location;
+import android.location.LocationManager;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Handler;
@@ -342,6 +343,16 @@ EditToiletActivity.NoticeDialogListener , AddReviewActivity.NoticeDialogListener
                 findViewById(id.Kilometers).setPadding(0,0,0,110);
                 origin = new LatLng(mlocation.getLatitude(), mlocation.getLongitude());
                 destination = m_marker.getPosition();
+                Location locationOne = new Location("");
+                locationOne.setLatitude(destination.latitude);
+                locationOne.setLongitude(destination.longitude);
+                float distanceInMetersOne = mlocation.distanceTo(locationOne);
+
+                BigDecimal result;
+                result = round(distanceInMetersOne/1000 ,2);
+                BigDecimal time = round((float) ((distanceInMetersOne/1000)*16.7),0);
+                String result1 = time+" min"+ " ("+result+" km)";
+                ((TextView)findViewById(id.Kilometers)).setText(result1);
 
                 requestDirection();
             }
@@ -935,9 +946,11 @@ EditToiletActivity.NoticeDialogListener , AddReviewActivity.NoticeDialogListener
             CameraUpdate location = CameraUpdateFactory.newLatLngZoom(
                     sydney, 15);
             mMap.animateCamera(location);
+            mlocation =  new Location(LocationManager.NETWORK_PROVIDER);
             mlocation.setLatitude(sydney.latitude);
             mlocation.setLongitude(sydney.longitude);
             isSearch=true;
+            searchmod=true;
             Log.i("name", place.getName().toString());
             Log.i("coordinates", place.getLatLng().toString());
         }
