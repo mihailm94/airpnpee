@@ -56,8 +56,11 @@ HTW Berlin
 		4. [DirectionAcivity.java](#directionactivity)
 6. [Fehlerhandler](#error)
 	1. [Netzwerkfehler](#Netzwerkfehler)
-
-7. [Fazit](#fazit)
+7.[UI Design](#UI)
+	1.[Visionäre Skizze](#skizze)
+	2.[Im Designprozess](#design)
+	3.[Endprodukt](#endp)
+8. [Fazit](#fazit)
 
 ## Einführung <a name="introduction"></a>
 
@@ -1048,6 +1051,72 @@ Mit hilfe ConnectivityManager wird der Netwerkfehler behandelt und ein Error Dia
         }
 }
 ```
+## UI Design <a name="UI"></a>
+
+Die Benutzeroberfläche jeder App ist alles, was der Benutzer sehen und damit interagieren kann. Es bedeutet, dass es einfach
+und leicht zu bedienen sein sollte, mit faszinierenden Themen und Farben, die den Benutzer überzeugen können, es unter tausenden anderen vorhandenen Apps auszuwählen.
+
+#### Visionäre Skizze <a name="skizze"></a>
+
+Am Anfang haben wir Figma (das Interface-Design-Tool) verwendet, um eine Vorstellung von unserem endgültigen Interface-Design zu erhalten. Natürlich sieht das Endprodukt nicht genau so aus, wie wir es erwartet hatten, aber es hat uns wirklich geholfen, die endgültigen Layouts zu verbessern und zu gestalten.
+Außerdem bietet Android Studio eine Reihe vorkonfigurierter UI-Komponenten, z. B. strukturierte Layout Objekte und UI-Steuerelemente, mit denen Sie die grafische Benutzeroberfläche für Ihre App erstellen können.
+
+#### Im Designprozess <a name="design"></a>
+
+Fast alle unsere Aktivitätsklassen verfügen über ein eigenes Layout (.xml). Einige davon, wie bzw.<i>activity_maps</i> , sind die Kombination verschiedener komplexer Layouts, die den Zugriff auf verschiedene Aktivitäten vom Hauptbildschirm aus erleichtert. Zum Beispiel sind <i>bottom_sheet</i> und <i>app_bar_menu</i> im Layout der <i>activity_maps</i> enthalten.
+
+```xml
+
+<android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MapsActivity">
+
+        <ProgressBar.../>
+
+        <fragment.../>
+
+        <include
+            layout="@layout/bottom_sheet" />
+
+        <LinearLayout...>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+    <include
+        layout="@layout/app_bar_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <android.support.design.widget.NavigationView...>
+
+```
+
+Einige unserer Layouts sind personalisierte Versionen der vorgefertigten pre-built UI Layouts des Android Studios. Einige werden aber von uns selbst erstellt, wie das Setting Activity Layout (<i>pref_main.xml</i>), in dem preferenceScreen anstelle von einfachem relativen / linearen Layout verwendet wurde.
+
+```xml
+
+<PreferenceScreen xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory android:title="Settings"...>
+
+
+    <PreferenceCategory android:title="Support">
+
+
+</PreferenceScreen>
+```
+
+Um zu verstehen, wie komplex eine Schnittstelle sein kann, ist hier eine Visualisierung der Ansichtshierarchie <i>bottom_sheet.xml</i>:
+
+![view hierarchy](https://user-images.githubusercontent.com/44113201/51075335-50e51880-168a-11e9-8196-b508b26b61d7.jpg)
+
+#### Endprodukt <a name="endp"> </a>
+
+Jetzt vertreten wir unsere letzte und beste Version unserer App:
+
 
 ## Fazit <a name="fazit"> </a>
 
