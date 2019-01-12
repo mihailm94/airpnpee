@@ -61,11 +61,11 @@ HTW Berlin
 
 ## Einführung <a name="introduction"></a>
 
-die AirPee&Pee App ist das Ergebnis unseres Softwareprojektes für den Kurs Softwareentwicklung im Wintersemester 18/19 an der HTW Berlin. Unser Team bestand aus 4 Personen. Jeder von uns hatte sich mit einer Hauptaufgabe beschäftigt und im folgenden dokumentiert.
+Die AirPee&Pee App ist das Ergebnis unseres Softwareprojektes für den Kurs Softwareentwicklung im Wintersemester 18/19 an der HTW Berlin. Unser Team bestand aus 4 Personen. Jeder von uns hatte sich mit einer Teilaufgabe beschäftigt und im folgenden dokumentiert.
 
-AirPee&Pee ist eine Android App die eine Dienstleistung repräsentiert. Alle öffentlich zugänglichen Toiletten in der Nähe des Benutzers werden gezeigt, inklusiv Preis, Öffnunszeiten, ob sie für Behinderte zugänglich sind, sowie Ratings und Kommentare für die jeweilige Toilette.
+AirPee&Pee ist eine Android App die eine Dienstleistung repräsentiert. Alle öffentlich zugänglichen Toiletten in der Nähe des Benutzers werden angezeigt, inklusiv Preis, Öffnunszeiten, ob sie für Behinderte zugänglich sind, sowie Ratings und Kommentare für die jeweilige Toilette.
 
-Um die Aufgaben richtig unter unserem Team zu verteilen, haben wir die Projekt-Management Kentnisse von dem Modul Computer Systems Engineering Projekt benutzt und den Entwicklungsvorgang in 5 Phasen unterteilt:
+Um die Aufgaben richtig unter unserem Team zu verteilen, haben wir die Projekt-Management Kenntnisse von dem Modul Computer Systems Engineering Projekt benutzt und den Entwicklungsvorgang in 5 Phasen unterteilt:
 
 ```
 1.Konzeptphase
@@ -79,7 +79,7 @@ In der Konzeptphase haben wir uns mit der Projektidee und Lastenheft beschäftig
 In der Definitionsphase wurde das Pflichtenheft erstellt.
 Die Entwurfsphase ist durch die Use Cases, ERD und Klassendiagramm gekennzeichnet.
 Die Fertigungsphase ist die Entwicklung.
-In der Wartungsphase haben wir uns damit beschäftigt das Code zu "reinigen", sowie die Wiki des Projektes vollständigen.
+In der Wartungsphase haben wir uns damit beschäftigt den Code zu "reinigen", sowie die Wiki des Projektes zu vervollständigen.
 
 
 
@@ -107,7 +107,7 @@ A.2.1 Die AirPnP-App kann das Hinzufügen von öffentlichen Toiletten durch eine
 A.2.2 Die AirPnP-App soll eine öffentliche Toilette automatisch entfernen wenn sie mehrmals (TBD) gemeldet worden ist.
 ```
 
-Die Definitionsphäse besteht aus dem Pflichtenheft. Die Kriterien in dem Pflichtenheft beschreiben sehr einfach und strukturiert wie das App-Backend funktioniert. Dadurch wurden uns die Aufgaben, die wir erledigen müssen, klar und konnten jedem Mitglied unseres Team eine Hauptaufgabe zuweisen.
+Die Definitionsphase besteht aus dem Pflichtenheft. Die Kriterien in dem Pflichtenheft beschreiben sehr einfach und strukturiert wie das App-Backend funktioniert.
 
 ```
 B.1.1 
@@ -210,7 +210,7 @@ Die Dateigröße des ursprunglichen Auszüges betrug ~51MB. Nachdem er dekomprim
 ./osmfilter berlin-latest.osm --keep-nodes"amenity=toilets or building=toilets" -o=berlin_toilets.osm
 ```
 
-Nach ein paar Minuten wurde die Ausgangsdatei generiert, deren Größe nur 302KB betrug. Die `.osm` Datei ist ein XML-Datei, die geographische Informationen im Form von "Nodes" mit zusätzlichen ergänzenden Tägs beinhaltet. Die Allgemeine Struktur eines Beispielnodes unseres Datensatzes sieht so aus:
+Nach ein paar Minuten wurde die Ausgangsdatei generiert, deren Größe nur 302KB betrug. Die `.osm` Datei ist ein XML-Datei, die geographische Informationen im Form von "Nodes" mit zusätzlichen ergänzenden Tags beinhaltet. Die Allgemeine Struktur eines Beispielnodes unseres Datensatzes sieht so aus:
 ```
 <node id="29040668" lat="52.5250054" lon="13.335496" version="16">
 		<tag k="fee" v="yes"/>
@@ -228,14 +228,14 @@ Nach ein paar Minuten wurde die Ausgangsdatei generiert, deren Größe nur 302KB
 	</node>
 ```
 
-Die bereitgestellten Tools zur Verarbeitung von den OpenStreetMap spezifischen Dateiformaten (`.osm, .osc, .o5m, .o5c, .osm.pbf`) haben sich als sehr nützlich und bedienerfreundlich bewiesen, und aus diesem Grund war die Konvertierung vom `.osm` zum `.xml` Format durchgeführt, erst nachdem alle unbrauchbaren Dateien rausgefiltert wurden.
+Die bereitgestellten Tools zur Verarbeitung von den OpenStreetMap spezifischen Dateiformaten (`.osm, .osc, .o5m, .o5c, .osm.pbf`) haben sich als sehr nützlich und bedienerfreundlich bewiesen, und aus diesem Grund haben wir die Konvertierung vom `.osm` zum `.xml` Format durchgeführt, erst nachdem alle unbrauchbaren Dateien rausgefiltert wurden.
 
 Als Datenbank haben wir für unser Pojekt die Firebase-Platform gewählt. Das Einbeziehen von Firebase in Android-Studio is einfach, da diese Funktionalität als Modul in dem Android Studio Softwarepaket schon zur Verfügung steht, nach entsprechender Aktivierung in den Einstellungen.
 Firebase ist eine Realtime NoSQL Datenbank. Realtime bedeutet, in diesem Fall, dass alle Endbenutzer (Devices) eine und dieselbe Datenbank-Instanz gemeinsam benutzen und asynchron den neusten Stand der Daten herunterladen. In der Datenbank werden die Daten in dem JavaScript Object Notation (JSON) Format gespeichert.
 
-Die nächste Aufgabe war die Konvertierung von `.xml` zu `.json`. Nach Recherche und Ausprobieren von mehreren Programmen, die kostenlos online zugänglich sind, kamen wir zu der Überzeugung, dass wenn wir eine dauernd stabile Ausgangsstruktur erzielen wollen, die an unseren Eingabedaten angepasst ist, mussten wir einen eigenen Parser entwickeln.
+Die nächste Aufgabe war die Konvertierung von `.xml` zu `.json`. Nach Recherche und Ausprobieren von mehreren Programmen, die kostenlos online zugänglich sind, kamen wir zu dem Entschluss, dass wenn  eine dauerhaft stabile Ausgangsstruktur erzielt werden soll, die an unseren Eingabedaten angepasst ist, wir einen eigenen Parser entwickeln müssen.
 
-Das eigentliche Problem bestand darin , dass alle Atributen der `.osm` Datei die Struktur 
+Das eigentliche Problem bestand darin , dass alle Atribute der `.osm` Datei die Struktur 
 `<tag k="--Bezeichnung--" v="--Wert--" />`
 trugen, was bei der Konvertierung zu JSON folgendes ergab: 
 
@@ -256,7 +256,7 @@ import xml.etree.cElementTree as et
 parsed_xml = et.parse("berlin_toilets.xml")
 ```
 
-Um `.xml`Dateien zu erfassen, ist die `xml.etree.cElementTree.parse()` vorhanden. Somit konnte die weitere Bearbeitung der `.xml`Datei fortgesetzt werden.
+Um `.xml`Dateien zu erfassen, ist die Funktion `xml.etree.cElementTree.parse()` vorhanden. Somit konnte die weitere Bearbeitung der `.xml`Datei fortgesetzt werden.
 
 
 Der Parser legt eine Datei mit der `.json ` Erweiterung im Schreibemodus an, und schreibt in dieser Datei mittels der `write()` Funktion weiter.
@@ -300,11 +300,11 @@ for osm in parsed_xml.iter('node'):
         f.close()
 ```
 
-Jedes Toilet-Objekt besitzt ein einzigartiges 'id', was wir für Übersichtlichkeit als Primärschlüssel betrachten können. 
+Jedes Toilet-Objekt besitzt eine einzigartiges 'id', die wir für ein bessere Übersichtlichkeit als Primärschlüssel betrachten können. 
 
 
 
-Nach Parsen, besitzt jedes Toiletten-Objekt im Allgemeinen folgende Struktur. Informationen über Adresse, Gebühr, Name, Öffnungszeiten weichen bei manchen Objekten ab, oder fehlen komplett. Alle Objekte besitzen aber, schon im Voraus, Informationen über Längen- und Breitengrad.
+Nach dem Parsen, besitzt jedes Toiletten-Objekt im Allgemeinen folgende Struktur. Informationen über Adresse, Gebühr, Name, Öffnungszeiten weichen bei manchen Objekten ab, oder fehlen komplett. Alle Objekte besitzen aber, schon im Voraus, Informationen über Längen- und Breitengrad.
 
 ```python
 {
@@ -469,7 +469,7 @@ StorageReference ref = storageRef.child("images/"+ UUID.randomUUID().toString())
 
 
 
-Drei Listener werden zu der `putFile()` Funktion beigefügt und somit wird den Erfolg- bzw. Fehlerfall abgefangen. Der `OnProgressListener` wurde in der letzten Version des Codes nicht benutzt, wie von Google empfohlen, da der `progressDialog` die Oberfläche blockiert und keine Eingabe während des Hochlade-Vorganges erlaubt. `bucketResult` ist der String, der den Datenpfad beinhaltet.
+Drei Listener werden zu der `putFile()` Funktion beigefügt und somit wird der Erfolg- bzw. Fehlerfall abgefangen. Der `OnProgressListener` wurde in der letzten Version des Codes nicht benutzt, wie von Google empfohlen, da der `progressDialog` die Oberfläche blockiert und keine Eingabe während des Hochlade-Vorganges erlaubt. `bucketResult` ist der String, der den Datenpfad beinhaltet.
 
 ```java
  ...
@@ -513,7 +513,7 @@ return bucketResult;
 
 <a name="Toilet.java"></a> Die `Toilet.java` Klasse beschreibt ein Toiletten-Objekt
 
-Ein Toiletten-Objekt kann unter den folgenden Umständen auf der Client-Seite erzeugt werden:
+Ein Toiletten-Objekt kann für folgende Situationen auf der Client-Seite erzeugt werden:
 
 1. Heruterladen von Datenbank
 2. Hinzufügen von einem User der AirPee&Pee App
@@ -545,7 +545,7 @@ protected String wheelchair;
 ## Comment.java & Rating.java <a name="Comment&Rating"></a>
 
 
-Es ist zu vermerken dass jedes Toiletten Objekt jeweils eine Liste von Kommentaren als auch Ratings beinhaltet. 
+Es ist zu vermerken, dass jedes Toiletten Objekt sowohl eine Liste von Kommentaren als auch Ratings beinhaltet. 
 
 
 
@@ -577,7 +577,7 @@ public class Rating {
     ...
 ```
 
-Die Konstruktoren von beiden bekommen einen String `id` (Toiletten-ID) zur Identifizierung in der Datenbank, ein User, der zu einem oder mehreren Ratings bzw Kommentaren gebunden ist und einen `commentText`  bzw. `userRating` . 
+Die Konstruktoren von beiden bekommen eine String `id` (Toiletten-ID) zur Identifizierung in der Datenbank, ein User, der zu einem oder mehreren Ratings bzw Kommentaren gebunden ist und einen `commentText`  bzw. `userRating` . 
 
 
 ## Log-in using firebase <a name="login"></a>
@@ -600,7 +600,7 @@ wir haben drei Funktionen - Email,Google und Facebook, die unsere Benutzer zur A
 
 Benutzerkonto anlegen :
 
-zuerst Email und Password wird bestätigt (nicht Null), danach E-Mail-Bestätigung wird gesendet dann Aktualisieren wir nach diesem erfolgreichen Anmelden die Benutzeroberfläche mit den Informationen des angemeldeten Benutzers und "Benutzer in Daten einfügen"
+Zuerst werden Email und Password bestätigt (nicht Null), danach wird ein E-Mail-Bestätigung gesendet und dann wird nach erfolgreichem Anmelden die Benutzeroberfläche mit den Informationen des angemeldeten Benutzers aktualisiert und der Benutzter wird in die Datenbank hinzugefügt.
 
 
 1. Email und Password wird bestätigt
@@ -678,7 +678,7 @@ private void createAccount(final String email, final String password) {
         // [END send_email_verification]
     }
  ```
-3. aktualisierung des Benutzeroberfläche : 
+3. Aktualisierung der Benutzeroberfläche : 
 
 ```java
  private void updateUI(FirebaseUser user) {
@@ -692,7 +692,7 @@ private void createAccount(final String email, final String password) {
     }
 
 ```
-4. mit facebook und google login, wir behandeln die auth dann update UI :
+4. Mit facebook und google login, wird die auth behandelt dann die UI geupdated :
 
 ```java
 
@@ -712,7 +712,7 @@ private void createAccount(final String email, final String password) {
 
 ```
 
-5. SingOut Function wird Alle daten von User Freigelassen
+5. mit der SingOut Function werden alle Daten von User freigelassen
 
 ```java
  private void signOut() {
@@ -737,7 +737,7 @@ private void createAccount(final String email, final String password) {
 
 ### Google Map Api Konfiguration <a name="api"></a>
 
-Damit die Karte und der Marker (Toilette) darauf erscheinen, benötigen wir eine Google Api
+Um eine Karte mit mehreren Toiletten (Markern) anzuzeigen, benötigen wir die Google API
 Um die Umstellung zu vollziehen, braucht man einen neuen "Maps API Key".
 von hier https://cloud.google.com/maps-platform/#get-started
 
@@ -749,9 +749,9 @@ der API-Schlüssel wird In AndroidManifest.xml eingestellt
             android:value="AIzaSyDilhmAZ-rUga7gKnXkrWWfXPhnCAhuyrA" />
 ```
 
-Google Maps API aktivieren, braucht man app's SHA-1 fingerprint 
+Um die Google Maps API zu aktivieren, braucht man einen app's SHA-1 fingerprint 
 
-um den app's SHA-1 fingerprint zu bekommen
+Um den app's SHA-1 fingerprint zu bekommen:
 ```shell
 
 keytool -list -v -keystore "%USERPROFILE%\.android\debug.keystore" -alias androiddebugkey -storepass android -keypass android
@@ -762,7 +762,7 @@ API Key erhalten und kopieren in android app setting Schlüssel absichern
 Specify the permissions your application needs, by adding <uses-permission> elements as children of the <manifest> element in AndroidManifest.xml.
 
 ### Location permissions <a name="location"></a>
-permissions to the app manifest
+Permissions to the app manifest
 the coarse location permission:
 ```xml
 <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
@@ -781,12 +781,13 @@ android.permission.ACCESS_NETWORK_STATE - Allows the API to check the connection
 
 ### Data anzeigen auf Karte <a name="DataAufKarte"></a>
 
-Berlin öffentliche und private Toiletten auf einer Google-Karte werden dargestellt,
+Berlins öffentliche und private Toiletten werden auf einer Google-Karte dargestellt
 und Informationen über Toiletten werden angezeigt.
 
 #### Marker als Toilet <a name="Marker" ></a>
 
-Daten vom Server werden zuerst geholt und werden in Objekte und Marker umgetautsch, amende werden sie auf die Karte gesetzt.
+Daten vom Server werden zuerst geholt und werden in Objekte und Marker umgetauscht. 
+Aam Ende werden sie auf die Karte gesetzt.
 
 ```java
 // Data vom Server 
@@ -838,7 +839,7 @@ Daten vom Server werden zuerst geholt und werden in Objekte und Marker umgetauts
 ```
 
 #### Toilet Informationen <a name="ToiletInformationen" ></a>
-Jedes Toilet-Objekt besitzt mehrere informationen name,type,ratings,image, .....
+Jedes Toilet-Objekt besitzt mehrere Informationen: name,type,ratings,image, etc. 
 die Datei wird erzeugt, wenn man auf dem Marker klickt.
 
 ```java
@@ -875,21 +876,21 @@ mMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
 
 
 ```
-### Suchfunktion <a name="Search API"></a>
+### Search API <a name="Suchfunktion"></a>
 
-Mit hilfe unserer App soll derUser in der Lage sein einen selbstgewählten Standort einzugeben und diesen dann auf der Karte angezeigt bekommen. Zudem soll ein Anbieter-User beim erstellen einer Privaten-Toilette auch einen Standort eingeben und die Toilette dann auf der Karte an angegebenen Standort angezeigt bekommen. Um diese Funktion der App zur verfügung zu stellen, haben wir uns der Google Places API bedient. 
+Mit hilfe unserer App soll der User in der Lage sein einen selbstgewählten Standort einzugeben und diesen dann auf der Karte angezeigt zu bekommen. Zudem soll ein Anbieter-User beim erstellen einer Privaten-Toilette auch einen Standort eingeben und die Toilette dann auf der Karte an angegebenen Standort angezeigt bekommen. Um diese Funktion der App zu gewährleisten, haben wir uns der Google Places API bedient. 
 
-#### apikey <a name="API-Key"></a>
-Als erstes musste ein API-Key erstellt werden bzw. den bereits bestehenden API-Key (der für die MAPS API benutzt wird) um die Location-API erweitern.
-#### placeautocomplete <a name="Place Autocomplete Request"></a>
-Der User bekommt ein Suchfeld in dem er einen Standort eingeben kann. Im laufe der Eingabe, soll unter dem Suchfeld Verfolständigungsvorschläge angezeigt werden. Dazu wird das Autocomplete Request der Places API benutzt. 
+#### API-Key <a name="apikey"></a>
+Als erstes musste ein API-Key erstellt werden bzw. den bereits bestehenden API-Key (der für die MAPS API benutzt wird) um die Location-API-Funktion erweitert werden.
+#### Place Autocomplete Request <a name="placeautocomplete"></a>
+Der User bekommt ein Suchfeld angezeigt. in dem er einen Standort eingeben kann. Im laufe der Eingabe, sollen unter dem Suchfeld Verfolständigungsvorschläge angezeigt werden. Dazu wird das Autocomplete Request der Places API benutzt. 
 Das Request hat die Form einer HTTP URL, wie folgt:
 ```https
 https://maps.googleapis.com/maps/api/place/autocomplete/output?parameters
 ```
 
-#### searchactivity <a name="SearchActivity.java"></a>
-Die Places API wurde in unserer App innerhalb der SearchActivity.java eingesetzt.
+#### SearchActivity.java <a name="searchactivity"></a>
+Die Places API wurde in unserer App innerhalb der SearchActivity.java umgesetzt.
 
 ```java
 PlaceAutocompleteFragment autocompleteFragment = (PlaceAutocompleteFragment)
@@ -897,13 +898,13 @@ PlaceAutocompleteFragment autocompleteFragment = (PlaceAutocompleteFragment)
 autocompleteFragment.setHint("Standort eingeben")
 ```
 
-Hier wird ein autocompleteFragment erstellt, mit Textinhalt „Standort eingeben“, wo der User dann seinen Standort eingeben kann. Dieses autocompleteFragment stammt aus der Places Bibliothek und gibt automatisch Standortvorschläge. Es muss von uns dazu kein weiterer Code geschrieben werden.
+Hier wird ein autocompleteFragment erstellt, mit Textinhalt „Standort eingeben“, in dem der User dann seinen Standort eingeben kann. Dieses autocompleteFragment stammt aus der Places Bibliothek und gibt automatisch Standortvorschläge. Es muss von uns dazu kein weiterer Code geschrieben werden.
 
 ```java
 autocompleteFragment.setBoundsBias(BOUNDS_MOUNTAIN_VIEW);
 ```
 
-Mit der Funktion autocompleteFragment.setBoundbias() können wir die angezeigten Ergebnisse geographisch eingrenzen. Wir habe unsere suche auf Berlin begrenzt:
+Mit der Funktion autocompleteFragment.setBoundBias() können wir die angezeigten Ergebnisse geographisch eingrenzen. Wir haben unsere suche auf Berlin begrenzt:
 ```java 
 private static final LatLngBounds BOUNDS_MOUNTAIN_VIEW = new LatLngBounds(
         new LatLng(52.352552, 13.053786), new LatLng(52.702921, 13.769575));
@@ -921,33 +922,33 @@ autocompleteFragment.setOnPlaceSelectedListener(new PlaceSelectionListener() {
     }
 });
 ```
-Hier erstellen wir einen Listener, der dann für das vom User ausgewählte Ergebnis Informationen wiedergibt, die dann im weiteren Verlauf der App verwendet werden. Und ggf. eine Fehlermeldung ausgiebt.
+Hier erstellen wir einen Listener, der dann für das vom User ausgewählte Ergebnis Informationen wiedergibt, die dann im weiteren Verlauf der App verwendet werden, und ggf. eine Fehlermeldung ausgiebt.
 
 
 
-### Richtungsfunktion <a name="Directions API"></a>
+### Direction API <a name="Richtungsfunktion"></a>
 
 Sobald der User im Hauptfenster eine Toilette ausgewählt hat, soll er die Möglichkeit haben eine Navigation zu der Toilette zu starten. Für diese Funktion wurde die Google Direction API benutzt.
-#### serverkey <a name="Server-Key"></a>
-Für die Direction API musste ein andere Art Key erstellt werden, nämlich ein Server-Key. Hier gab es anfänglich Probleme, da die Funktionen der Direction-API nur auf dem Rechner funktionnierte auf dem der Server-Key zuerst benutzt wurde.  Es musste erst ein kostenloses Google Developperkonto erstellt werden. Hier wurden jedoch trotz Kostenlosigkeit Rechnugsadresse und Kreditkarteninformation verlangt, die wir dann mit großem Wiederwillen angegeben haben.
+#### Server-Key <a name="serverkey"></a>
+Für die Direction API musste ein andere Art Key erstellt werden, nämlich ein Server-Key. Hier gab es anfänglich Probleme, da die Funktionen der Direction-API nur auf dem Rechner funktionnierten auf dem der Server-Key zuerst benutzt wurde.  Es musste erst ein kostenloses Google Developperkonto erstellt werden. Hier wurden jedoch trotz Kostenlosigkeit Rechnungsadresse und Kreditkarteninformation verlangt, die wir dann mit großem Wiederwillen angegeben haben.
 
-#### directionrequest <a name="Direction Request"></a>
+#### Direction Request <a name="directionrequest"></a>
 Ausgangssituation ist, dass der User Standort und Toilette ausgewählt hat. Sobald der User nun auf den Navigationsbutton drückt, wird ein Direction Request geschickt. 
 Das Request hat Form einer HTTP URL, wie folgt:
 ```https
 https://maps.googleapis.com/maps/api/directions/json?origin=Standort&destination=Toilette&key=YOUR_API_KEY
 ```
 
-#### akexorcistlibrary <a name="Akexorcist Library"></a>
-Um uns die arbeit zu vereinfachen, haben wir uns der Akexorcist Library bedient, die (nebenbei erwähnt) sehr gut dokumentiert war.
+#### Akexorcist Library <a name="akexorcistlibrary"></a>
+Um uns die Arbeit zu vereinfachen, haben wir uns der Akexorcist Library bedient, die (nebenbei erwähnt) sehr gut dokumentiert ist.
 
-#### directionactivity <a name="DirectionActivity.java"></a>
-Die Direction API wurde in unserer App innerhalb der SearchActivity eingesetzt.
+#### DirectionActivity.java <a name="directionactivity"></a>
+Die Direction API wurde in unserer App innerhalb der SearchActivity umgesetzt.
 ```java
 btnRequestDirection = findViewById(R.id.btn_request_direction);
 btnRequestDirection.setOnClickListener(this);
 ```
-Hier wird ein Button erstellt mit zugehörigem Listener, der sobald er von User gedrückt wird, die Navigation zwichen Start und Zielpunkt ausgeben soll. (Start und Zielpunkt werden an anderer Stelle definiert siehe MapsActivity und SearschActivity)
+Hier wird ein Button erstellt mit zugehörigem Listener, der sobald er vom User gedrückt wird, die Navigation zwichen Start und Zielpunkt ausgeben soll. (Start und Zielpunkt werden an anderer Stelle definiert siehe MapsActivity und SearschActivity)
 ```java
 public void requestDirection() {
     Snackbar.make(btnRequestDirection, "Direction Requesting...", Snackbar.LENGTH_SHORT).show();
@@ -958,11 +959,11 @@ public void requestDirection() {
             .execute(this);
 }
 ```
-requestDirection wird ausgeführt sobald btnRequestDirection gedrückt wird.
+requestDirection() wird ausgeführt sobald btnRequestDirection gedrückt wird.
 Die Paramater sind wie folgt zu verstehen:
-origin: gibt den Startpunkt an
-destination: gibt den Zielpunkt an
-WALKING: gibt die Fortbewegungsart an.
+origin: gibt den Startpunkt an.
+destination: gibt den Zielpunkt an.
+WALKING: gibt die Fortbewegungsart an. In unserem Fall: Laufen.
 
 ```java
 @Override
@@ -986,8 +987,9 @@ public void onDirectionFailure(Throwable t) {
     Snackbar.make(btnRequestDirection, t.getMessage(), Snackbar.LENGTH_SHORT).show();
 }
 ```
-Wenn requestDirection erfolgreich ist, wird onDirectionSuccess ausgeführt bzw. onDirectionFailure falls nicht.
-In onDirectionSuccess wird mit googleMap.clear() die map geleert, das heißt alle anderen Öffentlischen Toilette, die ausgewählte ausgeschlossen, werden nicht mehr angezeigt.
+Wenn requestDirection() erfolgreich ist, wird onDirectionSuccess() ausgeführt bzw. onDirectionFailure() falls nicht.
+
+In onDirectionSuccess() wird mit googleMap.clear() die map geleert, das heißt alle anderen öffentlischen Toilette, die ausgewählte ausgeschlossen, werden nicht mehr angezeigt.
 Mit googleMap.addmarket und googleMap.addPolyline wird die Strecke auf der Karte angezeigt.
 Mit setCameraCoordinationBounds wird die Sicht der Karte auf Start und Zielpunkt zugeschnitten.
 
@@ -998,9 +1000,9 @@ Mit setCameraCoordinationBounds wird die Sicht der Karte auf Start und Zielpunkt
 
 
 ### Netzwerkfehler <a name="Netzwerkfehler"> </a>
-Airpee&pee hängt von Netzwerk an, Es muss mit dem Server kommunizieren ,um Daten zu nehmen.
-und konnte nicht ohne Netzwerk funktionieren,
-mit hilfe ConnectivityManager wird die Netwerkfehler behandelt und Error Dialog wird erzeugen. [ConnectivityManager doc hier](https://developer.android.com/reference/android/net/ConnectivityManager) 
+Airpee&pee hängt vom Netzwerk ab. Es muss mit dem Server kommunizieren, um Daten zu empfangen 
+und kann nicht ohne Netzwerk funktionieren.
+Mit hilfe ConnectivityManager wird der Netwerkfehler behandelt und ein Error Dialog wird erzeugen. [ConnectivityManager doc hier](https://developer.android.com/reference/android/net/ConnectivityManager) 
 
 ```java
  public boolean isOnline() {
@@ -1046,12 +1048,14 @@ mit hilfe ConnectivityManager wird die Netwerkfehler behandelt und Error Dialog 
         }
 }
 ```
-## fazit <a name="Fazit"> </a>
+
+## Fazit <a name="fazit"> </a>
 
 An dieser Stelle wollen wir noch kurz darauf eingehen, was wir im laufe dieses Projektes, dass für die meisten von uns das erste größere Softwareprojekt war, gelernt haben. 
-Den ersten Wochen haben unseren Schwerpunkt auf den Projekt-Management-Anteil des Projektes gesetzt. Um von vornehinein ein klares Ziel zu setzten (Lastenheft) und dieses im Detail auszuformulieren (Pflichtenheft) und in folge dessen auch eine klare Aufgabenverteilung zu erstellen. Und um eine reibungsfreie Kommunikations sicherzustellen haben wir auch sofort ein Github-Repository erstellt sowie eine Slack-Gruppe. Dies hat sich im laufe des Projektes als enorm Hilfreich herausgestellt. Die Kommunikation hat in unserer Gruppe hervoragend funktionniert und zusammen mit der detaillierten Plannung zu einem erfolgreichen und pünktlichen Beenden unseres Projektes geführt.
 
-Die programmieren in Java innerhalb von android-studio hat sich, obwohl die meisten von uns keine Java-Kenntnisse besaßen, als sehr intuitiv herausgestellt und dank der sehr guten Dokumentation und starken Forenactivität zu einem schnellen Verständnis hinsichtlich der Android-Programmierung.
+In den ersten Wochen haben wir unseren Schwerpunkt auf den Projekt-Management-Anteil des Projektes gesetzt. Um von vornehinein ein klares Ziel zu setzten (Lastenheft) und dieses im Detail auszuformulieren (Pflichtenheft) und in folge dessen auch eine klare Aufgabenverteilung zu erreichen. Und um eine reibungsfreie Kommunikations sicherzustellen haben wir auch sofort ein Github-Repository erstellt sowie eine Slack-Gruppe. Dies hat sich im Laufe des Projektes als enorm Hilfreich herausgestellt. Die Kommunikation hat in unserer Gruppe hervoragend funktionniert und zusammen mit der detaillierten Plannung zu einem erfolgreichen und pünktlichen Beenden unseres Projektes geführt.
+
+Die programmieren in Java innerhalb von android-studio hat sich, obwohl die meisten von uns keine Java-Kenntnisse besaßen, als sehr intuitiv herausgestellt und dank der sehr guten Dokumentation und starken Forenactivität zu einem schnellen Verständnis hinsichtlich der Android-Programmierung geführt.
 
 Auf Fehler sind wir dennoch gestoßen, teilweise auch sehr nervenaufreibende. Diese hatten aber weder mit Java noch mit Android zu tun, sondern eher mit Android-Studio (Probleme bei der Simulation) und den APIs von Google.
 
