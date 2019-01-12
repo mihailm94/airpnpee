@@ -1117,6 +1117,9 @@ Um zu verstehen, wie komplex eine Schnittstelle sein kann, ist hier eine Visuali
 
 Jetzt vertreten wir unsere letzte und beste Version unserer App:
 
+![wireframe1](https://user-images.githubusercontent.com/44113201/51075609-28f7b400-168e-11e9-9cad-9ff227ce7987.jpg)
+![wireframe2](https://user-images.githubusercontent.com/44113201/51075621-4af13680-168e-11e9-97c3-e372f4ba84ed.jpg)
+
 
 ## Fazit <a name="fazit"> </a>
 
