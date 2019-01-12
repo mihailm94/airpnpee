@@ -335,7 +335,6 @@ EditToiletActivity.NoticeDialogListener , AddReviewActivity.NoticeDialogListener
                // mlocation = myLocationListener.getLastBestLocation();
                 mendtrip =false;
                 findViewById(id.imageView5).setVisibility(View.VISIBLE);
-                findViewById(id.floatingActionButton).setVisibility(View.GONE);
                 findViewById(id.filter_all).setVisibility(View.GONE);
                 findViewById(id.filter_fee).setVisibility(View.GONE);
                 findViewById(id.filter_wheelchair).setVisibility(View.GONE);
@@ -561,6 +560,8 @@ EditToiletActivity.NoticeDialogListener , AddReviewActivity.NoticeDialogListener
                             if (distanceInMetersOne <30) {
                                 //destination = null;
                                 mendtrip=true;
+                                findViewById(id.Kilometers).setVisibility(View.GONE);
+                                findViewById(id.imageView5).setVisibility(View.GONE);
                                 findViewById(id.bottom_sheet).setVisibility(View.GONE);
                                 findViewById(id.floatingActionButton).setVisibility(View.VISIBLE);
                                 refreshMarker();
