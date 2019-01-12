@@ -191,6 +191,9 @@ B.1.10
 
 ![Class Diagram](https://i.imgur.com/JJM3IWqr.jpg)
 
+4. State Diagram
+![airpp](https://user-images.githubusercontent.com/44113201/51066119-bb557480-1608-11e9-919c-f55dcd455529.jpg)
+
 
 
 ## Implementierung der Datenbank in Firebase <a name="dbFirebase"></a>
