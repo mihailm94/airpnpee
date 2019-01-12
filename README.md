@@ -875,27 +875,126 @@ mMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
 
 
 ```
+### Suchfunktion <a name="Search API"
 
-### Richtungsfunktion <a name="Richtungsfunktion"> </a>
+Mit hilfe unserer App soll derUser in der Lage sein einen selbstgewählten Standort einzugeben und diesen dann auf der Karte angezeigt bekommen. Zudem soll ein Anbieter-User beim erstellen einer Privaten-Toilette auch einen Standort eingeben und die Toilette dann auf der Karte an angegebenen Standort angezeigt bekommen. Um diese Funktion der App zur verfügung zu stellen, haben wir uns der Google Places API bedient. 
 
-#### 1.
+#### 1. Api-Key
+Als erstes musste ein API-Key erstellt werden bzw. den bereits bestehenden API-Key (der für die MAPS API benutzt wird) um die Location-API erweitern.
+#### 2. Place Autocomplete Request
+Der User bekommt ein Suchfeld in dem er einen Standort eingeben kann. Im laufe der Eingabe, soll unter dem Suchfeld Verfolständigungsvorschläge angezeigt werden. Dazu wird das Autocomplete Request der Places API benutzt. 
+Das Request hat die Form einer HTTP URL, wie folgt:
+```https
+https://maps.googleapis.com/maps/api/place/autocomplete/output?parameters
+```
 
-#### 2.
+#### 4. SearchActivity.java
+Die Places API wurde in unserer App innerhalb der SearchActivity.java eingesetzt.
 
-#### 3.
+```java
+PlaceAutocompleteFragment autocompleteFragment = (PlaceAutocompleteFragment)
+        getFragmentManager().findFragmentById(R.id.place_autocomplete_fragment);
+autocompleteFragment.setHint("Standort eingeben")
+```
+
+Hier wird ein autocompleteFragment erstellt, mit Textinhalt „Standort eingeben“, wo der User dann seinen Standort eingeben kann. Dieses autocompleteFragment stammt aus der Places Bibliothek und gibt automatisch Standortvorschläge. Es muss von uns dazu kein weiterer Code geschrieben werden.
+
+```java
+autocompleteFragment.setBoundsBias(BOUNDS_MOUNTAIN_VIEW);
+```
+
+Mit der Funktion autocompleteFragment.setBoundbias() können wir die angezeigten Ergebnisse geographisch eingrenzen. Wir habe unsere suche auf Berlin begrenzt:
+```java 
+private static final LatLngBounds BOUNDS_MOUNTAIN_VIEW = new LatLngBounds(
+        new LatLng(52.352552, 13.053786), new LatLng(52.702921, 13.769575));
+```
+
+```java
+autocompleteFragment.setOnPlaceSelectedListener(new PlaceSelectionListener() {
+    @Override
+    public void onPlaceSelected(Place place) {
+        Toast.makeText(getApplicationContext(),place.getName().toString(),Toast.LENGTH_SHORT).show();
+    }
+    @Override
+    public void onError(Status status) {
+        Toast.makeText(getApplicationContext(),status.toString(),Toast.LENGTH_SHORT).show();
+    }
+});
+```
+Hier erstellen wir einen Listener, der dann für das vom User ausgewählte Ergebnis Informationen wiedergibt, die dann im weiteren Verlauf der App verwendet werden. Und ggf. eine Fehlermeldung ausgiebt.
+
+
+
+### Richtungsfunktion <a name="Directions API"
+
+Sobald der User im Hauptfenster eine Toilette ausgewählt hat, soll er die Möglichkeit haben eine Navigation zu der Toilette zu starten. Für diese Funktion wurde die Google Direction API benutzt.
+#### 1. Server-Key
+Für die Direction API musste ein andere Art Key erstellt werden, nämlich ein Server-Key. Hier gab es anfänglich Probleme, da die Funktionen der Direction-API nur auf dem Rechner funktionnierte auf dem der Server-Key zuerst benutzt wurde.  Es musste erst ein kostenloses Google Developperkonto erstellt werden. Hier wurden jedoch trotz Kostenlosigkeit Rechnugsadresse und Kreditkarteninformation verlangt, die wir dann mit großem Wiederwillen angegeben haben.
+
+#### 2. Direction Request
+Ausgangssituation ist, dass der User Standort und Toilette ausgewählt hat. Sobald der User nun auf den Navigationsbutton drückt, wird ein Direction Request geschickt. 
+Das Request hat Form einer HTTP URL, wie folgt:
+```https
+https://maps.googleapis.com/maps/api/directions/json?origin=Standort&destination=Toilette&key=YOUR_API_KEY
+```
+
+#### 3. Akexorcist Library
+Um uns die arbeit zu vereinfachen, haben wir uns der Akexorcist Library bedient, die (nebenbei erwähnt) sehr gut dokumentiert war.
+
+#### 4. DirectionActivity.java
+Die Direction API wurde in unserer App innerhalb der SearchActivity eingesetzt.
+```java
+btnRequestDirection = findViewById(R.id.btn_request_direction);
+btnRequestDirection.setOnClickListener(this);
+```
+Hier wird ein Button erstellt mit zugehörigem Listener, der sobald er von User gedrückt wird, die Navigation zwichen Start und Zielpunkt ausgeben soll. (Start und Zielpunkt werden an anderer Stelle definiert siehe MapsActivity und SearschActivity)
+```java
+public void requestDirection() {
+    Snackbar.make(btnRequestDirection, "Direction Requesting...", Snackbar.LENGTH_SHORT).show();
+    GoogleDirection.withServerKey(serverKey)
+            .from(origin)
+            .to(destination)
+            .transitMode(TransportMode.WALKING)
+            .execute(this);
+}
+```
+requestDirection wird ausgeführt sobald btnRequestDirection gedrückt wird.
+Die Paramater sind wie folgt zu verstehen:
+origin: gibt den Startpunkt an
+destination: gibt den Zielpunkt an
+WALKING: gibt die Fortbewegungsart an.
+
+```java
+@Override
+public void onDirectionSuccess(Direction direction, String rawBody) {
+    Snackbar.make(btnRequestDirection, "Success with status: " + direction.getStatus(), Snackbar.LENGTH_SHORT).show();
+    if(direction.isOK()){
+        googleMap.clear();
+        Route route = direction.getRouteList().get(0);
+        googleMap.addMarker(new MarkerOptions().position(origin));
+        googleMap.addMarker(new MarkerOptions().position(destination));
+        ArrayList<LatLng> directionPositionList = route.getLegList().get(0).getDirectionPoint();
+        googleMap.addPolyline(DirectionConverter.createPolyline(this, directionPositionList, 5, Color.RED));
+        setCameraWithCoordinationBounds(route);
+        btnRequestDirection.setVisibility(View.GONE);
+    } else {
+        Snackbar.make(btnRequestDirection, direction.getStatus(), Snackbar.LENGTH_SHORT).show();
+    }
+}
+@Override
+public void onDirectionFailure(Throwable t) {
+    Snackbar.make(btnRequestDirection, t.getMessage(), Snackbar.LENGTH_SHORT).show();
+}
+```
+Wenn requestDirection erfolgreich ist, wird onDirectionSuccess ausgeführt bzw. onDirectionFailure falls nicht.
+In onDirectionSuccess wird mit googleMap.clear() die map geleert, das heißt alle anderen Öffentlischen Toilette, die ausgewählte ausgeschlossen, werden nicht mehr angezeigt.
+Mit googleMap.addmarket und googleMap.addPolyline wird die Strecke auf der Karte angezeigt.
+Mit setCameraCoordinationBounds wird die Sicht der Karte auf Start und Zielpunkt zugeschnitten.
 
 
 ## Fehlerhandler <a name="error"> </a>
 
-### Ohne GPS-Berechtigung <a name="OhneGPS-Berechtigung"></a>
 
-#### Suchfunktion <a name="Suchfunktion"></a>
-
-##### 1.
-
-##### 2.
-
-##### 3.
 
 
 ### Netzwerkfehler <a name="Netzwerkfehler"> </a>
