@@ -45,19 +45,19 @@ HTW Berlin
 	3. [Data anzeigen auf Karte](#DataAufKarte)
 		1. [Marker als Toilet](#Marker)
 		2. [Toilet Informationen](#ToiletInformationen)
-	4. [Richtungsfunktion](#Richtungsfunktion)
-		1. [ ](# )
-		2. [ ](# )
-		3. [ ](# )
+	4. [Places API](#Suchfunktion)
+		1. [API-key](#apikey)
+		2. [Place Autocomplete Request](#placeautocomplete)
+		3. [SearchAcivity.java](#searchactivity)
+	5. [Directions API](#Richtungsfunktion)
+		1. [Server-Key](#serverkey)
+		2. [Direction Request](#directionrequest)
+		3. [Akexorcist Library](#akexorcistlibrary)
+		4. [DirectionAcivity.java](#directionactivity)
 6. [Fehlerhandler](#error)
-	1. [Ohne GPS-Berechtigung](#OhneGPS-Berechtigung)
-		1. [Suchfunktion](#Suchfunktion)
-			1. [ ](# )
-			2. [ ](# )
-			3. [ ](# )
-	2. [Netzwerkfehler](#Netzwerkfehler)
+	1. [Netzwerkfehler](#Netzwerkfehler)
 
-
+7. [Fazit](#fazit)
 
 ## Einführung <a name="introduction"></a>
 
@@ -875,20 +875,20 @@ mMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
 
 
 ```
-### Suchfunktion <a name="Search API"
+### Suchfunktion <a name="Search API"></a>
 
 Mit hilfe unserer App soll derUser in der Lage sein einen selbstgewählten Standort einzugeben und diesen dann auf der Karte angezeigt bekommen. Zudem soll ein Anbieter-User beim erstellen einer Privaten-Toilette auch einen Standort eingeben und die Toilette dann auf der Karte an angegebenen Standort angezeigt bekommen. Um diese Funktion der App zur verfügung zu stellen, haben wir uns der Google Places API bedient. 
 
-#### 1. Api-Key
+#### apikey <a name="API-Key"></a>
 Als erstes musste ein API-Key erstellt werden bzw. den bereits bestehenden API-Key (der für die MAPS API benutzt wird) um die Location-API erweitern.
-#### 2. Place Autocomplete Request
+#### placeautocomplete <a name="Place Autocomplete Request"></a>
 Der User bekommt ein Suchfeld in dem er einen Standort eingeben kann. Im laufe der Eingabe, soll unter dem Suchfeld Verfolständigungsvorschläge angezeigt werden. Dazu wird das Autocomplete Request der Places API benutzt. 
 Das Request hat die Form einer HTTP URL, wie folgt:
 ```https
 https://maps.googleapis.com/maps/api/place/autocomplete/output?parameters
 ```
 
-#### 4. SearchActivity.java
+#### searchactivity <a name="SearchActivity.java"></a>
 Die Places API wurde in unserer App innerhalb der SearchActivity.java eingesetzt.
 
 ```java
@@ -925,23 +925,23 @@ Hier erstellen wir einen Listener, der dann für das vom User ausgewählte Ergeb
 
 
 
-### Richtungsfunktion <a name="Directions API"
+### Richtungsfunktion <a name="Directions API"></a>
 
 Sobald der User im Hauptfenster eine Toilette ausgewählt hat, soll er die Möglichkeit haben eine Navigation zu der Toilette zu starten. Für diese Funktion wurde die Google Direction API benutzt.
-#### 1. Server-Key
+#### serverkey <a name="Server-Key"></a>
 Für die Direction API musste ein andere Art Key erstellt werden, nämlich ein Server-Key. Hier gab es anfänglich Probleme, da die Funktionen der Direction-API nur auf dem Rechner funktionnierte auf dem der Server-Key zuerst benutzt wurde.  Es musste erst ein kostenloses Google Developperkonto erstellt werden. Hier wurden jedoch trotz Kostenlosigkeit Rechnugsadresse und Kreditkarteninformation verlangt, die wir dann mit großem Wiederwillen angegeben haben.
 
-#### 2. Direction Request
+#### directionrequest <a name="Direction Request"></a>
 Ausgangssituation ist, dass der User Standort und Toilette ausgewählt hat. Sobald der User nun auf den Navigationsbutton drückt, wird ein Direction Request geschickt. 
 Das Request hat Form einer HTTP URL, wie folgt:
 ```https
 https://maps.googleapis.com/maps/api/directions/json?origin=Standort&destination=Toilette&key=YOUR_API_KEY
 ```
 
-#### 3. Akexorcist Library
+#### akexorcistlibrary <a name="Akexorcist Library"></a>
 Um uns die arbeit zu vereinfachen, haben wir uns der Akexorcist Library bedient, die (nebenbei erwähnt) sehr gut dokumentiert war.
 
-#### 4. DirectionActivity.java
+#### directionactivity <a name="DirectionActivity.java"></a>
 Die Direction API wurde in unserer App innerhalb der SearchActivity eingesetzt.
 ```java
 btnRequestDirection = findViewById(R.id.btn_request_direction);
@@ -1046,4 +1046,12 @@ mit hilfe ConnectivityManager wird die Netwerkfehler behandelt und Error Dialog 
         }
 }
 ```
+##fazit <a name="Fazit"> </a>
+An dieser Stelle wollen wir noch kurz darauf eingehen, was wir im laufe dieses Projektes, dass für die meisten von uns das erste größere Softwareprojekt war, gelernt haben. 
+Den ersten Wochen haben unseren Schwerpunkt auf den Projekt-Management-Anteil des Projektes gesetzt. Um von vornehinein ein klares Ziel zu setzten (Lastenheft) und dieses im Detail auszuformulieren (Pflichtenheft) und in folge dessen auch eine klare Aufgabenverteilung zu erstellen. Und um eine reibungsfreie Kommunikations sicherzustellen haben wir auch sofort ein Github-Repository erstellt sowie eine Slack-Gruppe. Dies hat sich im laufe des Projektes als enorm Hilfreich herausgestellt. Die Kommunikation hat in unserer Gruppe hervoragend funktionniert und zusammen mit der detaillierten Plannung zu einem erfolgreichen und pünktlichen Beenden unseres Projektes geführt.
 
+Die programmieren in Java innerhalb von android-studio hat sich, obwohl die meisten von uns keine Java-Kenntnisse besaßen, als sehr intuitiv herausgestellt und dank der sehr guten Dokumentation und starken Forenactivität zu einem schnellen Verständnis hinsichtlich der Android-Programmierung.
+
+Auf Fehler sind wir dennoch gestoßen, teilweise auch sehr nervenaufreibende. Diese hatten aber weder mit Java noch mit Android zu tun, sondern eher mit Android-Studio (Probleme bei der Simulation) und den APIs von Google.
+
+ 
