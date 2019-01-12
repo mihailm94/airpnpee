@@ -57,9 +57,9 @@ HTW Berlin
 6. [Fehlerhandler](#error)
 	1. [Netzwerkfehler](#Netzwerkfehler)
 7. [UI Design](#UI)
-	1.[Visionäre Skizze](#skizze)
-	2.[Im Designprozess](#design)
-	3.[Endprodukt](#endp)
+	1. [Visionäre Skizze](#skizze)
+	2. [Im Designprozess](#design)
+	3. [Endprodukt](#endp)
 8. [Fazit](#fazit)
 
 ## Einführung <a name="introduction"></a>
