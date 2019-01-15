@@ -20,8 +20,9 @@ HTW Berlin
 ##### [Mihail Milchev](https://github.com/mihailm94) 
 
 
-#### Dozent
-#### Prof. Dr. Thomas Baar
+
+##### Dozent
+##### Prof. Dr. Thomas Baar
 
 </center>
 </div>
