@@ -100,8 +100,7 @@ A.1.2 Die AirPnP-App soll über ein benutzerfreundliches GUI (Graphical User Int
 A.1.3 Die AirPnP-App soll auf Informationen über öffentliche Toiletten in Berlin zugreifen.
 A.1.4 Die AirPnP-App soll das Erstellen eines User-Accounts erzwingen.
 A.1.5 Die AirPnP-App soll auf Standort zugreifen können.
-A.1.6 Die AirPnP-App soll dem User öffentlische und private Toiletten in einem Umkreis(TBD) um seinen Standort auf einer Karte 
-anzeigen.
+A.1.6 Die AirPnP-App soll dem User öffentliche und private Toiletten in einem Umkreis(TBD) um seinen Standort auf einer Karte anzeigen.
 A.1.7 Die AirPnP-App soll dem User öffentliche und private Toiletten in einem Umkreis(TBD) um einen benutzerdefinierten Standort auf einer Karte anzeigen.
 A.1.8 Die AirPnP-App soll dem User die Funktion anbieten eine Toilette zu bewerten.
 A.1.9 Die AirPnP-App soll das Anlegen eines Anbieter-Account anbieten.
@@ -206,7 +205,7 @@ B.1.10
 
 ## Implementierung der Datenbank in Firebase <a name="dbFirebase"></a>
 
-Um die Daten über bestehenden öffentlichen Toiletten zu sammeln, wurde einen Schnappschuss der OpenStreetMap Datenbank - die **Planet.osm** Datei, benutzt. Planet.osm ist die Sammlung von Nodes, Ways, Relationen und Änderungssätze als Datenbank, inklusive aller Tags. Planet.osm ist eine XML-Datei im .osm-Format, was ein OpenStreetMap spezifisches Dateiformat ist. Die Datei enthällt alle vorhandenen Daten in OpenStreetMap und beschreibt somit die komplette Erde. Mittlerweile ist die Planet.osm Datei 803GB, was für unser Projekt nicht gut geeignet ist. Kleinere Auszüge der Datenbank, die von verschiedenenen Anbietern ebenfalls im .osm-Format zur Verfügung gestellt wurden, haben wir für unseren Zweck benutzt.
+Um die Daten über bestehenden öffentlichen Toiletten zu sammeln, wurde einen Schnappschuss der OpenStreetMap Datenbank - die **Planet.osm** Datei, benutzt. Planet.osm ist die Sammlung von Nodes, Ways, Relationen und Änderungssätze als Datenbank, inklusive aller Tags. Planet.osm ist eine XML-Datei im .osm-Format, was ein OpenStreetMap spezifisches Dateiformat ist. Die Datei enthällt alle vorhandenen Daten in OpenStreetMap und beschreibt somit die komplette Erde. Mittlerweile ist die Planet.osm Datei 803GB, was für unser Projekt nicht gut geeignet ist. Kleinere Auszüge der Datenbank, die von verschiedenen Anbietern ebenfalls im .osm-Format zur Verfügung gestellt wurden, haben wir für unseren Zweck benutzt.
 
 Von dem Geofabrik-Downloadserver (https://download.geofabrik.de) wurde der Berlin-Auszug des Planet.osm-Schnappschusses heruntergeladen.  Geofabrik bietet diese Datei in dem `.osm.pbf` Dateiformat. Das erforderte erstmal eine Konvertierung von `.osm.pbf` zu `osm`, und somit das Dekomprimieren der Datei. Um das gewährzuleisten wurde ein Werkzeug namens **osmconvert** benutzt. Die Eingabe erfolgt durch die Kommandozeile. Um unsere Datei zu konvertieren wurde folgendes Kommando benutzt:
 ```
@@ -238,8 +237,8 @@ Nach ein paar Minuten wurde die Ausgangsdatei generiert, deren Größe nur 302KB
 
 Die bereitgestellten Tools zur Verarbeitung von den OpenStreetMap spezifischen Dateiformaten (`.osm, .osc, .o5m, .o5c, .osm.pbf`) haben sich als sehr nützlich und bedienerfreundlich bewiesen, und aus diesem Grund haben wir die Konvertierung vom `.osm` zum `.xml` Format durchgeführt, erst nachdem alle unbrauchbaren Dateien rausgefiltert wurden.
 
-Als Datenbank haben wir für unser Pojekt die Firebase-Platform gewählt. Das Einbeziehen von Firebase in Android-Studio is einfach, da diese Funktionalität als Modul in dem Android Studio Softwarepaket schon zur Verfügung steht, nach entsprechender Aktivierung in den Einstellungen.
-Firebase ist eine Realtime NoSQL Datenbank. Realtime bedeutet, in diesem Fall, dass alle Endbenutzer (Devices) eine und dieselbe Datenbank-Instanz gemeinsam benutzen und asynchron den neusten Stand der Daten herunterladen. In der Datenbank werden die Daten in dem JavaScript Object Notation (JSON) Format gespeichert.
+Als Datenbank haben wir für unser Pojekt die Firebase-Platform gewählt. Das Einbeziehen von Firebase in Android-Studio ist einfach, da diese Funktionalität als Modul in dem Android Studio Softwarepaket schon zur Verfügung steht, nach entsprechender Aktivierung in den Einstellungen.
+Firebase ist eine Realtime NoSQL Datenbank. Realtime bedeutet, in diesem Fall, dass alle Endbenutzer (Devices) eine und dieselbe Datenbank-Instanz gemeinsam benutzen und asynchron den neuesten Stand der Daten herunterladen. In der Datenbank werden die Daten in dem JavaScript Object Notation (JSON) Format gespeichert.
 
 Die nächste Aufgabe war die Konvertierung von `.xml` zu `.json`. Nach Recherche und Ausprobieren von mehreren Programmen, die kostenlos online zugänglich sind, kamen wir zu dem Entschluss, dass wenn  eine dauerhaft stabile Ausgangsstruktur erzielt werden soll, die an unseren Eingabedaten angepasst ist, wir einen eigenen Parser entwickeln müssen.
 
@@ -466,7 +465,7 @@ public static boolean addToilet(Toilet toilet)
 
 `storageRef` ist die Referenz des Speicherbereiches unserer Datenbank. Nach erfolgreichem Hochladevorgang mittels der Methode `storageRef.putFile();`, kann auf den Dateipfad der hochgeladenen Datei mit der Methode `storageRef.getPath();` zugegriffen werden.
 
-Der Hochladevorgang ist in der `uploadImage(Uri filePath, final Context context){...}` Methode vollständig beschrieben. Der Rückgabewert dieser Methode ist ein `String`, welchem Wert den Datenpfad der hochgeladenen Datei ist.
+Der Hochladevorgang ist in der `uploadImage(Uri filePath, final Context context){...}` Methode vollständig beschrieben. Der Rückgabewert dieser Methode ist ein `String`, dessen Wert der Datenpfad der hochgeladenen Datei ist.
 
 Jedes Bild  bekommt einen einzigartigen Namen beim Hochladen. Die `UUID.randomUUID()` Funktion generiert einen 36-Zeichen-langen alphanumerischen String und setzt ihn als den Namen des Fotos. Die Wahrscheinlichkeit, dass zwei Fotos denselben Namen bekommen besteht zwar, ist aber sehr, sehr, sehr klein. (https://en.wikipedia.org/w/index.php?title=Universally_unique_identifier&oldid=755882275#Random_UUID_probability_of_duplicates)
 ```java
@@ -523,7 +522,7 @@ return bucketResult;
 
 Ein Toiletten-Objekt kann für folgende Situationen auf der Client-Seite erzeugt werden:
 
-1. Heruterladen von Datenbank
+1. Herunterladen von Datenbank
 2. Hinzufügen von einem User der AirPee&Pee App
 
 
